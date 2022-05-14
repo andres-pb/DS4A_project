@@ -1,2 +1,2 @@
-# DS4A_proyect
+# DS4A Trading Bot
 Cripto analysis
