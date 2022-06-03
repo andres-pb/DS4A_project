@@ -35,6 +35,10 @@ status, polygon_data = polygon.get_news_ticker('2022-05-23', 'BTC')
 if status:
     print(polygon_data)
 
+status, polygon_data = polygon.get_old_news('2022-05-30')
+if status:
+    print(polygon_data)
+
 
 #Here you can see how implement plygon module
 alphavantage=Alphavantage(environ.get("ALPHA_KEY"))

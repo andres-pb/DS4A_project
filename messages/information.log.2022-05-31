@@ -1,0 +1,858 @@
+[2640] __main__ - 2022-05-23 21:16:15,677 - INFO - ...... Initialization Completed  ......
+[2640] __main__ - 2022-05-23 21:16:15,680 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16892] __main__ - 2022-05-23 21:23:18,894 - INFO - ...... Initialization Completed  ......
+[16892] __main__ - 2022-05-23 21:23:18,894 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16892] urllib3.connectionpool - 2022-05-23 21:23:18,907 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16892] urllib3.connectionpool - 2022-05-23 21:23:19,345 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16892] urllib3.connectionpool - 2022-05-23 21:23:24,375 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16892] urllib3.connectionpool - 2022-05-23 21:23:24,598 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16892] urllib3.connectionpool - 2022-05-23 21:23:29,635 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16892] urllib3.connectionpool - 2022-05-23 21:23:30,206 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16892] urllib3.connectionpool - 2022-05-23 21:23:35,257 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16892] urllib3.connectionpool - 2022-05-23 21:23:35,499 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16892] app.api.yahoo_finances - 2022-05-23 21:23:35,507 - DEBUG - There is not response because it was tryed 4 and  was not found any information
+[10884] __main__ - 2022-05-23 21:23:54,562 - INFO - ...... Initialization Completed  ......
+[10884] __main__ - 2022-05-23 21:23:54,563 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[10884] urllib3.connectionpool - 2022-05-23 21:23:54,570 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[10884] urllib3.connectionpool - 2022-05-23 21:23:54,890 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[16392] __main__ - 2022-05-23 21:25:22,444 - INFO - ...... Initialization Completed  ......
+[16392] __main__ - 2022-05-23 21:25:22,445 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16392] urllib3.connectionpool - 2022-05-23 21:25:22,452 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16392] urllib3.connectionpool - 2022-05-23 21:25:22,640 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[15264] __main__ - 2022-05-23 21:30:08,769 - INFO - ...... Initialization Completed  ......
+[15264] __main__ - 2022-05-23 21:30:08,769 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[15264] urllib3.connectionpool - 2022-05-23 21:30:08,776 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[15264] urllib3.connectionpool - 2022-05-23 21:30:08,922 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[27252] __main__ - 2022-05-23 21:46:00,430 - INFO - ...... Initialization Completed  ......
+[27252] __main__ - 2022-05-23 21:46:00,431 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[27252] urllib3.connectionpool - 2022-05-23 21:46:00,438 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[27252] urllib3.connectionpool - 2022-05-23 21:46:00,597 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[27252] urllib3.connectionpool - 2022-05-23 21:46:00,651 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[27252] urllib3.connectionpool - 2022-05-23 21:46:00,990 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[24500] __main__ - 2022-05-23 21:46:50,174 - INFO - ...... Initialization Completed  ......
+[24500] __main__ - 2022-05-23 21:46:50,174 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[24500] urllib3.connectionpool - 2022-05-23 21:46:50,181 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[24500] urllib3.connectionpool - 2022-05-23 21:46:50,540 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[24500] urllib3.connectionpool - 2022-05-23 21:46:50,603 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[24500] urllib3.connectionpool - 2022-05-23 21:46:50,801 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[22752] __main__ - 2022-05-23 21:49:34,787 - INFO - ...... Initialization Completed  ......
+[22752] __main__ - 2022-05-23 21:49:34,787 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[22752] urllib3.connectionpool - 2022-05-23 21:49:34,794 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[22752] urllib3.connectionpool - 2022-05-23 21:49:34,970 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[22752] urllib3.connectionpool - 2022-05-23 21:49:35,019 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[22752] urllib3.connectionpool - 2022-05-23 21:49:35,324 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[28556] __main__ - 2022-05-23 21:50:29,584 - INFO - ...... Initialization Completed  ......
+[28556] __main__ - 2022-05-23 21:50:29,584 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[28556] urllib3.connectionpool - 2022-05-23 21:50:29,594 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[28556] urllib3.connectionpool - 2022-05-23 21:50:29,782 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[28556] urllib3.connectionpool - 2022-05-23 21:50:29,814 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[28556] urllib3.connectionpool - 2022-05-23 21:50:30,018 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[28648] __main__ - 2022-05-23 21:51:13,338 - INFO - ...... Initialization Completed  ......
+[28648] __main__ - 2022-05-23 21:51:13,338 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[28648] urllib3.connectionpool - 2022-05-23 21:51:13,350 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[28648] urllib3.connectionpool - 2022-05-23 21:51:13,511 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[28648] urllib3.connectionpool - 2022-05-23 21:51:13,568 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[28648] urllib3.connectionpool - 2022-05-23 21:51:13,775 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[23384] __main__ - 2022-05-23 21:51:26,004 - INFO - ...... Initialization Completed  ......
+[23384] __main__ - 2022-05-23 21:51:26,004 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23384] urllib3.connectionpool - 2022-05-23 21:51:26,014 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[23384] urllib3.connectionpool - 2022-05-23 21:51:26,185 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[23384] urllib3.connectionpool - 2022-05-23 21:51:26,246 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[23384] urllib3.connectionpool - 2022-05-23 21:51:26,455 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[23992] __main__ - 2022-05-23 21:57:51,569 - INFO - ...... Initialization Completed  ......
+[23992] __main__ - 2022-05-23 21:57:51,569 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23992] urllib3.connectionpool - 2022-05-23 21:57:51,581 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[23992] urllib3.connectionpool - 2022-05-23 21:57:51,863 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[23992] urllib3.connectionpool - 2022-05-23 21:57:51,911 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[23992] urllib3.connectionpool - 2022-05-23 21:57:53,189 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[14212] __main__ - 2022-05-23 21:58:27,278 - INFO - ...... Initialization Completed  ......
+[14212] __main__ - 2022-05-23 21:58:27,278 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14212] urllib3.connectionpool - 2022-05-23 21:58:27,288 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[14212] urllib3.connectionpool - 2022-05-23 21:58:27,493 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[14212] urllib3.connectionpool - 2022-05-23 21:58:27,549 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14212] urllib3.connectionpool - 2022-05-23 21:58:28,010 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[7308] __main__ - 2022-05-23 21:59:59,108 - INFO - ...... Initialization Completed  ......
+[7308] __main__ - 2022-05-23 21:59:59,108 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[7308] urllib3.connectionpool - 2022-05-23 21:59:59,117 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[7308] urllib3.connectionpool - 2022-05-23 21:59:59,307 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[7308] urllib3.connectionpool - 2022-05-23 21:59:59,362 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[7308] urllib3.connectionpool - 2022-05-23 21:59:59,563 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[8340] __main__ - 2022-05-23 22:00:43,584 - INFO - ...... Initialization Completed  ......
+[8340] __main__ - 2022-05-23 22:00:43,584 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[8340] urllib3.connectionpool - 2022-05-23 22:00:43,594 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[8340] urllib3.connectionpool - 2022-05-23 22:00:43,870 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[8340] urllib3.connectionpool - 2022-05-23 22:00:43,908 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[8340] urllib3.connectionpool - 2022-05-23 22:00:44,576 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[5332] __main__ - 2022-05-23 22:04:11,632 - INFO - ...... Initialization Completed  ......
+[5332] __main__ - 2022-05-23 22:04:11,632 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[5332] urllib3.connectionpool - 2022-05-23 22:04:11,641 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[5332] urllib3.connectionpool - 2022-05-23 22:04:11,828 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[5332] urllib3.connectionpool - 2022-05-23 22:04:11,887 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[5332] urllib3.connectionpool - 2022-05-23 22:04:12,086 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[26724] __main__ - 2022-05-23 22:04:38,856 - INFO - ...... Initialization Completed  ......
+[26724] __main__ - 2022-05-23 22:04:38,856 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[26724] urllib3.connectionpool - 2022-05-23 22:04:38,868 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[26724] urllib3.connectionpool - 2022-05-23 22:04:39,018 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[26724] urllib3.connectionpool - 2022-05-23 22:04:39,074 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[26724] urllib3.connectionpool - 2022-05-23 22:04:39,261 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[21752] __main__ - 2022-05-23 22:07:38,452 - INFO - ...... Initialization Completed  ......
+[21752] __main__ - 2022-05-23 22:07:38,452 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[21752] urllib3.connectionpool - 2022-05-23 22:07:38,463 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[21752] urllib3.connectionpool - 2022-05-23 22:07:38,627 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[21752] urllib3.connectionpool - 2022-05-23 22:07:38,670 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[21752] urllib3.connectionpool - 2022-05-23 22:07:38,844 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[5656] __main__ - 2022-05-23 22:08:54,433 - INFO - ...... Initialization Completed  ......
+[5656] __main__ - 2022-05-23 22:08:54,433 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[5656] urllib3.connectionpool - 2022-05-23 22:08:54,443 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[5656] urllib3.connectionpool - 2022-05-23 22:08:54,621 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[5656] urllib3.connectionpool - 2022-05-23 22:08:54,664 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[5656] urllib3.connectionpool - 2022-05-23 22:08:54,866 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[18444] __main__ - 2022-05-23 22:12:00,990 - INFO - ...... Initialization Completed  ......
+[18444] __main__ - 2022-05-23 22:12:00,990 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[18444] urllib3.connectionpool - 2022-05-23 22:12:01,000 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[18444] urllib3.connectionpool - 2022-05-23 22:12:01,166 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[18444] urllib3.connectionpool - 2022-05-23 22:12:01,223 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[18444] urllib3.connectionpool - 2022-05-23 22:12:01,410 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=None HTTP/1.1" 401 92
+[22920] __main__ - 2022-05-23 22:30:37,407 - INFO - ...... Initialization Completed  ......
+[22920] __main__ - 2022-05-23 22:30:37,410 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[22920] urllib3.connectionpool - 2022-05-23 22:30:37,418 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[22920] urllib3.connectionpool - 2022-05-23 22:30:37,587 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[22920] urllib3.connectionpool - 2022-05-23 22:30:37,625 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[22920] urllib3.connectionpool - 2022-05-23 22:30:37,867 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[21064] __main__ - 2022-05-23 22:32:01,923 - INFO - ...... Initialization Completed  ......
+[21064] __main__ - 2022-05-23 22:32:01,923 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[21064] urllib3.connectionpool - 2022-05-23 22:32:01,931 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[21064] urllib3.connectionpool - 2022-05-23 22:32:02,119 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[21064] urllib3.connectionpool - 2022-05-23 22:32:02,174 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[21064] urllib3.connectionpool - 2022-05-23 22:32:02,374 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[21064] urllib3.connectionpool - 2022-05-23 22:32:02,394 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[21064] urllib3.connectionpool - 2022-05-23 22:32:03,006 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=ascending&sort=published_utc&published_utc.gte=1990-04-26&apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[14212] __main__ - 2022-05-23 22:32:58,654 - INFO - ...... Initialization Completed  ......
+[14212] __main__ - 2022-05-23 22:32:58,655 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14212] urllib3.connectionpool - 2022-05-23 22:32:58,666 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[14212] urllib3.connectionpool - 2022-05-23 22:32:58,939 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[14212] urllib3.connectionpool - 2022-05-23 22:32:58,983 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14212] urllib3.connectionpool - 2022-05-23 22:32:59,506 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[14212] urllib3.connectionpool - 2022-05-23 22:32:59,524 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14212] urllib3.connectionpool - 2022-05-23 22:32:59,701 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=1990-04-26&apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 100
+[28548] __main__ - 2022-05-23 22:33:19,826 - INFO - ...... Initialization Completed  ......
+[28548] __main__ - 2022-05-23 22:33:19,826 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[28548] urllib3.connectionpool - 2022-05-23 22:33:19,836 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[28548] urllib3.connectionpool - 2022-05-23 22:33:20,002 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[28548] urllib3.connectionpool - 2022-05-23 22:33:20,059 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[28548] urllib3.connectionpool - 2022-05-23 22:33:21,359 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[28548] urllib3.connectionpool - 2022-05-23 22:33:21,689 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[28548] urllib3.connectionpool - 2022-05-23 22:33:23,331 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=2022-04-26&apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 100
+[26580] __main__ - 2022-05-23 22:35:09,421 - INFO - ...... Initialization Completed  ......
+[26580] __main__ - 2022-05-23 22:35:09,421 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[26580] urllib3.connectionpool - 2022-05-23 22:35:09,433 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[26580] urllib3.connectionpool - 2022-05-23 22:35:09,622 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[26580] urllib3.connectionpool - 2022-05-23 22:35:09,682 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[26580] urllib3.connectionpool - 2022-05-23 22:35:09,877 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[26580] urllib3.connectionpool - 2022-05-23 22:35:09,885 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[26580] urllib3.connectionpool - 2022-05-23 22:35:10,074 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=2022-05-23&apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 100
+[27292] __main__ - 2022-05-23 22:53:15,894 - INFO - ...... Initialization Completed  ......
+[27292] __main__ - 2022-05-23 22:53:15,895 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[27292] urllib3.connectionpool - 2022-05-23 22:53:15,905 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[27292] urllib3.connectionpool - 2022-05-23 22:53:16,103 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[27292] urllib3.connectionpool - 2022-05-23 22:53:16,162 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[27292] urllib3.connectionpool - 2022-05-23 22:53:17,255 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[27292] urllib3.connectionpool - 2022-05-23 22:53:17,258 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[27292] urllib3.connectionpool - 2022-05-23 22:53:17,681 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=2022-05-23&apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 98
+[14676] __main__ - 2022-05-23 22:54:36,757 - INFO - ...... Initialization Completed  ......
+[14676] __main__ - 2022-05-23 22:54:36,757 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14676] urllib3.connectionpool - 2022-05-23 22:54:36,769 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[14676] urllib3.connectionpool - 2022-05-23 22:54:36,955 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1575522000&period2=1653364800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[14676] urllib3.connectionpool - 2022-05-23 22:54:37,012 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14676] urllib3.connectionpool - 2022-05-23 22:54:37,534 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 None
+[14676] urllib3.connectionpool - 2022-05-23 22:54:37,553 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14676] urllib3.connectionpool - 2022-05-23 22:54:37,750 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=2022-05-23&apiKey=MvwUSXRAe_YgLJaD4I8ohqUU6UQ0WtQ8 HTTP/1.1" 200 100
+[14676] urllib3.connectionpool - 2022-05-23 22:54:37,768 - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+[14676] urllib3.connectionpool - 2022-05-23 22:54:38,029 - DEBUG - https://www.alphavantage.co:443 "GET /query?function=CRYPTO_INTRADAY&symbol=ETH&market=USD&interval=5min&apikey=ASD7T9WHMM15IX8Y. HTTP/1.1" 200 None
+[14616] __main__ - 2022-05-31 22:32:16,536 - INFO - ...... Initialization Completed  ......
+[14616] __main__ - 2022-05-31 22:32:16,536 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14616] urllib3.connectionpool - 2022-05-31 22:32:16,543 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[14616] urllib3.connectionpool - 2022-05-31 22:32:16,785 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576213200&period2=1654059600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[14616] urllib3.connectionpool - 2022-05-31 22:32:17,025 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14616] urllib3.connectionpool - 2022-05-31 22:32:17,324 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[14616] urllib3.connectionpool - 2022-05-31 22:32:17,327 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[14616] urllib3.connectionpool - 2022-05-31 22:32:17,628 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=2022-05-23&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 100
+[14616] urllib3.connectionpool - 2022-05-31 22:32:17,632 - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+[14616] urllib3.connectionpool - 2022-05-31 22:32:18,408 - DEBUG - https://www.alphavantage.co:443 "GET /query?function=CRYPTO_INTRADAY&symbol=ETH&market=USD&interval=5min&apikey=4RBB1VWACSPNF8DH HTTP/1.1" 200 None
+[11272] __main__ - 2022-05-31 22:46:02,773 - INFO - ...... Initialization Completed  ......
+[11272] __main__ - 2022-05-31 22:46:02,773 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[11272] urllib3.connectionpool - 2022-05-31 22:46:05,565 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[11272] urllib3.connectionpool - 2022-05-31 22:46:05,919 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576213200&period2=1654059600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[11272] urllib3.connectionpool - 2022-05-31 22:46:51,091 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[11272] urllib3.connectionpool - 2022-05-31 22:46:51,393 - DEBUG - https://api.polygon.io:443 "GET /v1/marketstatus/now?apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[11272] urllib3.connectionpool - 2022-05-31 22:47:08,847 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[11272] urllib3.connectionpool - 2022-05-31 22:47:09,148 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=10&order=descending&sort=published_utc&ticker=BTC&published_utc=2022-05-23&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 100
+[11272] urllib3.connectionpool - 2022-05-31 22:47:16,081 - DEBUG - Starting new HTTPS connection (1): www.alphavantage.co:443
+[11272] urllib3.connectionpool - 2022-05-31 22:47:17,038 - DEBUG - https://www.alphavantage.co:443 "GET /query?function=CRYPTO_INTRADAY&symbol=ETH&market=USD&interval=5min&apikey=4RBB1VWACSPNF8DH HTTP/1.1" 200 None
