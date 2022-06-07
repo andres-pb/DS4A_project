@@ -1,0 +1,51 @@
+id,name,symbol,slug,rank,is_active,hash_slug,twt_query
+1,Bitcoin,BTC,bitcoin,1,1,#bitcoin,Bitcoin OR bitcoin OR #bitcoin
+1027,Ethereum,ETH,ethereum,2,1,#ethereum,Ethereum OR ethereum OR #ethereum
+825,Tether,USDT,tether,3,1,#tether,Tether OR tether OR #tether
+3408,USD Coin,USDC,usd-coin,4,1,#usd-coin,USD Coin OR usd-coin OR #usd-coin
+1839,BNB,BNB,bnb,5,1,#bnb,BNB OR bnb OR #bnb
+2010,Cardano,ADA,cardano,6,1,#cardano,Cardano OR cardano OR #cardano
+52,XRP,XRP,xrp,7,1,#xrp,XRP OR xrp OR #xrp
+4687,Binance USD,BUSD,binance-usd,8,1,#binance-usd,Binance USD OR binance-usd OR #binance-usd
+5426,Solana,SOL,solana,9,1,#solana,Solana OR solana OR #solana
+74,Dogecoin,DOGE,dogecoin,10,1,#dogecoin,Dogecoin OR dogecoin OR #dogecoin
+6636,Polkadot,DOT,polkadot-new,11,1,#polkadot-new,Polkadot OR polkadot-new OR #polkadot-new
+3717,Wrapped Bitcoin,WBTC,wrapped-bitcoin,12,1,#wrapped-bitcoin,Wrapped Bitcoin OR wrapped-bitcoin OR #wrapped-bitcoin
+1958,TRON,TRX,tron,13,1,#tron,TRON OR tron OR #tron
+4943,Dai,DAI,multi-collateral-dai,14,1,#multi-collateral-dai,Dai OR multi-collateral-dai OR #multi-collateral-dai
+5805,Avalanche,AVAX,avalanche,15,1,#avalanche,Avalanche OR avalanche OR #avalanche
+5994,Shiba Inu,SHIB,shiba-inu,16,1,#shiba-inu,Shiba Inu OR shiba-inu OR #shiba-inu
+3957,UNUS SED LEO,LEO,unus-sed-leo,17,1,#unus-sed-leo,UNUS SED LEO OR unus-sed-leo OR #unus-sed-leo
+3890,Polygon,MATIC,polygon,18,1,#polygon,Polygon OR polygon OR #polygon
+3635,Cronos,CRO,cronos,19,1,#cronos,Cronos OR cronos OR #cronos
+2,Litecoin,LTC,litecoin,20,1,#litecoin,Litecoin OR litecoin OR #litecoin
+6535,NEAR Protocol,NEAR,near-protocol,21,1,#near-protocol,NEAR Protocol OR near-protocol OR #near-protocol
+7083,Uniswap,UNI,uniswap,22,1,#uniswap,Uniswap OR uniswap OR #uniswap
+1975,Chainlink,LINK,chainlink,23,1,#chainlink,Chainlink OR chainlink OR #chainlink
+4195,FTX Token,FTT,ftx-token,24,1,#ftx-token,FTX Token OR ftx-token OR #ftx-token
+512,Stellar,XLM,stellar,25,1,#stellar,Stellar OR stellar OR #stellar
+1831,Bitcoin Cash,BCH,bitcoin-cash,26,1,#bitcoin-cash,Bitcoin Cash OR bitcoin-cash OR #bitcoin-cash
+328,Monero,XMR,monero,27,1,#monero,Monero OR monero OR #monero
+1321,Ethereum Classic,ETC,ethereum-classic,28,1,#ethereum-classic,Ethereum Classic OR ethereum-classic OR #ethereum-classic
+4030,Algorand,ALGO,algorand,29,1,#algorand,Algorand OR algorand OR #algorand
+3794,Cosmos,ATOM,cosmos,30,1,#cosmos,Cosmos OR cosmos OR #cosmos
+4558,Flow,FLOW,flow,31,1,#flow,Flow OR flow OR #flow
+3077,VeChain,VET,vechain,32,1,#vechain,VeChain OR vechain OR #vechain
+2011,Tezos,XTZ,tezos,33,1,#tezos,Tezos OR tezos OR #tezos
+4642,Hedera,HBAR,hedera,34,1,#hedera,Hedera OR hedera OR #hedera
+1966,Decentraland,MANA,decentraland,35,1,#decentraland,Decentraland OR decentraland OR #decentraland
+18876,ApeCoin,APE,apecoin-ape,36,1,#apecoin-ape,ApeCoin OR apecoin-ape OR #apecoin-ape
+8916,Internet Computer,ICP,internet-computer,37,1,#internet-computer,Internet Computer OR internet-computer OR #internet-computer
+6210,The Sandbox,SAND,the-sandbox,38,1,#the-sandbox,The Sandbox OR the-sandbox OR #the-sandbox
+2087,KuCoin Token,KCS,kucoin-token,39,1,#kucoin-token,KuCoin Token OR kucoin-token OR #kucoin-token
+2280,Filecoin,FIL,filecoin,40,1,#filecoin,Filecoin OR filecoin OR #filecoin
+6892,Elrond,EGLD,elrond-egld,41,1,#elrond-egld,Elrond OR elrond-egld OR #elrond-egld
+7278,Aave,AAVE,aave,42,1,#aave,Aave OR aave OR #aave
+1437,Zcash,ZEC,zcash,43,1,#zcash,Zcash OR zcash OR #zcash
+2563,TrueUSD,TUSD,trueusd,44,1,#trueusd,TrueUSD OR trueusd OR #trueusd
+6783,Axie Infinity,AXS,axie-infinity,45,1,#axie-infinity,Axie Infinity OR axie-infinity OR #axie-infinity
+1765,EOS,EOS,eos,46,1,#eos,EOS OR eos OR #eos
+2416,Theta Network,THETA,theta-network,47,1,#theta-network,Theta Network OR theta-network OR #theta-network
+5665,Helium,HNT,helium,48,1,#helium,Helium OR helium OR #helium
+2502,Huobi Token,HT,huobi-token,49,1,#huobi-token,Huobi Token OR huobi-token OR #huobi-token
+4256,Klaytn,KLAY,klaytn,50,1,#klaytn,Klaytn OR klaytn OR #klaytn
