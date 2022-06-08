@@ -3,14 +3,14 @@ from os.path import dirname, join
 from dotenv import load_dotenv
 import logging
 from app.util.message import starting_message
-from app import yahoo_finance, Polygon, Alphavantage
+from app import yahoo_finance, Polygon, Alphavantage, Twitter, Statistical
 
 
-print(join(dirname(__file__), '.env'))
+
 #load_dotenv(dotenv_path=join(dirname(__file__), '.env'))
 load_dotenv()
 from os import environ
-print(environ.get("POLYGON_KEY"))
+
 
 
 logging_config.init_logging()
@@ -18,7 +18,7 @@ __LOG = logging.getLogger(__name__)
 __LOG.info('...... Initialization Completed  ......')
 __LOG.info(starting_message())
 
-#Here you can see how implement yahoo module
+"""#Here you can see how implement yahoo module
 status, yahoo_data = yahoo_finance.market_value('BTC-USD')
 if status:
     print(yahoo_data)
@@ -47,6 +47,14 @@ status, alphavantage_data = alphavantage.intraday('ETH')
 if status:
     print(alphavantage_data)
 
+#Here you can see how implement twitter
+twt = Twitter()
+twt.get_tweets_df(query="#Bitcoin OR Bitcoin", limit=20).to_csv('twitter.csv')
+print(twt.get_tweets_df(query="#Bitcoin OR Bitcoin", limit=20))"""
 
 
-
+#Here you can see how implement statistical
+statistical = Statistical('BTC-USD')
+print(statistical.volume())
+print('!'*100)
+print(statistical.ATR())
