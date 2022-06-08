@@ -40,8 +40,8 @@ class GoogleTrends:
 
 
 # Test
-gt = GoogleTrends()
+""" gt = GoogleTrends()
 btc_trend = gt.get_daily_trend_df(['Bitcoin', 'Etherium'])
-print(btc_trend)
+print(btc_trend) """
 
 
