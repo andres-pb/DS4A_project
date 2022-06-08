@@ -72,7 +72,8 @@ access_token_secret = environ.get('TW_TOKEN_SECRET')
 
 twt = Twitter(api_key, api_secret, access_token, access_token_secret)
 twt_df = twt.get_tweets_df(query="#Bitcoin OR Bitcoin", limit=200)
-print(twt_df.size)
+twt_df.to_csv('20k_tweets_btc.csv', index=False)
+print(twt_df['created_at'].min())
 
 
 # Test for all top 50 coins
