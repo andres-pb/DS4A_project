@@ -5,6 +5,7 @@ from typing import Tuple
 import pandas as pd
 import logging
 
+
 class YahooFinance:
     def __init__(self) -> None:
         self._LOG = logging.getLogger(__name__)
@@ -13,6 +14,9 @@ class YahooFinance:
         return None
 
     def market_value(self, symbol: str, today: dt = None, hist: dt = None, interval: str ='1wk') -> Tuple[bool, pd.DataFrame]:
+        """
+        intervals --->1d,5d,1wk,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
+        """
         count = 0
         today = today if today else self.today
         hist = hist if hist else self.hist
@@ -26,3 +30,4 @@ class YahooFinance:
                 time.sleep(5)
             else: break
         return True, stock_market_value 
+    

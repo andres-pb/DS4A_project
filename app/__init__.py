@@ -1,1 +1,2 @@
-from .api import Polygon, Alphavantage, yahoo_finance
+from .api import Polygon, Alphavantage, yahoo_finance, Twitter
+from .modules import Statistical
