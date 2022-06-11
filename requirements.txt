@@ -6,7 +6,8 @@ numpy==1.21.5
 pandas==1.3.5
 tweepy==4.10.0
 python-coinmarketcap==0.3
-TA-Lib==0.4.24
 statsmodels==0.5.2
 scikit_learn==1.1.1
 tensorflow==2.9.1
+pytrends=4.8.0
+TA-Lib==0.4.24
