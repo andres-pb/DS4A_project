@@ -1,51 +1,51 @@
-index,id,name,symbol,slug,rank,is_active,hash_symbol,hash_slug,twt_query
-0,1,Bitcoin,BTC,bitcoin,1,1,#BTC,#bitcoin,BTC OR #BTC OR Bitcoin OR bitcoin OR #bitcoin
-157,1027,Ethereum,ETH,ethereum,2,1,#ETH,#ethereum,ETH OR #ETH OR Ethereum OR ethereum OR #ethereum
-126,825,Tether,USDT,tether,3,1,#USDT,#tether,USDT OR #USDT OR Tether OR tether OR #tether
-1038,3408,USD Coin,USDC,usd-coin,4,1,#USDC,#usd-coin,USDC OR #USDC OR USD Coin OR usd-coin OR #usd-coin
-357,1839,BNB,BNB,bnb,5,1,#BNB,#bnb,BNB OR #BNB OR BNB OR bnb OR #bnb
-414,2010,Cardano,ADA,cardano,6,1,#ADA,#cardano,ADA OR #ADA OR Cardano OR cardano OR #cardano
-18,52,XRP,XRP,xrp,7,1,#XRP,#xrp,XRP OR #XRP OR XRP OR xrp OR #xrp
-1551,4687,Binance USD,BUSD,binance-usd,8,1,#BUSD,#binance-usd,BUSD OR #BUSD OR Binance USD OR binance-usd OR #binance-usd
-1832,5426,Solana,SOL,solana,9,1,#SOL,#solana,SOL OR #SOL OR Solana OR solana OR #solana
-27,74,Dogecoin,DOGE,dogecoin,10,1,#DOGE,#dogecoin,DOGE OR #DOGE OR Dogecoin OR dogecoin OR #dogecoin
-2292,6636,Polkadot,DOT,polkadot-new,11,1,#DOT,#polkadot-new,DOT OR #DOT OR Polkadot OR polkadot-new OR #polkadot-new
-1164,3717,Wrapped Bitcoin,WBTC,wrapped-bitcoin,12,1,#WBTC,#wrapped-bitcoin,WBTC OR #WBTC OR Wrapped Bitcoin OR wrapped-bitcoin OR #wrapped-bitcoin
-393,1958,TRON,TRX,tron,13,1,#TRX,#tron,TRX OR #TRX OR TRON OR tron OR #tron
-2013,5805,Avalanche,AVAX,avalanche,14,1,#AVAX,#avalanche,AVAX OR #AVAX OR Avalanche OR avalanche OR #avalanche
-1634,4943,Dai,DAI,multi-collateral-dai,15,1,#DAI,#multi-collateral-dai,DAI OR #DAI OR Dai OR multi-collateral-dai OR #multi-collateral-dai
-2107,5994,Shiba Inu,SHIB,shiba-inu,16,1,#SHIB,#shiba-inu,SHIB OR #SHIB OR Shiba Inu OR shiba-inu OR #shiba-inu
-1310,3957,UNUS SED LEO,LEO,unus-sed-leo,17,1,#LEO,#unus-sed-leo,LEO OR #LEO OR UNUS SED LEO OR unus-sed-leo OR #unus-sed-leo
-1269,3890,Polygon,MATIC,polygon,18,1,#MATIC,#polygon,MATIC OR #MATIC OR Polygon OR polygon OR #polygon
-1,2,Litecoin,LTC,litecoin,19,1,#LTC,#litecoin,LTC OR #LTC OR Litecoin OR litecoin OR #litecoin
-1115,3635,Cronos,CRO,cronos,20,1,#CRO,#cronos,CRO OR #CRO OR Cronos OR cronos OR #cronos
-401,1975,Chainlink,LINK,chainlink,21,1,#LINK,#chainlink,LINK OR #LINK OR Chainlink OR chainlink OR #chainlink
-2500,7083,Uniswap,UNI,uniswap,22,1,#UNI,#uniswap,UNI OR #UNI OR Uniswap OR uniswap OR #uniswap
-2251,6535,NEAR Protocol,NEAR,near-protocol,23,1,#NEAR,#near-protocol,NEAR OR #NEAR OR NEAR Protocol OR near-protocol OR #near-protocol
-1426,4195,FTX Token,FTT,ftx-token,24,1,#FTT,#ftx-token,FTT OR #FTT OR FTX Token OR ftx-token OR #ftx-token
-94,512,Stellar,XLM,stellar,25,1,#XLM,#stellar,XLM OR #XLM OR Stellar OR stellar OR #stellar
-354,1831,Bitcoin Cash,BCH,bitcoin-cash,26,1,#BCH,#bitcoin-cash,BCH OR #BCH OR Bitcoin Cash OR bitcoin-cash OR #bitcoin-cash
-72,328,Monero,XMR,monero,27,1,#XMR,#monero,XMR OR #XMR OR Monero OR monero OR #monero
-228,1321,Ethereum Classic,ETC,ethereum-classic,28,1,#ETC,#ethereum-classic,ETC OR #ETC OR Ethereum Classic OR ethereum-classic OR #ethereum-classic
-1347,4030,Algorand,ALGO,algorand,29,1,#ALGO,#algorand,ALGO OR #ALGO OR Algorand OR algorand OR #algorand
-1212,3794,Cosmos,ATOM,cosmos,30,1,#ATOM,#cosmos,ATOM OR #ATOM OR Cosmos OR cosmos OR #cosmos
-1529,4558,Flow,FLOW,flow,31,1,#FLOW,#flow,FLOW OR #FLOW OR Flow OR flow OR #flow
-883,3077,VeChain,VET,vechain,32,1,#VET,#vechain,VET OR #VET OR VeChain OR vechain OR #vechain
-415,2011,Tezos,XTZ,tezos,33,1,#XTZ,#tezos,XTZ OR #XTZ OR Tezos OR tezos OR #tezos
-1539,4642,Hedera,HBAR,hedera,34,1,#HBAR,#hedera,HBAR OR #HBAR OR Hedera OR hedera OR #hedera
-395,1966,Decentraland,MANA,decentraland,35,1,#MANA,#decentraland,MANA OR #MANA OR Decentraland OR decentraland OR #decentraland
-8999,18876,ApeCoin,APE,apecoin-ape,36,1,#APE,#apecoin-ape,APE OR #APE OR ApeCoin OR apecoin-ape OR #apecoin-ape
-3530,8916,Internet Computer,ICP,internet-computer,37,1,#ICP,#internet-computer,ICP OR #ICP OR Internet Computer OR internet-computer OR #internet-computer
-2169,6210,The Sandbox,SAND,the-sandbox,38,1,#SAND,#the-sandbox,SAND OR #SAND OR The Sandbox OR the-sandbox OR #the-sandbox
-512,2280,Filecoin,FIL,filecoin,39,1,#FIL,#filecoin,FIL OR #FIL OR Filecoin OR filecoin OR #filecoin
-437,2087,KuCoin Token,KCS,kucoin-token,40,1,#KCS,#kucoin-token,KCS OR #KCS OR KuCoin Token OR kucoin-token OR #kucoin-token
-2402,6892,Elrond,EGLD,elrond-egld,41,1,#EGLD,#elrond-egld,EGLD OR #EGLD OR Elrond OR elrond-egld OR #elrond-egld
-2592,7278,Aave,AAVE,aave,42,1,#AAVE,#aave,AAVE OR #AAVE OR Aave OR aave OR #aave
-243,1437,Zcash,ZEC,zcash,43,1,#ZEC,#zcash,ZEC OR #ZEC OR Zcash OR zcash OR #zcash
-332,1765,EOS,EOS,eos,44,1,#EOS,#eos,EOS OR #EOS OR EOS OR eos OR #eos
-1952,5665,Helium,HNT,helium,45,1,#HNT,#helium,HNT OR #HNT OR Helium OR helium OR #helium
-2359,6783,Axie Infinity,AXS,axie-infinity,46,1,#AXS,#axie-infinity,AXS OR #AXS OR Axie Infinity OR axie-infinity OR #axie-infinity
-586,2416,Theta Network,THETA,theta-network,47,1,#THETA,#theta-network,THETA OR #THETA OR Theta Network OR theta-network OR #theta-network
-660,2563,TrueUSD,TUSD,trueusd,48,1,#TUSD,#trueusd,TUSD OR #TUSD OR TrueUSD OR trueusd OR #trueusd
-262,1518,Maker,MKR,maker,49,1,#MKR,#maker,MKR OR #MKR OR Maker OR maker OR #maker
-632,2502,Huobi Token,HT,huobi-token,50,1,#HT,#huobi-token,HT OR #HT OR Huobi Token OR huobi-token OR #huobi-token
+index,id,name,symbol,slug,rank,is_active,days_history,hash_symbol,hash_slug,twt_query
+0,1,Bitcoin,BTC,bitcoin,1,1,3327 days 05:31:39,#BTC,#bitcoin,BTC OR #BTC OR Bitcoin OR bitcoin OR #bitcoin
+157,1027,Ethereum,ETH,ethereum,2,1,2496 days 09:29:30,#ETH,#ethereum,ETH OR #ETH OR Ethereum OR ethereum OR #ethereum
+126,825,Tether,USDT,tether,3,1,2659 days 10:44:34,#USDT,#tether,USDT OR #USDT OR Tether OR tether OR #tether
+18,52,XRP,XRP,xrp,7,1,3229 days 05:27:55,#XRP,#xrp,XRP OR #XRP OR XRP OR xrp OR #xrp
+27,74,Dogecoin,DOGE,dogecoin,10,1,3096 days 09:36:26,#DOGE,#dogecoin,DOGE OR #DOGE OR Dogecoin OR dogecoin OR #dogecoin
+1,2,Litecoin,LTC,litecoin,20,1,3327 days 05:31:38,#LTC,#litecoin,LTC OR #LTC OR Litecoin OR litecoin OR #litecoin
+94,512,Stellar,XLM,stellar,25,1,2863 days 18:34:41,#XLM,#stellar,XLM OR #XLM OR Stellar OR stellar OR #stellar
+72,328,Monero,XMR,monero,27,1,2939 days 22:37:47,#XMR,#monero,XMR OR #XMR OR Monero OR monero OR #monero
+40,131,Dash,DASH,dash,72,1,3035 days 10:34:51,#DASH,#dash,DASH OR #DASH OR Dash OR dash OR #dash
+133,873,NEM,XEM,nem,87,1,2624 days 23:49:19,#XEM,#nem,XEM OR #XEM OR NEM OR nem OR #nem
+163,1042,Siacoin,SC,siacoin,119,1,2477 days 05:59:32,#SC,#siacoin,SC OR #SC OR Siacoin OR siacoin OR #siacoin
+36,109,DigiByte,DGB,digibyte,145,1,3043 days 11:05:22,#DGB,#digibyte,DGB OR #DGB OR DigiByte OR digibyte OR #digibyte
+95,541,Syscoin,SYS,syscoin,164,1,2848 days 13:14:39,#SYS,#syscoin,SYS OR #SYS OR Syscoin OR syscoin OR #syscoin
+173,1104,Augur,REP,augur,260,1,2415 days 07:04:30,#REP,#augur,REP OR #REP OR Augur OR augur OR #augur
+66,291,MaidSafeCoin,MAID,maidsafecoin,302,1,2962 days 20:57:34,#MAID,#maidsafecoin,MAID OR #MAID OR MaidSafeCoin OR maidsafecoin OR #maidsafecoin
+110,693,Verge,XVG,verge,312,1,2782 days 02:04:34,#XVG,#verge,XVG OR #XVG OR Verge OR verge OR #verge
+62,268,WhiteCoin,XWC,whitecoin,328,1,2972 days 12:06:53,#XWC,#whitecoin,XWC OR #XWC OR WhiteCoin OR whitecoin OR #whitecoin
+88,463,BitShares,BTS,bitshares,469,1,2878 days 20:34:42,#BTS,#bitshares,BTS OR #BTS OR BitShares OR bitshares OR #bitshares
+54,213,MonaCoin,MONA,monacoin,474,1,3001 days 19:09:05,#MONA,#monacoin,MONA OR #MONA OR MonaCoin OR monacoin OR #monacoin
+59,258,Groestlcoin,GRS,groestlcoin,482,1,2979 days 03:33:07,#GRS,#groestlcoin,GRS OR #GRS OR Groestlcoin OR groestlcoin OR #groestlcoin
+132,859,Woodcoin,LOG,woodcoin,518,1,2633 days 22:14:33,#LOG,#woodcoin,LOG OR #LOG OR Woodcoin OR woodcoin OR #woodcoin
+120,788,Circuits of Value,COVAL,circuits-of-value,545,1,2692 days 10:39:37,#COVAL,#circuits-of-value,COVAL OR #COVAL OR Circuits of Value OR circuits-of-value OR #circuits-of-value
+2,3,Namecoin,NMC,namecoin,623,1,3327 days 05:31:38,#NMC,#namecoin,NMC OR #NMC OR Namecoin OR namecoin OR #namecoin
+37,118,ReddCoin,RDD,redd,648,1,3039 days 23:20:43,#RDD,#redd,RDD OR #RDD OR ReddCoin OR redd OR #redd
+80,372,Bytecoin,BCN,bytecoin-bcn,743,1,2912 days 11:17:07,#BCN,#bytecoin-bcn,BCN OR #BCN OR Bytecoin OR bytecoin-bcn OR #bytecoin-bcn
+41,132,Counterparty,XCP,counterparty,767,1,3034 days 10:19:24,#XCP,#counterparty,XCP OR #XCP OR Counterparty OR counterparty OR #counterparty
+35,99,Vertcoin,VTC,vertcoin,769,1,3060 days 18:51:03,#VTC,#vertcoin,VTC OR #VTC OR Vertcoin OR vertcoin OR #vertcoin
+121,789,Nexus,NXS,nexus,775,1,2690 days 05:24:37,#NXS,#nexus,NXS OR #NXS OR Nexus OR nexus OR #nexus
+4,5,Peercoin,PPC,peercoin,785,1,3327 days 05:31:37,#PPC,#peercoin,PPC OR #PPC OR Peercoin OR peercoin OR #peercoin
+14,41,Infinitecoin,IFC,infinitecoin,819,1,3254 days 10:51:58,#IFC,#infinitecoin,IFC OR #IFC OR Infinitecoin OR infinitecoin OR #infinitecoin
+161,1037,Agoras: Currency of Tau,AGRS,agoras-tokens,859,1,2479 days 21:29:32,#AGRS,#agoras-tokens,AGRS OR #AGRS OR Agoras: Currency of Tau OR agoras-tokens OR #agoras-tokens
+175,1107,PAC Protocol,PAC,pac-protocol,861,1,2409 days 02:19:33,#PAC,#pac-protocol,PAC OR #PAC OR PAC Protocol OR pac-protocol OR #pac-protocol
+81,377,Navcoin,NAV,nav-coin,896,1,2917 days 12:35:24,#NAV,#nav-coin,NAV OR #NAV OR Navcoin OR nav-coin OR #nav-coin
+89,470,Viacoin,VIA,viacoin,929,1,2881 days 11:54:41,#VIA,#viacoin,VIA OR #VIA OR Viacoin OR viacoin OR #viacoin
+28,77,Diamond,DMD,diamond,946,1,3092 days 11:47:01,#DMD,#diamond,DMD OR #DMD OR Diamond OR diamond OR #diamond
+92,502,Carboncoin,CARBON,carboncoin,1001,1,2866 days 02:59:40,#CARBON,#carboncoin,CARBON OR #CARBON OR Carboncoin OR carboncoin OR #carboncoin
+23,66,Nxt,NXT,nxt,1014,1,3107 days 18:32:20,#NXT,#nxt,NXT OR #NXT OR Nxt OR nxt OR #nxt
+104,624,bitCNY,BITCNY,bitcny,1027,1,2814 days 19:54:38,#BITCNY,#bitcny,BITCNY OR #BITCNY OR bitCNY OR bitcny OR #bitcny
+171,1087,Factom,FCT,factom,1028,1,2436 days 22:44:31,#FCT,#factom,FCT OR #FCT OR Factom OR factom OR #factom
+77,362,CloakCoin,CLOAK,cloakcoin,1131,1,2923 days 00:10:59,#CLOAK,#cloakcoin,CLOAK OR #CLOAK OR CloakCoin OR cloakcoin OR #cloakcoin
+169,1082,SIBCoin,SIB,sibcoin,1143,1,2447 days 01:59:31,#SIB,#sibcoin,SIB OR #SIB OR SIBCoin OR sibcoin OR #sibcoin
+128,833,Gridcoin,GRC,gridcoin,1202,1,2656 days 05:54:34,#GRC,#gridcoin,GRC OR #GRC OR Gridcoin OR gridcoin OR #gridcoin
+114,707,Blocknet,BLOCK,blocknet,1219,1,2775 days 02:59:34,#BLOCK,#blocknet,BLOCK OR #BLOCK OR Blocknet OR blocknet OR #blocknet
+99,576,GameCredits,GAME,gamecredits,1220,1,2836 days 07:24:39,#GAME,#gamecredits,GAME OR #GAME OR GameCredits OR gamecredits OR #gamecredits
+158,1032,TransferCoin,TX,transfercoin,1230,1,2482 days 22:09:30,#TX,#transfercoin,TX OR #TX OR TransferCoin OR transfercoin OR #transfercoin
+34,93,42-coin,42,42-coin,1236,1,3066 days 19:46:59,#42,#42-coin,42 OR #42 OR 42-coin OR 42-coin OR #42-coin
+52,201,Einsteinium,EMC2,einsteinium,1246,1,2981 days 20:08:36,#EMC2,#einsteinium,EMC2 OR #EMC2 OR Einsteinium OR einsteinium OR #einsteinium
+6,8,Feathercoin,FTC,feathercoin,1272,1,3322 days 20:53:45,#FTC,#feathercoin,FTC OR #FTC OR Feathercoin OR feathercoin OR #feathercoin
+58,254,Gulden,NLG,gulden,1312,1,2982 days 20:08:00,#NLG,#gulden,NLG OR #NLG OR Gulden OR gulden OR #gulden
+15,42,Primecoin,XPM,primecoin,1355,1,3253 days 20:57:41,#XPM,#primecoin,XPM OR #XPM OR Primecoin OR primecoin OR #primecoin

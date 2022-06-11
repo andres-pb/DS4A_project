@@ -1,2 +1,2 @@
 # DS4A Trading Bot
-Cripto analysis
+Crypto analysis

@@ -26,6 +26,8 @@ class Twitter:
             characters maximum, including operators (AND OR). 
             Queries may additionally be limited by complexity.
         limit: Total number of tweets to return.
+        popular: boolean, filter only most popular tweets.
+        
         """
         __LOG.debug(f"Getting Tweets information")
         twitter_data = []
