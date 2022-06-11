@@ -3,7 +3,7 @@ from os.path import dirname, join
 from dotenv import load_dotenv
 import logging
 from app.util.message import starting_message
-from app import yahoo_finance, Polygon, Alphavantage, Twitter, Statistical
+from app import yahoo_finance, Polygon, Alphavantage, Twitter, Statistical, Predict, LSTM_model
 
 
 
@@ -50,11 +50,22 @@ if status:
 #Here you can see how implement twitter
 twt = Twitter()
 twt.get_tweets_df(query="#Bitcoin OR Bitcoin", limit=20).to_csv('twitter.csv')
-print(twt.get_tweets_df(query="#Bitcoin OR Bitcoin", limit=20))"""
+print(twt.get_tweets_df(query="#Bitcoin OR Bitcoin", limit=20))
 
 
 #Here you can see how implement statistical
 statistical = Statistical('BTC-USD')
 print(statistical.volume())
 print('!'*100)
-print(statistical.ATR())
+print(statistical.MACD()) 
+
+
+#Here you can see how implement predict
+predict = Predict()
+print(predict.SEX('BTC-USD',10))
+print(predict.sequential())
+"""
+
+#Here you can see how implement LSTM
+for x in range (10):
+    print(LSTM_model('BTC-USD', x))
