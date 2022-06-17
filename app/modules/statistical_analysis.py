@@ -1,4 +1,4 @@
-from .. import yahoo_finance
+from ..api import yahoo_finance
 import pandas as pd
 from pandas import DataFrame
 import datetime as dt
