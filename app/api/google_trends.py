@@ -8,11 +8,9 @@ __LOG = logging.getLogger(__name__)
 class GoogleTrends:
 
     def __init__(self) -> None:
-        __LOG.debug(f"Initializing GoogleTrends Object")
         self.pytrend = TrendReq()
     
     def get_daily_trend_df(self, kw_list:list, start_date:str='2022-01-01', end_date:str='2022-06-01'):
-        __LOG.debug(f"Getting daily google trend data")
         start_dt = dt.datetime.strptime(start_date, r'%Y-%m-%d')
         end_dt = dt.datetime.strptime(end_date, r'%Y-%m-%d')
         

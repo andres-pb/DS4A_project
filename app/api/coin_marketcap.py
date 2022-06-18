@@ -11,13 +11,13 @@ __LOG = logging.getLogger(__name__)
 class CoinMarketCap:
     
     def __init__(self, key) -> None:
-        __LOG.debug(f"Initializing CoinMarketCap Object")
+
         self.key = key
         self.api = coinmarketcapapi.CoinMarketCapAPI(self.key)
 
 
     def get_top_coins(self, top_n:int=50, sort_col:str='rank', sort_asc:bool=True, min_days:int=2400):
-        __LOG.debug(f"Getting top coins most recent metadata")
+
         data_id_map = self.api.cryptocurrency_map().data
         topcoins_df = pd.DataFrame.from_records(data_id_map)
 
