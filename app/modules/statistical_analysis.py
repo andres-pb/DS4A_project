@@ -9,6 +9,7 @@ from typing import Tuple
 class Statistical():
     store_request=dict()
     time_restriction=60
+    
     def __init__(self, ticker:str, today: dt = None, hist: dt = None, interval:str='1wk') -> None:
         self.ticker=ticker
         self.interval= interval
