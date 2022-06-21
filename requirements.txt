@@ -11,3 +11,5 @@ scikit_learn==1.1.1
 tensorflow==2.9.1
 pytrends==4.8.0
 TA-Lib==0.4.24
+plotly==5.8.2
+nbformat==5.4.0
