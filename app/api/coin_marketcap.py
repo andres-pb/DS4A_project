@@ -24,10 +24,11 @@ class CoinMarketCap:
         # Require a minimum of history days
         topcoins_df['first_historical_data'] = pd.to_datetime(topcoins_df['first_historical_data'])
         topcoins_df['last_historical_data'] = pd.to_datetime(topcoins_df['last_historical_data'])
-        topcoins_df['days_history'] = topcoins_df['last_historical_data'] - topcoins_df['first_historical_data']
-        topcoins_df.drop(columns=['platform', 'last_historical_data', 'first_historical_data'], inplace=True)
+        topcoins_df['days_history'] = (topcoins_df['last_historical_data'] - topcoins_df['first_historical_data'])
+        #topcoins_df.drop(columns=['platform', 'last_historical_data', 'first_historical_data'], inplace=True)
         min_hist = dt.timedelta(days=min_days)
         topcoins_df = topcoins_df[topcoins_df['days_history'] >= min_hist]
+        topcoins_df['days_history'] = topcoins_df['days_history'].dt.days.astype(int)
 
         # Sort by importance
         topcoins_df.sort_values(by=sort_col, ascending=sort_asc, inplace=True)
@@ -43,11 +44,11 @@ class CoinMarketCap:
         return topcoins_df
 
 
-""" # Test
+# Test
 load_dotenv()
 mktcap_key = environ.get('COIN_MKTCAP_KEY')
 cmc = CoinMarketCap(mktcap_key)
 coins_df = cmc.get_top_coins()
 # Save top 50 coins metadata
-coins_df.to_csv('presel_coins.csv', index=False)
-print(coins_df) """
+#coins_df.to_csv('presel_coins.csv', index=False)
+print(coins_df.info()) 
