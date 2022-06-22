@@ -27,7 +27,7 @@ class GoogleTrends:
             cat=0,
             geo='',
             gprop='',
-            sleep=0
+            sleep=60
         )
 
         # Google trends gives us hourly data, conver to daily
