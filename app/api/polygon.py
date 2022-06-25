@@ -32,7 +32,7 @@ class Polygon:
     @result_status
     def get_news_ticker(self, tiempo: str, ticker: str) -> Dict[str, str]:
         response = requests.get(
-            f'https://api.polygon.io/v2/reference/news?limit=10&order=descending&sort=published_utc&ticker={ticker}&published_utc={tiempo}&apiKey={self.key}')
+            f'https://api.polygon.io/v2/reference/news?limit=1000&order=descending&sort=published_utc&ticker={ticker}&published_utc={tiempo}&apiKey={self.key}')
         return response.json()
 
     @result_status
