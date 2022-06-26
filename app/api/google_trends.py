@@ -9,12 +9,15 @@ class GoogleTrends:
 
     def __init__(self) -> None:
         self.pytrend = TrendReq()
+        self.today = dt.date.today()
+        self.week_ago = self.today - dt.timedelta(days=7)
     
-    def get_daily_trend_df(self, kw_list:list, start_date:str='2022-01-01', end_date:str='2022-06-01'):
-        start_dt = dt.datetime.strptime(start_date, r'%Y-%m-%d')
-        end_dt = dt.datetime.strptime(end_date, r'%Y-%m-%d')
+    def get_daily_trend_df(self, kw_list:list, start_dt: dt.date = None , end_dt: dt.date = None):
         
-        hourlytrend_df = self.pytrend.get_historical_interest(
+        start_dt = self.week_ago if not start_dt else start_dt
+        end_dt  = self.today if not end_dt else end_dt
+        
+        daily_df = self.pytrend.get_historical_interest(
             kw_list, 
             year_start=start_dt.year,
             month_start=start_dt.month, 
@@ -27,16 +30,13 @@ class GoogleTrends:
             cat=0,
             geo='',
             gprop='',
-            sleep=60
+            sleep=60,
+            frequency='daily'
         )
-
-        # Google trends gives us hourly data, conver to daily
-        hourlytrend_df = hourlytrend_df.iloc[:, :-1]
-        daily_df = hourlytrend_df.groupby(pd.Grouper(freq='d')).mean()
-
-        # Our feature is the trend difference with respect to the daily mean
-        daily_df = (daily_df - daily_df.mean())/daily_df.mean()
-
+        daily_df.reset_index(inplace=True)
+        daily_df['date'] = daily_df['date'].dt.date
+        daily_df.set_index('date', inplace=True)
+        
         return daily_df
 
 
@@ -44,5 +44,3 @@ class GoogleTrends:
 """ gt = GoogleTrends()
 btc_trend = gt.get_daily_trend_df(['Bitcoin', 'Etherium'])
 print(btc_trend) """
-
-
