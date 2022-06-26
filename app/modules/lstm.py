@@ -379,9 +379,9 @@ def select_features(data_dict, keep=['Volume', 'Gtrend']):
         
         data_dict[coin] = dset[list(set(selected_features)) + ['Close']]
 
-
+# Reframes data to have n_in lags of each feature and n_out future target values in the columns
 def series_to_supervised(df, n_in=1, n_out=1, target_idx=-1, 
-                         dropnan=True, min_input=None):
+                         dropnan=True, min_input=None, trajectory=False):
 
     """
     Takes the dataframe and sets as many as n_in lags of the features as columns. (Reframes the df)
@@ -406,10 +406,14 @@ def series_to_supervised(df, n_in=1, n_out=1, target_idx=-1,
     cols.append(df)
     names += [(var + '(t)') for var in vars]
     names += [target + '(t)']
-     # forecast sequence (t, t+1, ... t+n)
-    for i in range(1, n_out):
-      cols.append(df[target].shift(-i))    
-      names += [target + '(t+%d)' % i]
+    if trajectory:
+      # forecast sequence (t, t+1, ... t+n)
+      for i in range(1, n_out):
+        cols.append(df[target].shift(-i))    
+        names += [target + '(t+%d)' % i]
+    else:
+        cols.append(df[target].shift(-n_out))    
+        names += [target + '(t+%d)' % n_out]
     # put it all together
     agg = pd.concat(cols, axis=1)
     agg.columns = names
