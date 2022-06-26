@@ -1,4 +1,4 @@
-from app import build_LSTM, build_BLSTM, build_Attentive_BLSTM
+from app.modules.lstm import build_LSTM, build_BLSTM
 from dash import html
 
 pred_models = {
@@ -10,8 +10,10 @@ pred_models = {
                 'test_days': 365,
                 'label': 'LSTM NN - Market and Google Trends',
                 'lags': 60,
-                'weights_path': '',
+                'test_weights_path': './test_models/BTC_LSTM_VGC_1D.h5',
+                'final_weights_path': '',
                 'builder': build_LSTM,
+                'n_features': 4,
                 'model_kwargs': dict(
                                 num_rnns=2,
                                 dim_rnn=50, 
