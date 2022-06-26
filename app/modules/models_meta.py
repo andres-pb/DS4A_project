@@ -22,11 +22,12 @@ pred_models = {
                                 drop_rate=0.5),
                 'about': html.Div([
                     html.P('Long Short Term Memory Neural Network using 60 lags of multiple features to forecast the closing price of the cryptocurrency.'),
-                    html.P('It consumes public data of four features until the last known daily close. '
+                    html.P('It consumes public data on four features until the last known daily close. '
                             'Historical Closing Price values constitute the autoregressive nature of the model, '
                             'historical traded volume is used as an additional market signal, '
                             'the historical U.S. Treasury Yield at the most relevant maturity (5, 10 or 30 years) is included as a way of capturing international inflation and market risk signals. '
-                            'Finally, the daily social interest in the cryptocurrency as measured by Google Trends is used to take into account alternative sources of data.')
+                            "Finally, the daily social interest in the cryptocurrency as measured by Google Trends takes into account potential investors' perception on the asset. "
+                            "LSTM layers capture the sequential structure of the data to predict next day's closing price.")
                     ])
                 }
         }
