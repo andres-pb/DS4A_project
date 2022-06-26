@@ -10,7 +10,7 @@ pred_models = {
                 'test_days': 365,
                 'label': 'LSTM NN - Market and Google Trends',
                 'lags': 60,
-                'test_weights_path': './test_models/BTC_LSTM_VGC_1D.h5',
+                'test_weights_path': './app/dash/test_models/BTC_LSTM_VGC_1D.h5',
                 'final_weights_path': '',
                 'builder': build_LSTM,
                 'n_features': 4,

@@ -9,25 +9,23 @@ import tensorflow as tf
 from tensorflow import keras
 import joblib
 
-from keras.models import Sequential, Model
+from keras.models import Model
 from keras.layers import LSTM, Bidirectional
-from keras.layers import Dense, BatchNormalization, ReLU, MaxPooling2D
+from keras.layers import Dense
 from keras.layers import Activation, Masking 
-from keras.layers import Dropout, PReLU
-from keras.layers import Conv1D, Input, SpatialDropout2D
-from keras.layers import MaxPooling1D, Reshape, ConvLSTM2D, Conv2D
+from keras.layers import Dropout
+from keras.layers import Input
 from keras.layers import Flatten, RepeatVector
-from keras.layers import TimeDistributed, Permute, Concatenate, Multiply, Lambda
+from keras.layers import Permute, Multiply, Lambda
 from keras.constraints import maxnorm
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.utils import plot_model
+from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
 import keras.backend as K
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error
-from tensorflow.keras.models import Sequential, model_from_json
-
-import plotly.express as px
+from keras.models import model_from_json
+from ..api import GoogleTrends, CoinMarketCap, yahoo_finance
+from dotenv import load_dotenv
 import plotly.graph_objects as go
 
 
@@ -371,7 +369,7 @@ def select_features(data_dict, keep=['Volume', 'Gtrend']):
 
     for coin, dset in data_dict.items():
         selected_features = keep
-        corr = dsets[coin].corr()
+        corr = dset.corr()
         yield_curve = ['FVX', 'TNX', 'TYX']
         corr_yield = np.abs(corr[yield_curve])
         ir_index = corr_yield.loc['Close', :].argmax()
@@ -402,16 +400,19 @@ def series_to_supervised(df, n_in=1, n_out=1, target_idx=-1,
     for i in range(n_in, 0, -1):
       cols.append(df.iloc[:,:target_idx].shift(i))
       names += [(var + '(t-%d)' % i) for var in vars]
-    # current features (t)
-    cols.append(df)
-    names += [(var + '(t)') for var in vars]
-    names += [target + '(t)']
-    if trajectory:
-      # forecast sequence (t, t+1, ... t+n)
-      for i in range(1, n_out):
-        cols.append(df[target].shift(-i))    
-        names += [target + '(t+%d)' % i]
+    if trajectory or n_out==1:    
+        # current features (t)
+        cols.append(df)
+        names += [(var + '(t)') for var in vars]
+        names += [target + '(t)']
+        # forecast sequence (t, t+1, ... t+n)
+        for i in range(1, n_out):
+            cols.append(df[target].shift(-i))    
+            names += [target + '(t+%d)' % i]
     else:
+        # current features (t)
+        cols.append(df.iloc[:,:-1])
+        names += [(var + '(t)') for var in vars]
         cols.append(df[target].shift(-n_out))    
         names += [target + '(t+%d)' % n_out]
     # put it all together
@@ -520,9 +521,15 @@ def gen_test_df(model, X_test, y_test, scaler, test_dates, model_id, ticker, pre
 
 
 # To load filtered test predictions
-def load_test_df(path, ticker, model_id, pred_scope):
-    test_df = pd.read_csv(path, parse_dates=['Date'], index_col='Date')
-    test_df = test_df.query('Scope==@pred_scope & Ticker==@ticker & Model==@model_id')
+def load_test_df(path, ticker, model_id, pred_scope, importance=False):
+    if importance:
+      test_df = pd.read_csv(path)
+      test_df = test_df.query('Scope==@pred_scope & Ticker==@ticker & Model==@model_id')
+    else:
+      test_df = pd.read_csv(path, parse_dates=['Date'], index_col='Date')
+      test_df = test_df.query('Scope==@pred_scope & Ticker==@ticker & Model==@model_id')
+      test_df = test_df[['Observed', 'Predicted']]
+
     return test_df.sort_index()
 
 
