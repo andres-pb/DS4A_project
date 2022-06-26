@@ -45,10 +45,10 @@ class CoinMarketCap:
 
 
 # Test
-load_dotenv()
+""" load_dotenv()
 mktcap_key = environ.get('COIN_MKTCAP_KEY')
 cmc = CoinMarketCap(mktcap_key)
 coins_df = cmc.get_top_coins()
 # Save top 50 coins metadata
 #coins_df.to_csv('presel_coins.csv', index=False)
-print(coins_df.info()) 
+print(coins_df.info())  """
