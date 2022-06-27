@@ -104,6 +104,13 @@ def render_page_content(pathname):
         return [
                 APP_TITLE,
                 dbc.Row([
+                    dbc.DropdownMenu(
+                        dbc.DropdownMenuItem(
+                            'Deep Learning LSTM', 
+                        )
+                    )
+                ]),
+                dbc.Row([
                     dbc.Col(
                         html.Div("Left column here"),
                         width={"size": 5, "offset": 0, 'order': 'first'}, 
@@ -126,6 +133,86 @@ def render_page_content(pathname):
             html.P(f"The pathname {pathname} was not recognised..."),
         ]
     )
+
+
+APP_TITLE = html.Div(
+            [
+                html.H1(
+                        [html.P(className='fa fa-coins'),
+                        'Crypto AI'],
+                        className="display-6",
+                        style={
+                            'textAlign':'right', 
+                            'padding-right': '8rem', 
+                            'padding-top': '1rem'
+                            }
+                            ),
+                html.Hr(),
+            ],
+    )
+
+# styling the sidebar
+SIDEBAR_STYLE = {
+    "position": "fixed",
+    "top": 0,
+    "left": "2rem",
+    "bottom": 0,
+    "width": "8rem",
+    "padding": "2rem 1rem",
+    "background-color": "#000000",
+}
+
+NAVBUTTON_STYLE = {
+    'textAlign':'center', 
+    'padding-':'0.2em 0.2em 0.2em 0.2em', 
+    'color': '#FFFFFF'
+    }
+
+# Sidebar navigation
+sidebar = html.Div(
+    [
+        html.P("Market: ", style={'textAlign':'center'}),
+        html.Hr(),
+        dbc.Nav(
+            [   
+                dbc.NavLink(
+                    html.Div(
+                        [html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], 
+                        style=NAVBUTTON_STYLE), 
+                        href="/monitor", 
+                        active="exact"),
+                html.Hr(),
+                dbc.NavLink(
+                    html.Div(
+                        [html.Span(className="fa fa-align-center fa-3x"), "Text AI"], 
+                        style=NAVBUTTON_STYLE), 
+                        href="/textai", 
+                        active="exact"),
+                html.Hr(),
+                dbc.NavLink(
+                    html.Div(
+                        [html.Span(className="fa fa-fast-forward fa-3x"), "Forecast"], 
+                        style=NAVBUTTON_STYLE), 
+                        href="/forecast", 
+                        active="exact"),
+            ],
+            vertical=True,
+            pills=True,
+        ),
+    ],
+    style=SIDEBAR_STYLE,
+)
+
+
+app.layout = html.Div([
+    dbc.Row(
+        [
+            dbc.Col(width={"size": 2, "offset": 0, 'order': 'first'}), 
+            dbc.Col(APP_TITLE, width={"size": 10, "offset": 0, 'order': 'last'})
+        ]),
+    sidebar,
+	dash.page_container
+])
 
 
 if __name__ == '__main__':
