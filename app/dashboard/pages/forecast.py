@@ -105,21 +105,3 @@ def update_testplot(sel_coin, sel_model, sel_time):
     model_preds = model_preds[['Observed', 'Predicted']]
     fig = plot_model_test(model_preds, px_theme='plotly_white')
     return fig
-    
-
-""" def update_label(n1, n2):
-    # use a dictionary to map ids back to the desired label
-    id_lookup = {
-        'BTC_LSTM_VGC_1D': 'LSTM',
-        'BTC_BLSTM_VGC_1D': 'Bidirectional LSTM'
-    }
-
-    ctx = dash.callback_context
-
-    if (n1 is None and n2 is None) or not ctx.triggered:
-        # if neither button has been clicked, return "Not selected"
-        return "Select a Model"
-
-    # this gets the id of the button that triggered the callback
-    button_id = ctx.triggered[0]["prop_id"].split(".")[0]
-    return id_lookup[button_id] """
