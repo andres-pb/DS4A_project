@@ -103,11 +103,20 @@ def render_page_content(pathname):
     elif pathname == "/forecast":
         return [
                 APP_TITLE,
-                dcc.Graph(
-                    id='test_plot',
-                    figure=plot_model_test(preds_df, ticker='BTC-USD', model_id='BTC_LSTM_VGC_1D', pred_scope='1D'),
-                    style={'right': 0}
-                )
+                dbc.Row([
+                    dbc.Col(
+                        html.Div("Left column here"),
+                        width={"size": 5, "offset": 0, 'order': 'first'}, 
+                    ),
+                    dbc.Col(
+                    dcc.Graph(
+                        id='test_plot',
+                        figure=plot_model_test(preds_df, ticker='BTC-USD', model_id='BTC_LSTM_VGC_1D', pred_scope='1D', px_theme='plotly_white')
+                        ),
+                        width={"size": 7, "offset": 0, 'order':'last'}, 
+                    )
+                ]),
+
                 ]
     # If the user tries to reach a different page, return a 404 message
     return html.Div(
