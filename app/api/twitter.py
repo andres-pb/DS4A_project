@@ -29,7 +29,7 @@ class Twitter:
         popular: boolean, filter only most popular tweets.
         
         """
-        __LOG.debug(f"Getting Tweets information")
+        #__LOG.debug(f"Getting Tweets information")
         twitter_data = []
         result_type = 'popular' if popular else 'mixed'
         results = tweepy.Cursor(
