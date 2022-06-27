@@ -10,12 +10,64 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
-layout = html.Div(children=[
-    html.H1(children=' IVAN GOMEZ'),
+layout = html.Div(
+                    className="flex-container",
+                    children=[
+                                 html.Div( 
+                                    className="row",
+                                    children=[
+                                        html.Div( 
+                                        className="column",
+                                        children=[
+                                                    html.Div( 
+                                                                className="",
+                                                                children=[
+                                                                            html.Div( 
+                                                                            className="item",
+                                                                            children=[ 
+                                                                                            html.P(className="monitor-title", children='BTC-USD'),
+                                                                                            ],
+                                                                                        style=CONTENT_STYLE
+                                                                                    )
+                                                                            ]
+                                                            ),
 
-    html.Div(children='''
-        This is our Archive page content.
-    '''),
-
-],
-style=CONTENT_STYLE)
+                                                    html.Div( 
+                                                                className="",
+                                                                children=[
+                                                                            html.Div( 
+                                                                            className="item",
+                                                                            children=[ 
+                                                                                            html.P( children='BTC-USD sdfdsfsdfsd'),
+                                                                                            ],
+                                                                                        style=CONTENT_STYLE
+                                                                                    ),
+                                                                            html.Div( 
+                                                                            className="item",
+                                                                            children=[ 
+                                                                                            html.P(children='BTC-USD sdfsdfdsfdsfdsfdsfsdfdsfdsfsdf'),
+                                                                                            ],
+                                                                                        style=CONTENT_STYLE
+                                                                                    )
+                                                                            ]
+                                                            )
+                                                    ]
+                                                    )
+                                                ]
+                                            ),
+                                html.Div( 
+                                    className="row",
+                                    children=[
+                                        html.Div( 
+                                                className="column",
+                                                children=[
+                                                html.Div( 
+                                                            className="item",
+                                                            children=[ 'hola']
+                                                        )
+                                                        ]
+                                                 )   
+                                            ]
+                                         )
+                            ],
+)
