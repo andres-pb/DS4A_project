@@ -65,7 +65,7 @@ layout = html.Div([
                     width={"size": 3, "offset": 0, 'order': 'last'},
                 )
         ],
-        style={'margin-right': '20px','margin-top': '5px', 'margin-bottom': '20px'}),
+        style={'margin-right': '20px','margin-top': '20px', 'margin-bottom': '50px'}),
         # Main content starts here in two columns                 
         dbc.Row([
                 dbc.Col(
@@ -74,16 +74,51 @@ layout = html.Div([
                 ),
                 dbc.Col(
                     children = [
-                        dcc.Loading(
-                            children=[dcc.Graph(id='test-plot',)],
-                            type='circle',
-                            color='#A0A0A0'
-                         ),
-                        dcc.Loading(
-                            children=[dcc.Graph(id='importance-plot',)],
-                            type='circle',
-                            color='#A0A0A0'
+                        html.Div(
+                            className='graph-cointainer',
+                            children=[
+                                html.H3('Model Performance', className='graph-title'),
+                                html.P('We set appart around 1 year of data during training and used it for model validation. ' 
+                                       'Below, you can see how the model prediction compared to the true price of the cryptocurrency.',
+                                       className='graph-info'),
+                                dcc.Loading(
+                                    children=[dcc.Graph(id='test-plot',)],
+                                    type='circle',
+                                    color='#A0A0A0'
+                                ),
+                            ],
+                            style={'padding': '1rem 1rem 1rem 1rem'}
                         ),
+                        html.Div(
+                            className='graph-cointainer',
+                            children=[
+                                html.H3('Feature Importance', className='graph-title'),
+                                html.P(
+                                    """
+                                    Cryptocurrency prices might be affected by many yet unknown factors. 
+                                    Some of our models are purely statistical and they provide us with valuable 
+                                    insights about the autoregressive nature of crypto prices, for which we report 
+                                    an autocorrelation plot below. On the other hand, for our deep learning models, 
+                                    we wanted to consider both the time structure of the data, and other 
+                                    sources of information that the team identified as potential predictors.
+                                    It is difficult to measure feature importance in Recurrent Neural Networks,
+                                    such as the ones we have used. However, we built our own measure of feature importance as
+                                    the error perturbation. That is, we measured by how much the model error increased when
+                                    the data on each one of the feature-lag combinations was shuffled. A greater error perturbation,
+                                    suggests a greater feature importance. Below we report top 20 feature-lag combinations for the
+                                    deep learning models following this criteria.
+                                    """,
+                                    className='graph-info'
+                                       ),
+                                dcc.Loading(
+                                    children=[dcc.Graph(id='importance-plot',)],
+                                    type='circle',
+                                    color='#A0A0A0'
+                                ),
+                            ],
+                            style={'padding': '1rem 1rem 1rem 1rem'}
+                        ),
+
                     ],
                     width={"size": 7, "offset": 0, 'order':'last'},
                 )
