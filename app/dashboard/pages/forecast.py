@@ -2,7 +2,7 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc, callback
 import pandas as pd
-from crypto_plots import plot_model_test
+from crypto_plots import plot_model_test, plot_importance
 from dash.dependencies import Input, Output
 
 dash.register_page(__name__)
@@ -16,6 +16,7 @@ CONTENT_STYLE = {
 
 # Read predictions obtained during model testing
 preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
+ft_importance_df = pd.read_csv('./app/dashboard/test_models/ft_importance.csv')
 
 layout = html.Div([
         # Menus and controls row
@@ -72,10 +73,18 @@ layout = html.Div([
                     width={"size": 5, "offset": 0, 'order':'first'},
                 ),
                 dbc.Col(
-                    dcc.Graph(
-                        id='test-plot',
-                        #figure=None, 
-                    ),
+                    children = [
+                        dcc.Loading(
+                            children=[dcc.Graph(id='test-plot',)],
+                            type='circle',
+                            color='#A0A0A0'
+                         ),
+                        dcc.Loading(
+                            children=[dcc.Graph(id='importance-plot',)],
+                            type='circle',
+                            color='#A0A0A0'
+                        ),
+                    ],
                     width={"size": 7, "offset": 0, 'order':'last'},
                 )
             ]
@@ -98,10 +107,17 @@ def populate_time_ddown(sel_coin, sel_model):
 
 @callback(
     Output('test-plot', 'figure'),
+    Output('importance-plot', 'figure'),
     [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
 )
-def update_testplot(sel_coin, sel_model, sel_time):
+def update_models_plots(sel_coin, sel_model, sel_time):
     model_preds = preds_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
     model_preds = model_preds[['Observed', 'Predicted']]
-    fig = plot_model_test(model_preds, px_theme='plotly_white')
-    return fig
+
+    ft_importance = ft_importance_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
+    ft_importance = ft_importance[['Feature', 'Importance', 'Metric']]
+
+    fig_test = plot_model_test(model_preds, px_theme='plotly_white')
+    fig_imp = plot_importance(ft_importance, px_theme='plotly_white')
+
+    return fig_test, fig_imp

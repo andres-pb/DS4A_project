@@ -56,7 +56,7 @@ def plot_model_test(filtered_df: pd.DataFrame, px_theme: str ='plotly_dark'):
     return fig
 
 
-def plot_importance(importance_df: pd.DataFrame, theme: str ='plotly_dark'):
+def plot_importance(importance_df: pd.DataFrame, px_theme: str ='plotly_dark'):
 
     fig = go.Figure()
     fig.update_xaxes(showgrid=True, gridwidth=0.1, gridcolor='DarkGrey')
@@ -116,11 +116,12 @@ def plot_importance(importance_df: pd.DataFrame, theme: str ='plotly_dark'):
             size=25
             )
             },
-        template=theme
+        template=px_theme
     )
 
     fig.update_yaxes(tickmode='linear')
     fig.update_layout(updatemenus=[dict(font=dict(color='black'))])
     fig.update_traces(marker_color='rgba(50, 171, 96, 0.6)')
+    fig.update_layout(width=750, height=500)
 
     return fig
