@@ -24,7 +24,7 @@ sidebar = html.Div(
                         html.Hr(),
                         dbc.Nav(
                             [   
-                                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active=True),
+                                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active='exact'),
                                 html.Hr(),
                                 dbc.NavLink(html.Div([html.Span(className="fa fa-align-center fa-3x"), "Text AI"], style=NAVBUTTON_STYLE), href="/textai", active="exact"),
                                 html.Hr(),
