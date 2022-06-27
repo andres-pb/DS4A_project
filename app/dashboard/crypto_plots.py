@@ -12,10 +12,8 @@ def filter_test_df(test_df, ticker, model_id, pred_scope):
     return test_df.sort_index()
 
 
-def plot_model_test(test_df, ticker, model_id, pred_scope, px_theme='plotly_dark'):
+def plot_model_test(filtered_df: pd.DataFrame, px_theme: str ='plotly_dark'):
 
-    test_dff = test_df.copy(deep=True)
-    filtered_df = filter_test_df(test_dff, ticker, model_id, pred_scope)
     fig = px.line(
             filtered_df,
             x=filtered_df.index, 

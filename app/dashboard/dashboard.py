@@ -8,16 +8,6 @@ app = Dash(__name__, use_pages=True,
             dbc.icons.FONT_AWESOME
             ])
 
-APP_TITLE = html.Div(
-            [
-                html.H1('Crypto AI',
-                        className="display-6",
-                        style={'textAlign':'right'}),
-                html.Hr(),
-            ],
-            style={'top': 0, 'right': 0}
-    )
-
 
 NAVBUTTON_STYLE = {
     'textAlign':'center', 
@@ -34,7 +24,7 @@ sidebar = html.Div(
                         html.Hr(),
                         dbc.Nav(
                             [   
-                                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active="exact"),
+                                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active=True),
                                 html.Hr(),
                                 dbc.NavLink(html.Div([html.Span(className="fa fa-align-center fa-3x"), "Text AI"], style=NAVBUTTON_STYLE), href="/textai", active="exact"),
                                 html.Hr(),
@@ -54,14 +44,16 @@ app.layout = html.Div(
     html.Div(
                 className="C",
                 children=[
-                html.H1(children='Crypto Trading Bot'),
+                html.H1(children=[html.P(className='fa fa-coins'),'Crypto Trading Bot']),
                 ]),
     html.Div(
                 className="B",
                 children=[
-                dash.page_container
+                    dash.page_container
                 ])
 ])
+
+app.config.suppress_callback_exceptions = True
 
 if __name__ == '__main__':
 	app.run_server(debug=True)

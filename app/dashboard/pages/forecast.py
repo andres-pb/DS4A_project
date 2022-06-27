@@ -19,45 +19,82 @@ preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_date
 
 layout = html.Div([
 
-    dbc.Row([
-            dbc.Col(
-                children=[
-                    html.H3('Model:'),
-                    dbc.DropdownMenu(
-                        id='model_dropdown',
-
-                        label='Select a Model',
-                        children=[
-                            dbc.DropdownMenuItem(
-                                'LSTM',
-                                id = 'BTC_LSTM_VGC_1D'
-                                ),
-                            dbc.DropdownMenuItem(
-                                'Bidirectional LSTM',
-                                id = 'BTC_BLSTM_VGC_1D'
+        dbc.Row([
+                dbc.Col(
+                    children=[
+                        dbc.Col(
+                            children=[
+                                html.H3('Cryptocurrency:'),
+                                dcc.Dropdown(
+                                    id='coin-dropdown',
+                                    options=[{'label': c, 'value': c} for c in sorted(preds_df['Coin'].unique())],
+                                    value='BTC - Bitcoin'
                                 )
-                            ]
+                            ],
+                            width={"size": 2, "offset": 0, 'order': 'first'},
                         ),
-                ],
-                width={"size": 5, "offset": 0, 'order': 'first'}, 
-            ),
-            dbc.Col(
-            dcc.Graph(
-                id='test_plot',
-                figure=plot_model_test(preds_df, ticker='BTC-USD', model_id='BTC_LSTM_VGC_1D', pred_scope='1D', px_theme='plotly_white')
+                        dbc.Col(
+                            children=[
+                                html.H3('Model:'),
+                                dcc.Dropdown(
+                                    id='model-dropdown',
+                                    options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
+                                    value='Deep Learning LSTM'
+                                )
+                            ],
+                            width={"size": 2, "offset": 0, 'order': 2},
+                        ),
+                        dbc.Col(
+                            children=[
+                                html.H3('Time Scope:'),
+                                dcc.Dropdown(
+                                    id='time-dropdown',
+                                    options=[],
+                                    value='1 day ahead'
+                                )
+                            ],
+                            width={"size": 1, "offset": 0, 'order': 'last'},
+                        )
+                    ],
+                    width={"size": 5, "offset": 0, 'order': 'first'}, 
                 ),
-                width={"size": 7, "offset": 0, 'order':'last'}, 
-            )
-        ]
-    ),
-],
-style=CONTENT_STYLE)
+                dbc.Col(
+                    dcc.Graph(
+                        id='test-plot',
+                        #figure=None, 
+                    ),
+                    width={"size": 7, "offset": 0, 'order':'last'},
+                )
+            ]
+        ),
+    ],
+    style=CONTENT_STYLE
+)
 
 @callback(
-    Output("model_dropdown", "label"),
-    [Input('BTC_LSTM_VGC_1D', "n_clicks"), Input('BTC_BLSTM_VGC_1D', "n_clicks")],
+    Output('time-dropdown', 'options'),
+    Output('time-dropdown', 'value'),
+    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value')],
 )
-def update_label(n1, n2):
+def populate_time_ddown(sel_coin, sel_model):
+    pred_dff = preds_df.query('(Coin == @sel_coin) & (Model == @sel_model)')
+    times_list = sorted(pred_dff['Scope'].unique())
+    time_opts = [{'label': t, 'value': t} for t in times_list]
+    time_value = times_list[0]
+    return time_opts, time_value
+
+@callback(
+    Output('test-plot', 'figure'),
+    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
+)
+def update_testplot(sel_coin, sel_model, sel_time):
+    model_preds = preds_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
+    model_preds = model_preds[['Observed', 'Predicted']]
+    fig = plot_model_test(model_preds, px_theme='plotly_white')
+    return fig
+    
+
+""" def update_label(n1, n2):
     # use a dictionary to map ids back to the desired label
     id_lookup = {
         'BTC_LSTM_VGC_1D': 'LSTM',
@@ -72,4 +109,4 @@ def update_label(n1, n2):
 
     # this gets the id of the button that triggered the callback
     button_id = ctx.triggered[0]["prop_id"].split(".")[0]
-    return id_lookup[button_id]
+    return id_lookup[button_id] """
