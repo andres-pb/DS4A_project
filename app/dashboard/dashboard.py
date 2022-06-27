@@ -18,18 +18,6 @@ APP_TITLE = html.Div(
             style={'top': 0, 'right': 0}
     )
 
-# styling the sidebar
-SIDEBAR_STYLE = {
-    "position": "fixed",
-    "top": 0,
-    "left": "2rem",
-    "bottom": 0,
-    "width": "8rem",
-    "padding": "2rem 1rem",
-    "background-color": "#000000",
-}
-
-
 
 NAVBUTTON_STYLE = {
     'textAlign':'center', 
@@ -38,27 +26,41 @@ NAVBUTTON_STYLE = {
     }
 
 sidebar = html.Div(
-    [
-        html.P("Market: ", style={'textAlign':'center'}),
-        html.Hr(),
-        dbc.Nav(
-            [   
-                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active="exact"),
-                html.Hr(),
-                dbc.NavLink(html.Div([html.Span(className="fa fa-align-center fa-3x"), "Text AI"], style=NAVBUTTON_STYLE), href="/textai", active="exact"),
-                html.Hr(),
-                dbc.NavLink(html.Div([html.Span(className="fa fa-fast-forward fa-3x"), "Forecast"], style=NAVBUTTON_STYLE), href="/forecast", active="exact"),
-            ],
-            vertical=True,
-            pills=True,
-        ),
-    ],
-    style=SIDEBAR_STYLE,
+    className="A",
+    children=[html.Div(
+            className="sidebar_style",
+            children=[
+                        html.P("Market: "),
+                        html.Hr(),
+                        dbc.Nav(
+                            [   
+                                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active="exact"),
+                                html.Hr(),
+                                dbc.NavLink(html.Div([html.Span(className="fa fa-align-center fa-3x"), "Text AI"], style=NAVBUTTON_STYLE), href="/textai", active="exact"),
+                                html.Hr(),
+                                dbc.NavLink(html.Div([html.Span(className="fa fa-fast-forward fa-3x"), "Forecast"], style=NAVBUTTON_STYLE), href="/forecast", active="exact"),
+                            ],
+                            vertical=True,
+                            pills=True,
+                        ),
+                ],
+            )]
 )
 
-app.layout = html.Div([
+app.layout = html.Div(
+    className="container",
+    children=[
     sidebar,
-	dash.page_container
+    html.Div(
+                className="C",
+                children=[
+                html.H1(children='Crypto Trading Bot'),
+                ]),
+    html.Div(
+                className="B",
+                children=[
+                dash.page_container
+                ])
 ])
 
 if __name__ == '__main__':
