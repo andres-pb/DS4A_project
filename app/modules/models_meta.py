@@ -1,6 +1,15 @@
 from app.modules.lstm import build_LSTM, build_BLSTM
 from dash import html
 
+
+COINS_SELECTION = [
+    'NMC-USD', 
+    'FTC-USD', 
+    'PPC-USD', 
+    'LTC-USD', 
+    'BTC-USD',
+]
+
 pred_models = {
 
     'BTC-USD': {

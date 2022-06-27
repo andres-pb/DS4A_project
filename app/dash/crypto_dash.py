@@ -110,7 +110,7 @@ def render_page_content(pathname):
                 )
                 ]
     # If the user tries to reach a different page, return a 404 message
-    return dbc.Jumbotron(
+    return html.Div(
         [
             html.H1("404: Not found", className="text-danger"),
             html.Hr(),
