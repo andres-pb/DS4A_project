@@ -5,7 +5,7 @@ from transformers import pipeline
     #FinancialBERT
 financialbert_tokenizer = BertTokenizer.from_pretrained("ahmedrachid/FinancialBERT-Sentiment-Analysis")                             #Download
 financialbert_model = BertForSequenceClassification.from_pretrained("ahmedrachid/FinancialBERT-Sentiment-Analysis", num_labels=3)   #Download
-financialbert_model.save_pretrained("./sentiment_models/financialbert_model")                                                             #Model is saved for local use
-financialbert_tokenizer.save_pretrained("./sentiment_models/financialbert_tokenizer")                                               #Model tokenizer is saved for local use
+financialbert_model.save_pretrained("./financial_bert/financialbert_model")                                                             #Model is saved for local use
+financialbert_tokenizer.save_pretrained("./financial_bert/financialbert_tokenizer")                                               #Model tokenizer is saved for local use
 
 
