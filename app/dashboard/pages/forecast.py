@@ -18,45 +18,58 @@ CONTENT_STYLE = {
 preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
 
 layout = html.Div([
-
+        # Menus and controls row
         dbc.Row([
                 dbc.Col(
-                    children=[
-                        dbc.Col(
-                            children=[
-                                html.H3('Cryptocurrency:'),
-                                dcc.Dropdown(
-                                    id='coin-dropdown',
-                                    options=[{'label': c, 'value': c} for c in sorted(preds_df['Coin'].unique())],
-                                    value='BTC - Bitcoin'
-                                )
-                            ],
-                            width={"size": 2, "offset": 0, 'order': 'first'},
-                        ),
-                        dbc.Col(
-                            children=[
-                                html.H3('Model:'),
-                                dcc.Dropdown(
-                                    id='model-dropdown',
-                                    options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
-                                    value='Deep Learning LSTM'
-                                )
-                            ],
-                            width={"size": 2, "offset": 0, 'order': 2},
-                        ),
-                        dbc.Col(
-                            children=[
-                                html.H3('Time Scope:'),
-                                dcc.Dropdown(
-                                    id='time-dropdown',
-                                    options=[],
-                                    value='1 day ahead'
-                                )
-                            ],
-                            width={"size": 1, "offset": 0, 'order': 'last'},
-                        )
-                    ],
-                    width={"size": 5, "offset": 0, 'order': 'first'}, 
+                    html.Div(
+                        className='dropdown',
+                        children=[
+                            html.H3('Cryptocurrency:'),
+                            dcc.Dropdown(
+                                id='coin-dropdown',
+                                options=[{'label': c, 'value': c} for c in sorted(preds_df['Coin'].unique())],
+                                value='BTC - Bitcoin',
+                                clearable=False,                             
+                            )
+                        ],
+                    ),
+                    width={"size": 4, "offset": 0, 'order': 'first'},
+                ),
+                dbc.Col(
+                    html.Div(
+                        className='dropdown',
+                        children=[
+                            html.H3('Model:'),
+                            dcc.Dropdown(
+                                id='model-dropdown',
+                                options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
+                                value='Deep Learning LSTM'
+                            )
+                        ],
+                    ),
+                    width={"size": 3, "offset": 0, 'order': 2},
+                ),
+                dbc.Col(
+                    html.Div(
+                        className='dropdown',
+                        children=[
+                            html.H3('Time Scope:'),
+                            dcc.Dropdown(
+                                id='time-dropdown',
+                                options=[],
+                                value='1 day ahead'
+                            )
+                        ],
+                    ),
+                    width={"size": 3, "offset": 0, 'order': 'last'},
+                )
+        ],
+        style={'margin-right': '20px','margin-top': '5px', 'margin-bottom': '20px'}),
+        # Main content starts here in two columns                 
+        dbc.Row([
+                dbc.Col(
+                    'About model here',
+                    width={"size": 5, "offset": 0, 'order':'first'},
                 ),
                 dbc.Col(
                     dcc.Graph(
