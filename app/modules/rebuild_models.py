@@ -4,23 +4,23 @@ Make predictions using new data.
 """
 from pyexpat import features
 from app.api import yahoo_finance, GoogleTrends
-from app.modules.models_meta import pred_models
+from app.modules import models_meta
 from app.modules.lstm import load_scaler, load_model, prep_data
 import datetime as dt
 import pandas as pd
 
 def rebuild_model(
-    models_meta, 
+    models_dict, 
     coin_label, 
     model_label, 
     scope_label, 
     models_path, 
     scalers_path):
 
-    print(models_meta)
+    print(models_dict)
     
     # Get production model metadata
-    model_meta = models_meta[coin_label][model_label][scope_label]
+    model_meta = models_dict[coin_label][model_label][scope_label]
     builder_func = model_meta['builder_func']
     builder_kwargs = model_meta['builder_kwargs']
     ticker = model_meta['ticker']
@@ -89,7 +89,7 @@ def rebuild_model(
 
 if __name__=='__main__':
     rebuild_model(
-        pred_models, 
+        models_meta.pred_models, 
         'BTC - Bitcoin', 
         'Deep Learning LSTM', 
         '1 day ahead',
