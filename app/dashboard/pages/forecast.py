@@ -45,11 +45,12 @@ layout = html.Div([
                             dcc.Dropdown(
                                 id='model-dropdown',
                                 options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
-                                value='Deep Learning LSTM'
+                                value='Deep Learning LSTM',
+                                clearable=False,
                             )
                         ],
                     ),
-                    width={"size": 3, "offset": 0, 'order': 2},
+                    width={"size": 4, "offset": 0, 'order': 2},
                 ),
                 dbc.Col(
                     html.Div(
@@ -59,11 +60,12 @@ layout = html.Div([
                             dcc.Dropdown(
                                 id='time-dropdown',
                                 options=[],
-                                value='1 day ahead'
+                                value='1 day ahead',
+                                clearable=False,
                             )
                         ],
                     ),
-                    width={"size": 3, "offset": 0, 'order': 'last'},
+                    width={"size": 4, "offset": 0, 'order': 'last'},
                 )
         ],
         style={'margin-right': '20px','margin-top': '20px', 'margin-bottom': '50px'}),
@@ -74,9 +76,13 @@ layout = html.Div([
                     children=[
                         html.Div(
                             className='black-container',
-                            style={'color': 'white', 'background-color': 'black', 'padding': '1rem 1rem 1rem 1rem'},
+                            style={'color': 'white', 'background-color': '#000000', 'padding': '1rem 1rem 1rem 1rem'},
                             children=[
-                                html.H3('About the Model', style={'color': 'white'})
+                                html.H3('About the Model', style={'color': 'white'}),
+                                html.Div(
+                                    id='about-model', 
+                                    children=[]
+                                    )
                             ]
                         ),
                     ],
@@ -169,3 +175,15 @@ def update_models_plots(sel_coin, sel_model, sel_time):
     fig_imp = plot_importance(ft_importance, px_theme='plotly_white')
 
     return fig_test, fig_imp
+
+@callback(
+    Output('about-model', 'children'),
+    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
+)
+def update_about_model(sel_coin, sel_model, sel_time):
+    try:
+        text = pred_models[sel_coin][sel_model][sel_time]['about']
+    except KeyError:
+        text = html.P('No information was found on this model.')
+    return text
+
