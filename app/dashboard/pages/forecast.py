@@ -5,6 +5,7 @@ import pandas as pd
 from app.dashboard.crypto_plots import plot_model_test, plot_importance
 from dash.dependencies import Input, Output
 from app.modules.models_meta import pred_models
+from app.api import yahoo_finance, GoogleTrends
 
 dash.register_page(__name__)
 
@@ -76,12 +77,12 @@ layout = html.Div([
                     children=[
                         html.Div(
                             className='black-container',
-                            style={'color': 'white', 'background-color': '#000000', 'padding': '1rem 1rem 1rem 1rem'},
                             children=[
                                 html.H3('About the Model', style={'color': 'white'}),
-                                html.Div(
-                                    id='about-model', 
-                                    children=[]
+                                html.P(
+                                    id='about-model',
+                                    className='text-just',
+                                    children=['Loading model description...']
                                     )
                             ]
                         ),
@@ -99,7 +100,7 @@ layout = html.Div([
                                     """We set apart around 1 year of data during training and used it for model validation. 
                                        Below, you can see how the model prediction compared to the true price of the cryptocurrency.
                                     """,
-                                       className='graph-info'),
+                                       className='text-just graph-info'),
                                 dcc.Loading(
                                     children=[dcc.Graph(id='test-plot',)],
                                     type='circle',
@@ -127,8 +128,8 @@ layout = html.Div([
                                     suggests a greater feature importance. Below we report top 20 feature-lag combinations for the
                                     deep learning models following this criteria.
                                     """,
-                                    className='graph-info'
-                                       ),
+                                    className='text-just graph-info'
+                                    ),
                                 dcc.Loading(
                                     children=[dcc.Graph(id='importance-plot',)],
                                     type='circle',

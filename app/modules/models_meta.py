@@ -20,7 +20,7 @@ pred_models = {
                         'lags': 60,
                         'n_features': 4,
                         'scaler_path': '',
-                        'test_weights_path': './app/dash/test_models/BTC_LSTM_VGC_1D.h5',
+                        'test_weights_path': './app/dashboard/test_models/BTC_LSTM_VGC_1D.h5',
                         'final_weights_path': '',
                         'builder_func': build_LSTM,
                         'builder_kwargs': dict(
@@ -36,9 +36,9 @@ pred_models = {
                                  target="_blank",
                                  style={'color': 'white'}),
                                 """
-                                    using 60 lags of 
-                                    multiple features to forecast the closing price of the cryptocurrency.
-                                """]),
+                                    using 60 lags of multiple features to forecast the closing 
+                                    price of the cryptocurrency.
+                                """], ),
                             html.P(
                                 """
                                 It consumes public data on four features until the last known daily close. 

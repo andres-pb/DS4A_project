@@ -2517,3 +2517,411 @@ Version .: 1.1
 [34044] sqlalchemy.engine.Engine - 2022-06-27 21:35:22,211 - INFO - PRAGMA main.table_info("crypto")
 [34044] sqlalchemy.engine.Engine - 2022-06-27 21:35:22,221 - INFO - [raw sql] ()
 [34044] sqlalchemy.engine.Engine - 2022-06-27 21:35:22,222 - INFO - COMMIT
+[23472] __main__ - 2022-06-27 21:36:09,195 - INFO - ...... Initialization Completed  ......
+[23472] __main__ - 2022-06-27 21:36:09,195 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23472] sqlalchemy.engine.Engine - 2022-06-27 21:36:09,195 - INFO - BEGIN (implicit)
+[23472] sqlalchemy.engine.Engine - 2022-06-27 21:36:09,195 - INFO - PRAGMA main.table_info("crypto")
+[23472] sqlalchemy.engine.Engine - 2022-06-27 21:36:09,195 - INFO - [raw sql] ()
+[23472] sqlalchemy.engine.Engine - 2022-06-27 21:36:09,201 - INFO - COMMIT
+[32124] __main__ - 2022-06-27 21:46:54,443 - INFO - ...... Initialization Completed  ......
+[32124] __main__ - 2022-06-27 21:46:54,443 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[32124] sqlalchemy.engine.Engine - 2022-06-27 21:46:54,443 - INFO - BEGIN (implicit)
+[32124] sqlalchemy.engine.Engine - 2022-06-27 21:46:54,443 - INFO - PRAGMA main.table_info("crypto")
+[32124] sqlalchemy.engine.Engine - 2022-06-27 21:46:54,455 - INFO - [raw sql] ()
+[32124] sqlalchemy.engine.Engine - 2022-06-27 21:46:54,457 - INFO - COMMIT
+[14072] __main__ - 2022-06-27 21:52:02,269 - INFO - ...... Initialization Completed  ......
+[14072] __main__ - 2022-06-27 21:52:02,269 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14072] sqlalchemy.engine.Engine - 2022-06-27 21:52:02,269 - INFO - BEGIN (implicit)
+[14072] sqlalchemy.engine.Engine - 2022-06-27 21:52:02,269 - INFO - PRAGMA main.table_info("crypto")
+[14072] sqlalchemy.engine.Engine - 2022-06-27 21:52:02,269 - INFO - [raw sql] ()
+[14072] sqlalchemy.engine.Engine - 2022-06-27 21:52:02,275 - INFO - COMMIT
+[33852] __main__ - 2022-06-27 21:52:37,361 - INFO - ...... Initialization Completed  ......
+[33852] __main__ - 2022-06-27 21:52:37,361 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[33852] sqlalchemy.engine.Engine - 2022-06-27 21:52:37,361 - INFO - BEGIN (implicit)
+[33852] sqlalchemy.engine.Engine - 2022-06-27 21:52:37,361 - INFO - PRAGMA main.table_info("crypto")
+[33852] sqlalchemy.engine.Engine - 2022-06-27 21:52:37,369 - INFO - [raw sql] ()
+[33852] sqlalchemy.engine.Engine - 2022-06-27 21:52:37,370 - INFO - COMMIT
+[24004] __main__ - 2022-06-27 21:55:27,473 - INFO - ...... Initialization Completed  ......
+[24004] __main__ - 2022-06-27 21:55:27,473 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[24004] sqlalchemy.engine.Engine - 2022-06-27 21:55:27,473 - INFO - BEGIN (implicit)
+[24004] sqlalchemy.engine.Engine - 2022-06-27 21:55:27,473 - INFO - PRAGMA main.table_info("crypto")
+[24004] sqlalchemy.engine.Engine - 2022-06-27 21:55:27,473 - INFO - [raw sql] ()
+[24004] sqlalchemy.engine.Engine - 2022-06-27 21:55:27,489 - INFO - COMMIT
+[24940] __main__ - 2022-06-27 21:56:29,324 - INFO - ...... Initialization Completed  ......
+[24940] __main__ - 2022-06-27 21:56:29,324 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[24940] sqlalchemy.engine.Engine - 2022-06-27 21:56:29,324 - INFO - BEGIN (implicit)
+[24940] sqlalchemy.engine.Engine - 2022-06-27 21:56:29,324 - INFO - PRAGMA main.table_info("crypto")
+[24940] sqlalchemy.engine.Engine - 2022-06-27 21:56:29,338 - INFO - [raw sql] ()
+[24940] sqlalchemy.engine.Engine - 2022-06-27 21:56:29,339 - INFO - COMMIT
+[27388] __main__ - 2022-06-27 21:57:13,062 - INFO - ...... Initialization Completed  ......
+[27388] __main__ - 2022-06-27 21:57:13,062 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[27388] sqlalchemy.engine.Engine - 2022-06-27 21:57:13,062 - INFO - BEGIN (implicit)
+[27388] sqlalchemy.engine.Engine - 2022-06-27 21:57:13,062 - INFO - PRAGMA main.table_info("crypto")
+[27388] sqlalchemy.engine.Engine - 2022-06-27 21:57:13,074 - INFO - [raw sql] ()
+[27388] sqlalchemy.engine.Engine - 2022-06-27 21:57:13,075 - INFO - COMMIT
+[27388] app.dashboard.dashboard - 2022-06-27 21:57:13,979 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[20988] __main__ - 2022-06-27 21:57:19,566 - INFO - ...... Initialization Completed  ......
+[20988] __main__ - 2022-06-27 21:57:19,566 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[20988] sqlalchemy.engine.Engine - 2022-06-27 21:57:19,567 - INFO - BEGIN (implicit)
+[20988] sqlalchemy.engine.Engine - 2022-06-27 21:57:19,568 - INFO - PRAGMA main.table_info("crypto")
+[20988] sqlalchemy.engine.Engine - 2022-06-27 21:57:19,569 - INFO - [raw sql] ()
+[20988] sqlalchemy.engine.Engine - 2022-06-27 21:57:19,571 - INFO - COMMIT
+[24616] __main__ - 2022-06-27 21:58:39,800 - INFO - ...... Initialization Completed  ......
+[24616] __main__ - 2022-06-27 21:58:39,800 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[24616] sqlalchemy.engine.Engine - 2022-06-27 21:58:39,801 - INFO - BEGIN (implicit)
+[24616] sqlalchemy.engine.Engine - 2022-06-27 21:58:39,802 - INFO - PRAGMA main.table_info("crypto")
+[24616] sqlalchemy.engine.Engine - 2022-06-27 21:58:39,803 - INFO - [raw sql] ()
+[24616] sqlalchemy.engine.Engine - 2022-06-27 21:58:39,804 - INFO - COMMIT
+[14304] __main__ - 2022-06-27 21:59:26,473 - INFO - ...... Initialization Completed  ......
+[14304] __main__ - 2022-06-27 21:59:26,473 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14304] sqlalchemy.engine.Engine - 2022-06-27 21:59:26,473 - INFO - BEGIN (implicit)
+[14304] sqlalchemy.engine.Engine - 2022-06-27 21:59:26,473 - INFO - PRAGMA main.table_info("crypto")
+[14304] sqlalchemy.engine.Engine - 2022-06-27 21:59:26,481 - INFO - [raw sql] ()
+[14304] sqlalchemy.engine.Engine - 2022-06-27 21:59:26,482 - INFO - COMMIT
+[34952] __main__ - 2022-06-27 22:00:33,820 - INFO - ...... Initialization Completed  ......
+[34952] __main__ - 2022-06-27 22:00:33,820 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[34952] sqlalchemy.engine.Engine - 2022-06-27 22:00:33,820 - INFO - BEGIN (implicit)
+[34952] sqlalchemy.engine.Engine - 2022-06-27 22:00:33,820 - INFO - PRAGMA main.table_info("crypto")
+[34952] sqlalchemy.engine.Engine - 2022-06-27 22:00:33,833 - INFO - [raw sql] ()
+[34952] sqlalchemy.engine.Engine - 2022-06-27 22:00:33,834 - INFO - COMMIT
+[7156] __main__ - 2022-06-27 22:01:30,545 - INFO - ...... Initialization Completed  ......
+[7156] __main__ - 2022-06-27 22:01:30,545 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[7156] sqlalchemy.engine.Engine - 2022-06-27 22:01:30,545 - INFO - BEGIN (implicit)
+[7156] sqlalchemy.engine.Engine - 2022-06-27 22:01:30,545 - INFO - PRAGMA main.table_info("crypto")
+[7156] sqlalchemy.engine.Engine - 2022-06-27 22:01:30,561 - INFO - [raw sql] ()
+[7156] sqlalchemy.engine.Engine - 2022-06-27 22:01:30,563 - INFO - COMMIT
+[32632] __main__ - 2022-06-27 22:01:43,520 - INFO - ...... Initialization Completed  ......
+[32632] __main__ - 2022-06-27 22:01:43,520 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[32632] sqlalchemy.engine.Engine - 2022-06-27 22:01:43,535 - INFO - BEGIN (implicit)
+[32632] sqlalchemy.engine.Engine - 2022-06-27 22:01:43,535 - INFO - PRAGMA main.table_info("crypto")
+[32632] sqlalchemy.engine.Engine - 2022-06-27 22:01:43,537 - INFO - [raw sql] ()
+[32632] sqlalchemy.engine.Engine - 2022-06-27 22:01:43,539 - INFO - COMMIT
+[25104] __main__ - 2022-06-27 22:01:54,467 - INFO - ...... Initialization Completed  ......
+[25104] __main__ - 2022-06-27 22:01:54,467 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[25104] sqlalchemy.engine.Engine - 2022-06-27 22:01:54,467 - INFO - BEGIN (implicit)
+[25104] sqlalchemy.engine.Engine - 2022-06-27 22:01:54,467 - INFO - PRAGMA main.table_info("crypto")
+[25104] sqlalchemy.engine.Engine - 2022-06-27 22:01:54,467 - INFO - [raw sql] ()
+[25104] sqlalchemy.engine.Engine - 2022-06-27 22:01:54,473 - INFO - COMMIT
