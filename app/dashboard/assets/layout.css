@@ -69,6 +69,12 @@ body{
     text-justify: inter-word;
 }
 
+.silver-container{
+    color: white;
+    background-color: #404040;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
 .text-just {
     text-align: justify;
     text-justify: inter-word;

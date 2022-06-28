@@ -425,7 +425,7 @@ def series_to_supervised(df, n_in=1, n_out=1, target_idx=-1,
     return agg
 
 
-def prep_data(df, timesteps, test_days=365, scaler=None):
+def prep_data(df, timesteps, test_days=365, scaler=None, production=False):
     """
     Final data preparations: 
     - extracts np.arrays from df,
@@ -439,20 +439,26 @@ def prep_data(df, timesteps, test_days=365, scaler=None):
 
     if not scaler:
         scaler = MinMaxScaler(feature_range=(0, 1))
-    scaled_seqs = scaler.fit_transform(seqs)
+        scaled_seqs = scaler.fit_transform(seqs)
+    else:
+      scaled_seqs = scaler.transform(seqs)
 
     X = scaled_seqs[:,:-1].reshape((seqs.shape[0], 
                             timesteps, 
                             int(seqs.shape[1]/timesteps)
                             ))
-    y = scaled_seqs[:, -1]
 
-    X_train, X_test = X[:-test_days, :, :], X[-test_days:, :, :]
-    y_train, y_test = y[:-test_days], y[-test_days:]
+    if production:
+      return X
+    else:
+      y = scaled_seqs[:, -1]
 
-    test_dates = df.iloc[-test_days:, :].index
-    
-    return X_train, y_train, X_test, y_test, scaler, test_dates
+      X_train, X_test = X[:-test_days, :, :], X[-test_days:, :, :]
+      y_train, y_test = y[:-test_days], y[-test_days:]
+
+      test_dates = df.iloc[-test_days:, :].index
+      
+      return X_train, y_train, X_test, y_test, scaler, test_dates
 
 
 # To build and train a model
@@ -600,26 +606,18 @@ def save_scaler(fitted_scaler, full_path: str= None, path="./models/", coin_tick
     joblib.dump(fitted_scaler, full_path)
 
 
-def load_scaler(full_path: str= None, path="./models/", coin_ticker='BTC'):
+def load_scaler(coin_ticker: str, root_path: str ="app/dashboard/test_models/"):
     
-    if not full_path:
-        full_path = path + coin_ticker + '_scaler.gz'
-    my_scaler = joblib.load(full_path)
+    scaler_path = root_path + coin_ticker + '_scaler.gz'
+    my_scaler = joblib.load(scaler_path)
     return my_scaler
 
 
-def load_model(full_path: str= None, path="./models/", coin_ticker='BTC', model_name='blstm'):
+def load_model(model, model_id: str, root_path: str = "app/dashboard/test_models/"):
     
-    if not full_path:
-    # load json and create model
-        full_path = path + coin_ticker + '_' + model_name + '.json'
-    json_file = open(full_path, 'r')
-    loaded_model_json = json_file.read()
-    json_file.close()
-    loaded_model = model_from_json(loaded_model_json)
-    # load weights into new model
-    weights_path = full_path.replace('.json', '.h5')
-    loaded_model.load_weights(weights_path)
+    # load serialized weights and create model
+    weights_path = root_path + model_id + '.h5'
+    model.load_weights(weights_path)
 
-    return loaded_model
+    return model
 

@@ -15,10 +15,15 @@ pred_models = {
     'BTC - Bitcoin': {
             'Deep Learning LSTM' : {
                     '1 day ahead': {
+                        'ticker': 'BTC',
+                        'coin_name': 'Bitcoin',
                         'model_id': 'BTC_LSTM_VGC_1D',
                         'test_days': 365,
                         'lags': 60,
                         'n_features': 4,
+                        'features': ['Volume', 'Close'],
+                        'treasury_ticker': '^TNX',
+                        'google_trend': True,
                         'scaler_path': '',
                         'test_weights_path': './app/dashboard/test_models/BTC_LSTM_VGC_1D.h5',
                         'final_weights_path': '',
@@ -46,7 +51,7 @@ pred_models = {
                                 historical traded volume is used as an additional market signal, 
                                 the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
                                 or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                                Finally, the daily social interest in the cryptocurrency as measured by Google Trends takes 
+                                Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
                                 into account potential investors' and general public perception on the asset.
                                 """),
                             html.P("LSTM layers capture the sequential structure of the data to predict next day's closing price.")

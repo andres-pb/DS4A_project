@@ -2,6 +2,7 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc, callback
 import pandas as pd
+import datetime as dt
 from app.dashboard.crypto_plots import plot_model_test, plot_importance
 from dash.dependencies import Input, Output
 from app.modules.models_meta import pred_models
@@ -15,6 +16,7 @@ CONTENT_STYLE = {
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
+
 
 # Read predictions obtained during model testing
 preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
@@ -78,6 +80,16 @@ layout = html.Div([
                         html.Div(
                             className='black-container',
                             children=[
+                                html.Div(
+                                    id='prediction-container',
+                                    className='silver-container',
+                                    children=[
+                                        html.H3('The last close is: '),
+                                        html.P(id='last-closing-price', children=[]),
+                                        dcc.Interval(id='update-price-interval', interval=60*1000, n_intervals=0)
+                                    ],
+                                ),
+                                html.Hr(),
                                 html.H3('About the Model', style={'color': 'white'}),
                                 html.P(
                                     id='about-model',
@@ -187,4 +199,18 @@ def update_about_model(sel_coin, sel_model, sel_time):
     except KeyError:
         text = html.P('No information was found on this model.')
     return text
+
+@callback(
+    Output('last-closing-price', 'children'),
+    [Input('coin-dropdown', 'value'),  Input('update-price-interval', 'n_intervals')]
+)
+def update_close(sel_coin, n):
+    today = dt.datetime.today() - dt.timedelta(1)
+    usd_ticker = str(sel_coin)[:3] + '-USD'
+    status, yahoo_df = yahoo_finance.market_value(usd_ticker, hist=today, interval='1d')
+    if status:
+        close = yahoo_df['Close'].values[-1]
+        return close
+    else:
+        return 'Unable to retrieve current price. Retrying...'
 
