@@ -1,5 +1,5 @@
-[2228] __main__ - 2022-06-08 21:39:33,713 - INFO - ...... Initialization Completed  ......
-[2228] __main__ - 2022-06-08 21:39:33,714 - INFO - [1;32m
+[21820] __main__ - 2022-06-27 17:22:02,011 - INFO - ...... Initialization Completed  ......
+[21820] __main__ - 2022-06-27 17:22:02,012 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -23,8 +23,10 @@ Company .: DS4A
 Version .: 1.1
 
     
-[16544] __main__ - 2022-06-08 21:39:59,268 - INFO - ...... Initialization Completed  ......
-[16544] __main__ - 2022-06-08 21:39:59,508 - INFO - [1;32m
+[21820] app.dashboard.dashboard - 2022-06-27 17:22:02,014 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[22524] __main__ - 2022-06-27 17:22:05,988 - INFO - ...... Initialization Completed  ......
+[22524] __main__ - 2022-06-27 17:22:05,988 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -48,17 +50,8 @@ Company .: DS4A
 Version .: 1.1
 
     
-[16544] urllib3.connectionpool - 2022-06-08 21:40:01,093 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[16544] urllib3.connectionpool - 2022-06-08 21:40:01,254 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
-[16544] urllib3.connectionpool - 2022-06-08 21:40:06,281 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[16544] urllib3.connectionpool - 2022-06-08 21:40:06,419 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
-[16544] urllib3.connectionpool - 2022-06-08 21:40:11,608 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[16544] urllib3.connectionpool - 2022-06-08 21:40:11,752 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
-[16544] urllib3.connectionpool - 2022-06-08 21:40:16,770 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[16544] urllib3.connectionpool - 2022-06-08 21:40:16,905 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
-[16544] app.api.yahoo_finances - 2022-06-08 21:40:16,909 - DEBUG - There is not response because it was tried 4, and  was not found any information
-[9184] __main__ - 2022-06-08 21:40:23,928 - INFO - ...... Initialization Completed  ......
-[9184] __main__ - 2022-06-08 21:40:23,928 - INFO - [1;32m
+[10848] __main__ - 2022-06-27 17:33:41,858 - INFO - ...... Initialization Completed  ......
+[10848] __main__ - 2022-06-27 17:33:41,858 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -82,11 +75,14 @@ Company .: DS4A
 Version .: 1.1
 
     
-[9184] urllib3.connectionpool - 2022-06-08 21:40:24,731 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[9184] urllib3.connectionpool - 2022-06-08 21:40:24,883 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[9184] app.modules.predict_models - 2022-06-08 21:40:25,141 - DEBUG - ARIMA Calculated
-[6840] __main__ - 2022-06-08 21:43:15,114 - INFO - ...... Initialization Completed  ......
-[6840] __main__ - 2022-06-08 21:43:15,114 - INFO - [1;32m
+[10848] sqlalchemy.engine.Engine - 2022-06-27 17:33:41,859 - INFO - BEGIN (implicit)
+[10848] sqlalchemy.engine.Engine - 2022-06-27 17:33:41,860 - INFO - PRAGMA main.table_info("crypto")
+[10848] sqlalchemy.engine.Engine - 2022-06-27 17:33:41,860 - INFO - [raw sql] ()
+[10848] sqlalchemy.engine.Engine - 2022-06-27 17:33:41,862 - INFO - COMMIT
+[10848] app.dashboard.dashboard - 2022-06-27 17:33:41,864 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[22468] __main__ - 2022-06-27 17:33:45,790 - INFO - ...... Initialization Completed  ......
+[22468] __main__ - 2022-06-27 17:33:45,790 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -110,10 +106,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[6840] urllib3.connectionpool - 2022-06-08 21:43:16,034 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[6840] urllib3.connectionpool - 2022-06-08 21:43:16,194 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[332] __main__ - 2022-06-08 21:43:33,264 - INFO - ...... Initialization Completed  ......
-[332] __main__ - 2022-06-08 21:43:33,265 - INFO - [1;32m
+[22468] sqlalchemy.engine.Engine - 2022-06-27 17:33:45,791 - INFO - BEGIN (implicit)
+[22468] sqlalchemy.engine.Engine - 2022-06-27 17:33:45,791 - INFO - PRAGMA main.table_info("crypto")
+[22468] sqlalchemy.engine.Engine - 2022-06-27 17:33:45,792 - INFO - [raw sql] ()
+[22468] sqlalchemy.engine.Engine - 2022-06-27 17:33:45,793 - INFO - COMMIT
+[5264] __main__ - 2022-06-27 17:34:58,056 - INFO - ...... Initialization Completed  ......
+[5264] __main__ - 2022-06-27 17:34:58,056 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -137,10 +135,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[332] urllib3.connectionpool - 2022-06-08 21:43:34,070 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[332] urllib3.connectionpool - 2022-06-08 21:43:34,248 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[13476] __main__ - 2022-06-08 21:43:53,037 - INFO - ...... Initialization Completed  ......
-[13476] __main__ - 2022-06-08 21:43:53,038 - INFO - [1;32m
+[5264] sqlalchemy.engine.Engine - 2022-06-27 17:34:58,057 - INFO - BEGIN (implicit)
+[5264] sqlalchemy.engine.Engine - 2022-06-27 17:34:58,058 - INFO - PRAGMA main.table_info("crypto")
+[5264] sqlalchemy.engine.Engine - 2022-06-27 17:34:58,059 - INFO - [raw sql] ()
+[5264] sqlalchemy.engine.Engine - 2022-06-27 17:34:58,060 - INFO - COMMIT
+[13596] __main__ - 2022-06-27 17:35:11,530 - INFO - ...... Initialization Completed  ......
+[13596] __main__ - 2022-06-27 17:35:11,530 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -164,10 +164,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[13476] urllib3.connectionpool - 2022-06-08 21:43:53,922 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[13476] urllib3.connectionpool - 2022-06-08 21:43:54,104 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[5900] __main__ - 2022-06-08 21:44:18,777 - INFO - ...... Initialization Completed  ......
-[5900] __main__ - 2022-06-08 21:44:18,777 - INFO - [1;32m
+[13596] sqlalchemy.engine.Engine - 2022-06-27 17:35:11,531 - INFO - BEGIN (implicit)
+[13596] sqlalchemy.engine.Engine - 2022-06-27 17:35:11,532 - INFO - PRAGMA main.table_info("crypto")
+[13596] sqlalchemy.engine.Engine - 2022-06-27 17:35:11,532 - INFO - [raw sql] ()
+[13596] sqlalchemy.engine.Engine - 2022-06-27 17:35:11,533 - INFO - COMMIT
+[7556] __main__ - 2022-06-27 17:35:53,344 - INFO - ...... Initialization Completed  ......
+[7556] __main__ - 2022-06-27 17:35:53,344 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -191,10 +193,26 @@ Company .: DS4A
 Version .: 1.1
 
     
-[5900] urllib3.connectionpool - 2022-06-08 21:44:19,789 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[5900] urllib3.connectionpool - 2022-06-08 21:44:19,951 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[19072] __main__ - 2022-06-08 21:44:35,453 - INFO - ...... Initialization Completed  ......
-[19072] __main__ - 2022-06-08 21:44:35,454 - INFO - [1;32m
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,345 - INFO - BEGIN (implicit)
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,346 - INFO - PRAGMA main.table_info("crypto")
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,347 - INFO - [raw sql] ()
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,348 - INFO - PRAGMA temp.table_info("crypto")
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,348 - INFO - [raw sql] ()
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,350 - INFO - 
+CREATE TABLE crypto (
+	id INTEGER NOT NULL, 
+	name VARCHAR, 
+	ticker VARCHAR, 
+	PRIMARY KEY (id)
+)
+
+
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,351 - INFO - [no key 0.00123s] ()
+[7556] sqlalchemy.engine.Engine - 2022-06-27 17:35:53,390 - INFO - COMMIT
+[7556] app.dashboard.dashboard - 2022-06-27 17:35:53,395 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[19816] __main__ - 2022-06-27 17:35:57,437 - INFO - ...... Initialization Completed  ......
+[19816] __main__ - 2022-06-27 17:35:57,437 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -218,10 +236,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[19072] urllib3.connectionpool - 2022-06-08 21:44:36,232 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[19072] urllib3.connectionpool - 2022-06-08 21:44:36,378 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[10204] __main__ - 2022-06-08 21:44:57,436 - INFO - ...... Initialization Completed  ......
-[10204] __main__ - 2022-06-08 21:44:57,437 - INFO - [1;32m
+[19816] sqlalchemy.engine.Engine - 2022-06-27 17:35:57,438 - INFO - BEGIN (implicit)
+[19816] sqlalchemy.engine.Engine - 2022-06-27 17:35:57,439 - INFO - PRAGMA main.table_info("crypto")
+[19816] sqlalchemy.engine.Engine - 2022-06-27 17:35:57,439 - INFO - [raw sql] ()
+[19816] sqlalchemy.engine.Engine - 2022-06-27 17:35:57,440 - INFO - COMMIT
+[6208] __main__ - 2022-06-27 17:37:32,344 - INFO - ...... Initialization Completed  ......
+[6208] __main__ - 2022-06-27 17:37:32,345 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -245,10 +265,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[10204] urllib3.connectionpool - 2022-06-08 21:44:58,221 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[10204] urllib3.connectionpool - 2022-06-08 21:44:58,405 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[16788] __main__ - 2022-06-08 21:45:09,887 - INFO - ...... Initialization Completed  ......
-[16788] __main__ - 2022-06-08 21:45:09,888 - INFO - [1;32m
+[6208] sqlalchemy.engine.Engine - 2022-06-27 17:37:32,345 - INFO - BEGIN (implicit)
+[6208] sqlalchemy.engine.Engine - 2022-06-27 17:37:32,346 - INFO - PRAGMA main.table_info("crypto")
+[6208] sqlalchemy.engine.Engine - 2022-06-27 17:37:32,347 - INFO - [raw sql] ()
+[6208] sqlalchemy.engine.Engine - 2022-06-27 17:37:32,348 - INFO - COMMIT
+[22112] __main__ - 2022-06-27 17:41:11,315 - INFO - ...... Initialization Completed  ......
+[22112] __main__ - 2022-06-27 17:41:11,315 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -272,10 +294,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[16788] urllib3.connectionpool - 2022-06-08 21:45:10,686 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[16788] urllib3.connectionpool - 2022-06-08 21:45:10,878 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[6840] __main__ - 2022-06-08 21:45:33,414 - INFO - ...... Initialization Completed  ......
-[6840] __main__ - 2022-06-08 21:45:33,414 - INFO - [1;32m
+[22112] sqlalchemy.engine.Engine - 2022-06-27 17:41:11,316 - INFO - BEGIN (implicit)
+[22112] sqlalchemy.engine.Engine - 2022-06-27 17:41:11,317 - INFO - PRAGMA main.table_info("crypto")
+[22112] sqlalchemy.engine.Engine - 2022-06-27 17:41:11,318 - INFO - [raw sql] ()
+[22112] sqlalchemy.engine.Engine - 2022-06-27 17:41:11,319 - INFO - COMMIT
+[9704] __main__ - 2022-06-27 18:25:19,484 - INFO - ...... Initialization Completed  ......
+[9704] __main__ - 2022-06-27 18:25:19,484 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -299,11 +323,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[6840] urllib3.connectionpool - 2022-06-08 21:45:34,216 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[6840] urllib3.connectionpool - 2022-06-08 21:45:34,385 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[6840] app.modules.predict_models - 2022-06-08 21:45:34,539 - DEBUG - ARIMA Calculated
-[12872] __main__ - 2022-06-08 21:46:01,864 - INFO - ...... Initialization Completed  ......
-[12872] __main__ - 2022-06-08 21:46:01,864 - INFO - [1;32m
+[9704] sqlalchemy.engine.Engine - 2022-06-27 18:25:19,485 - INFO - BEGIN (implicit)
+[9704] sqlalchemy.engine.Engine - 2022-06-27 18:25:19,486 - INFO - PRAGMA main.table_info("crypto")
+[9704] sqlalchemy.engine.Engine - 2022-06-27 18:25:19,487 - INFO - [raw sql] ()
+[9704] sqlalchemy.engine.Engine - 2022-06-27 18:25:19,488 - INFO - COMMIT
+[20736] __main__ - 2022-06-27 18:25:44,452 - INFO - ...... Initialization Completed  ......
+[20736] __main__ - 2022-06-27 18:25:44,452 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -327,11 +352,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[12872] urllib3.connectionpool - 2022-06-08 21:46:02,677 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[12872] urllib3.connectionpool - 2022-06-08 21:46:02,859 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[12872] app.modules.predict_models - 2022-06-08 21:46:02,998 - DEBUG - ARIMA Calculated
-[9272] __main__ - 2022-06-08 21:46:20,239 - INFO - ...... Initialization Completed  ......
-[9272] __main__ - 2022-06-08 21:46:20,240 - INFO - [1;32m
+[20736] sqlalchemy.engine.Engine - 2022-06-27 18:25:44,453 - INFO - BEGIN (implicit)
+[20736] sqlalchemy.engine.Engine - 2022-06-27 18:25:44,454 - INFO - PRAGMA main.table_info("crypto")
+[20736] sqlalchemy.engine.Engine - 2022-06-27 18:25:44,454 - INFO - [raw sql] ()
+[20736] sqlalchemy.engine.Engine - 2022-06-27 18:25:44,455 - INFO - COMMIT
+[22384] __main__ - 2022-06-27 18:25:55,593 - INFO - ...... Initialization Completed  ......
+[22384] __main__ - 2022-06-27 18:25:55,593 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -355,11 +381,14 @@ Company .: DS4A
 Version .: 1.1
 
     
-[9272] urllib3.connectionpool - 2022-06-08 21:46:21,023 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[9272] urllib3.connectionpool - 2022-06-08 21:46:21,163 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[9272] app.modules.predict_models - 2022-06-08 21:46:21,270 - DEBUG - ARIMA Calculated
-[18316] __main__ - 2022-06-08 21:47:18,848 - INFO - ...... Initialization Completed  ......
-[18316] __main__ - 2022-06-08 21:47:18,848 - INFO - [1;32m
+[22384] sqlalchemy.engine.Engine - 2022-06-27 18:25:55,594 - INFO - BEGIN (implicit)
+[22384] sqlalchemy.engine.Engine - 2022-06-27 18:25:55,595 - INFO - PRAGMA main.table_info("crypto")
+[22384] sqlalchemy.engine.Engine - 2022-06-27 18:25:55,595 - INFO - [raw sql] ()
+[22384] sqlalchemy.engine.Engine - 2022-06-27 18:25:55,597 - INFO - COMMIT
+[22384] app.dashboard.dashboard - 2022-06-27 18:25:56,024 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[22352] __main__ - 2022-06-27 18:25:59,795 - INFO - ...... Initialization Completed  ......
+[22352] __main__ - 2022-06-27 18:25:59,795 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -383,8 +412,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[3448] __main__ - 2022-06-08 21:47:30,243 - INFO - ...... Initialization Completed  ......
-[3448] __main__ - 2022-06-08 21:47:30,243 - INFO - [1;32m
+[22352] sqlalchemy.engine.Engine - 2022-06-27 18:25:59,796 - INFO - BEGIN (implicit)
+[22352] sqlalchemy.engine.Engine - 2022-06-27 18:25:59,797 - INFO - PRAGMA main.table_info("crypto")
+[22352] sqlalchemy.engine.Engine - 2022-06-27 18:25:59,797 - INFO - [raw sql] ()
+[22352] sqlalchemy.engine.Engine - 2022-06-27 18:25:59,799 - INFO - COMMIT
+[24352] __main__ - 2022-06-27 18:26:42,550 - INFO - ...... Initialization Completed  ......
+[24352] __main__ - 2022-06-27 18:26:42,550 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -408,11 +441,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[3448] urllib3.connectionpool - 2022-06-08 21:47:31,021 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[3448] urllib3.connectionpool - 2022-06-08 21:47:31,196 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[3448] app.modules.predict_models - 2022-06-08 21:47:31,308 - DEBUG - ARIMA Calculated
-[8860] __main__ - 2022-06-08 21:53:03,433 - INFO - ...... Initialization Completed  ......
-[8860] __main__ - 2022-06-08 21:53:03,433 - INFO - [1;32m
+[24352] sqlalchemy.engine.Engine - 2022-06-27 18:26:42,551 - INFO - BEGIN (implicit)
+[24352] sqlalchemy.engine.Engine - 2022-06-27 18:26:42,551 - INFO - PRAGMA main.table_info("crypto")
+[24352] sqlalchemy.engine.Engine - 2022-06-27 18:26:42,552 - INFO - [raw sql] ()
+[24352] sqlalchemy.engine.Engine - 2022-06-27 18:26:42,552 - INFO - COMMIT
+[19448] __main__ - 2022-06-27 18:26:52,518 - INFO - ...... Initialization Completed  ......
+[19448] __main__ - 2022-06-27 18:26:52,518 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -436,11 +470,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[8860] urllib3.connectionpool - 2022-06-08 21:53:04,256 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[8860] urllib3.connectionpool - 2022-06-08 21:53:04,452 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[8860] app.modules.predict_models - 2022-06-08 21:53:04,481 - DEBUG - AR Calculated
-[10792] __main__ - 2022-06-08 21:56:45,262 - INFO - ...... Initialization Completed  ......
-[10792] __main__ - 2022-06-08 21:56:45,262 - INFO - [1;32m
+[19448] sqlalchemy.engine.Engine - 2022-06-27 18:26:52,518 - INFO - BEGIN (implicit)
+[19448] sqlalchemy.engine.Engine - 2022-06-27 18:26:52,519 - INFO - PRAGMA main.table_info("crypto")
+[19448] sqlalchemy.engine.Engine - 2022-06-27 18:26:52,519 - INFO - [raw sql] ()
+[19448] sqlalchemy.engine.Engine - 2022-06-27 18:26:52,520 - INFO - COMMIT
+[22204] __main__ - 2022-06-27 18:27:20,414 - INFO - ...... Initialization Completed  ......
+[22204] __main__ - 2022-06-27 18:27:20,415 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -464,11 +499,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[10792] urllib3.connectionpool - 2022-06-08 21:56:46,106 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[10792] urllib3.connectionpool - 2022-06-08 21:56:46,267 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[10792] app.modules.predict_models - 2022-06-08 21:56:46,304 - DEBUG - AR Calculated
-[20640] __main__ - 2022-06-08 21:57:33,060 - INFO - ...... Initialization Completed  ......
-[20640] __main__ - 2022-06-08 21:57:33,060 - INFO - [1;32m
+[22204] sqlalchemy.engine.Engine - 2022-06-27 18:27:20,416 - INFO - BEGIN (implicit)
+[22204] sqlalchemy.engine.Engine - 2022-06-27 18:27:20,416 - INFO - PRAGMA main.table_info("crypto")
+[22204] sqlalchemy.engine.Engine - 2022-06-27 18:27:20,417 - INFO - [raw sql] ()
+[22204] sqlalchemy.engine.Engine - 2022-06-27 18:27:20,418 - INFO - COMMIT
+[15568] __main__ - 2022-06-27 18:29:00,174 - INFO - ...... Initialization Completed  ......
+[15568] __main__ - 2022-06-27 18:29:00,174 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -492,8 +528,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[6012] __main__ - 2022-06-08 21:57:59,959 - INFO - ...... Initialization Completed  ......
-[6012] __main__ - 2022-06-08 21:57:59,959 - INFO - [1;32m
+[15568] sqlalchemy.engine.Engine - 2022-06-27 18:29:00,175 - INFO - BEGIN (implicit)
+[15568] sqlalchemy.engine.Engine - 2022-06-27 18:29:00,175 - INFO - PRAGMA main.table_info("crypto")
+[15568] sqlalchemy.engine.Engine - 2022-06-27 18:29:00,176 - INFO - [raw sql] ()
+[15568] sqlalchemy.engine.Engine - 2022-06-27 18:29:00,177 - INFO - COMMIT
+[4660] __main__ - 2022-06-27 18:35:09,415 - INFO - ...... Initialization Completed  ......
+[4660] __main__ - 2022-06-27 18:35:09,415 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -517,11 +557,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[6012] urllib3.connectionpool - 2022-06-08 21:58:00,816 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[6012] urllib3.connectionpool - 2022-06-08 21:58:01,256 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[6012] app.modules.predict_models - 2022-06-08 21:58:01,278 - DEBUG - AR Calculated
-[10792] __main__ - 2022-06-08 22:01:02,814 - INFO - ...... Initialization Completed  ......
-[10792] __main__ - 2022-06-08 22:01:02,814 - INFO - [1;32m
+[4660] sqlalchemy.engine.Engine - 2022-06-27 18:35:09,416 - INFO - BEGIN (implicit)
+[4660] sqlalchemy.engine.Engine - 2022-06-27 18:35:09,416 - INFO - PRAGMA main.table_info("crypto")
+[4660] sqlalchemy.engine.Engine - 2022-06-27 18:35:09,417 - INFO - [raw sql] ()
+[4660] sqlalchemy.engine.Engine - 2022-06-27 18:35:09,418 - INFO - COMMIT
+[20156] __main__ - 2022-06-27 18:35:16,057 - INFO - ...... Initialization Completed  ......
+[20156] __main__ - 2022-06-27 18:35:16,057 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -545,11 +586,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[10792] urllib3.connectionpool - 2022-06-08 22:01:03,710 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[10792] urllib3.connectionpool - 2022-06-08 22:01:03,884 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[10792] app.modules.predict_models - 2022-06-08 22:01:03,904 - DEBUG - AR Calculated
-[19928] __main__ - 2022-06-08 22:48:07,397 - INFO - ...... Initialization Completed  ......
-[19928] __main__ - 2022-06-08 22:48:07,398 - INFO - [1;32m
+[20156] sqlalchemy.engine.Engine - 2022-06-27 18:35:16,059 - INFO - BEGIN (implicit)
+[20156] sqlalchemy.engine.Engine - 2022-06-27 18:35:16,059 - INFO - PRAGMA main.table_info("crypto")
+[20156] sqlalchemy.engine.Engine - 2022-06-27 18:35:16,059 - INFO - [raw sql] ()
+[20156] sqlalchemy.engine.Engine - 2022-06-27 18:35:16,060 - INFO - COMMIT
+[4988] __main__ - 2022-06-27 18:36:08,674 - INFO - ...... Initialization Completed  ......
+[4988] __main__ - 2022-06-27 18:36:08,674 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -573,11 +615,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[19928] urllib3.connectionpool - 2022-06-08 22:48:07,762 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[19928] urllib3.connectionpool - 2022-06-08 22:48:07,956 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[19928] app.modules.predict_models - 2022-06-08 22:48:08,044 - DEBUG - AR Calculated
-[12388] __main__ - 2022-06-08 22:48:39,256 - INFO - ...... Initialization Completed  ......
-[12388] __main__ - 2022-06-08 22:48:39,256 - INFO - [1;32m
+[4988] sqlalchemy.engine.Engine - 2022-06-27 18:36:08,675 - INFO - BEGIN (implicit)
+[4988] sqlalchemy.engine.Engine - 2022-06-27 18:36:08,676 - INFO - PRAGMA main.table_info("crypto")
+[4988] sqlalchemy.engine.Engine - 2022-06-27 18:36:08,676 - INFO - [raw sql] ()
+[4988] sqlalchemy.engine.Engine - 2022-06-27 18:36:08,677 - INFO - COMMIT
+[8356] __main__ - 2022-06-27 18:42:21,311 - INFO - ...... Initialization Completed  ......
+[8356] __main__ - 2022-06-27 18:42:21,311 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -601,11 +644,14 @@ Company .: DS4A
 Version .: 1.1
 
     
-[12388] urllib3.connectionpool - 2022-06-08 22:48:39,413 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[12388] urllib3.connectionpool - 2022-06-08 22:48:39,571 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[12388] app.modules.predict_models - 2022-06-08 22:48:39,597 - DEBUG - AR Calculated
-[8320] __main__ - 2022-06-08 22:49:00,354 - INFO - ...... Initialization Completed  ......
-[8320] __main__ - 2022-06-08 22:49:00,354 - INFO - [1;32m
+[8356] sqlalchemy.engine.Engine - 2022-06-27 18:42:21,312 - INFO - BEGIN (implicit)
+[8356] sqlalchemy.engine.Engine - 2022-06-27 18:42:21,312 - INFO - PRAGMA main.table_info("crypto")
+[8356] sqlalchemy.engine.Engine - 2022-06-27 18:42:21,313 - INFO - [raw sql] ()
+[8356] sqlalchemy.engine.Engine - 2022-06-27 18:42:21,314 - INFO - COMMIT
+[8356] app.dashboard.dashboard - 2022-06-27 18:42:21,702 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[22800] __main__ - 2022-06-27 18:42:25,422 - INFO - ...... Initialization Completed  ......
+[22800] __main__ - 2022-06-27 18:42:25,422 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -629,11 +675,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[8320] urllib3.connectionpool - 2022-06-08 22:49:00,513 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[8320] urllib3.connectionpool - 2022-06-08 22:49:00,786 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[8320] app.modules.predict_models - 2022-06-08 22:49:00,823 - DEBUG - AR Calculated
-[13116] __main__ - 2022-06-08 22:50:35,922 - INFO - ...... Initialization Completed  ......
-[13116] __main__ - 2022-06-08 22:50:35,923 - INFO - [1;32m
+[22800] sqlalchemy.engine.Engine - 2022-06-27 18:42:25,423 - INFO - BEGIN (implicit)
+[22800] sqlalchemy.engine.Engine - 2022-06-27 18:42:25,424 - INFO - PRAGMA main.table_info("crypto")
+[22800] sqlalchemy.engine.Engine - 2022-06-27 18:42:25,424 - INFO - [raw sql] ()
+[22800] sqlalchemy.engine.Engine - 2022-06-27 18:42:25,425 - INFO - COMMIT
+[5632] __main__ - 2022-06-27 18:43:16,258 - INFO - ...... Initialization Completed  ......
+[5632] __main__ - 2022-06-27 18:43:16,258 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -657,11 +704,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[13116] urllib3.connectionpool - 2022-06-08 22:50:36,085 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[13116] urllib3.connectionpool - 2022-06-08 22:50:36,252 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[13116] app.modules.predict_models - 2022-06-08 22:50:36,278 - DEBUG - AR Calculated
-[4176] __main__ - 2022-06-08 22:50:51,609 - INFO - ...... Initialization Completed  ......
-[4176] __main__ - 2022-06-08 22:50:51,610 - INFO - [1;32m
+[5632] sqlalchemy.engine.Engine - 2022-06-27 18:43:16,259 - INFO - BEGIN (implicit)
+[5632] sqlalchemy.engine.Engine - 2022-06-27 18:43:16,260 - INFO - PRAGMA main.table_info("crypto")
+[5632] sqlalchemy.engine.Engine - 2022-06-27 18:43:16,260 - INFO - [raw sql] ()
+[5632] sqlalchemy.engine.Engine - 2022-06-27 18:43:16,261 - INFO - COMMIT
+[20100] __main__ - 2022-06-27 18:47:06,956 - INFO - ...... Initialization Completed  ......
+[20100] __main__ - 2022-06-27 18:47:06,956 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -685,11 +733,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[4176] urllib3.connectionpool - 2022-06-08 22:50:51,782 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[4176] urllib3.connectionpool - 2022-06-08 22:50:51,937 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[4176] app.modules.predict_models - 2022-06-08 22:50:51,963 - DEBUG - AR Calculated
-[2012] __main__ - 2022-06-08 22:52:36,148 - INFO - ...... Initialization Completed  ......
-[2012] __main__ - 2022-06-08 22:52:36,148 - INFO - [1;32m
+[20100] sqlalchemy.engine.Engine - 2022-06-27 18:47:06,957 - INFO - BEGIN (implicit)
+[20100] sqlalchemy.engine.Engine - 2022-06-27 18:47:06,958 - INFO - PRAGMA main.table_info("crypto")
+[20100] sqlalchemy.engine.Engine - 2022-06-27 18:47:06,958 - INFO - [raw sql] ()
+[20100] sqlalchemy.engine.Engine - 2022-06-27 18:47:06,960 - INFO - COMMIT
+[13596] __main__ - 2022-06-27 18:52:06,967 - INFO - ...... Initialization Completed  ......
+[13596] __main__ - 2022-06-27 18:52:06,967 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -713,11 +762,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[2012] urllib3.connectionpool - 2022-06-08 22:52:36,324 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[2012] urllib3.connectionpool - 2022-06-08 22:52:36,491 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[2012] app.modules.predict_models - 2022-06-08 22:52:36,521 - DEBUG - AR Calculated
-[5184] __main__ - 2022-06-08 22:53:25,675 - INFO - ...... Initialization Completed  ......
-[5184] __main__ - 2022-06-08 22:53:25,675 - INFO - [1;32m
+[13596] sqlalchemy.engine.Engine - 2022-06-27 18:52:06,967 - INFO - BEGIN (implicit)
+[13596] sqlalchemy.engine.Engine - 2022-06-27 18:52:06,968 - INFO - PRAGMA main.table_info("crypto")
+[13596] sqlalchemy.engine.Engine - 2022-06-27 18:52:06,969 - INFO - [raw sql] ()
+[13596] sqlalchemy.engine.Engine - 2022-06-27 18:52:06,970 - INFO - COMMIT
+[16612] __main__ - 2022-06-27 18:52:28,096 - INFO - ...... Initialization Completed  ......
+[16612] __main__ - 2022-06-27 18:52:28,096 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -741,11 +791,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[5184] urllib3.connectionpool - 2022-06-08 22:53:25,878 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[5184] urllib3.connectionpool - 2022-06-08 22:53:26,018 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[5184] app.modules.predict_models - 2022-06-08 22:53:26,048 - DEBUG - AR Calculated
-[11764] __main__ - 2022-06-08 23:04:02,175 - INFO - ...... Initialization Completed  ......
-[11764] __main__ - 2022-06-08 23:04:02,175 - INFO - [1;32m
+[16612] sqlalchemy.engine.Engine - 2022-06-27 18:52:28,097 - INFO - BEGIN (implicit)
+[16612] sqlalchemy.engine.Engine - 2022-06-27 18:52:28,098 - INFO - PRAGMA main.table_info("crypto")
+[16612] sqlalchemy.engine.Engine - 2022-06-27 18:52:28,098 - INFO - [raw sql] ()
+[16612] sqlalchemy.engine.Engine - 2022-06-27 18:52:28,099 - INFO - COMMIT
+[4792] __main__ - 2022-06-27 18:53:09,869 - INFO - ...... Initialization Completed  ......
+[4792] __main__ - 2022-06-27 18:53:09,869 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -769,15 +820,14 @@ Company .: DS4A
 Version .: 1.1
 
     
-[11764] urllib3.connectionpool - 2022-06-08 23:04:02,182 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[11764] urllib3.connectionpool - 2022-06-08 23:04:02,373 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[11764] tensorflow - 2022-06-08 23:04:04,188 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-[11764] h5py._conv - 2022-06-08 23:04:04,398 - DEBUG - Creating converter from 7 to 5
-[11764] h5py._conv - 2022-06-08 23:04:04,398 - DEBUG - Creating converter from 5 to 7
-[11764] h5py._conv - 2022-06-08 23:04:04,398 - DEBUG - Creating converter from 7 to 5
-[11764] h5py._conv - 2022-06-08 23:04:04,399 - DEBUG - Creating converter from 5 to 7
-[17036] __main__ - 2022-06-08 23:05:13,044 - INFO - ...... Initialization Completed  ......
-[17036] __main__ - 2022-06-08 23:05:13,044 - INFO - [1;32m
+[4792] sqlalchemy.engine.Engine - 2022-06-27 18:53:09,870 - INFO - BEGIN (implicit)
+[4792] sqlalchemy.engine.Engine - 2022-06-27 18:53:09,871 - INFO - PRAGMA main.table_info("crypto")
+[4792] sqlalchemy.engine.Engine - 2022-06-27 18:53:09,871 - INFO - [raw sql] ()
+[4792] sqlalchemy.engine.Engine - 2022-06-27 18:53:09,873 - INFO - COMMIT
+[4792] app.dashboard.dashboard - 2022-06-27 18:53:10,300 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[18216] __main__ - 2022-06-27 18:53:14,800 - INFO - ...... Initialization Completed  ......
+[18216] __main__ - 2022-06-27 18:53:14,800 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -801,15 +851,12 @@ Company .: DS4A
 Version .: 1.1
 
     
-[17036] tensorflow - 2022-06-08 23:05:14,881 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-[17036] h5py._conv - 2022-06-08 23:05:15,085 - DEBUG - Creating converter from 7 to 5
-[17036] h5py._conv - 2022-06-08 23:05:15,085 - DEBUG - Creating converter from 5 to 7
-[17036] h5py._conv - 2022-06-08 23:05:15,085 - DEBUG - Creating converter from 7 to 5
-[17036] h5py._conv - 2022-06-08 23:05:15,086 - DEBUG - Creating converter from 5 to 7
-[17036] urllib3.connectionpool - 2022-06-08 23:05:16,044 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
-[17036] urllib3.connectionpool - 2022-06-08 23:05:16,213 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
-[6168] __main__ - 2022-06-08 23:06:47,938 - INFO - ...... Initialization Completed  ......
-[6168] __main__ - 2022-06-08 23:06:47,939 - INFO - [1;32m
+[18216] sqlalchemy.engine.Engine - 2022-06-27 18:53:14,801 - INFO - BEGIN (implicit)
+[18216] sqlalchemy.engine.Engine - 2022-06-27 18:53:14,802 - INFO - PRAGMA main.table_info("crypto")
+[18216] sqlalchemy.engine.Engine - 2022-06-27 18:53:14,802 - INFO - [raw sql] ()
+[18216] sqlalchemy.engine.Engine - 2022-06-27 18:53:14,803 - INFO - COMMIT
+[23816] __main__ - 2022-06-27 18:53:35,972 - INFO - ...... Initialization Completed  ......
+[23816] __main__ - 2022-06-27 18:53:35,972 - INFO - [1;32m
 
  #####  #######    #    ######  ####### ### #     #  #####     
  #     #    #      # #   #     #    #     #  ##    # #     #    
@@ -833,6 +880,883 @@ Company .: DS4A
 Version .: 1.1
 
     
+[23816] sqlalchemy.engine.Engine - 2022-06-27 18:53:35,973 - INFO - BEGIN (implicit)
+[23816] sqlalchemy.engine.Engine - 2022-06-27 18:53:35,974 - INFO - PRAGMA main.table_info("crypto")
+[23816] sqlalchemy.engine.Engine - 2022-06-27 18:53:35,974 - INFO - [raw sql] ()
+[23816] sqlalchemy.engine.Engine - 2022-06-27 18:53:35,975 - INFO - COMMIT
+[16728] __main__ - 2022-06-27 18:55:14,215 - INFO - ...... Initialization Completed  ......
+[16728] __main__ - 2022-06-27 18:55:14,215 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16728] sqlalchemy.engine.Engine - 2022-06-27 18:55:14,216 - INFO - BEGIN (implicit)
+[16728] sqlalchemy.engine.Engine - 2022-06-27 18:55:14,217 - INFO - PRAGMA main.table_info("crypto")
+[16728] sqlalchemy.engine.Engine - 2022-06-27 18:55:14,218 - INFO - [raw sql] ()
+[16728] sqlalchemy.engine.Engine - 2022-06-27 18:55:14,219 - INFO - COMMIT
+[24048] __main__ - 2022-06-27 18:58:02,194 - INFO - ...... Initialization Completed  ......
+[24048] __main__ - 2022-06-27 18:58:02,195 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[24048] sqlalchemy.engine.Engine - 2022-06-27 18:58:02,196 - INFO - BEGIN (implicit)
+[24048] sqlalchemy.engine.Engine - 2022-06-27 18:58:02,196 - INFO - PRAGMA main.table_info("crypto")
+[24048] sqlalchemy.engine.Engine - 2022-06-27 18:58:02,197 - INFO - [raw sql] ()
+[24048] sqlalchemy.engine.Engine - 2022-06-27 18:58:02,199 - INFO - COMMIT
+[23288] __main__ - 2022-06-27 18:58:38,972 - INFO - ...... Initialization Completed  ......
+[23288] __main__ - 2022-06-27 18:58:38,973 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23288] sqlalchemy.engine.Engine - 2022-06-27 18:58:38,974 - INFO - BEGIN (implicit)
+[23288] sqlalchemy.engine.Engine - 2022-06-27 18:58:38,975 - INFO - PRAGMA main.table_info("crypto")
+[23288] sqlalchemy.engine.Engine - 2022-06-27 18:58:38,975 - INFO - [raw sql] ()
+[23288] sqlalchemy.engine.Engine - 2022-06-27 18:58:38,976 - INFO - COMMIT
+[14480] __main__ - 2022-06-27 19:12:11,804 - INFO - ...... Initialization Completed  ......
+[14480] __main__ - 2022-06-27 19:12:11,804 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[14480] sqlalchemy.engine.Engine - 2022-06-27 19:12:11,805 - INFO - BEGIN (implicit)
+[14480] sqlalchemy.engine.Engine - 2022-06-27 19:12:11,806 - INFO - PRAGMA main.table_info("crypto")
+[14480] sqlalchemy.engine.Engine - 2022-06-27 19:12:11,806 - INFO - [raw sql] ()
+[14480] sqlalchemy.engine.Engine - 2022-06-27 19:12:11,807 - INFO - COMMIT
+[7488] __main__ - 2022-06-27 19:20:10,830 - INFO - ...... Initialization Completed  ......
+[7488] __main__ - 2022-06-27 19:20:10,830 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[7488] sqlalchemy.engine.Engine - 2022-06-27 19:20:10,831 - INFO - BEGIN (implicit)
+[7488] sqlalchemy.engine.Engine - 2022-06-27 19:20:10,832 - INFO - PRAGMA main.table_info("crypto")
+[7488] sqlalchemy.engine.Engine - 2022-06-27 19:20:10,832 - INFO - [raw sql] ()
+[7488] sqlalchemy.engine.Engine - 2022-06-27 19:20:10,833 - INFO - COMMIT
+[13176] __main__ - 2022-06-27 19:24:22,433 - INFO - ...... Initialization Completed  ......
+[13176] __main__ - 2022-06-27 19:24:22,433 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[13176] sqlalchemy.engine.Engine - 2022-06-27 19:24:22,434 - INFO - BEGIN (implicit)
+[13176] sqlalchemy.engine.Engine - 2022-06-27 19:24:22,435 - INFO - PRAGMA main.table_info("crypto")
+[13176] sqlalchemy.engine.Engine - 2022-06-27 19:24:22,435 - INFO - [raw sql] ()
+[13176] sqlalchemy.engine.Engine - 2022-06-27 19:24:22,436 - INFO - COMMIT
+[24064] __main__ - 2022-06-27 19:25:38,218 - INFO - ...... Initialization Completed  ......
+[24064] __main__ - 2022-06-27 19:25:38,219 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[24064] sqlalchemy.engine.Engine - 2022-06-27 19:25:38,219 - INFO - BEGIN (implicit)
+[24064] sqlalchemy.engine.Engine - 2022-06-27 19:25:38,220 - INFO - PRAGMA main.table_info("crypto")
+[24064] sqlalchemy.engine.Engine - 2022-06-27 19:25:38,221 - INFO - [raw sql] ()
+[24064] sqlalchemy.engine.Engine - 2022-06-27 19:25:38,222 - INFO - COMMIT
+[20488] __main__ - 2022-06-27 19:33:17,806 - INFO - ...... Initialization Completed  ......
+[20488] __main__ - 2022-06-27 19:33:17,806 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[20488] sqlalchemy.engine.Engine - 2022-06-27 19:33:17,807 - INFO - BEGIN (implicit)
+[20488] sqlalchemy.engine.Engine - 2022-06-27 19:33:17,808 - INFO - PRAGMA main.table_info("crypto")
+[20488] sqlalchemy.engine.Engine - 2022-06-27 19:33:17,809 - INFO - [raw sql] ()
+[20488] sqlalchemy.engine.Engine - 2022-06-27 19:33:17,810 - INFO - COMMIT
+[4360] __main__ - 2022-06-27 20:16:35,777 - INFO - ...... Initialization Completed  ......
+[4360] __main__ - 2022-06-27 20:16:35,777 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[4360] sqlalchemy.engine.Engine - 2022-06-27 20:16:35,779 - INFO - BEGIN (implicit)
+[4360] sqlalchemy.engine.Engine - 2022-06-27 20:16:35,779 - INFO - PRAGMA main.table_info("crypto")
+[4360] sqlalchemy.engine.Engine - 2022-06-27 20:16:35,780 - INFO - [raw sql] ()
+[4360] sqlalchemy.engine.Engine - 2022-06-27 20:16:35,780 - INFO - COMMIT
+[9968] __main__ - 2022-06-27 20:17:08,070 - INFO - ...... Initialization Completed  ......
+[9968] __main__ - 2022-06-27 20:17:08,070 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[9968] sqlalchemy.engine.Engine - 2022-06-27 20:17:08,071 - INFO - BEGIN (implicit)
+[9968] sqlalchemy.engine.Engine - 2022-06-27 20:17:08,071 - INFO - PRAGMA main.table_info("crypto")
+[9968] sqlalchemy.engine.Engine - 2022-06-27 20:17:08,072 - INFO - [raw sql] ()
+[9968] sqlalchemy.engine.Engine - 2022-06-27 20:17:08,073 - INFO - COMMIT
+[1192] __main__ - 2022-06-27 20:17:53,332 - INFO - ...... Initialization Completed  ......
+[1192] __main__ - 2022-06-27 20:17:53,332 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[1192] sqlalchemy.engine.Engine - 2022-06-27 20:17:53,335 - INFO - BEGIN (implicit)
+[1192] sqlalchemy.engine.Engine - 2022-06-27 20:17:53,337 - INFO - PRAGMA main.table_info("crypto")
+[1192] sqlalchemy.engine.Engine - 2022-06-27 20:17:53,338 - INFO - [raw sql] ()
+[1192] sqlalchemy.engine.Engine - 2022-06-27 20:17:53,341 - INFO - COMMIT
+[16752] __main__ - 2022-06-27 20:18:36,992 - INFO - ...... Initialization Completed  ......
+[16752] __main__ - 2022-06-27 20:18:36,992 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16752] sqlalchemy.engine.Engine - 2022-06-27 20:18:36,994 - INFO - BEGIN (implicit)
+[16752] sqlalchemy.engine.Engine - 2022-06-27 20:18:36,994 - INFO - PRAGMA main.table_info("crypto")
+[16752] sqlalchemy.engine.Engine - 2022-06-27 20:18:36,995 - INFO - [raw sql] ()
+[16752] sqlalchemy.engine.Engine - 2022-06-27 20:18:36,996 - INFO - COMMIT
+[16752] app.dashboard.dashboard - 2022-06-27 20:18:37,385 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[9084] __main__ - 2022-06-27 20:18:40,972 - INFO - ...... Initialization Completed  ......
+[9084] __main__ - 2022-06-27 20:18:40,972 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[9084] sqlalchemy.engine.Engine - 2022-06-27 20:18:40,972 - INFO - BEGIN (implicit)
+[9084] sqlalchemy.engine.Engine - 2022-06-27 20:18:40,973 - INFO - PRAGMA main.table_info("crypto")
+[9084] sqlalchemy.engine.Engine - 2022-06-27 20:18:40,973 - INFO - [raw sql] ()
+[9084] sqlalchemy.engine.Engine - 2022-06-27 20:18:40,975 - INFO - COMMIT
+[12020] __main__ - 2022-06-27 20:19:03,409 - INFO - ...... Initialization Completed  ......
+[12020] __main__ - 2022-06-27 20:19:03,409 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[12020] sqlalchemy.engine.Engine - 2022-06-27 20:19:03,410 - INFO - BEGIN (implicit)
+[12020] sqlalchemy.engine.Engine - 2022-06-27 20:19:03,410 - INFO - PRAGMA main.table_info("crypto")
+[12020] sqlalchemy.engine.Engine - 2022-06-27 20:19:03,411 - INFO - [raw sql] ()
+[12020] sqlalchemy.engine.Engine - 2022-06-27 20:19:03,412 - INFO - COMMIT
+[23600] __main__ - 2022-06-27 20:19:27,227 - INFO - ...... Initialization Completed  ......
+[23600] __main__ - 2022-06-27 20:19:27,227 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23600] sqlalchemy.engine.Engine - 2022-06-27 20:19:27,227 - INFO - BEGIN (implicit)
+[23600] sqlalchemy.engine.Engine - 2022-06-27 20:19:27,228 - INFO - PRAGMA main.table_info("crypto")
+[23600] sqlalchemy.engine.Engine - 2022-06-27 20:19:27,229 - INFO - [raw sql] ()
+[23600] sqlalchemy.engine.Engine - 2022-06-27 20:19:27,230 - INFO - COMMIT
+[15056] __main__ - 2022-06-27 20:21:05,659 - INFO - ...... Initialization Completed  ......
+[15056] __main__ - 2022-06-27 20:21:05,659 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[15056] sqlalchemy.engine.Engine - 2022-06-27 20:21:05,660 - INFO - BEGIN (implicit)
+[15056] sqlalchemy.engine.Engine - 2022-06-27 20:21:05,661 - INFO - PRAGMA main.table_info("crypto")
+[15056] sqlalchemy.engine.Engine - 2022-06-27 20:21:05,661 - INFO - [raw sql] ()
+[15056] sqlalchemy.engine.Engine - 2022-06-27 20:21:05,662 - INFO - COMMIT
+[20676] __main__ - 2022-06-27 20:21:39,958 - INFO - ...... Initialization Completed  ......
+[20676] __main__ - 2022-06-27 20:21:39,958 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[20676] sqlalchemy.engine.Engine - 2022-06-27 20:21:39,959 - INFO - BEGIN (implicit)
+[20676] sqlalchemy.engine.Engine - 2022-06-27 20:21:39,960 - INFO - PRAGMA main.table_info("crypto")
+[20676] sqlalchemy.engine.Engine - 2022-06-27 20:21:39,960 - INFO - [raw sql] ()
+[20676] sqlalchemy.engine.Engine - 2022-06-27 20:21:39,962 - INFO - COMMIT
+[23448] __main__ - 2022-06-27 20:27:09,543 - INFO - ...... Initialization Completed  ......
+[23448] __main__ - 2022-06-27 20:27:09,543 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23448] sqlalchemy.engine.Engine - 2022-06-27 20:27:09,543 - INFO - BEGIN (implicit)
+[23448] sqlalchemy.engine.Engine - 2022-06-27 20:27:09,544 - INFO - PRAGMA main.table_info("crypto")
+[23448] sqlalchemy.engine.Engine - 2022-06-27 20:27:09,544 - INFO - [raw sql] ()
+[23448] sqlalchemy.engine.Engine - 2022-06-27 20:27:09,545 - INFO - COMMIT
+[20672] __main__ - 2022-06-27 20:29:04,993 - INFO - ...... Initialization Completed  ......
+[20672] __main__ - 2022-06-27 20:29:04,993 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[20672] sqlalchemy.engine.Engine - 2022-06-27 20:29:04,995 - INFO - BEGIN (implicit)
+[20672] sqlalchemy.engine.Engine - 2022-06-27 20:29:04,996 - INFO - PRAGMA main.table_info("crypto")
+[20672] sqlalchemy.engine.Engine - 2022-06-27 20:29:04,996 - INFO - [raw sql] ()
+[20672] sqlalchemy.engine.Engine - 2022-06-27 20:29:04,997 - INFO - COMMIT
+[6404] __main__ - 2022-06-27 20:29:15,990 - INFO - ...... Initialization Completed  ......
+[6404] __main__ - 2022-06-27 20:29:15,991 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[6404] sqlalchemy.engine.Engine - 2022-06-27 20:29:15,991 - INFO - BEGIN (implicit)
+[6404] sqlalchemy.engine.Engine - 2022-06-27 20:29:15,992 - INFO - PRAGMA main.table_info("crypto")
+[6404] sqlalchemy.engine.Engine - 2022-06-27 20:29:15,992 - INFO - [raw sql] ()
+[6404] sqlalchemy.engine.Engine - 2022-06-27 20:29:15,993 - INFO - COMMIT
+[19072] __main__ - 2022-06-27 20:33:52,693 - INFO - ...... Initialization Completed  ......
+[19072] __main__ - 2022-06-27 20:33:52,693 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[19072] sqlalchemy.engine.Engine - 2022-06-27 20:33:52,695 - INFO - BEGIN (implicit)
+[19072] sqlalchemy.engine.Engine - 2022-06-27 20:33:52,695 - INFO - PRAGMA main.table_info("crypto")
+[19072] sqlalchemy.engine.Engine - 2022-06-27 20:33:52,695 - INFO - [raw sql] ()
+[19072] sqlalchemy.engine.Engine - 2022-06-27 20:33:52,696 - INFO - COMMIT
+[23132] __main__ - 2022-06-27 20:36:27,436 - INFO - ...... Initialization Completed  ......
+[23132] __main__ - 2022-06-27 20:36:27,437 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23132] sqlalchemy.engine.Engine - 2022-06-27 20:36:27,437 - INFO - BEGIN (implicit)
+[23132] sqlalchemy.engine.Engine - 2022-06-27 20:36:27,438 - INFO - PRAGMA main.table_info("crypto")
+[23132] sqlalchemy.engine.Engine - 2022-06-27 20:36:27,438 - INFO - [raw sql] ()
+[23132] sqlalchemy.engine.Engine - 2022-06-27 20:36:27,439 - INFO - COMMIT
+[12892] __main__ - 2022-06-27 20:38:29,327 - INFO - ...... Initialization Completed  ......
+[12892] __main__ - 2022-06-27 20:38:29,329 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[12892] sqlalchemy.engine.Engine - 2022-06-27 20:38:29,332 - INFO - BEGIN (implicit)
+[12892] sqlalchemy.engine.Engine - 2022-06-27 20:38:29,351 - INFO - PRAGMA main.table_info("crypto")
+[12892] sqlalchemy.engine.Engine - 2022-06-27 20:38:29,352 - INFO - [raw sql] ()
+[12892] sqlalchemy.engine.Engine - 2022-06-27 20:38:29,360 - INFO - COMMIT
+[23372] __main__ - 2022-06-27 20:40:24,034 - INFO - ...... Initialization Completed  ......
+[23372] __main__ - 2022-06-27 20:40:24,034 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[23372] sqlalchemy.engine.Engine - 2022-06-27 20:40:24,035 - INFO - BEGIN (implicit)
+[23372] sqlalchemy.engine.Engine - 2022-06-27 20:40:24,036 - INFO - PRAGMA main.table_info("crypto")
+[23372] sqlalchemy.engine.Engine - 2022-06-27 20:40:24,036 - INFO - [raw sql] ()
+[23372] sqlalchemy.engine.Engine - 2022-06-27 20:40:24,037 - INFO - COMMIT
+[23372] app.dashboard.dashboard - 2022-06-27 20:40:24,476 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[21080] __main__ - 2022-06-27 20:40:28,122 - INFO - ...... Initialization Completed  ......
+[21080] __main__ - 2022-06-27 20:40:28,122 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[21080] sqlalchemy.engine.Engine - 2022-06-27 20:40:28,123 - INFO - BEGIN (implicit)
+[21080] sqlalchemy.engine.Engine - 2022-06-27 20:40:28,123 - INFO - PRAGMA main.table_info("crypto")
+[21080] sqlalchemy.engine.Engine - 2022-06-27 20:40:28,124 - INFO - [raw sql] ()
+[21080] sqlalchemy.engine.Engine - 2022-06-27 20:40:28,125 - INFO - COMMIT
+[20152] __main__ - 2022-06-27 20:54:18,422 - INFO - ...... Initialization Completed  ......
+[20152] __main__ - 2022-06-27 20:54:18,422 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[20152] sqlalchemy.engine.Engine - 2022-06-27 20:54:18,423 - INFO - BEGIN (implicit)
+[20152] sqlalchemy.engine.Engine - 2022-06-27 20:54:18,424 - INFO - PRAGMA main.table_info("crypto")
+[20152] sqlalchemy.engine.Engine - 2022-06-27 20:54:18,424 - INFO - [raw sql] ()
+[20152] sqlalchemy.engine.Engine - 2022-06-27 20:54:18,426 - INFO - COMMIT
+[12836] __main__ - 2022-06-27 20:54:41,592 - INFO - ...... Initialization Completed  ......
+[12836] __main__ - 2022-06-27 20:54:41,592 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[12836] sqlalchemy.engine.Engine - 2022-06-27 20:54:41,592 - INFO - BEGIN (implicit)
+[12836] sqlalchemy.engine.Engine - 2022-06-27 20:54:41,593 - INFO - PRAGMA main.table_info("crypto")
+[12836] sqlalchemy.engine.Engine - 2022-06-27 20:54:41,593 - INFO - [raw sql] ()
+[12836] sqlalchemy.engine.Engine - 2022-06-27 20:54:41,594 - INFO - COMMIT
+[12836] app.dashboard.dashboard - 2022-06-27 20:54:42,014 - INFO - Dash is running on http://127.0.0.1:8050/
+
+[716] __main__ - 2022-06-27 20:54:45,591 - INFO - ...... Initialization Completed  ......
+[716] __main__ - 2022-06-27 20:54:45,591 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[716] sqlalchemy.engine.Engine - 2022-06-27 20:54:45,591 - INFO - BEGIN (implicit)
+[716] sqlalchemy.engine.Engine - 2022-06-27 20:54:45,592 - INFO - PRAGMA main.table_info("crypto")
+[716] sqlalchemy.engine.Engine - 2022-06-27 20:54:45,592 - INFO - [raw sql] ()
+[716] sqlalchemy.engine.Engine - 2022-06-27 20:54:45,593 - INFO - COMMIT
+[20896] __main__ - 2022-06-27 21:00:14,934 - INFO - ...... Initialization Completed  ......
+[20896] __main__ - 2022-06-27 21:00:14,935 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[20896] sqlalchemy.engine.Engine - 2022-06-27 21:00:14,936 - INFO - BEGIN (implicit)
+[20896] sqlalchemy.engine.Engine - 2022-06-27 21:00:14,936 - INFO - PRAGMA main.table_info("crypto")
+[20896] sqlalchemy.engine.Engine - 2022-06-27 21:00:14,937 - INFO - [raw sql] ()
+[20896] sqlalchemy.engine.Engine - 2022-06-27 21:00:14,939 - INFO - COMMIT
+[9096] __main__ - 2022-06-27 21:04:08,077 - INFO - ...... Initialization Completed  ......
+[9096] __main__ - 2022-06-27 21:04:08,077 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+<<<<<<< HEAD
 [6168] tensorflow - 2022-06-08 23:06:49,659 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
 [6168] h5py._conv - 2022-06-08 23:06:49,867 - DEBUG - Creating converter from 7 to 5
 [6168] h5py._conv - 2022-06-08 23:06:49,867 - DEBUG - Creating converter from 5 to 7
@@ -1092,3 +2016,9 @@ Version .: 1.1
 [21680] urllib3.connectionpool - 2022-06-27 15:47:40,209 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=descending&sort=published_utc&ticker=BLOCK&published_utc=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 100
 [21680] urllib3.connectionpool - 2022-06-27 15:48:45,223 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
 [21680] urllib3.connectionpool - 2022-06-27 15:48:45,697 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=descending&sort=published_utc&ticker=NLG&published_utc=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 100
+=======
+[9096] sqlalchemy.engine.Engine - 2022-06-27 21:04:08,078 - INFO - BEGIN (implicit)
+[9096] sqlalchemy.engine.Engine - 2022-06-27 21:04:08,078 - INFO - PRAGMA main.table_info("crypto")
+[9096] sqlalchemy.engine.Engine - 2022-06-27 21:04:08,079 - INFO - [raw sql] ()
+[9096] sqlalchemy.engine.Engine - 2022-06-27 21:04:08,080 - INFO - COMMIT
+>>>>>>> 19c8fee1e54282467d4054b7d4c036027e571084

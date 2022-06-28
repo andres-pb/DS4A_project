@@ -1,0 +1,844 @@
+[2228] __main__ - 2022-06-08 21:39:33,713 - INFO - ...... Initialization Completed  ......
+[2228] __main__ - 2022-06-08 21:39:33,714 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16544] __main__ - 2022-06-08 21:39:59,268 - INFO - ...... Initialization Completed  ......
+[16544] __main__ - 2022-06-08 21:39:59,508 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16544] urllib3.connectionpool - 2022-06-08 21:40:01,093 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16544] urllib3.connectionpool - 2022-06-08 21:40:01,254 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16544] urllib3.connectionpool - 2022-06-08 21:40:06,281 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16544] urllib3.connectionpool - 2022-06-08 21:40:06,419 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16544] urllib3.connectionpool - 2022-06-08 21:40:11,608 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16544] urllib3.connectionpool - 2022-06-08 21:40:11,752 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16544] urllib3.connectionpool - 2022-06-08 21:40:16,770 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16544] urllib3.connectionpool - 2022-06-08 21:40:16,905 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USA?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 404 108
+[16544] app.api.yahoo_finances - 2022-06-08 21:40:16,909 - DEBUG - There is not response because it was tried 4, and  was not found any information
+[9184] __main__ - 2022-06-08 21:40:23,928 - INFO - ...... Initialization Completed  ......
+[9184] __main__ - 2022-06-08 21:40:23,928 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[9184] urllib3.connectionpool - 2022-06-08 21:40:24,731 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[9184] urllib3.connectionpool - 2022-06-08 21:40:24,883 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[9184] app.modules.predict_models - 2022-06-08 21:40:25,141 - DEBUG - ARIMA Calculated
+[6840] __main__ - 2022-06-08 21:43:15,114 - INFO - ...... Initialization Completed  ......
+[6840] __main__ - 2022-06-08 21:43:15,114 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[6840] urllib3.connectionpool - 2022-06-08 21:43:16,034 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[6840] urllib3.connectionpool - 2022-06-08 21:43:16,194 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[332] __main__ - 2022-06-08 21:43:33,264 - INFO - ...... Initialization Completed  ......
+[332] __main__ - 2022-06-08 21:43:33,265 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[332] urllib3.connectionpool - 2022-06-08 21:43:34,070 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[332] urllib3.connectionpool - 2022-06-08 21:43:34,248 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[13476] __main__ - 2022-06-08 21:43:53,037 - INFO - ...... Initialization Completed  ......
+[13476] __main__ - 2022-06-08 21:43:53,038 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[13476] urllib3.connectionpool - 2022-06-08 21:43:53,922 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[13476] urllib3.connectionpool - 2022-06-08 21:43:54,104 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[5900] __main__ - 2022-06-08 21:44:18,777 - INFO - ...... Initialization Completed  ......
+[5900] __main__ - 2022-06-08 21:44:18,777 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[5900] urllib3.connectionpool - 2022-06-08 21:44:19,789 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[5900] urllib3.connectionpool - 2022-06-08 21:44:19,951 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[19072] __main__ - 2022-06-08 21:44:35,453 - INFO - ...... Initialization Completed  ......
+[19072] __main__ - 2022-06-08 21:44:35,454 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[19072] urllib3.connectionpool - 2022-06-08 21:44:36,232 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[19072] urllib3.connectionpool - 2022-06-08 21:44:36,378 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[10204] __main__ - 2022-06-08 21:44:57,436 - INFO - ...... Initialization Completed  ......
+[10204] __main__ - 2022-06-08 21:44:57,437 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[10204] urllib3.connectionpool - 2022-06-08 21:44:58,221 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[10204] urllib3.connectionpool - 2022-06-08 21:44:58,405 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[16788] __main__ - 2022-06-08 21:45:09,887 - INFO - ...... Initialization Completed  ......
+[16788] __main__ - 2022-06-08 21:45:09,888 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16788] urllib3.connectionpool - 2022-06-08 21:45:10,686 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16788] urllib3.connectionpool - 2022-06-08 21:45:10,878 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[6840] __main__ - 2022-06-08 21:45:33,414 - INFO - ...... Initialization Completed  ......
+[6840] __main__ - 2022-06-08 21:45:33,414 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[6840] urllib3.connectionpool - 2022-06-08 21:45:34,216 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[6840] urllib3.connectionpool - 2022-06-08 21:45:34,385 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[6840] app.modules.predict_models - 2022-06-08 21:45:34,539 - DEBUG - ARIMA Calculated
+[12872] __main__ - 2022-06-08 21:46:01,864 - INFO - ...... Initialization Completed  ......
+[12872] __main__ - 2022-06-08 21:46:01,864 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[12872] urllib3.connectionpool - 2022-06-08 21:46:02,677 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[12872] urllib3.connectionpool - 2022-06-08 21:46:02,859 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[12872] app.modules.predict_models - 2022-06-08 21:46:02,998 - DEBUG - ARIMA Calculated
+[9272] __main__ - 2022-06-08 21:46:20,239 - INFO - ...... Initialization Completed  ......
+[9272] __main__ - 2022-06-08 21:46:20,240 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[9272] urllib3.connectionpool - 2022-06-08 21:46:21,023 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[9272] urllib3.connectionpool - 2022-06-08 21:46:21,163 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[9272] app.modules.predict_models - 2022-06-08 21:46:21,270 - DEBUG - ARIMA Calculated
+[18316] __main__ - 2022-06-08 21:47:18,848 - INFO - ...... Initialization Completed  ......
+[18316] __main__ - 2022-06-08 21:47:18,848 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[3448] __main__ - 2022-06-08 21:47:30,243 - INFO - ...... Initialization Completed  ......
+[3448] __main__ - 2022-06-08 21:47:30,243 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[3448] urllib3.connectionpool - 2022-06-08 21:47:31,021 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[3448] urllib3.connectionpool - 2022-06-08 21:47:31,196 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[3448] app.modules.predict_models - 2022-06-08 21:47:31,308 - DEBUG - ARIMA Calculated
+[8860] __main__ - 2022-06-08 21:53:03,433 - INFO - ...... Initialization Completed  ......
+[8860] __main__ - 2022-06-08 21:53:03,433 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[8860] urllib3.connectionpool - 2022-06-08 21:53:04,256 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[8860] urllib3.connectionpool - 2022-06-08 21:53:04,452 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[8860] app.modules.predict_models - 2022-06-08 21:53:04,481 - DEBUG - AR Calculated
+[10792] __main__ - 2022-06-08 21:56:45,262 - INFO - ...... Initialization Completed  ......
+[10792] __main__ - 2022-06-08 21:56:45,262 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[10792] urllib3.connectionpool - 2022-06-08 21:56:46,106 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[10792] urllib3.connectionpool - 2022-06-08 21:56:46,267 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[10792] app.modules.predict_models - 2022-06-08 21:56:46,304 - DEBUG - AR Calculated
+[20640] __main__ - 2022-06-08 21:57:33,060 - INFO - ...... Initialization Completed  ......
+[20640] __main__ - 2022-06-08 21:57:33,060 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[6012] __main__ - 2022-06-08 21:57:59,959 - INFO - ...... Initialization Completed  ......
+[6012] __main__ - 2022-06-08 21:57:59,959 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[6012] urllib3.connectionpool - 2022-06-08 21:58:00,816 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[6012] urllib3.connectionpool - 2022-06-08 21:58:01,256 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[6012] app.modules.predict_models - 2022-06-08 21:58:01,278 - DEBUG - AR Calculated
+[10792] __main__ - 2022-06-08 22:01:02,814 - INFO - ...... Initialization Completed  ......
+[10792] __main__ - 2022-06-08 22:01:02,814 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[10792] urllib3.connectionpool - 2022-06-08 22:01:03,710 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[10792] urllib3.connectionpool - 2022-06-08 22:01:03,884 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[10792] app.modules.predict_models - 2022-06-08 22:01:03,904 - DEBUG - AR Calculated
+[19928] __main__ - 2022-06-08 22:48:07,397 - INFO - ...... Initialization Completed  ......
+[19928] __main__ - 2022-06-08 22:48:07,398 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[19928] urllib3.connectionpool - 2022-06-08 22:48:07,762 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[19928] urllib3.connectionpool - 2022-06-08 22:48:07,956 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[19928] app.modules.predict_models - 2022-06-08 22:48:08,044 - DEBUG - AR Calculated
+[12388] __main__ - 2022-06-08 22:48:39,256 - INFO - ...... Initialization Completed  ......
+[12388] __main__ - 2022-06-08 22:48:39,256 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[12388] urllib3.connectionpool - 2022-06-08 22:48:39,413 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[12388] urllib3.connectionpool - 2022-06-08 22:48:39,571 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[12388] app.modules.predict_models - 2022-06-08 22:48:39,597 - DEBUG - AR Calculated
+[8320] __main__ - 2022-06-08 22:49:00,354 - INFO - ...... Initialization Completed  ......
+[8320] __main__ - 2022-06-08 22:49:00,354 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[8320] urllib3.connectionpool - 2022-06-08 22:49:00,513 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[8320] urllib3.connectionpool - 2022-06-08 22:49:00,786 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[8320] app.modules.predict_models - 2022-06-08 22:49:00,823 - DEBUG - AR Calculated
+[13116] __main__ - 2022-06-08 22:50:35,922 - INFO - ...... Initialization Completed  ......
+[13116] __main__ - 2022-06-08 22:50:35,923 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[13116] urllib3.connectionpool - 2022-06-08 22:50:36,085 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[13116] urllib3.connectionpool - 2022-06-08 22:50:36,252 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[13116] app.modules.predict_models - 2022-06-08 22:50:36,278 - DEBUG - AR Calculated
+[4176] __main__ - 2022-06-08 22:50:51,609 - INFO - ...... Initialization Completed  ......
+[4176] __main__ - 2022-06-08 22:50:51,610 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[4176] urllib3.connectionpool - 2022-06-08 22:50:51,782 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[4176] urllib3.connectionpool - 2022-06-08 22:50:51,937 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[4176] app.modules.predict_models - 2022-06-08 22:50:51,963 - DEBUG - AR Calculated
+[2012] __main__ - 2022-06-08 22:52:36,148 - INFO - ...... Initialization Completed  ......
+[2012] __main__ - 2022-06-08 22:52:36,148 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[2012] urllib3.connectionpool - 2022-06-08 22:52:36,324 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[2012] urllib3.connectionpool - 2022-06-08 22:52:36,491 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[2012] app.modules.predict_models - 2022-06-08 22:52:36,521 - DEBUG - AR Calculated
+[5184] __main__ - 2022-06-08 22:53:25,675 - INFO - ...... Initialization Completed  ......
+[5184] __main__ - 2022-06-08 22:53:25,675 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[5184] urllib3.connectionpool - 2022-06-08 22:53:25,878 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[5184] urllib3.connectionpool - 2022-06-08 22:53:26,018 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[5184] app.modules.predict_models - 2022-06-08 22:53:26,048 - DEBUG - AR Calculated
+[11764] __main__ - 2022-06-08 23:04:02,175 - INFO - ...... Initialization Completed  ......
+[11764] __main__ - 2022-06-08 23:04:02,175 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[11764] urllib3.connectionpool - 2022-06-08 23:04:02,182 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[11764] urllib3.connectionpool - 2022-06-08 23:04:02,373 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[11764] tensorflow - 2022-06-08 23:04:04,188 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[11764] h5py._conv - 2022-06-08 23:04:04,398 - DEBUG - Creating converter from 7 to 5
+[11764] h5py._conv - 2022-06-08 23:04:04,398 - DEBUG - Creating converter from 5 to 7
+[11764] h5py._conv - 2022-06-08 23:04:04,398 - DEBUG - Creating converter from 7 to 5
+[11764] h5py._conv - 2022-06-08 23:04:04,399 - DEBUG - Creating converter from 5 to 7
+[17036] __main__ - 2022-06-08 23:05:13,044 - INFO - ...... Initialization Completed  ......
+[17036] __main__ - 2022-06-08 23:05:13,044 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[17036] tensorflow - 2022-06-08 23:05:14,881 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[17036] h5py._conv - 2022-06-08 23:05:15,085 - DEBUG - Creating converter from 7 to 5
+[17036] h5py._conv - 2022-06-08 23:05:15,085 - DEBUG - Creating converter from 5 to 7
+[17036] h5py._conv - 2022-06-08 23:05:15,085 - DEBUG - Creating converter from 7 to 5
+[17036] h5py._conv - 2022-06-08 23:05:15,086 - DEBUG - Creating converter from 5 to 7
+[17036] urllib3.connectionpool - 2022-06-08 23:05:16,044 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[17036] urllib3.connectionpool - 2022-06-08 23:05:16,213 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[6168] __main__ - 2022-06-08 23:06:47,938 - INFO - ...... Initialization Completed  ......
+[6168] __main__ - 2022-06-08 23:06:47,939 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[6168] tensorflow - 2022-06-08 23:06:49,659 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[6168] h5py._conv - 2022-06-08 23:06:49,867 - DEBUG - Creating converter from 7 to 5
+[6168] h5py._conv - 2022-06-08 23:06:49,867 - DEBUG - Creating converter from 5 to 7
+[6168] h5py._conv - 2022-06-08 23:06:49,867 - DEBUG - Creating converter from 7 to 5
+[6168] h5py._conv - 2022-06-08 23:06:49,868 - DEBUG - Creating converter from 5 to 7
+[6168] urllib3.connectionpool - 2022-06-08 23:06:50,831 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[6168] urllib3.connectionpool - 2022-06-08 23:06:51,003 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1576904400&period2=1654747200&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[6168] tensorflow - 2022-06-08 23:07:13,096 - WARNING - 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E28658BEB0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[6168] tensorflow - 2022-06-08 23:07:17,033 - WARNING - 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E2FB2FFD00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.

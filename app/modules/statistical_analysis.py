@@ -2,12 +2,12 @@ from ..api import yahoo_finance
 import pandas as pd
 from pandas import DataFrame
 import datetime as dt
-import talib
+#import talib
 from typing import Tuple
 
 
-class Statistical():
-    store_request=dict()
+class Statistical():pass
+"""store_request=dict()
     time_restriction=60
     
     def __init__(self, ticker:str, today: dt = None, hist: dt = None, interval:str='1wk') -> None:
@@ -134,4 +134,4 @@ class Statistical():
         if status:
             MACD = talib.MACD(value['close'],fastperiod=12, slowperiod=26, signalperiod=9)
             return [True, MACD]
-        return [False, None]
+        return [False, None]"""
