@@ -61,6 +61,20 @@ body{
     margin-top:1rem;
 }
 
+.black-container {
+    color: white; 
+    background-color: #000000;
+    padding: 3rem 3rem 1rem 4rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-just {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 1rem;
+}
+
 @media (min-width: 1400px)
 {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
