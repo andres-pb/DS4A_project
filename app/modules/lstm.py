@@ -27,8 +27,6 @@ from keras.models import model_from_json
 from ..api import GoogleTrends, CoinMarketCap, yahoo_finance
 from dotenv import load_dotenv
 import plotly.graph_objects as go
-
-from app.modules.models_meta import pred_models
 import datetime as dt
 
 
