@@ -2,8 +2,9 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc, callback
 import pandas as pd
-from crypto_plots import plot_model_test, plot_importance
+from app.dashboard.crypto_plots import plot_model_test, plot_importance
 from dash.dependencies import Input, Output
+from app.modules.models_meta import pred_models
 
 dash.register_page(__name__)
 
@@ -68,18 +69,30 @@ layout = html.Div([
         style={'margin-right': '20px','margin-top': '20px', 'margin-bottom': '50px'}),
         # Main content starts here in two columns                 
         dbc.Row([
+                # Left column of main content
                 dbc.Col(
-                    'About model here',
+                    children=[
+                        html.Div(
+                            className='black-container',
+                            style={'color': 'white', 'background-color': 'black', 'padding': '1rem 1rem 1rem 1rem'},
+                            children=[
+                                html.H3('About the Model', style={'color': 'white'})
+                            ]
+                        ),
+                    ],
                     width={"size": 5, "offset": 0, 'order':'first'},
                 ),
+                # Right column of main content
                 dbc.Col(
                     children = [
                         html.Div(
                             className='graph-cointainer',
                             children=[
                                 html.H3('Model Performance', className='graph-title'),
-                                html.P('We set appart around 1 year of data during training and used it for model validation. ' 
-                                       'Below, you can see how the model prediction compared to the true price of the cryptocurrency.',
+                                html.P(
+                                    """We set apart around 1 year of data during training and used it for model validation. 
+                                       Below, you can see how the model prediction compared to the true price of the cryptocurrency.
+                                    """,
                                        className='graph-info'),
                                 dcc.Loading(
                                     children=[dcc.Graph(id='test-plot',)],
