@@ -1,14 +1,17 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc, callback
+from matplotlib.pyplot import text
 import pandas as pd
 import datetime as dt
 from app.dashboard.crypto_plots import plot_model_test, plot_importance
 from dash.dependencies import Input, Output
 from app.modules.models_meta import pred_models
 from app.api import yahoo_finance, GoogleTrends
+from app.modules.lstm import get_prediction
 
 dash.register_page(__name__)
+
 
 # padding for the page content
 CONTENT_STYLE = {
@@ -21,6 +24,7 @@ CONTENT_STYLE = {
 # Read predictions obtained during model testing
 preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
 ft_importance_df = pd.read_csv('./app/dashboard/test_models/ft_importance.csv')
+
 
 layout = html.Div([
         # Menus and controls row
@@ -86,7 +90,8 @@ layout = html.Div([
                                     children=[
                                         html.H3('The last close is: '),
                                         html.P(id='last-closing-price', children=[]),
-                                        dcc.Interval(id='update-price-interval', interval=60*1000, n_intervals=0)
+                                        dcc.Interval(id='update-price-interval', interval=60*1000, n_intervals=0),
+                                        html.P(id='prediction-test', children=[]),
                                     ],
                                 ),
                                 html.Hr(),
@@ -160,6 +165,9 @@ layout = html.Div([
     style=CONTENT_STYLE
 )
 
+
+# -------------------------------------------- CALLBACKS ----------------------------------------------
+
 @callback(
     Output('time-dropdown', 'options'),
     Output('time-dropdown', 'value'),
@@ -171,6 +179,7 @@ def populate_time_ddown(sel_coin, sel_model):
     time_opts = [{'label': t, 'value': t} for t in times_list]
     time_value = times_list[0]
     return time_opts, time_value
+
 
 @callback(
     Output('test-plot', 'figure'),
@@ -189,6 +198,7 @@ def update_models_plots(sel_coin, sel_model, sel_time):
 
     return fig_test, fig_imp
 
+
 @callback(
     Output('about-model', 'children'),
     [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
@@ -199,6 +209,19 @@ def update_about_model(sel_coin, sel_model, sel_time):
     except KeyError:
         text = html.P('No information was found on this model.')
     return text
+
+
+""" @callback(
+    Output('prediction-test', 'children'),
+    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
+)
+def predict_price(sel_coin, sel_model, sel_time):
+    print('ATTEMPTING PRICE PREDICTION !!!')
+    text = get_prediction(pred_models, sel_coin, sel_model,sel_time,'./app/dashboard/test_models/', './models/')
+    import time
+    time.sleep(60)
+    return text """
+
 
 @callback(
     Output('last-closing-price', 'children'),
