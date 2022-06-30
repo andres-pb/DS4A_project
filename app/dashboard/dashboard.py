@@ -45,6 +45,7 @@ app.layout = html.Div(
                 className="C",
                 children=[
                 html.H1(children=[html.P(className='fa fa-coins'),'Crypto Trading Bot']),
+                html.H6('The future of Crypto in one click')
                 ]),
     html.Div(
                 className="B",

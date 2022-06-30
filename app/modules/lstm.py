@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from . import Statistical
+from app.modules import Statistical
 
 import datetime as dt
 import matplotlib.pyplot as plt
@@ -27,7 +27,10 @@ from keras.models import model_from_json
 from ..api import GoogleTrends, CoinMarketCap, yahoo_finance
 from dotenv import load_dotenv
 import plotly.graph_objects as go
+import datetime as dt
 
+
+TEST_VAR = 888
 
 #Long Short Term Memory Ivan
 def LSTM_model(ticker: str, number_prediction: int):
@@ -425,7 +428,7 @@ def series_to_supervised(df, n_in=1, n_out=1, target_idx=-1,
     return agg
 
 
-def prep_data(df, timesteps, test_days=365, scaler=None):
+def prep_data(df, timesteps, test_days=365, xscaler=None, yscaler=None, production=False):
     """
     Final data preparations: 
     - extracts np.arrays from df,
@@ -433,81 +436,55 @@ def prep_data(df, timesteps, test_days=365, scaler=None):
     - reshapes data into the 3D sequential arrays as required by LSTMs
     - Train-Test split using the last test_days parameter as training samples.
     """
+    if not xscaler:
+      xscaler = MinMaxScaler(feature_range=(0, 1))
+      scaled_x = xscaler.fit_transform(df.iloc[:, :-1].values)
+    else:
+      scaled_x = xscaler.transform(df.iloc[:, :-1].values)
+    if not yscaler:
+      yscaler = MinMaxScaler(feature_range=(0, 1))
+      scaled_y = yscaler.fit_transform(df.iloc[:,-1].values.reshape(-1, 1))
+    else:
+      scaled_y = yscaler.transform(df.iloc[:,-1].values.reshape(-1, 1))
 
-    reframed = series_to_supervised(df, n_in=timesteps, min_input=timesteps)
-    seqs = reframed.values 
+    scaled_all =  np.append(scaled_x, scaled_y, axis=1)
+    print(scaled_all.shape)
+    scaled_df = pd.DataFrame(scaled_all, columns=df.columns)
 
-    if not scaler:
-        scaler = MinMaxScaler(feature_range=(0, 1))
-    scaled_seqs = scaler.fit_transform(seqs)
-
-    X = scaled_seqs[:,:-1].reshape((seqs.shape[0], 
-                            timesteps, 
-                            int(seqs.shape[1]/timesteps)
+    if production:
+      # En este caso no hay target
+      scaled_seqs = scaled_df.values
+      # reshapes to (1, n_timesteps, n_features)
+      X = scaled_seqs.reshape(
+                        (1, timesteps, int(scaled_seqs.shape[1]))
+                        )
+      # For production we only need the input sample
+      return X
+    else:
+      # For model training both input and target
+      reframed = series_to_supervised(scaled_df, n_in=timesteps, min_input=timesteps)
+      scaled_seqs = reframed.values
+      X = scaled_seqs[:,:-1].reshape(
+                            (scaled_seqs.shape[0], 
+                            timesteps,
+                            int(scaled_seqs.shape[1]/timesteps)
                             ))
-    y = scaled_seqs[:, -1]
+      y = scaled_seqs[:, -1]
+      # Train test split
+      X_train, X_test = X[:-test_days, :, :], X[-test_days:, :, :]
+      y_train, y_test = y[:-test_days], y[-test_days:]
 
-    X_train, X_test = X[:-test_days, :, :], X[-test_days:, :, :]
-    y_train, y_test = y[:-test_days], y[-test_days:]
-
-    test_dates = df.iloc[-test_days:, :].index
-    
-    return X_train, y_train, X_test, y_test, scaler, test_dates
-
-
-# To build and train a model
-def train_model(
-    prep_dsets: dict, 
-    coin_name: str,
-    model_builder,
-    n_epochs=1,
-    batch_size=1,
-    early_stop: bool = False,
-    patience: int = None,
-    model_kwargs: dict = {}):
-
-    X_train, y_train, X_test, y_test, _, _ = prep_dsets[coin_name]
-    # Build lstm model
-    model = model_builder(
-                    in_shape=(X_train.shape[1], X_train.shape[2]),
-                    **model_kwargs
-                    )
-    if early_stop and patience:
-        # This EarlyStopping callback stops training once it stops improving
-        # so that you can set a high number of epochs and let it choose when to stop
-        monitor = EarlyStopping(monitor='val_loss', 
-                                min_delta=1e-3, 
-                                patience=patience, 
-                                verbose=0, 
-                                mode='auto', 
-                                restore_best_weights=True)
-    # Train the model
-    history = model.fit(
-                    X_train, y_train, 
-                    validation_data=(X_test, y_test),
-                    callbacks=[monitor] if early_stop else None,
-                    verbose=2, 
-                    epochs=n_epochs,
-                    batch_size=batch_size
-                    )
-    # visualize training
-    plt.plot(history.history['mse'], label='train')
-    plt.plot(history.history['val_mse'], label='test')
-    plt.legend()
-    plt.show()
-
-    return model
+      test_dates = df.iloc[-test_days:, :].index
+      
+      return X_train, y_train, X_test, y_test, xscaler, yscaler, test_dates
 
 
 # To build test predictions dataframe
-def gen_test_df(model, X_test, y_test, scaler, test_dates, model_id, ticker, pred_scope, lags):
+def gen_test_df(model, X_test, y_test, yscaler, test_dates, model_id, ticker, pred_scope, lags):
     
     predicted = model.predict(X_test)
-    X_test_2d = X_test.reshape((X_test.shape[0], lags * X_test.shape[2]))
-    xpred_2d = np.append(X_test_2d, predicted, axis=1)
-    pred_y = scaler.inverse_transform(xpred_2d)[:, -1]
-    xtrue_2d = np.append(X_test_2d, y_test.reshape(predicted.shape), axis=1)
-    true_y = scaler.inverse_transform(xtrue_2d)[:, -1]
+    pred_y = yscaler.inverse_transform(predicted)
+    true_y = yscaler.inverse_transform(y_test.reshape(predicted.shape))
 
     test_df = pd.DataFrame()
     test_df['Observed'] = true_y
@@ -594,32 +571,164 @@ def save_model(model, full_path: str= None, path="./models/", coin_ticker='BTC')
     model.save_weights(weights_path)
 
 
-def save_scaler(fitted_scaler, full_path: str= None, path="./models/", coin_ticker='BTC'):
+def save_scaler(fitted_scaler, fits='x',full_path: str= None, path="./models/", coin_ticker='BTC'):
     if not full_path:
-        full_path = path + coin_ticker + '_scaler.gz'
+        full_path = path + coin_ticker + '_{}_scaler.gz'.format(fits)
     joblib.dump(fitted_scaler, full_path)
 
 
-def load_scaler(full_path: str= None, path="./models/", coin_ticker='BTC'):
+def load_scaler(coin_ticker: str, root_path: str ="app/dashboard/test_models/"):
     
-    if not full_path:
-        full_path = path + coin_ticker + '_scaler.gz'
-    my_scaler = joblib.load(full_path)
+    scaler_path = root_path + coin_ticker + '_scaler.gz'
+    my_scaler = joblib.load(scaler_path)
     return my_scaler
 
 
-def load_model(full_path: str= None, path="./models/", coin_ticker='BTC', model_name='blstm'):
+def load_model(model, model_id: str, root_path: str = "app/dashboard/test_models/"):
     
-    if not full_path:
-    # load json and create model
-        full_path = path + coin_ticker + '_' + model_name + '.json'
-    json_file = open(full_path, 'r')
-    loaded_model_json = json_file.read()
-    json_file.close()
-    loaded_model = model_from_json(loaded_model_json)
-    # load weights into new model
-    weights_path = full_path.replace('.json', '.h5')
-    loaded_model.load_weights(weights_path)
+    # load serialized weights and create model
+    weights_path = root_path + model_id + '.h5'
+    model.load_weights(weights_path)
 
-    return loaded_model
+    return model
 
+
+# To build and train a model
+def train_model(
+    prep_dsets: dict, 
+    coin_name: str,
+    model_builder,
+    n_epochs=1,
+    batch_size=1,
+    early_stop: bool = False,
+    patience: int = None,
+    model_kwargs: dict = {},
+    save=False
+    ):
+
+    X_train, y_train, X_test, y_test, xscaler, yscaler, test_dates = prep_dsets[coin_name]
+    # Build NN model
+    model = model_builder(
+                    in_shape=(X_train.shape[1], X_train.shape[2]),
+                    **model_kwargs
+                    )
+    if early_stop and patience:
+        # This EarlyStopping callback stops training once it stops improving
+        # so that you can set a high number of epochs and let it choose when to stop
+        monitor = EarlyStopping(monitor='val_loss', 
+                                min_delta=1e-3, 
+                                patience=patience, 
+                                verbose=0, 
+                                mode='auto', 
+                                restore_best_weights=True)
+    # Train the model
+    history = model.fit(
+
+                    X_train, y_train, 
+                    validation_data=(X_test, y_test),
+                    callbacks=[monitor] if early_stop else None,
+                    verbose=2, 
+                    epochs=n_epochs,
+                    batch_size=batch_size
+                    )
+    # visualize training
+    plt.plot(history.history['mse'], label='train')
+    plt.plot(history.history['val_mse'], label='test')
+    plt.legend()
+    plt.show()
+
+    if save:
+      save_model(model, coin_ticker=coin_name)
+      save_scaler(xscaler, coin_ticker=coin_name, fits='x')
+      save_scaler(yscaler, coin_ticker=coin_name, fits='y')
+
+    return model, X_test, y_test, xscaler, yscaler, test_dates
+
+
+def get_prediction(
+    models_dict, 
+    coin_label, 
+    model_label, 
+    scope_label, 
+    models_path, 
+    scalers_path
+    ):
+
+    # Get production model metadata
+    model_meta = models_dict[coin_label][model_label][scope_label]
+    builder_func = model_meta['builder_func']
+    builder_kwargs = model_meta['builder_kwargs']
+    ticker = model_meta['ticker']
+    coin_name = model_meta['coin_name']
+    lags = model_meta['lags']
+    features = model_meta['features']
+    n_features = model_meta['n_features']
+    # Define a model that is still not trained
+    rebuilt_model = builder_func(in_shape=(lags, n_features), **builder_kwargs)
+    # load models weight
+    load_model(rebuilt_model, model_id=model_meta['model_id'], root_path=models_path)
+    # load the scaler
+    scaler = load_scaler(ticker, root_path=scalers_path)
+    # get sample for prediction
+    yf = yahoo_finance
+    # we go back as many days as needed lags, plus an extra just in case
+    history = dt.datetime.today() - dt.timedelta(days=lags + 1)
+    # get treasury bonds price
+    tr_ticker = model_meta['treasury_ticker']
+    status, yield_df = yf.market_value(tr_ticker, hist=history, interval='1d')
+    if status:
+        print('got treasury data')
+        yield_df.fillna(method='ffill', inplace=True)
+        yield_data = yield_df.iloc[-lags:, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+        # get the last close
+        status, close_df = yf.market_value(ticker + '-USD', hist=history, interval='1d')
+
+        if status:
+            print('got coin mkt data')
+            print(close_df.info())
+            sample_df = close_df.iloc[-lags:, :][features]
+            sample_df[tr_ticker[-3:]] = yield_data
+            print(sample_df.info())
+            all_features = [tr_ticker[-3:]] + features
+            use_gtrend = model_meta['google_trend']
+            if use_gtrend:
+                print('attempting google trends')
+                # Get daily google trend interest
+                gt = GoogleTrends()
+                gtrend_df = gt.get_daily_trend_df([coin_name], start_dt=history)
+                gtrend_df.fillna(method='ffill', inplace=True)
+                gtrend_df = gtrend_df.iloc[-lags:, :]
+                print(gtrend_df.info())
+                gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
+                gtrend_data = gtrend_df[coin_name]
+                
+                sample_df['Gtrend'] = gtrend_data
+                all_features = [tr_ticker[-3:]] + ['Gtrend'] + features
+            # Dataframe con la muestra
+            sample_df = sample_df[all_features]
+            print(sample_df.shape)
+
+            # Extract and scale sample
+            X = prep_data(sample_df, timesteps=lags, scaler=scaler, production=True)
+            print(X.shape)
+            # Make model prediction
+            pred_y = rebuilt_model.predict(X)
+
+            # undo scaling
+            prediction = scaler.inverse_transform(pred_y)
+            
+            print(prediction)
+
+            return prediction
+        else:
+            print('Error trying to get ticker {} data from Yahoo Finance.'.format(ticker))
+            return False               
+    else:
+        print('Error trying to get treasury yield {} data from Yahoo Finance.'.format(tr_ticker))
+        return False
+
+
+
+"""     except KeyError:
+        print('Requested model is not defined in models metadata dictionary.')
+        return False, None, None """

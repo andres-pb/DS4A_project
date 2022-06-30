@@ -35,7 +35,7 @@ def plot_model_test(filtered_df: pd.DataFrame, px_theme: str ='plotly_dark'):
     fig.update_layout(
         yaxis_tickformat = '$',
         title={
-            'text': "Model Performance",
+            #'text': "Model Performance",
             'y':0.95,
             'x':0.5,
             'xanchor': 'center',
@@ -56,7 +56,7 @@ def plot_model_test(filtered_df: pd.DataFrame, px_theme: str ='plotly_dark'):
     return fig
 
 
-def plot_importance(importance_df: pd.DataFrame, theme: str ='plotly_dark'):
+def plot_importance(importance_df: pd.DataFrame, px_theme: str ='plotly_dark'):
 
     fig = go.Figure()
     fig.update_xaxes(showgrid=True, gridwidth=0.1, gridcolor='DarkGrey')
@@ -64,7 +64,7 @@ def plot_importance(importance_df: pd.DataFrame, theme: str ='plotly_dark'):
     metrics_list = list(importance_df['Metric'].unique())
 
     for metric in metrics_list:
-        vis = metric == 'mse'
+        vis = metric == 'mae'
         mdf = importance_df[importance_df['Metric']==metric]
 
         mdf = mdf.sort_values('Importance').tail(20)
@@ -106,7 +106,7 @@ def plot_importance(importance_df: pd.DataFrame, theme: str ='plotly_dark'):
     )
     fig.update_layout(
         title={
-            'text': "Feature Importance",
+            'text': "Error Perturbation",
             'y':0.9,
             'x':0.5,
             'xanchor': 'center',
@@ -116,11 +116,12 @@ def plot_importance(importance_df: pd.DataFrame, theme: str ='plotly_dark'):
             size=25
             )
             },
-        template=theme
+        template=px_theme
     )
 
     fig.update_yaxes(tickmode='linear')
-    fig.update_layout(updatemenus=[dict(font=dict(color='black'))])
+    #fig.update_layout(updatemenus=[dict(font=dict(color='gray',), bgcolor='black')])
     fig.update_traces(marker_color='rgba(50, 171, 96, 0.6)')
+    fig.update_layout(width=750, height=500)
 
     return fig
