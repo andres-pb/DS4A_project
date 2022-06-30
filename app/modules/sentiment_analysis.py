@@ -39,6 +39,7 @@ class Sentiment_predict():
                     sent = list(nlp_fin(df[string_column].tolist()[i])[0].values())[0]
                 except:
                     #Deals with large text dividing it in 2 parts 
+                    print(f"in row {i} the text its divided in two parts")
                     firstpart, secondpart = df[string_column].tolist()[i][:round(len(df[string_column].tolist()[i])/2)], df[string_column].tolist()[i][round(len(df[string_column].tolist()[i])/2):]
                     sent_1 = [list(descr.items())[0][1] for descr in  nlp_fin(firstpart)]
                     sent_2 = [list(descr.items())[0][1] for descr in  nlp_fin(secondpart)]
@@ -72,6 +73,7 @@ class Sentiment_predict():
                     sent = list(nlp_financial(df[string_column].tolist()[i])[0].values())[0]
                 except: 
                     #Deals with large text dividing it in 2 parts 
+                    print(f"in row {i} the text its divided in two parts")
                     firstpart, secondpart = df[string_column].tolist()[i][:round(len(df[string_column].tolist()[i])/2)], df[string_column].tolist()[i][round(len(df[string_column].tolist()[i])/2):]
                     sent_1 = [list(descr.items())[0][1] for descr in  nlp_financial(firstpart)]
                     sent_2 = [list(descr.items())[0][1] for descr in  nlp_financial(secondpart)]
