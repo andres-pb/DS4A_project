@@ -12,7 +12,7 @@ class LoggingConfig:
             format='[%(thread)d] %(name)s - %(asctime)s - %(levelname)s - %(message)s',
             level=logging.DEBUG,
             handlers={
-                TimedRotatingFileHandler(join(__file__, '..\..\..', 'messages', "information.log"), when='midnight', interval=1)
+                TimedRotatingFileHandler(join(__file__, '../../..', 'messages', "information.log"), when='midnight', interval=1)
             }
         )
         return None

@@ -1,0 +1,7 @@
+version: "3.2"
+services:
+    app:
+      container_name: ds4a
+      ports:
+        - "8050:8050"
+      build: .
