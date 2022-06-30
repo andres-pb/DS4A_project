@@ -1,3 +1,4 @@
+from cgi import test
 import pandas as pd
 import numpy as np
 from app.modules import Statistical
@@ -8,6 +9,7 @@ from os import environ
 import tensorflow as tf
 from tensorflow import keras
 import joblib
+import time
 
 from keras.models import Model
 from keras.layers import LSTM, Bidirectional
@@ -96,7 +98,7 @@ def LSTM_model(ticker: str, number_prediction: int):
     return closing_price
 
 
-# Functions to define NN with different architectures
+# Functions to define NN with different architectures Pris
 def build_LSTM(in_shape, 
                num_rnns=1, 
                dim_rnn=128,
@@ -296,7 +298,7 @@ def build_AttentiveBLSTM(
   predictor = Model(in_seq, pred_out, name=model_name + '_' + str(lags) + '_lags_' + str(features) + '_fts' + '_' + suffix)
   # compile model
   opt = Adam(learning_rate=lr, decay=decay)
-  predictor.compile(loss='mae', 
+  predictor.compile(loss='mse', 
                      optimizer=opt, metrics=['mse'])
   if summarize:
     predictor.summary()
@@ -305,63 +307,86 @@ def build_AttentiveBLSTM(
 
 
 # Data preprocessing functions
-def build_dset(n_coins: int, gtrends: bool = False):
+def build_dset(coins_list: list, gtrends: bool = False):
 
-    """
-    Builds a dataframe with price and volume daily data from yahoofinance for each of a given
-    number of coins and returns a dictionary with the coin name as the key and the dataframe as the value.
-    The dataframe also cointains the risk free rate as the US treasury bonds yield at different maturities,
-    which is thought to capture the effect of inflation and inflation expectations that might have certain effect
-    on crypto prices.
-    Coins are sorted by market cap and days of history available.
-    """
+  """
+  Builds a dataframe with price and volume daily data from yahoofinance for each of a given
+  number of coins and returns a dictionary with the coin name as the key and the dataframe as the value.
+  The dataframe also cointains the risk free rate as the US treasury bonds yield at different maturities,
+  which is thought to capture the effect of inflation and inflation expectations that might have certain effect
+  on crypto prices.
+  Coins are sorted by market cap and days of history available.
+  """
 
-    # Get top n_coins coins by mktcap
-    load_dotenv()
-    mktcap_key = environ.get('COIN_MKTCAP_KEY')
-    cmc = CoinMarketCap(mktcap_key)
-    coins_df = cmc.get_top_coins(n_coins)
+  # Get top n_coins coins by mktcap
+  load_dotenv()
+  mktcap_key = environ.get('COIN_MKTCAP_KEY')
+  cmc = CoinMarketCap(mktcap_key)
+  coins_df = cmc.get_top_coins(top_n=100)
+  coins_df = coins_df[coins_df['symbol'].isin(coins_list)]
+  # Daily US yield curve to account for interest rate (inflation) effect
+  yield_curve = ['^FVX', '^TNX', '^TYX']
+  ir_dfs = []
+  for ir in yield_curve:
+      min_date = coins_df['first_historical_data'].min()
+      status, ir_data = yahoo_finance.market_value(ir, hist=min_date, interval='1d')
+      ir_data.rename(columns={'Close': ir[1:]}, inplace=True)
+      ir_close =  ir_data[ir[1:]]
+      ir_dfs.append(ir_close)
+  us_treasury = pd.concat(ir_dfs, axis=1)
 
-    # Daily US yield curve to account for interest rate (inflation) effect
-    yield_curve = ['^FVX', '^TNX', '^TYX']
-    ir_dfs = []
-    for ir in yield_curve:
-        min_date = coins_df['first_historical_data'].min()
-        status, ir_data = yahoo_finance.market_value(ir, hist=min_date, interval='1d')
-        ir_data.rename(columns={'Close': ir[1:]}, inplace=True)
-        ir_close =  ir_data[ir[1:]]
-        ir_dfs.append(ir_close)
-    us_treasury = pd.concat(ir_dfs, axis=1)
+  # Get daily coins market data
+  data_dict = {}
+  for idx, coin in coins_df.iterrows():
+    coin_name = coin['name']
+    slug = coin['slug']
+    ticker = coin['symbol'] + '-USD'
+    start = coin['first_historical_data']
 
-    # Get daily market data for top 10 coins
-    data_dict = {}
-    for idx, coin in coins_df.iterrows():
-        coin_name = coin['name']
-        ticker = coin['symbol'] + '-USD'
-        start = coin['first_historical_data']
+    # Get daily market data from yahoo
+    status, data = yahoo_finance.market_value(ticker, hist=start, interval='1d')
+    print(coin_name, coin['days_history'])
+    print(data.shape)
+    # Add yield curve data
+    data = data.merge(us_treasury, how='left', left_index=True, right_index=True)
+    xcols = ['High', 'Low', 'Volume'] + [s[1:] for s in yield_curve]
 
-        # Get daily market data from yahoo
-        status, data = yahoo_finance.market_value(ticker, hist=start, interval='1d')
-        print(coin_name, coin['days_history'])
-        print(data.shape)
-        # Add yield curve data
-        data = data.merge(us_treasury, how='left', left_index=True, right_index=True)
-        xcols = ['High', 'Low', 'Volume'] + [s[1:] for s in yield_curve]
+    if gtrends:
 
-        if gtrends:
-            gt = GoogleTrends()
-            # Get daily google trend data
-            start_str = dt.datetime.strftime(start, r'%Y-%m-%d')
-            end_str = dt.datetime.strftime(dt.datetime.today(), r'%Y-%m-%d')
-            gtrend = gt.get_daily_trend_df([coin_name], start_date=start_str, end_date=end_str)
-            data = data.merge(gtrend, how='left', left_index=True, right_index=True)
-            data = data.rename(columns={coin_name: 'Google_Trend'})
-            xcols = ['High', 'Low', 'Volume'] + [s[1:] for s in yield_curve] + ['Google_Trend']
+      gt = GoogleTrends()
+      kwords = [slug]
+      trend_chunks = []
+      start_date = start
+      end_date = start_date + dt.timedelta(days=250)
+      n_chunk = 0
+      while start_date <= gt.today:
+        print('Getting GT data for: ', ticker, n_chunk)
+        trend_chunk = gt.get_daily_trend_df(kw_list=kwords, start_dt=start_date, end_dt=end_date)
+        trend_chunks.append(trend_chunk)
+        start_date = end_date + dt.timedelta(days=1)
+        end_date = min(end_date + dt.timedelta(days=365), gt.today)
+        n_chunk += 1
+        if n_chunk > 2:
+          n_chunk = 0
+          # El API tiende a bloquearnos despues de 3 calls
+          print('Waiting for next GT API call...')
+          # Espera de 60s soluciona el problema
+          time.sleep(60)
 
-        data = data.fillna(method='ffill')[xcols + ['Close']]
-        data_dict[coin_name] = data
-        
-    return data_dict
+      coin_trend = pd.concat(trend_chunks)
+      gt_start, gt_end = coin_trend.index.min(), coin_trend.index.max()
+      print('Successfully got GT data from {} until {}'.format(gt_start, gt_end))
+      coin_trend = coin_trend.reset_index()
+      coin_trend.rename(columns={slug: 'Gtrend', 'date': 'Date'}, inplace=True)
+      coin_trend.set_index('Date', inplace=True)
+      coin_trend['Ticker'] = ticker
+      data = data.merge(coin_trend, how='left', left_index=True, right_index=True)
+      xcols.append('Gtrend')
+
+    data = data.fillna(method='ffill')[xcols + ['Close']]
+    data_dict[ticker] = data
+      
+  return data_dict
 
 
 def select_features(data_dict, keep=['Volume', 'Gtrend']):
@@ -436,6 +461,9 @@ def prep_data(df, timesteps, test_days=365, xscaler=None, yscaler=None, producti
     - reshapes data into the 3D sequential arrays as required by LSTMs
     - Train-Test split using the last test_days parameter as training samples.
     """
+    if df.shape[0] <= 1900:
+      test_days = 120
+
     if not xscaler:
       xscaler = MinMaxScaler(feature_range=(0, 1))
       scaled_x = xscaler.fit_transform(df.iloc[:, :-1].values)
@@ -487,12 +515,13 @@ def gen_test_df(model, X_test, y_test, yscaler, test_dates, model_id, ticker, pr
     true_y = yscaler.inverse_transform(y_test.reshape(predicted.shape))
 
     test_df = pd.DataFrame()
-    test_df['Observed'] = true_y
-    test_df['Predicted'] = pred_y
+    test_df['Observed'] = true_y.reshape(len(test_dates))
+    test_df['Predicted'] = pred_y.reshape(len(test_dates))
     test_df['Ticker'] = ticker
     test_df['Model'] = model_id
-    test_df['scope'] = pred_scope
+    test_df['Scope'] = pred_scope
     test_df['Date'] = test_dates
+    test_df.set_index('Date', inplace=True)
 
     return test_df
 
@@ -515,8 +544,8 @@ def gen_importance_df(model, dset, timesteps, ticker, model_id, pred_scope):
 
     reframed = series_to_supervised(dset, n_in=timesteps, min_input=60)
     feature_names = reframed.iloc[:, :-1].columns
-    feature_names = list(feature_names)
-    _, _, X_test, y_test, _, _ = prep_data(dset, timesteps)
+    feature_names = list(dset.columns)
+    _, _, X_test, y_test, _, _, _ = prep_data(dset, timesteps)
     results = []
 
     mae_err = mean_absolute_error
@@ -526,12 +555,12 @@ def gen_importance_df(model, dset, timesteps, ticker, model_id, pred_scope):
     baseline_mse = mse_err(y_test, oof_preds)
 
     np.random.seed(888)
-    for k in range(timesteps):
-        for f in range(3):
+    for k in range(len(feature_names)):
+        for t in range(timesteps):
             # SHUFFLE LAG k OF FEATURE f
-            save_col = X_test[:,k,f].copy()
-            np.random.shuffle(X_test[:,k,f])
-            current_ft = feature_names.pop(0)
+            save_col = X_test[:,t,k].copy()
+            np.random.shuffle(X_test[:,t,k])
+            current_ft = feature_names[k] + ' t-'  + str(timesteps - t)
             # COMPUTE OOF MAE WITH FEATURE K SHUFFLED
             oof_preds = model.predict(X_test, verbose=0).squeeze() 
             mae = mae_err(y_test, oof_preds) - baseline_mae
@@ -546,15 +575,14 @@ def gen_importance_df(model, dset, timesteps, ticker, model_id, pred_scope):
                 'Importance':mse,
                 'Metric': 'mse'
                 })
-            X_test[:,k,f] = save_col
+            X_test[:,t,k] = save_col
 
+    importance_df = pd.DataFrame(results)
     importance_df['Ticker'] = ticker
     importance_df['Model'] = model_id
-    importance_df['scope'] = pred_scope
-    importance_df = pd.DataFrame(results).sort_values(['Ticker', 'Scope', 'Model', 'Metric', 'Importance'])
+    importance_df['Scope'] = pred_scope
 
-
-    return importance_df
+    return importance_df.sort_values(['Ticker', 'Scope', 'Model', 'Metric', 'Importance'])
 
 
 #To save and load models
@@ -638,20 +666,20 @@ def train_model(
     plt.show()
 
     if save:
-      save_model(model, coin_ticker=coin_name)
-      save_scaler(xscaler, coin_ticker=coin_name, fits='x')
-      save_scaler(yscaler, coin_ticker=coin_name, fits='y')
+      save_model(model, coin_ticker=coin_name[:3])
+      save_scaler(xscaler, coin_ticker=coin_name[:3], fits='x')
+      save_scaler(yscaler, coin_ticker=coin_name[:3], fits='y')
 
     return model, X_test, y_test, xscaler, yscaler, test_dates
 
 
 def get_prediction(
-    models_dict, 
-    coin_label, 
-    model_label, 
-    scope_label, 
-    models_path, 
-    scalers_path
+    models_dict: dict, 
+    coin_label: str, 
+    model_label: str, 
+    scope_label: str, 
+    models_path: str, 
+    scalers_path: str
     ):
 
     # Get production model metadata
@@ -732,3 +760,30 @@ def get_prediction(
 """     except KeyError:
         print('Requested model is not defined in models metadata dictionary.')
         return False, None, None """
+
+
+def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, scope, yscaler):
+
+    explainer = lime.lime_tabular.RecurrentTabularExplainer(
+                                            X_train,
+                                            feature_names=list(dsets[ticker + '-USD'].columns),
+                                            verbose=True,
+                                            mode='regression',
+                                            discretize_continuous=False
+                                            )
+
+    lime_dfs = []
+    for i in range(len(test_dates)):
+        exp = explainer.explain_instance(X_test[i], model.predict)
+        lime_df = pd.DataFrame(exp.as_list(), columns=['Feature', 'LIME Weight'])
+        lime_df['Predicted Close t+'+scope[0]] = yscaler.inverse_transform(lime_df['LIME Weight'].abs().values.reshape(-1,1))[:,0] * (lime_df['LIME Weight'].values//lime_df['LIME Weight'].abs().values)
+        lime_df['Date'] = test_dates[i]
+        lime_df['Model'] = model_id
+        lime_df['Ticker'] = ticker
+        lime_df['Scope'] = scope
+        lime_dfs.append(lime_df)
+    lime_df = pd.concat(lime_dfs)
+    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].values.reshape(-1,1))
+    lime_df.rename(columns={'Date': 'Date_dt'}, inplace=True)
+    lime_df['Date'] = lime_df['Date_dt'].dt.date.apply(lambda x: str(x))
+    return lime_df

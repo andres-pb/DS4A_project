@@ -67,7 +67,7 @@ def plot_importance(importance_df: pd.DataFrame, px_theme: str ='plotly_dark'):
         vis = metric == 'mae'
         mdf = importance_df[importance_df['Metric']==metric]
 
-        mdf = mdf.sort_values('Importance').tail(20)
+        mdf = mdf.sort_values('Importance').tail(5)
         fig.add_trace(
             go.Bar(
                 orientation='h', 
