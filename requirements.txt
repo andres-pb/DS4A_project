@@ -11,12 +11,10 @@ statsmodels==0.13.2
 scikit_learn==1.1.1
 tensorflow==2.9.1
 pytrends==4.8.0
-TA-Lib==0.4.24
-plotly==5.8.2
-nbformat==5.4.0
-transformers == 4.19.4
-pytorch == 1.11.0
-dash == 1.19.0
-dash_bootstrap_components == 1.1.0
+plotly==5.9.0
+dash==2.5.1
+dash-bootstrap-components==1.1.0
 pytrends==4.8.0
-sqlalchemy ==1.4.36
+SQLAlchemy==1.4.36
+joblib==1.1.0
+matplotlib==3.5.2

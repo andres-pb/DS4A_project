@@ -10,7 +10,7 @@ __LOG = logging.getLogger(__name__)
 
 class Twitter:
     def __init__(self) -> None:
-        __LOG.debug(f"Initializing Twitter Object")
+        #__LOG.debug(f"Initializing Twitter Object")
         self.key = environ.get('TW_KEY')
         self.secret = environ.get('TW_SECRET')
         self.token = environ.get('TW_TOKEN')
@@ -29,7 +29,7 @@ class Twitter:
         popular: boolean, filter only most popular tweets.
         
         """
-        __LOG.debug(f"Getting Tweets information")
+        #__LOG.debug(f"Getting Tweets information")
         twitter_data = []
         result_type = 'popular' if popular else 'mixed'
         results = tweepy.Cursor(

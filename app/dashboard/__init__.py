@@ -1,1 +1,1 @@
-from .dashboard import app as dashboard_app
+from .dashboard import dashboard_app
