@@ -160,15 +160,44 @@ def plot_monitor_candle(ticker:str = globals_variable.COINS_SELECTION[-1]['ticke
                     close=df[variable])], layout=layout)
     if models:
         for x in models:
-            fig.add_trace(
+            if x == 'BBANDS':
+                bands= getattr(statistical_models,x)(df,variable)
+                bands_name=['upperband', 'middleband', 'lowerband']
+                for index, band in enumerate(bands):
+                    fig.add_trace(
                             go.Scatter(
-                                        x = df.index,
-                                        y = df[variable],
+                                        x = band.index,
+                                        y = band,
                                         mode = 'lines',
-                                        name = 'Line',
-                                        #line = dict(shape = 'linear', color = 'rgb(100, 10, 100)', width = 1, dash = 'dash'),
+                                        name = bands_name[index],
+                                        line = dict(shape = 'linear', width = 3, dash = 'dashdot'),
                                         connectgaps = True
                                     ))
+            elif x == 'MACD':
+                lines= getattr(statistical_models,x)(df,variable)
+                lines_name=['Convergence', 'Divergence']
+                for index, line in enumerate(lines):
+                    fig.add_trace(
+                            go.Scatter(
+                                        x = line.index,
+                                        y = line,
+                                        mode = 'lines',
+                                        name = lines_name[index],
+                                        line = dict(shape = 'linear', width =2, dash = 'dashdot'),
+                                        connectgaps = True
+                                    ))
+            else:
+                df_result=getattr(statistical_models,x)(df,variable)
+                fig.add_trace(
+                                go.Scatter(
+                                            x = df.index,
+                                            y = df_result,
+                                            mode = 'lines',
+                                            name = x,
+                                            line = dict(shape = 'linear', width = 2,  dash = 'dash'),
+                                            connectgaps = True
+                                        ))
+    
 
     fig.update_layout(clickmode='event+select')
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
@@ -177,9 +206,7 @@ def plot_monitor_candle(ticker:str = globals_variable.COINS_SELECTION[-1]['ticke
 
 
 def plot_monitor_line(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'], exchanges:str = "Dolar", interval: str ='1wk', variable:str='Close', models=[]):
-    print(ticker)
     status, df=yahoo_finance.market_value(symbol=ticker,interval=interval)
-    print('status',status)
     if not status:
         return None
     if exchanges in ['BTC-USD','COP=X']:
@@ -201,17 +228,44 @@ def plot_monitor_line(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'
             )
     if models:
         for x in models:
-            df_result=getattr(statistical_models,x)(df,variable)
-            print(df_result)
-            fig.add_trace(
+            if x == 'BBANDS':
+                bands= getattr(statistical_models,x)(df,variable)
+                bands_name=['upperband', 'middleband', 'lowerband']
+                for index, band in enumerate(bands):
+                    fig.add_trace(
                             go.Scatter(
-                                        x = df.index,
-                                        y = df_result,
+                                        x = band.index,
+                                        y = band,
                                         mode = 'lines',
-                                        name = x,
-                                        #line = dict(shape = 'linear', color = 'rgb(100, 10, 100)', width = 1, dash = 'dash'),
+                                        name = bands_name[index],
+                                        line = dict(shape = 'linear', width = 3, dash = 'dashdot'),
                                         connectgaps = True
                                     ))
+            elif x == 'MACD':
+                lines= getattr(statistical_models,x)(df,variable)
+                lines_name=['Convergence', 'Divergence']
+                for index, line in enumerate(lines):
+                    fig.add_trace(
+                            go.Scatter(
+                                        x = line.index,
+                                        y = line,
+                                        mode = 'lines',
+                                        name = lines_name[index],
+                                        line = dict(shape = 'linear', width =2, dash = 'dashdot'),
+                                        connectgaps = True
+                                    ))
+            else:
+                df_result=getattr(statistical_models,x)(df,variable)
+                fig.add_trace(
+                                go.Scatter(
+                                            x = df.index,
+                                            y = df_result,
+                                            mode = 'lines',
+                                            name = x,
+                                            line = dict(shape = 'linear', width = 2,  dash = 'dash'),
+                                            connectgaps = True
+                                        ))
+    
     fig.update_layout(
                         margin=dict(l=0, r=0, t=0, b=0),
                         clickmode='event+select'
@@ -230,7 +284,6 @@ def plot_monitor_line(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'
 
 
 def plot_monitor_candle_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'], exchanges:str = "Dolar", interval: str ='1wk', variable:str='Close',  models=[]):
-    print('grafica')
     import pandas as pd
     import plotly.graph_objects as go
     from plotly.subplots import make_subplots
@@ -263,15 +316,44 @@ def plot_monitor_candle_volume(ticker:str = globals_variable.COINS_SELECTION[-1]
 
     if models:
         for x in models:
-            fig.add_trace(
+            if x == 'BBANDS':
+                bands= getattr(statistical_models,x)(df,variable)
+                bands_name=['upperband', 'middleband', 'lowerband']
+                for index, band in enumerate(bands):
+                    fig.add_trace(
                             go.Scatter(
-                                        x = df.index,
-                                        y = df[variable],
+                                        x = band.index,
+                                        y = band,
                                         mode = 'lines',
-                                        name = x,
-                                        #line = dict(shape = 'linear', color = 'rgb(100, 10, 100)', width = 1, dash = 'dash'),
+                                        name = bands_name[index],
+                                        line = dict(shape = 'linear', width = 3, dash = 'dashdot'),
                                         connectgaps = True
                                     ))
+            elif x == 'MACD':
+                lines= getattr(statistical_models,x)(df,variable)
+                lines_name=['Convergence', 'Divergence']
+                for index, line in enumerate(lines):
+                    fig.add_trace(
+                            go.Scatter(
+                                        x = line.index,
+                                        y = line,
+                                        mode = 'lines',
+                                        name = lines_name[index],
+                                        line = dict(shape = 'linear', width =2, dash = 'dashdot'),
+                                        connectgaps = True
+                                    ))
+            else:
+                df_result=getattr(statistical_models,x)(df,variable)
+                fig.add_trace(
+                                go.Scatter(
+                                            x = df.index,
+                                            y = df_result,
+                                            mode = 'lines',
+                                            name = x,
+                                            line = dict(shape = 'linear', width = 2,  dash = 'dash'),
+                                            connectgaps = True
+                                        ))
+    
     
     fig.update(layout_xaxis_rangeslider_visible=False)
     fig.update_layout(
@@ -312,7 +394,7 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
                                 x = df.index,
                                 y = df[variable],
                                 mode ='lines',
-                                name = x,
+                                name = 'line',
                                 #line = dict(shape = 'linear', color = 'rgb(100, 10, 100)', width = 1, dash = 'dash'),
                                 connectgaps = True
                             ), row=1, col=1
@@ -320,17 +402,47 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
 
     # Bar trace for volumes on 2nd row without legend
     fig.add_trace(go.Bar(x=df.index, y=df['Volume'], showlegend=False), row=2, col=1)
+
     if models:
         for x in models:
-            fig.add_trace(
+            if x == 'BBANDS':
+                bands= getattr(statistical_models,x)(df,variable)
+                bands_name=['upperband', 'middleband', 'lowerband']
+                for index, band in enumerate(bands):
+                    fig.add_trace(
                             go.Scatter(
-                                        x = df.index,
-                                        y = df[variable],
+                                        x = band.index,
+                                        y = band,
                                         mode = 'lines',
-                                        name = x,
-                                        #line = dict(shape = 'linear', color = 'rgb(100, 10, 100)', width = 1, dash = 'dash'),
+                                        name = bands_name[index],
+                                        line = dict(shape = 'linear', width = 3, dash = 'dashdot'),
                                         connectgaps = True
                                     ))
+            elif x == 'MACD':
+                lines= getattr(statistical_models,x)(df,variable)
+                lines_name=['Convergence', 'Divergence']
+                for index, line in enumerate(lines):
+                    fig.add_trace(
+                            go.Scatter(
+                                        x = line.index,
+                                        y = line,
+                                        mode = 'lines',
+                                        name = lines_name[index],
+                                        line = dict(shape = 'linear', width = 2, dash = 'dashdot'),
+                                        connectgaps = True
+                                    ))
+            else:
+                df_result=getattr(statistical_models,x)(df,variable)
+                fig.add_trace(
+                                go.Scatter(
+                                            x = df.index,
+                                            y = df_result,
+                                            mode = 'lines',
+                                            name = x,
+                                            line = dict(shape = 'linear', width = 2,  dash = 'dash'),
+                                            connectgaps = True
+                                        ))
+    
 
     fig.update(layout_xaxis_rangeslider_visible=False)
     fig.update_layout(
