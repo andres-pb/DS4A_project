@@ -20,7 +20,7 @@ class Twitter:
         self.api = tweepy.API(auth)
     
 
-    def get_tweets_df(self, query:str, limit:int, popular:bool=False):
+    def get_tweets_df(self, ticker:str, query:str, limit:int, popular:bool=False):
         """
         query: A UTF-8, URL-encoded search query of 500 
             characters maximum, including operators (AND OR). 
@@ -52,7 +52,8 @@ class Twitter:
                                     'user_name': json_response['user']['screen_name'],
                                     'user_verified': json_response['user']['verified'],
                                     'user_followers': json_response['user']['followers_count'],
-                                    'user_image_url': json_response['user']['profile_image_url']
+                                    'user_image_url': json_response['user']['profile_image_url'],
+                                    'ticker': ticker
                                 })
         return pd.DataFrame.from_records(twitter_data)
         
