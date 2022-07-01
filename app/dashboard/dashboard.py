@@ -58,5 +58,7 @@ dashboard_app.config.suppress_callback_exceptions = True
 
 from .callbacks import register_monitor_callbacks
 register_monitor_callbacks(dashboard_app)
+#app.config.suppress_callback_exceptions = True
+
 if __name__ == '__main__':
 	dashboard_app.run_server(debug=True)

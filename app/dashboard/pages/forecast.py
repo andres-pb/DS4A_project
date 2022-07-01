@@ -1,11 +1,17 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc, callback
+from matplotlib.pyplot import text
 import pandas as pd
+import datetime as dt
 from app.dashboard.crypto_plots import plot_model_test, plot_importance
 from dash.dependencies import Input, Output
+from app.modules.models_meta import pred_models
+from app.api import yahoo_finance, GoogleTrends
+from app.modules.lstm import get_prediction
 
 dash.register_page(__name__)
+
 
 # padding for the page content
 CONTENT_STYLE = {
@@ -44,11 +50,12 @@ layout = html.Div([
                             dcc.Dropdown(
                                 id='model-dropdown',
                                 options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
-                                value='Deep Learning LSTM'
+                                value='Deep Learning LSTM',
+                                clearable=False,
                             )
                         ],
                     ),
-                    width={"size": 3, "offset": 0, 'order': 2},
+                    width={"size": 4, "offset": 0, 'order': 2},
                 ),
                 dbc.Col(
                     html.Div(
@@ -58,29 +65,57 @@ layout = html.Div([
                             dcc.Dropdown(
                                 id='time-dropdown',
                                 options=[],
-                                value='1 day ahead'
+                                value='1 day ahead',
+                                clearable=False,
                             )
                         ],
                     ),
-                    width={"size": 3, "offset": 0, 'order': 'last'},
+                    width={"size": 4, "offset": 0, 'order': 'last'},
                 )
         ],
         style={'margin-right': '20px','margin-top': '20px', 'margin-bottom': '50px'}),
         # Main content starts here in two columns                 
         dbc.Row([
+                # Left column of main content
                 dbc.Col(
-                    'About model here',
+                    children=[
+                        html.Div(
+                            className='black-container',
+                            children=[
+                                html.Div(
+                                    id='prediction-container',
+                                    className='silver-container',
+                                    children=[
+                                        html.H3('The last close is: '),
+                                        html.P(id='last-closing-price', children=[]),
+                                        dcc.Interval(id='update-price-interval', interval=60*1000, n_intervals=0),
+                                        html.P(id='prediction-test', children=[]),
+                                    ],
+                                ),
+                                html.Hr(),
+                                html.H3('About the Model', style={'color': 'white'}),
+                                html.P(
+                                    id='about-model',
+                                    className='text-just',
+                                    children=['Loading model description...']
+                                    )
+                            ]
+                        ),
+                    ],
                     width={"size": 5, "offset": 0, 'order':'first'},
                 ),
+                # Right column of main content
                 dbc.Col(
                     children = [
                         html.Div(
                             className='graph-cointainer',
                             children=[
                                 html.H3('Model Performance', className='graph-title'),
-                                html.P('We set appart around 1 year of data during training and used it for model validation. ' 
-                                       'Below, you can see how the model prediction compared to the true price of the cryptocurrency.',
-                                       className='graph-info'),
+                                html.P(
+                                    """We set apart around 1 year of data during training and used it for model validation. 
+                                       Below, you can see how the model prediction compared to the true price of the cryptocurrency.
+                                    """,
+                                       className='text-just graph-info'),
                                 dcc.Loading(
                                     children=[dcc.Graph(id='test-plot',)],
                                     type='circle',
@@ -108,8 +143,8 @@ layout = html.Div([
                                     suggests a greater feature importance. Below we report top 20 feature-lag combinations for the
                                     deep learning models following this criteria.
                                     """,
-                                    className='graph-info'
-                                       ),
+                                    className='text-just graph-info'
+                                    ),
                                 dcc.Loading(
                                     children=[dcc.Graph(id='importance-plot',)],
                                     type='circle',
@@ -127,6 +162,9 @@ layout = html.Div([
     ],
     style=CONTENT_STYLE
 )
+
+
+# -------------------------------------------- CALLBACKS ----------------------------------------------
 
 @callback(
     Output('time-dropdown', 'options'),
@@ -156,3 +194,43 @@ def update_models_plots(sel_coin, sel_model, sel_time):
     fig_imp = plot_importance(ft_importance, px_theme='plotly_white')
 
     return fig_test, fig_imp
+
+
+@callback(
+    Output('about-model', 'children'),
+    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
+)
+def update_about_model(sel_coin, sel_model, sel_time):
+    try:
+        text = pred_models[sel_coin][sel_model][sel_time]['about']
+    except KeyError:
+        text = html.P('No information was found on this model.')
+    return text
+
+
+""" @callback(
+    Output('prediction-test', 'children'),
+    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
+)
+def predict_price(sel_coin, sel_model, sel_time):
+    print('ATTEMPTING PRICE PREDICTION !!!')
+    text = get_prediction(pred_models, sel_coin, sel_model,sel_time,'./app/dashboard/test_models/', './models/')
+    import time
+    time.sleep(60)
+    return text """
+
+
+@callback(
+    Output('last-closing-price', 'children'),
+    [Input('coin-dropdown', 'value'),  Input('update-price-interval', 'n_intervals')]
+)
+def update_close(sel_coin, n):
+    today = dt.datetime.today() - dt.timedelta(1)
+    usd_ticker = str(sel_coin)[:3] + '-USD'
+    status, yahoo_df = yahoo_finance.market_value(usd_ticker, hist=today, interval='1d')
+    if status:
+        close = yahoo_df['Close'].values[-1]
+        return close
+    else:
+        return 'Unable to retrieve current price. Retrying...'
+
