@@ -1,5 +1,5 @@
 from dash import Output, Input, ctx
-from app import globals_variable
+from app import globals_variable, yahoo_finance
 from app.dashboard.crypto_plots import plot_monitor_candle, plot_monitor_candle_volume, plot_monitor_line, plot_monitor_line_volume
 def register_monitor_callbacks(app):
     
@@ -81,6 +81,10 @@ def register_monitor_callbacks(app):
                         Output('btn_nclicks_7', 'style'), 
                         Output('btn_nclicks_8', 'style'), 
                         Output('btn_nclicks_9', 'style'),
+                        Output('output-deviation', 'children'),
+                        Output('output-average', 'children'),
+                        Output('output-max', 'children'),
+                        Output('output-min', 'children'),
                         Output('monitor_plot', 'figure')],
                     [
                         Input('dropdown_coins', 'value'), 
@@ -102,22 +106,51 @@ def register_monitor_callbacks(app):
                                 ticker, exchanges, chart, view,
                                 btn_nclicks_1, btn_nclicks_2, 
                                 btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7, btn_nclicks_8, btn_nclicks_9):
-        print(view)
+        variables_value=['ivan']
         models=list()
         for i in view:
             if i != 'Volume':
                 models.append(statistical_models[i])
-        print(models)
         right_result, variable =update_class_right(btn_nclicks_1, btn_nclicks_2)
         result, interval = update_class_left(btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7, btn_nclicks_8, btn_nclicks_9)
         if chart=='line':
             if 'Volume' in view:
-                return *right_result, *result, plot_monitor_line_volume(ticker=ticker, exchanges=exchanges, interval=interval, models=models)
-            return *right_result, *result, plot_monitor_line(ticker=ticker, exchanges=exchanges, interval=interval, models=models)
+                fig=plot_monitor_line_volume(
+                                                                            ticker=ticker, 
+                                                                            exchanges=exchanges, 
+                                                                            interval=interval, 
+                                                                            models=models,
+                                                                            variable=variable
+                                                                        )
+                return *right_result, *result, *globals_variable.STATISTICS_VALUES,fig
+            fig=plot_monitor_line(
+                                                                ticker=ticker, 
+                                                                exchanges=exchanges, 
+                                                                interval=interval, 
+                                                                models=models,
+                                                                variable=variable
+                                                            )
+            #print(variables_value)
+
+            return *right_result, *result, *globals_variable.STATISTICS_VALUES, fig
         if chart =='candle':
             if 'Volume' in view:
-                return *right_result, *result, plot_monitor_candle_volume(ticker=ticker, exchanges=exchanges, interval=interval, models=models)
-            return *right_result, *result, plot_monitor_candle(ticker=ticker, exchanges=exchanges, interval=interval, models=models)
+                fig=plot_monitor_candle_volume(
+                                                                            ticker=ticker, 
+                                                                            exchanges=exchanges, 
+                                                                            interval=interval, 
+                                                                            models=models,
+                                                                            variable=variable
+                                                                            )
+                return *right_result, *result, *globals_variable.STATISTICS_VALUES, fig
+            fig=plot_monitor_candle(
+                                                                ticker=ticker, 
+                                                                exchanges=exchanges, 
+                                                                interval=interval, 
+                                                                models=models,
+                                                                variable=variable
+                                                                )
+            return *right_result, *result, *globals_variable.STATISTICS_VALUES, fig
         return None
 
   
