@@ -169,8 +169,7 @@ layout = html.Div([
                         html.H3('Error Perturbation', className='graph-title'),
                         html.P(
                             ["""
-                            To measure feature importance in Recurrent Neural Networks 
-                            we built ERROR PERTURBATION as a measure of feature importance. 
+                            ERROR PERTURBATION as a measure of feature importance for Recurrent Neural Networks. 
                             It tells us by how much the model error increased when
                             the true values on each one of the feature-lag combinations were shuffled. 
                             A greater error perturbation, suggests a greater feature importance. 
@@ -202,13 +201,23 @@ layout = html.Div([
                         html.H3('Feature Contribution Across Time', className='graph-title'),
                         html.P(
                             ["""
-                            To measure feature importance in Recurrent Neural Networks 
-                            we built ERROR PERTURBATION as a measure of feature importance. 
-                            It tells us by how much the model error increased when
-                            the true values on each one of the feature-lag combinations were shuffled. 
-                            A greater error perturbation, suggests a greater feature importance. 
-                            We offer you the top feature-lag combinations for the deep learning 
-                            models following this criteria. Toggle the buttons to change the error metric.
+                            Error perturbation might give us a general idea of those features
+                            that are important to preserve an overall minimum error metrics. Using LIME - 
+                            Local Interpretable Agnostic Explanations -, we can obtain a robust feature contribution measure
+                            for each individual observation in the test set.
+                            """],
+                            className='graph-info'
+                        ),
+                        html.P(
+                            ["""
+                            Use the play and stop buttons to visualize how feature importance changes across time for this model.
+                            """],
+                            className='graph-info'
+                        ),
+                                                html.P(
+                            ["""
+                            Notice how the most accurate models start to percieve higher contributions of features such as the interest rate, 
+                            google trends and traded volume in times of negative price trends like in the the most recent history.
                             """],
                             className='graph-info'
                         )
