@@ -66,7 +66,7 @@ body{
 .black-container {
     color: white; 
     background-color: #000000;
-    padding: 3rem 3rem 1rem 4rem;
+    padding: 3rem 3rem 3rem 4rem;
     text-align: justify;
     text-justify: inter-word;
 }

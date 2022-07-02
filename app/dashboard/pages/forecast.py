@@ -15,7 +15,7 @@ dash.register_page(__name__)
 
 # padding for the page content
 CONTENT_STYLE = {
-    "margin-left": "12rem",
+    "margin-left": "2rem",
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
@@ -159,7 +159,7 @@ layout = html.Div([
             ]
         ),
         html.Hr(),
-        html.H1('EXPLAINABLE MODELS'),
+        html.H1('EXPLAINABLE MODELS', className='header-extra'),
         html.H2('We Love Black. Just Not BLACK BOX!'),
         dbc.Row(
             children=[
