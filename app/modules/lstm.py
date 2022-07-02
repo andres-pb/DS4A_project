@@ -11,6 +11,9 @@ from tensorflow import keras
 import joblib
 import time
 
+import lime
+import lime.lime_tabular
+
 from keras.models import Model
 from keras.layers import LSTM, Bidirectional
 from keras.layers import Dense
@@ -783,7 +786,40 @@ def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, sco
         lime_df['Scope'] = scope
         lime_dfs.append(lime_df)
     lime_df = pd.concat(lime_dfs)
-    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].values.reshape(-1,1))
+    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].abs().values.reshape(-1,1)) * (lime_df['LIME Weight'].values//lime_df['LIME Weight'].abs().values)
+        
     lime_df.rename(columns={'Date': 'Date_dt'}, inplace=True)
     lime_df['Date'] = lime_df['Date_dt'].dt.date.apply(lambda x: str(x))
     return lime_df
+
+def plot_lime(lime_df):
+
+    fig = px.bar(
+        lime_df, 
+        x='LIME Weight', 
+        y='Feature',
+        animation_frame='Date',
+        orientation='h', 
+        color='LIME Weight', 
+        template='plotly_dark',
+        title="LIME - Top Features' Effect on Close t+1",
+        color_continuous_scale='viridis',
+        )
+    fig.update_layout(
+            xaxis_tickformat = '$',
+            title={
+                'y':0.95,
+                'x':0.5,
+                'xanchor': 'center',
+                'yanchor': 'top',
+                'font': dict(
+                #family="Courier New, monospace",
+                size=25)
+                },
+            )
+    fig.update_traces(
+        hovertemplate="<br>".join([
+            "Feature: %{y}",
+            "Contribution: $%{x:,.2f}"])
+            )
+    return fig
