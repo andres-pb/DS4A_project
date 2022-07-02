@@ -14,3 +14,43 @@
 [18308] urllib3.connectionpool - 2022-07-02 08:56:07,308 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683767&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
 [23940] urllib3.connectionpool - 2022-07-02 08:56:07,411 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683767&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
 [26432] urllib3.connectionpool - 2022-07-02 08:56:07,552 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683767&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[39188] urllib3.connectionpool - 2022-07-02 08:56:38,028 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[17216] __main__ - 2022-07-02 08:56:47,043 - INFO - ...... Initialization Completed  ......
+[17216] __main__ - 2022-07-02 08:56:47,043 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[17216] sqlalchemy.engine.Engine - 2022-07-02 08:56:47,059 - INFO - BEGIN (implicit)
+[17216] sqlalchemy.engine.Engine - 2022-07-02 08:56:47,059 - INFO - PRAGMA main.table_info("crypto")
+[17216] sqlalchemy.engine.Engine - 2022-07-02 08:56:47,061 - INFO - [raw sql] ()
+[17216] sqlalchemy.engine.Engine - 2022-07-02 08:56:47,062 - INFO - COMMIT
+[17216] urllib3.connectionpool - 2022-07-02 08:56:48,382 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[17216] urllib3.connectionpool - 2022-07-02 08:56:48,625 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/ETH-USD?period1=1578978000&period2=1656824400&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[2632] urllib3.connectionpool - 2022-07-02 08:56:51,283 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[2632] urllib3.connectionpool - 2022-07-02 08:56:51,624 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683811&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1002
+[29224] urllib3.connectionpool - 2022-07-02 08:57:06,357 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[12684] urllib3.connectionpool - 2022-07-02 08:57:06,390 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[12636] urllib3.connectionpool - 2022-07-02 08:57:06,590 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[29224] urllib3.connectionpool - 2022-07-02 08:57:06,690 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683826&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1002
+[12684] urllib3.connectionpool - 2022-07-02 08:57:06,690 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683826&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1002
+[12636] urllib3.connectionpool - 2022-07-02 08:57:07,168 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683826&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1002
