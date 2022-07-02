@@ -20,11 +20,9 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
-
 # Read predictions obtained during model testing
 preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
 ft_importance_df = pd.read_csv('./app/dashboard/test_models/ft_importance.csv')
-
 
 layout = html.Div([
         # Menus and controls row
@@ -179,7 +177,6 @@ def populate_time_ddown(sel_coin, sel_model):
     time_opts = [{'label': t, 'value': t} for t in times_list]
     time_value = times_list[0]
     return time_opts, time_value
-
 
 @callback(
     Output('test-plot', 'figure'),

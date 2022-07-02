@@ -2,7 +2,7 @@ import dash
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 
-app = Dash(__name__, use_pages=True, 
+dashboard_app = Dash(__name__, use_pages=True, 
     external_stylesheets=[
             dbc.themes.LUX,
             dbc.icons.FONT_AWESOME
@@ -37,8 +37,8 @@ sidebar = html.Div(
             )]
 )
 
-app.layout = html.Div(
-    className="container",
+dashboard_app.layout = html.Div(
+    className="container-layout",
     children=[
     sidebar,
     html.Div(
@@ -54,7 +54,11 @@ app.layout = html.Div(
                 ])
 ])
 
-app.config.suppress_callback_exceptions = True
+dashboard_app.config.suppress_callback_exceptions = True
+
+from .callbacks import register_monitor_callbacks
+register_monitor_callbacks(dashboard_app)
+#app.config.suppress_callback_exceptions = True
 
 if __name__ == '__main__':
-	app.run_server(debug=True)
+	dashboard_app.run_server(debug=True)

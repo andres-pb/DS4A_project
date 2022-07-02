@@ -22,8 +22,7 @@
     display: flex;
     justify-content: center;
     padding:0;
-    margin:0.5rem;
-    background-color: aquamarine;
+    margin:0.1rem;
 
 }
 
@@ -42,6 +41,7 @@
       "BB"; 
     grid-gap:0;
     justify-items: center;
+    height: 5px;;
   }
 
   .monitor-A { 
@@ -50,7 +50,7 @@
 
   .monitor-B { 
         grid-area: BB; 
-        margin-bottom:2rem;
+        margin-bottom:0.5rem;
         }
 
 
@@ -59,35 +59,117 @@
         margin:0 !important;
         display: grid; 
         grid-template-columns: 1.6fr 0.4fr; 
-        grid-template-rows: 1fr; 
+        grid-template-rows: 1fr 0.8fr; 
         gap: 0px 0px; 
         grid-template-areas: 
           "AAA BBB"
           "AAA CCC"; 
         grid-gap:0;
         justify-items: center;
+        height: 100%;
       }
     
     .monitor-AA { 
                 grid-area: AAA;
-                background-color: aquamarine !important;
                 width:auto;
+                margin-top: 1rem;
                 }
     
     .monitor-BB { 
                 grid-area: BBB; 
+                margin-top: 1rem;
                 }
     
     .monitor-CC { 
                 grid-area: CCC;
+                margin-top: 1rem;
+                margin-left:2rem;
                 }
+
+
+
+                .monitor-container-graph{
+                    margin:0 !important;
+                    display: grid; 
+                    grid-template-columns: 1fr; 
+                    grid-template-rows: 0.2fr 1.8fr; 
+                    gap: 0px 0px; 
+                    grid-template-areas: 
+                      "GRAPH_A"
+                      "GRAPH_B"; 
+                    grid-gap:0;
+                    justify-items: center;
+                    width:100%;
+                    height: auto;
+                  }
+                
+                .monitor-GRAPH-A { 
+                            grid-area: "GRAPH_A";
+                            width:100%;
+                            margin-top: 1rem;
+                            padding-top: 0.5rem;
+                            }
+                
+                .monitor-GRAPH-B { 
+                            grid-area: "GRAPH_B"; 
+                            width:100%;
+                            }
+
+                .monitor-left-group{
+                    margin-left: 1rem;
+                    padding:0rem 0rem 0.05rem 0rem;
+                    width:7.2rem;
+                    height: 1.9rem;
+                    background-color: #c6c9cc;
+                    border: 1px solid rgba(122, 120, 120, 0.2);
+                    border-radius: 0.4rem;
+                    float:left;
+                }
+
+                .monitor-right-group{
+                    padding:0rem 0rem 0rem 0rem;
+                    width:13.7rem;
+                    height: 1.9rem;
+                    background-color: #c6c9cc;
+                    border: 1px solid rgba(122, 120, 120, 0.2);
+                    border-radius: 0.4rem;
+                    float:right;
+                }
+                .graph-button{
+                    padding: 0.2rem 0.4rem;
+                    background-color: #c6c9cc; 
+                    border:0px solid rgba(122, 120, 120, 0.2);
+                    border-radius: 0.3rem;
+                    margin-left:0.1rem;
+                    font-size: 0.7rem;
+                    font-weight:700;
+                }
+
+
+                
+
+
+
+
+
+.radio-title{
+                margin-bottom: 0.2rem;
+                text-align: left;
+                font-size:1.5rem;
+                font-weight: 700;
+                color:black;
+            }
+.radio-item{
+    display: inline-grid;
+  line-height: 2;
+}
 
 
 .summary{
     background-color: #F4F4F4;
-    padding: 40px;
-    margin-right: 15px;
-    margin-top: 15px;
+    padding-top: 5px;
+    margin-right: 25px;
+    margin-top: 10px;
 }
 
 .monitor-output-text{
@@ -100,17 +182,20 @@
 }
 
 .monitor-output{
-    background-color: aqua;
+    background-color: #fff;
+    border: 1px solid rgba(122, 120, 120, 0.2);
+    border-radius: 0.4rem;
     padding: 1rem;
     margin-top: 0px;
     width: 12rem;
-    height: auto;
+    height: 2rem;
 }
 
 .monitor-title{
     font-size:3rem;
     color:black;
     text-align: left;
+    margin:0;
 }
 
 .dropdown-title{
@@ -124,6 +209,10 @@
 .dropdown{
     width:25rem;
     
+}
+
+.dropdown > #dropdown-chart{
+    width:15rem;
 }
 
 .dropdown-item{
@@ -148,6 +237,10 @@
  .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{
     color:white !important;
     background-color: black;
+}
+
+input[type=checkbox]{
+    margin-right: 0.5rem;
 }
 
 @media(max-width: 800px){

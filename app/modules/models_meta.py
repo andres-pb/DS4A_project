@@ -10,6 +10,15 @@ COINS_SELECTION = [
     'LTC-USD',
 ]
 
+
+COINS_SELECTION = [
+    'BTC-USD',
+    'NMC-USD', 
+    'FTC-USD', 
+    'PPC-USD', 
+    'LTC-USD',
+]
+
 pred_models = {
 
     'BTC - Bitcoin': {
