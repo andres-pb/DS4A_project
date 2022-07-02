@@ -1,4 +1,5 @@
 from turtle import width
+from numpy import average
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
@@ -206,6 +207,7 @@ def plot_monitor_candle(ticker:str = globals_variable.COINS_SELECTION[-1]['ticke
     fig.update_layout(clickmode='event+select')
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
+    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
     return fig
 
 
@@ -283,6 +285,7 @@ def plot_monitor_line(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'
         title_text = 'Date',
         rangeslider_visible = True
         )
+    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
     return fig
 
 
@@ -368,7 +371,10 @@ def plot_monitor_candle_volume(ticker:str = globals_variable.COINS_SELECTION[-1]
                         )
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
+    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
     return fig
+
+
 
 def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'], exchanges:str = "Dolar", interval: str ='1wk', variable:str='Close', models=[]):
     import pandas as pd
@@ -457,6 +463,7 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
                         )
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
+    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
     return fig
 
 

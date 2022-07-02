@@ -62,28 +62,28 @@ layout = html.Div(
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Average Value'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-average', className="item monitor-output monitor-B")
+                                                                                    html.Div(id='output-average', className="item monitor-output monitor-B",children=[''])
                                                                                     ]
                                                                             ),
                                                                     html.Div( 
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Standard Deviation'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-deviation', className="item monitor-output monitor-b")
+                                                                                    html.P(id='output-deviation', className="item monitor-output monitor-b",children=[''])
                                                                                     ]
                                                                             ),
                                                                     html.Div( 
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Maximum Value'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-max', className="item monitor-output monitor-B")
+                                                                                    html.Div(id='output-max', className="item monitor-output monitor-B",children=[''])
                                                                                     ]
                                                                             ),
                                                                     html.Div( 
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Minimal Value'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-min', className="item monitor-output monitor-B")
+                                                                                    html.Div(id='output-min', className="item monitor-output monitor-B",children=[''])
                                                                                     ]
                                                                             )
                                                                 ]

@@ -20,7 +20,7 @@ body{
     gap: 0px 0px; 
     grid-template-areas: 
       "A C"
-      "B B"; 
+      "A B"; 
     grid-gap:0;
     width: 100vw !important;
     height: 100vh;
