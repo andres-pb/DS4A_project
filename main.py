@@ -1,20 +1,24 @@
 from app.log import logging_config
 # from os.path import dirname, join
-from dotenv import load_dotenv
+
 import logging
 from app import database
 from app.util.message import starting_message
 from app import globals_variable
+from os import environ
 # from app import yahoo_finance, Polygon, Alphavantage, Twitter, Statistical, Predict, LSTM_model
 
 
 
 #load_dotenv(dotenv_path=join(dirname(__file__), '.env'))
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except:
+    pass
 #from os import environ
 
 class Main:
-
 
     def run(self) -> None:
         logging_config.init_logging()
@@ -29,17 +33,31 @@ class Main:
                                             {'name':'PPC - Peercoin', 'ticker':'PPC-USD'},
                                             {'name':'LTC -  Litecoin', 'ticker':'LTC-USD'},
                                             {'name':'BTC - Bitcoin', 'ticker':'BTC-USD'},
-                                            {'name':'ETF Ethereum', 'ticker':'ETF-USD'},
+                                            {'name':'ETH - Ethereum', 'ticker':'ETH-USD'},
                                         ]
         globals_variable.EXCHANGES=[
                                     {'name':'Dolar', 'ticker':'USD'},
-                                    {'name':'Peso Colombiano', 'ticker':'PESO'},
-                                    {'name':'Bitcoin', 'ticker':'BTC'}
+                                    {'name':'Peso Colombiano', 'ticker':'COP=X'},
+                                    {'name':'Bitcoin', 'ticker':'BTC-USD'}
                                      ]
-
+        globals_variable.STATISTICAL_MODELS=[
+                                    {'name':'Volume', 'function':''},
+                                    {'name':'Mean Price', 'function':'mean_price'},
+                                    {'name':'Rolling Mean Price', 'function':'rolling_mean'},
+                                    {'name':'Rolling Standard Deviation', 'function':'rolling_std'},
+                                    {'name':'Exponential WMA', 'function':'exponential_wma'},
+                                    {'name':'Bollinger Bands', 'function':'BBANDS'},
+                                    {'name':'Average Directional Movement Index', 'function':'ADX'},
+                                    {'name':'Average True Range', 'function':'ATR'},
+                                    {'name':'Moving Average Convergence/Divergence', 'function':'MACD'},
+                                     ]
         from app.dashboard import dashboard_app
-        dashboard_app.run_server(debug=True)
-
+        print(environ.get("DS4A_ENV"))
+        host, debug, port = {
+            'development':('127.0.0.1',True, 8888),
+            'production':('0.0.0.0',True, 8050)
+                }[environ.get("DS4A_ENV")]
+        dashboard_app.run_server(host=host,debug=debug, port=port)
 Main().run()
 
 

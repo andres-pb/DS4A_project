@@ -1,6 +1,7 @@
 import dash
-from dash import html, dcc
+from dash import Input, Output, html, dcc
 from app import globals_variable
+from app.dashboard.crypto_plots import plot_monitor_candle, plot_monitor_candle_volume, plot_monitor_line, plot_monitor_line_volume
 dash.register_page(__name__)
 
 # padding for the page content
@@ -33,9 +34,10 @@ layout = html.Div(
                                                                                 children=[
                                                                                             html.P( className="dropdown-title", children='Crypto Currency'),
                                                                                             dcc.Dropdown(
+                                                                                                id="dropdown_coins",
                                                                                                 className="dropdown-item", 
                                                                                                 options=[{'label': x['name'], 'value': x['ticker']} for x in globals_variable.COINS_SELECTION],
-                                                                                                value= globals_variable.COINS_SELECTION[0]['name']
+                                                                                                value= globals_variable.COINS_SELECTION[-1]['ticker']
                                                                                             ),
                                                                                         ]),
                                                                         html.Div(
@@ -43,9 +45,10 @@ layout = html.Div(
                                                                             children=[
                                                                                     html.P( className="dropdown-title", children='Currency'),
                                                                                     dcc.Dropdown(
+                                                                                        id="dropdown_exchanges",
                                                                                         className="dropdown-item", 
                                                                                         options=[{'label': x['name'], 'value': x['ticker']} for x in globals_variable.EXCHANGES],
-                                                                                        value=globals_variable.EXCHANGES[0]['name']
+                                                                                        value=globals_variable.EXCHANGES[0]['ticker']
                                                                                     ),
                                                                                 ])
                                                                             ],
@@ -59,28 +62,28 @@ layout = html.Div(
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Average Value'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-average', className="item monitor-output monitor-B")
+                                                                                    html.Div(id='output-average', className="item monitor-output monitor-B",children=[''])
                                                                                     ]
                                                                             ),
                                                                     html.Div( 
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Standard Deviation'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-deviation', className="item monitor-output monitor-b")
+                                                                                    html.P(id='output-deviation', className="item monitor-output monitor-b",children=[''])
                                                                                     ]
                                                                             ),
                                                                     html.Div( 
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Maximum Value'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-max', className="item monitor-output monitor-B")
+                                                                                    html.Div(id='output-max', className="item monitor-output monitor-B",children=[''])
                                                                                     ]
                                                                             ),
                                                                     html.Div( 
                                                                                 className="column monitor-container",
                                                                                 children=[
                                                                                     html.P(children=['Minimal Value'], className="monitor-output-text monitor-A"),
-                                                                                    html.Div(id='output-min', className="item monitor-output monitor-B")
+                                                                                    html.Div(id='output-min', className="item monitor-output monitor-B",children=[''])
                                                                                     ]
                                                                             )
                                                                 ]
@@ -88,18 +91,76 @@ layout = html.Div(
                                     html.Div( 
                                                                                 className="monitor-container2",
                                                                                 children=[
-                                                                                    dcc.Graph(
-                                                                                                    id='test_plot',
-                                                                                                    className="monitor-AA",
-                                                                                                    #figure=plot_model_test(preds_df, ticker='BTC-USD', model_id='BTC_LSTM_VGC_1D', pred_scope='1D'),
-                                                                                                    style={'right': 0}
+                                                                                html.Div( 
+                                                                                               className="monitor-AA monitor-container-graph",
+                                                                                               children=[
+                                                                                                            html.Div( 
+                                                                                                                        className="monitor-GRAPH-A",
+                                                                                                                        children=[
+                                                                                                                                        html.Div( 
+                                                                                                                                            className="monitor-left-group",
+                                                                                                                                            children=[
+                                                                                                                                                html.Button('Close', className="graph-button", id='btn_nclicks_1', n_clicks=0),
+                                                                                                                                                html.Button('Adj Close', className="graph-button", id='btn_nclicks_2', n_clicks=0),
+                                                                                                                                            ]
+                                                                                                                                        ),
+                                                                                                                                        html.Div( 
+                                                                                                                                            className="monitor-right-group",
+                                                                                                                                            children=[
+                                                                                                                                                html.Button('1D', className="graph-button", id='btn_nclicks_3', n_clicks=0),
+                                                                                                                                                html.Button('5D', className="graph-button", id='btn_nclicks_4', n_clicks=0),
+                                                                                                                                                html.Button('1W', className="graph-button", id='btn_nclicks_5', n_clicks=0, style={'background-color': 'white'}),
+                                                                                                                                                html.Button('1M', className="graph-button", id='btn_nclicks_6', n_clicks=0),
+                                                                                                                                                html.Button('3M', className="graph-button", id='btn_nclicks_7', n_clicks=0),
+                                                                                                                                                html.Button('6M', className="graph-button", id='btn_nclicks_8', n_clicks=0),
+                                                                                                                                                html.Button('1Y', className="graph-button", id='btn_nclicks_9', n_clicks=0)
+                                                                                                                                            ]
+                                                                                                                                        )
+                                                                                                                        ]
+                                                                                                                    ),
+                                                                                                            dcc.Graph(
+                                                                                                                        id='monitor_plot',
+                                                                                                                        className="monitor-GRAPH-B",
+                                                                                                                        figure=plot_monitor_line()
+                                                                                                                        )
+                                                                                                        ]
                                                                                                 ),
                                                                                     html.Div( 
                                                                                                className="monitor-BB",
-                                                                                               children=["asdasdfadsfsdfdsf assdgfdfs"]
+                                                                                               children=[
+                                                                                                            html.Div( 
+                                                                                                                        className="radio-title",
+                                                                                                                        children=['View:']
+                                                                                                                    ),
+                                                                                                            dcc.Checklist(
+                                                                                                                            className="radio-item",
+                                                                                                                            id="checklist_view",
+                                                                                                                            options=[x['name'] for x in globals_variable.STATISTICAL_MODELS],
+                                                                                                                            value=[]
+                                                                                                                            )
+                                                                                                        ]
                                                                                             ),
                                                                                     html.Div( 
-                                                                                               className="monitor-CC"
+                                                                                               className="monitor-CC",
+                                                                                               children=[
+                                                                                                            html.Div( 
+                                                                                                                        className="radio-title",
+                                                                                                                        children=['Chart Type:']
+                                                                                                                    ),
+                                                                                                            html.Div(
+                                                                                                                        className="dropdown",
+                                                                                                                        children=[
+                                                                                                                                dcc.Dropdown(
+                                                                                                                                    className="dropdown-item", 
+                                                                                                                                    id="dropdown-chart",
+                                                                                                                                    options=[
+                                                                                                                                                {'label': 'Line', 'value': 'line'},
+                                                                                                                                                {'label': 'Candle', 'value': 'candle'}
+                                                                                                                                            ],
+                                                                                                                                    value='line'
+                                                                                                                                ),
+                                                                                                                            ])
+                                                                                                        ]
                                                                                             )
                                                                                     
                                                                                 ]

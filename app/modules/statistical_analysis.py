@@ -2,12 +2,55 @@ from ..api import yahoo_finance
 import pandas as pd
 from pandas import DataFrame
 import datetime as dt
-#import talib
+import talib
 from typing import Tuple
 
+class StatisticalModels:
+    
+        def __init__(self) -> None:pass
 
-class Statistical():pass
-"""store_request=dict()
+        def mean_price(self, df, variable) -> Tuple[bool, DataFrame]:
+            mean=int(df[variable].mean())
+            return [mean for x in range(len(df[variable]))]
+
+        def rolling_mean(self, df, variable) -> Tuple[bool, DataFrame]:
+            return pd.Series(df[variable]).rolling(window=12).mean()
+ 
+    
+        def rolling_std(self, df, variable) -> Tuple[bool, DataFrame]:
+            return pd.Series(df[variable]).rolling(window=12).std()
+
+
+        #Exponentially Weighted Moving Average
+        def exponential_wma(self, df, variable) -> Tuple[bool, DataFrame]:
+            return df[variable].ewm(halflife=200).mean()
+
+        
+        # #https://mrjbq7.github.io/ta-lib/funcs.html
+        #Bollinger Bands
+        def BBANDS(self, df, variable) -> Tuple[bool, DataFrame]:
+            df['upperband'], df['middleband'], df['lowerband']  = talib.BBANDS(df[variable],
+                                                            timeperiod=20, nbdevup=2,
+                                                            nbdevdn=2, matype=0)
+            return df['upperband'], df['middleband'], df['lowerband']
+
+        #Average Directional Movement Index
+        def ADX(self, df, variable) -> Tuple[bool, DataFrame]:
+            return talib.ADX(df['High'], df['Low'], df[variable], timeperiod=7)
+        
+            
+        #Average True Range
+        def ATR(self, df, variable) -> Tuple[bool, DataFrame]:
+            return talib.ATR(df['High'], df['Low'], df[variable], timeperiod=14)
+        
+        # #Moving Average Convergence/Divergence
+        def MACD(self, df, variable) -> Tuple[bool, DataFrame]:
+            result= talib.MACD(df[variable],fastperiod=12, slowperiod=26, signalperiod=9)
+            return result[0], result[1]
+
+
+class Statistical():
+    store_request=dict()
     time_restriction=60
     
     def __init__(self, ticker:str, today: dt = None, hist: dt = None, interval:str='1wk') -> None:
@@ -57,81 +100,87 @@ class Statistical():pass
         if status:return [True, value['Open','High','Low','Close']]
         return [False, None]
 
-    def rolling_mean(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:return [True, pd.Series(value['Close']).rolling(window=12).mean()]
-        return [False, None]
+    # def rolling_mean(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:return [True, pd.Series(value['Close']).rolling(window=12).mean()]
+    #     return [False, None]
     
-    def rolling_std(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:return [True, pd.Series(value['Close']).rolling(window=12).std()]
-        return [False, None]
+    # def rolling_std(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:return [True, pd.Series(value['Close']).rolling(window=12).std()]
+    #     return [False, None]
 
-    #Exponentially Weighted Moving Average
-    def exponential_wma(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:return [True, value['Close'].ewm(halflife=200).mean()]
-        return [False, None]
+    # #Exponentially Weighted Moving Average
+    # def exponential_wma(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:return [True, value['Close'].ewm(halflife=200).mean()]
+    #     return [False, None]
 
-    #https://mrjbq7.github.io/ta-lib/funcs.html
-    #Bollinger Bands
-    def BBANDS(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:
-            value['upperband'], value['middleband'], value['lowerband'] = talib.BBANDS(value['Close'],
-                                                                                  timeperiod=20, nbdevup=2,
-                                                                                  nbdevdn=2, matype=0)
-            return [True, value[['upperband','middleband','lowerband']]]
-        return [False, None]
+    # #https://mrjbq7.github.io/ta-lib/funcs.html
+    # #Bollinger Bands
+    # def BBANDS(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:
+    #         value['upperband'], value['middleband'], value['lowerband'] = talib.BBANDS(value['Close'],
+    #                                                                               timeperiod=20, nbdevup=2,
+    #                                                                               nbdevdn=2, matype=0)
+    #         return [True, value[['upperband','middleband','lowerband']]]
+    #     return [False, None]
 
-    #Average Directional Movement Index
-    def ADX(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:
-            ADX=talib.ADX(value['High'], value['Low'], value['Close'], timeperiod=7)
-            return [True, ADX]
-        return [False, None]
+    # #Average Directional Movement Index
+    # def ADX(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:
+    #         ADX=talib.ADX(value['High'], value['Low'], value['Close'], timeperiod=7)
+    #         return [True, ADX]
+    #     return [False, None]
     
-    #Average True Range
-    def ATR(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:
-            ATR = talib.ATR(value['High'], value['Low'], value['Close'], timeperiod=14)
-            return [True, ATR]
-        return [False, None]
+    # #Average True Range
+    # def ATR(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:
+    #         ATR = talib.ATR(value['High'], value['Low'], value['Close'], timeperiod=14)
+    #         return [True, ATR]
+    #     return [False, None]
     
-    #Moving Average Convergence/Divergence
-    def MACD(self) -> Tuple[bool, DataFrame]:
-        status, value =self.request_external_data(
-                                                    yahoo_finance.market_value, 
-                                                    self.ticker, self.today,
-                                                    self.hist, self.interval
-                                                )
-        if status:
-            MACD = talib.MACD(value['close'],fastperiod=12, slowperiod=26, signalperiod=9)
-            return [True, MACD]
-        return [False, None]"""
+    # #Moving Average Convergence/Divergence
+    # def MACD(self) -> Tuple[bool, DataFrame]:
+    #     status, value =self.request_external_data(
+    #                                                 yahoo_finance.market_value, 
+    #                                                 self.ticker, self.today,
+    #                                                 self.hist, self.interval
+    #                                             )
+    #     if status:
+    #         MACD = talib.MACD(value['close'],fastperiod=12, slowperiod=26, signalperiod=9)
+    #         return [True, MACD]
+    #     return [False, None]
+
+
+   
+
+
+
