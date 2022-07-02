@@ -5,6 +5,7 @@ import pandas as pd
 from app import globals_variable, yahoo_finance
 from app.modules import statistical_models
 
+
 def filter_test_df(test_df, ticker, model_id, pred_scope):
 
     test_df = test_df.query('Scope==@pred_scope & Ticker==@ticker & Model==@model_id')
@@ -68,7 +69,10 @@ def plot_importance(importance_df: pd.DataFrame, px_theme: str ='plotly_dark'):
         vis = metric == 'mae'
         mdf = importance_df[importance_df['Metric']==metric]
 
-        mdf = mdf.sort_values('Importance').tail(5)
+        mdf = mdf.sort_values('Importance')
+        mdf = mdf.query('Importance > 0')
+        show = min(mdf.shape[0], 10)
+        mdf = mdf.tail(show)
         fig.add_trace(
             go.Bar(
                 orientation='h', 
@@ -107,14 +111,14 @@ def plot_importance(importance_df: pd.DataFrame, px_theme: str ='plotly_dark'):
     )
     fig.update_layout(
         title={
-            'text': "Error Perturbation",
+            #'text': "Error Perturbation",
             'y':0.9,
             'x':0.5,
             'xanchor': 'center',
             'yanchor': 'top',
             'font': dict(
             #family="Courier New, monospace",
-            size=25
+            #size=25
             )
             },
         template=px_theme
@@ -123,7 +127,7 @@ def plot_importance(importance_df: pd.DataFrame, px_theme: str ='plotly_dark'):
     fig.update_yaxes(tickmode='linear')
     #fig.update_layout(updatemenus=[dict(font=dict(color='gray',), bgcolor='black')])
     fig.update_traces(marker_color='rgba(50, 171, 96, 0.6)')
-    fig.update_layout(width=750, height=500)
+    #fig.update_layout(width=750, height=500)
 
     return fig
 
@@ -454,6 +458,43 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     return fig
+
+
+
+def plot_lime(lime_df, px_theme='plotly_dark'):
+
+    fig = px.bar(
+        lime_df, 
+        x='LIME Weight', 
+        y='Feature',
+        animation_frame='Date',
+        orientation='h', 
+        color='LIME Weight', 
+        template=px_theme,
+        title="",
+        color_continuous_scale='viridis',
+        )
+    
+    fig.update_traces(
+        hovertemplate="<br>".join([
+            "Feature: %{y}",
+            "Contribution: $%{x:,.2f}"])
+            )
+    fig.update_layout(
+            xaxis_tickformat = '$',
+            title={
+                'y':0.95,
+                'x':0.5,
+                'xanchor': 'center',
+                'yanchor': 'top',
+                'font': dict(
+                #family="Courier New, monospace",
+                size=25)
+                },
+            )
+    
+    return fig
+
 
 if '__main__'==__name__:
     pass

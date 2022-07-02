@@ -1,10 +1,10 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc, callback
-from matplotlib.pyplot import text
+from matplotlib.pyplot import plot, text
 import pandas as pd
 import datetime as dt
-from app.dashboard.crypto_plots import plot_model_test, plot_importance
+from app.dashboard.crypto_plots import plot_model_test, plot_importance, plot_lime
 from dash.dependencies import Input, Output
 from app.modules.models_meta import pred_models
 from app.api import yahoo_finance, GoogleTrends
@@ -23,13 +23,14 @@ CONTENT_STYLE = {
 # Read predictions obtained during model testing
 preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
 ft_importance_df = pd.read_csv('./app/dashboard/test_models/ft_importance.csv')
+lime_df = pd.read_csv('./app/dashboard/test_models/lime.csv')
 
 layout = html.Div([
         # Menus and controls row
         dbc.Row([
                 dbc.Col(
                     html.Div(
-                        className='dropdown',
+                        className='dropdown-fc',
                         children=[
                             html.H3('Cryptocurrency:'),
                             dcc.Dropdown(
@@ -44,7 +45,7 @@ layout = html.Div([
                 ),
                 dbc.Col(
                     html.Div(
-                        className='dropdown',
+                        className='dropdown-fc',
                         children=[
                             html.H3('Model:'),
                             dcc.Dropdown(
@@ -59,7 +60,7 @@ layout = html.Div([
                 ),
                 dbc.Col(
                     html.Div(
-                        className='dropdown',
+                        className='dropdown-fc',
                         children=[
                             html.H3('Time Scope:'),
                             dcc.Dropdown(
@@ -74,7 +75,7 @@ layout = html.Div([
                 )
         ],
         style={'margin-right': '20px','margin-top': '20px', 'margin-bottom': '50px'}),
-        # Main content starts here in two columns                 
+        # Main content starts here in two columns        
         dbc.Row([
                 # Left column of main content
                 dbc.Col(
@@ -98,7 +99,35 @@ layout = html.Div([
                                     id='about-model',
                                     className='text-just',
                                     children=['Loading model description...']
-                                    )
+                                    ),
+                                html.Hr(),
+                                html.H3('Features', style={'color': 'white'}),
+                                dbc.Row(
+                                    children=[
+                                        dbc.Col(
+                                            html.Img(className='feature-img-on', src=dash.get_asset_url('autoreg_iconxs.png')),
+                                            className='feature-container',
+                                            width={"size": 3, "offset": 0, 'order': 'first'}    
+                                        ),
+                                        dbc.Col(
+                                            html.Img(className='feature-img-on', src=dash.get_asset_url('volume.png')),
+                                            className='feature-container',
+                                            width={"size": 3, "offset": 0, 'order': 2}
+                                        ),
+                                        dbc.Col(
+                                            html.Img(className='feature-img-on', src=dash.get_asset_url('int_rate.png')),
+                                            className='feature-container',
+                                            width={"size": 3, "offset": 0, 'order': 3}
+                                        ),
+                                        dbc.Col(
+                                            html.Img(className='feature-img-on', src=dash.get_asset_url('google_logo.png')),
+                                            className='feature-container',
+                                            width={"size": 3, "offset": 0, 'order': 'last'}
+                                        ),
+                                        ],
+                                        #width={"size": 2, "offset": 0, 'order': 'first'},
+                                        className='features-container'
+                            ),
                             ]
                         ),
                     ],
@@ -124,40 +153,79 @@ layout = html.Div([
                             ],
                             style={'padding': '1rem 1rem 1rem 1rem'}
                         ),
-                        html.Div(
-                            className='graph-cointainer',
-                            children=[
-                                html.H3('Feature Importance', className='graph-title'),
-                                html.P(
-                                    """
-                                    Cryptocurrency prices might be affected by many yet unknown factors. 
-                                    Some of our models are purely statistical and they provide us with valuable 
-                                    insights about the autoregressive nature of crypto prices, for which we report 
-                                    an autocorrelation plot below. On the other hand, for our deep learning models, 
-                                    we wanted to consider both the time structure of the data, and other 
-                                    sources of information that the team identified as potential predictors.
-                                    It is difficult to measure feature importance in Recurrent Neural Networks,
-                                    such as the ones we have used. However, we built our own measure of feature importance as
-                                    the error perturbation. That is, we measured by how much the model error increased when
-                                    the data on each one of the feature-lag combinations was shuffled. A greater error perturbation,
-                                    suggests a greater feature importance. Below we report top 20 feature-lag combinations for the
-                                    deep learning models following this criteria.
-                                    """,
-                                    className='text-just graph-info'
-                                    ),
-                                dcc.Loading(
-                                    children=[dcc.Graph(id='importance-plot',)],
-                                    type='circle',
-                                    color='#A0A0A0'
-                                ),
-                            ],
-                            style={'padding': '1rem 1rem 1rem 1rem'}
-                        ),
-
                     ],
                     width={"size": 7, "offset": 0, 'order':'last'},
                 )
             ]
+        ),
+        html.Hr(),
+        html.H1('EXPLAINABLE MODELS'),
+        html.H2('We Love Black. Just Not BLACK BOX!'),
+        dbc.Row(
+            children=[
+                dbc.Col(
+                    className='side-graph-desc',
+                    children=[
+                        html.H3('Error Perturbation', className='graph-title'),
+                        html.P(
+                            ["""
+                            To measure feature importance in Recurrent Neural Networks 
+                            we built ERROR PERTURBATION as a measure of feature importance. 
+                            It tells us by how much the model error increased when
+                            the true values on each one of the feature-lag combinations were shuffled. 
+                            A greater error perturbation, suggests a greater feature importance. 
+                            We offer you the top feature-lag combinations for the deep learning 
+                            models following this criteria. Toggle the buttons to change the error metric.
+                            """],
+                            className='graph-info'
+                        )
+                    ],
+                    width={"size": 4, "offset": 0, 'order':'first'},
+                ),
+                dbc.Col(
+                    children=[
+                        dcc.Loading(
+                            children=[dcc.Graph(id='importance-plot', className='graph-container')],
+                            type='circle',
+                            color='#A0A0A0'
+                        )
+                    ],
+                    width={"size": 8, "offset": 0, 'order':'last'},
+                )
+            ],
+            style={'padding': '1rem 1rem 1rem 1rem'}
+        ),
+        dbc.Row(
+            children=[
+                dbc.Col(
+                    children=[
+                        html.H3('Feature Contribution Across Time', className='graph-title'),
+                        html.P(
+                            ["""
+                            To measure feature importance in Recurrent Neural Networks 
+                            we built ERROR PERTURBATION as a measure of feature importance. 
+                            It tells us by how much the model error increased when
+                            the true values on each one of the feature-lag combinations were shuffled. 
+                            A greater error perturbation, suggests a greater feature importance. 
+                            We offer you the top feature-lag combinations for the deep learning 
+                            models following this criteria. Toggle the buttons to change the error metric.
+                            """],
+                            className='graph-info'
+                        )
+                    ],
+                    width={"size": 4, "offset": 0, 'order':'last'},
+                ),
+                dbc.Col(
+                    children=[
+                        dcc.Loading(
+                            children=[dcc.Graph(id='lime-plot', className='graph-container',)],
+                            type='circle',
+                            color='#A0A0A0'
+                        )],
+                    width={"size": 8, "offset": 0, 'order':'first'},
+                )
+            ],
+            style={'padding': '1rem 1rem 1rem 1rem'}
         ),
     ],
     style=CONTENT_STYLE
@@ -181,19 +249,25 @@ def populate_time_ddown(sel_coin, sel_model):
 @callback(
     Output('test-plot', 'figure'),
     Output('importance-plot', 'figure'),
+    Output('lime-plot', 'figure'),
     [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
 )
 def update_models_plots(sel_coin, sel_model, sel_time):
+    
     model_preds = preds_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
     model_preds = model_preds[['Observed', 'Predicted']]
 
     ft_importance = ft_importance_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
     ft_importance = ft_importance[['Feature', 'Importance', 'Metric']]
+    ft_importance.sort_values(by=['Metric', 'Importance'], inplace=True)
+
+    sublime_df = lime_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
 
     fig_test = plot_model_test(model_preds, px_theme='plotly_white')
     fig_imp = plot_importance(ft_importance, px_theme='plotly_white')
+    fig_lime = plot_lime(sublime_df, px_theme='plotly_white')
 
-    return fig_test, fig_imp
+    return fig_test, fig_imp, fig_lime
 
 
 @callback(
@@ -234,3 +308,19 @@ def update_close(sel_coin, n):
     else:
         return 'Unable to retrieve current price. Retrying...'
 
+
+
+    """
+    Cryptocurrency prices might be affected by many yet unknown factors. 
+    Some of our models are purely statistical and they provide us with valuable 
+    insights about the autoregressive nature of crypto prices, for which we report 
+    an autocorrelation plot below. On the other hand, for our deep learning models, 
+    we wanted to consider both the time structure of the data, and other 
+    sources of information that the team identified as potential predictors.
+    It is difficult to measure feature importance in Recurrent Neural Networks,
+    such as the ones we have used. However, we built our own measure of feature importance as
+    the error perturbation. That is, we measured by how much the model error increased when
+    the data on each one of the feature-lag combinations was shuffled. A greater error perturbation,
+    suggests a greater feature importance. Below we report top 20 feature-lag combinations for the
+    deep learning models following this criteria.
+    """,

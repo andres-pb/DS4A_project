@@ -1,0 +1,56 @@
+.dropdown-title-fc{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    font-size:1.2rem;
+    color:black;
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-fc{
+    width: 100%;
+    height: auto;
+}
+.features-container {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 0 4px;
+    margin-top: 0;
+}
+
+.feature-container {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem 1rem 1rem 1rem
+}
+
+.feature-img-on{
+    opacity: 1;
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+.feature-img-off{
+    opacity: 0.2;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+.graph-cointainer{
+    width: 100%;
+    height: auto;
+}
+
+.side-graph-desc {
+    padding-top: 2em;
+    margin-top: 2em
+}
