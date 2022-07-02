@@ -1,2 +1,16 @@
 [9432] urllib3.connectionpool - 2022-07-02 08:54:38,047 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
 [9432] urllib3.connectionpool - 2022-07-02 08:54:38,491 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683678&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1003
+[40004] urllib3.connectionpool - 2022-07-02 08:55:07,054 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[36172] urllib3.connectionpool - 2022-07-02 08:55:07,070 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[39276] urllib3.connectionpool - 2022-07-02 08:55:07,070 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[40004] urllib3.connectionpool - 2022-07-02 08:55:07,340 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683707&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[39276] urllib3.connectionpool - 2022-07-02 08:55:07,442 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683707&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[36172] urllib3.connectionpool - 2022-07-02 08:55:07,576 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683707&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[40948] urllib3.connectionpool - 2022-07-02 08:55:38,043 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[40948] urllib3.connectionpool - 2022-07-02 08:55:38,492 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683738&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[26432] urllib3.connectionpool - 2022-07-02 08:56:07,039 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[18308] urllib3.connectionpool - 2022-07-02 08:56:07,055 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[23940] urllib3.connectionpool - 2022-07-02 08:56:07,070 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[18308] urllib3.connectionpool - 2022-07-02 08:56:07,308 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683767&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[23940] urllib3.connectionpool - 2022-07-02 08:56:07,411 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683767&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
+[26432] urllib3.connectionpool - 2022-07-02 08:56:07,552 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656683767&period2=1656824400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1008
