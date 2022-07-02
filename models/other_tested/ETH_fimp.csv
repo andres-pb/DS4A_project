@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Feature,Importance,Metric,Ticker,Model,Scope
 Gtrend t-2,-0.00035842830823861957,mae,ETH,Deep Learning LSTM,1 day ahead
 Close t-9,-0.0002632277260667913,mae,ETH,Deep Learning LSTM,1 day ahead
@@ -959,3 +960,966 @@ FVX t-2,5.634283514303982e-05,mse,ETH,Bidirectional LSTM,1 day ahead
 Close t-3,0.0002942577970329119,mse,ETH,Bidirectional LSTM,1 day ahead
 Close t-2,0.0017974054512509916,mse,ETH,Bidirectional LSTM,1 day ahead
 Close t-1,0.018842585356810226,mse,ETH,Bidirectional LSTM,1 day ahead
+=======
+Feature,Importance,Metric,Ticker,Model,Scope
+Gtrend t-2,-0.00035842830823861957,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-9,-0.0002632277260667913,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-1,-0.00023811738387270742,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-3,-0.00019283592700958252,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-1,-0.00017382130026817252,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-2,-0.00013090247909227845,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-12,-0.00010099227476782421,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-11,-9.794904985048133e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-13,-9.782488147417473e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-4,-8.344208891713709e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-14,-7.957200944055248e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-9,-6.291865505792665e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-7,-5.296453345852645e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-13,-4.971336945539667e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-14,-4.319721657055492e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-16,-4.0470865762524955e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-11,-3.91519213621995e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-5,-3.4100313981374336e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-12,-2.007260918617318e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-8,-1.7405293365496677e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-4,-1.3780345519381898e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-17,-1.186231772104876e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-16,-1.0645637909569017e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-18,-1.0159860054651665e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-8,-9.269324338725266e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-15,-8.557240168252656e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-12,-6.6099067529031e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-15,-6.503917173834861e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-14,-6.4216554164879536e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-18,-5.824118852613275e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-16,-4.654129346210595e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-20,-4.476308822630448e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-17,-3.875046968460777e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-13,-3.832827011742562e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-17,-3.4737090269729154e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-21,-3.1399230162286462e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-25,-2.959122260410424e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-19,-2.5915602842943586e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-20,-2.336005369821259e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-23,-1.9334256649017334e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-18,-1.9297003746032715e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-19,-1.846998929976723e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-22,-1.8080075581856925e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-20,-1.7690161863946618e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-18,-1.646578311920166e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-22,-1.499305168788101e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-15,-1.389533281326294e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-26,-1.3664364814751362e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-24,-1.1670092741646043e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-17,-1.1126200358049787e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-21,-7.828076680482798e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-22,-5.389253298418439e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-28,-4.1301051775452513e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-25,-3.697971502937547e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-31,-2.5207797686027655e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-32,-1.9470850626604475e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-25,-1.8700957298348198e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-27,-1.808007558182223e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-22,-1.50998433430527e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-34,-1.4727314313206508e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-30,-1.3932585716039392e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-33,-1.3783574104309082e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-35,-1.2069940566808435e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-34,-1.204510529824454e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-31,-9.909272193769914e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-35,-9.263555208680052e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-30,-8.493661880423775e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-32,-8.344650268346521e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-32,-8.170803387705372e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-33,-7.425745328012989e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-27,-7.102886835641531e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-23,-6.581346193718085e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-38,-6.482005119115564e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-37,-5.21540641784668e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-39,-4.94221846260301e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-36,-3.5514434178207654e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-36,-3.3527612686157227e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-38,-3.178914387974574e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-41,-3.104408581935947e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-42,-3.0547380448081585e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-36,-3.0050675073334254e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-40,-2.905726432730904e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-37,-2.632538477487234e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-39,-2.4338563282821912e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-41,-1.862645149230957e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-35,-1.7136335371537026e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-40,-1.6639630000259142e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-36,-1.589457193987287e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-42,-1.3659397758714054e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-44,-1.2914339701797228e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-43,-1.2417634327049898e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-28,-1.1920928955772014e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-40,-1.1920928955772014e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-43,-1.1424223581024684e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-44,-1.1175870895385742e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-45,-8.692344028587984e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-46,-5.960464476151284e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-41,-5.4637591048734e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-50,-4.2219956697397976e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-56,-3.973642984100856e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-44,-3.973642984100856e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-56,-3.973642984100856e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-57,-3.725290298461914e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-51,-3.725290298461914e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-47,-3.725290298461914e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-53,-3.4769376093535254e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-50,-3.4769376093535254e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-55,-3.4769376093535254e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-41,-3.2285849237145836e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-49,-3.2285849237145836e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-45,-2.980232238075642e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-39,-2.980232238075642e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-46,-2.7318795524367e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-55,-2.4835268633283114e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-51,-2.4835268633283114e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-59,-2.2351741776893697e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-59,-2.2351741776893697e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-52,-2.2351741776893697e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-50,-2.2351741776893697e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-60,-2.2351741776893697e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-48,-2.2351741776893697e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-54,-1.986821492050428e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-46,-1.986821492050428e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-54,-1.986821492050428e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-52,-1.986821492050428e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-50,-1.986821492050428e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-47,-1.7384688064114862e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-29,-1.7384688064114862e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-54,-1.7384688064114862e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-57,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-49,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-40,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-56,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-54,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-47,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-53,-1.4901161173030975e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-60,-1.2417634316641557e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-59,-1.2417634316641557e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-53,-1.2417634316641557e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-49,-1.2417634316641557e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-59,-1.2417634316641557e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-48,-9.93410746025214e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-49,-7.450580603862722e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-55,-7.450580603862722e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-46,-7.450580603862722e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-58,-4.967053712778835e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-55,-4.967053712778835e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-52,-4.967053712778835e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-58,-4.967053712778835e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-57,-4.967053712778835e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-53,0.0,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-60,0.0,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-58,2.483526891083887e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-52,2.483526891083887e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-60,2.483526891083887e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-56,2.483526891083887e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-42,2.483526891083887e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-48,4.967053747473305e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-58,4.967053747473305e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-48,7.450580603862722e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-57,9.93410746025214e-10,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-51,1.2417634351336027e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-51,1.2417634351336027e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-47,3.2285849271840306e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-45,4.718701044487128e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-45,4.967053733595517e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-43,5.2154064192344585e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-42,5.4637591048734e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-44,6.705522536537556e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-39,6.953875225645945e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-43,9.437402088974256e-09,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-37,2.2848447165518815e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-37,2.3096799851157757e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-33,2.409021059718297e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-29,2.4338563282821912e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-38,2.45869159719303e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-35,2.5083621343208184e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-30,2.8063853581283826e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-34,3.6259492238593927e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-26,3.8246313730644355e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-38,3.849466641975274e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-23,5.48859437309035e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-34,5.7369470597701255e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-33,7.376074790885201e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-24,8.816520373142178e-08,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-27,1.0356307029654732e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-31,1.2367963790962944e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-32,1.3758738835745188e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-30,1.770754655197604e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-31,1.9868214925361505e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-27,2.178053061172025e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-25,2.386669317906709e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-29,2.562999725334858e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-19,3.032386302961876e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-26,3.3179918925221874e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-21,3.899137179068368e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-28,3.9190053939888725e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-29,3.958741823829881e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-28,4.3809413910120276e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-26,6.233652432782733e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-24,7.53005345664054e-07,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-24,1.1049211025258854e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-23,1.3540188471480863e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-3,1.5044639952582761e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-20,1.5303492546074604e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-19,1.6552706559522234e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-21,1.9957621892295607e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-13,5.869070688883926e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-11,8.245805899302627e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-16,8.906672398251159e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-15,9.966890017192032e-06,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-6,1.124019424120562e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-9,1.2410928805668686e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-7,1.7855019434871028e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-14,2.6790052652360397e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-8,2.839044533155602e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Volume t-10,2.905304233233319e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-12,3.010841780276899e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-11,3.7501504023870064e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-1,4.206858648232378e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-10,5.167624157649195e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-9,6.774856905510801e-05,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-5,0.00010069454018747995,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-3,0.00011900757015119792,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-10,0.0001240211907400958,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-7,0.0001351567735946857,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-6,0.00013978177611505965,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-4,0.0001523759747857449,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-2,0.0001594333036119,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-5,0.0002142903846619297,mae,ETH,Deep Learning LSTM,1 day ahead
+FVX t-6,0.0002674965245896832,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-10,0.0003363264233276521,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-8,0.0010555406006922292,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-6,0.002734541133368365,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-7,0.0031187257377836217,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-5,0.007842073786917092,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-4,0.00827093834245455,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-1,0.010965607510803034,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-3,0.015056264345283885,mae,ETH,Deep Learning LSTM,1 day ahead
+Close t-2,0.016898280621207032,mae,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-2,-4.083866762009947e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-1,-2.3088041614447016e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-1,-2.128226641367353e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-3,-1.754125799908698e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-2,-1.707313060411871e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-11,-9.092722371481466e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-9,-7.794803622402768e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-4,-7.242191738168063e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-13,-6.7529395146831254e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-12,-6.553766995539634e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-13,-6.482364413701834e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-14,-6.123712960280896e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-14,-5.771509363456046e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-10,-5.630144695418582e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-3,-5.086181473527461e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-11,-4.592658808933066e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-4,-3.2156951163839296e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-7,-2.4891139847416175e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-12,-2.1871399359613217e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-15,-2.1054992580347293e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-16,-1.933303187606067e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-8,-1.7920055655059816e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-5,-1.579521781412815e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-7,-1.4321105869595074e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-17,-1.42387802327254e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-16,-1.2904009393111936e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-17,-1.0139350064375212e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-5,-8.403916467070345e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-14,-5.929650157430934e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-19,-4.368044746411257e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-18,-3.9664159876711715e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-21,-3.769552297957189e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-16,-3.148903533721492e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-8,-2.9564015088866073e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-22,-2.8496620261934946e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-17,-2.812937654433738e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-19,-2.655394535453631e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-18,-2.5289643626079036e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-16,-2.3610845534347696e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-20,-2.3326360544355385e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-23,-2.2495656560759733e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-25,-2.2152813806421666e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-20,-2.205239465263506e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-18,-1.903270869798527e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-21,-1.468426718310989e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-20,-1.365333123833773e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-20,-1.3576292883757564e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-18,-1.2733596011123283e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-13,-1.2654873264681017e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-15,-9.4286930681e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-22,-9.12158795035329e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-24,-7.608327912372696e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-22,-6.219195686609294e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-21,-5.2950877901542653e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-23,-4.8370884624332824e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-26,-3.510872462154577e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-25,-2.3287012314993083e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-31,-2.0835756434425812e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-24,-2.0025391166047374e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-28,-1.9104547370300817e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-33,-1.8642806408862567e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-32,-1.7274150951448672e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-35,-1.5966094798688935e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-34,-1.4913059110744156e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-26,-1.156430086434769e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-32,-9.939056319283046e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-38,-7.283352029558571e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-34,-6.882029547150906e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-37,-6.304677474533449e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-30,-5.650961512745564e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-33,-5.47009291400162e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-36,-5.253473297659947e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-29,-5.189695923219287e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-36,-4.118964474619097e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-22,-4.033978025317492e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-32,-3.6952559614653047e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-35,-3.648096799039463e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-39,-3.3361333240215785e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-27,-3.253435737178914e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-37,-2.9430277106393815e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-42,-2.868982434652348e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-41,-2.6418899971326903e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-29,-2.6194350670732253e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-38,-2.590766126370908e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-43,-1.5269719848363256e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-40,-1.4872077117988186e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-42,-1.4434708079432562e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-44,-1.3034525357929344e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-43,-1.2108690450058496e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-39,-1.1276713074610811e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-44,-1.0266655440290678e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-35,-8.423023478785346e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-41,-7.36807800102296e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-27,-7.118659750213197e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-40,-5.404757106274027e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-45,-5.151465020617613e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-39,-4.674500066539911e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-45,-4.534890093652044e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-36,-4.228325625830337e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-46,-4.119943232058776e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-40,-3.882027154161055e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-44,-1.7230771648911458e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-41,-1.6757976495189453e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-56,-1.638008945061692e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-47,-1.4720600780004922e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-57,-1.3256754678378502e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-56,-1.3192466238355627e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-46,-1.2451904980205486e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-50,-1.2114326512421836e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-55,-1.1794084806004967e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-51,-1.1643752281798037e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-55,-1.1177890470864815e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-49,-1.0170054859023892e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-51,-9.552004413132531e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-57,-9.086384270863557e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-60,-7.198381148966482e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-52,-7.173857406554685e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-47,-6.577992924666765e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-54,-6.541330281259472e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-59,-5.998062333270604e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-52,-3.5899498217889514e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-49,-3.3947300699666005e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-59,-3.124518894483119e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-54,-2.924632172725261e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-57,-2.6318674453337798e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-50,-1.8662232132912737e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-60,-1.7617106775127955e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-54,-1.4052518697293959e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-53,-1.3326975807637087e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-53,1.6546401835487723e-12,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-55,4.6068008349026135e-12,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-58,1.3741592499311173e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-59,3.4123681961692465e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-53,3.7865207497267406e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-48,4.1944517087041944e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-41,5.423594993253511e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-58,5.5433751339206694e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-60,6.329408741914677e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-48,6.400679595716663e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-54,7.096650003757254e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-60,7.105541979454677e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-53,7.534603041307875e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-49,7.965004003573917e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-50,8.09082824609203e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-46,8.835575023360964e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-59,9.477376565827922e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-56,9.692169137577589e-11,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-50,1.0500929444566542e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-52,1.2030227790511827e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-57,1.279293793295111e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-49,1.286960269256121e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-58,1.3738289607496956e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-55,1.4006661911043772e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-48,1.5833749979557443e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-51,1.6040819952704843e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-58,1.6361188445723762e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-47,1.7442606885763323e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-51,1.791872338442052e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-46,1.8915471554532826e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-56,1.8948277495656196e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-48,2.0729569796817948e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-44,2.586762115272534e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-52,2.7979403494603206e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-31,3.2850754278293537e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-47,3.794901257386102e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-42,4.649294957272815e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-43,6.928062199450247e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-45,7.041922891158625e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-45,7.115136218920071e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-38,8.857703097473607e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-30,9.57934965075194e-10,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-37,1.208886428244113e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-42,1.2276423163627703e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-43,1.233308949974768e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-40,1.3119011135678121e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-19,1.340852129197781e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-39,1.3933306479071983e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-37,1.4196177389007303e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-24,1.6889169611455923e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-34,2.2347229806669172e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-36,2.656401055069549e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-33,3.1567200648157517e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-38,3.35705767806789e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-30,3.41743566539994e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-26,4.447996383542818e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-28,5.7026012850649316e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-28,6.67024053807759e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-35,6.970503136282877e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-25,7.654939238261119e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-29,8.211390513292866e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-34,9.476754594603398e-09,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-19,1.1647697554075312e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-27,1.4834928339360273e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-33,1.498343991847978e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-30,1.5168874924805648e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-31,1.9016904406450943e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-31,2.13220901486115e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-32,2.36034424991316e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-9,2.446780250024011e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-27,2.757205943551208e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-28,4.066270745139468e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-29,4.291815041248051e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-25,5.3022147864347294e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-26,5.8772487485916555e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-15,5.9448242510553445e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-23,6.099411190398432e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-24,9.73577619714245e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-23,9.943133460858788e-08,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-11,1.2613165697940472e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-21,2.795620029035807e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-17,5.275114359280623e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-12,5.72417336714131e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-15,7.901773213751101e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-6,7.943884675308543e-07,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-13,1.0077351055930682e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-9,1.7236308688308322e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-14,1.7971457747245363e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Volume t-10,2.0460218239037008e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-12,2.062197263123962e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-8,3.582138283484944e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-11,3.940441568302559e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-9,6.617605334765164e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-3,7.659167040190845e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-10,7.851760603231998e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-1,8.210968105213214e-06,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-4,1.1572887053077968e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Gtrend t-6,1.3730710255037719e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-5,1.4570221593549924e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-2,1.945145604291933e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-7,2.3034656592543475e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-10,2.409294729566365e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+FVX t-6,3.455113789245252e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-8,5.724176015223779e-05,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-7,0.00021589805998807458,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-6,0.00022525402177439786,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-4,0.0007277144484772247,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-5,0.0007331047386103086,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-1,0.001294697334651585,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-3,0.0016262168570290983,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-2,0.0018317609683619793,mse,ETH,Deep Learning LSTM,1 day ahead
+Close t-60,-0.0002538974271789271,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-1,-0.00022531982460632927,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-59,-0.00019101326664288862,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-59,-0.00017473529027925427,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-54,-0.0001506986677996154,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-2,-0.00014310722205851042,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-2,-0.0001360409468484404,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-56,-0.00013210128301056195,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-53,-0.00011871593693892069,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-3,-0.00011651565631230765,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-55,-0.00011097503361295197,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-58,-0.00011028101596903886,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-57,-9.977426727753036e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-60,-9.25171415430033e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-52,-8.520347376664295e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-55,-6.958184142907484e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-56,-6.704082091649188e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-51,-5.91897716124834e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-57,-5.132221235505663e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-57,-4.2436898287853686e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-4,-4.242534438769069e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-54,-4.121586680412223e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-56,-3.9162663092479066e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-5,-3.6978349089621804e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-58,-3.52138217861557e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-5,-3.4797693825482784e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-53,-3.4512703617414764e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-50,-3.041078646977627e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-58,-2.932672699292385e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-52,-2.5173152486481637e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-6,-2.3484726746875184e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-60,-2.013817429542472e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-7,-1.9496110548841705e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-6,-1.2397145231563683e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-55,-1.1049583554266496e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-8,-9.597217043241096e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-9,-9.2916190624244e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-54,-9.26268597443991e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-59,-8.935978015264107e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-11,-7.3483834664017644e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-46,-6.828332940737869e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-12,-6.341810027756661e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-47,-6.1371674140303645e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-13,-5.299597978590531e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-43,-4.617621501286362e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-45,-4.4477482636778864e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-45,-4.416331648826599e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-13,-4.023810227710145e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-11,-4.013876120249893e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-42,-3.989289204277963e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-44,-3.83319954077449e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-10,-3.7554651498780678e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-50,-3.5976370175681838e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-43,-3.42130661010534e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-44,-3.3033390839896926e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-14,-3.1369427839905706e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-41,-3.1297405560792857e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-43,-3.105650345485572e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-16,-2.862885594367981e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-41,-2.8505921363837505e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-48,-2.837181091307206e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-39,-2.654641866682572e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-44,-2.301856875417535e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-15,-2.2890667120620267e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-17,-2.2735446691506123e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-42,-2.1254022916153414e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-11,-2.1045406659453425e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-40,-1.972913742064042e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-39,-1.7496446768454355e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-19,-1.7038236061715784e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-49,-1.7009675502763222e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-45,-1.593182484310035e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-42,-1.5756736199065702e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-20,-1.5247613191597675e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-18,-1.5086183945342557e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-10,-1.4829138914734807e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-51,-1.385559638342193e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-40,-1.3820827007293701e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-37,-1.202772061028451e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-47,-1.1071562767035747e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-52,-8.773058652877808e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-38,-7.433195908859713e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-21,-7.039556900664823e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-18,-6.917864084250713e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-36,-6.914138793931435e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-17,-6.893028815582736e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-37,-6.853292385741727e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-36,-6.750226020819927e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-22,-6.660819053642963e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-19,-6.382664044686515e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-13,-6.008893251412128e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-17,-5.724529425314706e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-38,-5.652507146201857e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-35,-3.8892030715734216e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-34,-3.817180792495267e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-14,-3.688037395477295e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-23,-3.2881895701067365e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-51,-2.8635064760682005e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-20,-2.781550089529794e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-16,-2.5431315104143537e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-35,-2.459933360413058e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-29,-2.3866693178720144e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-38,-2.353141705206674e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-24,-2.281119426093825e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-37,-2.178053061172025e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-26,-2.0576020081861102e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-32,-1.9967555999617081e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-27,-1.9893050193578454e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-25,-1.8663704395155412e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-28,-1.4578302701129253e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-20,-1.2516975402693253e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-36,-1.2330710887770158e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-34,-1.1983017126834805e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-31,-1.0865430037296231e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-31,-9.536743163923722e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-23,-7.76102145501334e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-30,-4.830459753718541e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-36,-2.2475918133590955e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-28,-9.809931117432669e-09,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-30,-8.692344028587984e-09,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-33,2.3593505239782875e-09,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-19,4.2219956732092445e-09,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-21,1.043081283499947e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-33,1.1672576270133073e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-22,2.359350522243564e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-29,2.4711092314749772e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-21,2.4835268657569243e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-28,4.9049655597571684e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-22,5.289912223885307e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-35,6.183981895654944e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-27,6.258487701346627e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-25,6.258487701346627e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-34,6.668269634385604e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-24,6.866951783590647e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-25,7.574756940090244e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-26,8.046627044885901e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-31,8.990367253783327e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-30,9.238719940116158e-08,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-32,1.0939935843334858e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-26,1.1399388313501624e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-39,1.1449058850629412e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-23,1.2057522932873432e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-24,1.21692816417579e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-40,1.2355546156680997e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-29,1.5559295813219465e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-25,1.7198423544681485e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-27,1.7446776231014316e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-21,1.8986562887873815e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-26,2.065052588789973e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-29,2.503395080573345e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-28,2.928078174611881e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-33,3.121793270104145e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-22,3.591179847731163e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-24,3.633399804428561e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-8,3.7004550297939365e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-27,4.7062834103786533e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-18,4.835426807396626e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-32,5.289912223815918e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-15,5.481143792486487e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-38,5.565583705915977e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-42,5.617737770073628e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-40,5.816419919348059e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-33,6.354103485733953e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-32,6.881852944694289e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-23,7.274250189460985e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-35,7.597108682005915e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-37,9.647260109588163e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-30,9.688238302857366e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-16,9.807447592415086e-07,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-14,1.0023514429718938e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-20,1.00520749886715e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-12,1.0798374811826772e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-19,1.1311223109579382e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-48,1.1883676052093506e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-39,1.3579924901321871e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-34,1.3886640469230882e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-18,1.6104429960243916e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-31,1.7038236061750478e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-12,2.016872167588668e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-15,2.0631899436303336e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-9,2.169112364450859e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-41,2.199411392213302e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-43,2.222880721092918e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-52,2.268080910045739e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-10,2.672771612803604e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-46,3.2354146242141724e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-9,3.288686275481484e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-7,3.3130248387643058e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-17,3.896281123162704e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-49,3.964950640995141e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-46,4.093224803606438e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-44,4.192317525547606e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-16,5.275631944339637e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-1,6.08993013211101e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-54,6.758545835813118e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-41,7.8640878200531e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-55,8.143484592437744e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-15,8.494034409525092e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-8,9.20097033182965e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-7,9.464348355928132e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-53,9.68103607495649e-06,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-56,1.0435034831366569e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-53,1.1414662003519233e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-14,1.2706095973650383e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-6,1.333691179752558e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-45,1.3689696788787148e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-50,1.5505403280258873e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-13,1.579083256893557e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-57,1.615273455778804e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-59,1.6848122080168754e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-47,1.6906112432480552e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-46,1.81484967470176e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-48,2.2038941582043503e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-48,2.3294488588967988e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-47,2.6259074608486754e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-4,2.698078751564234e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-58,2.7449429035188155e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-51,3.1758844852448204e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Volume t-49,3.17951043446868e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-12,3.490100304285801e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-49,3.6321207880975204e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-5,3.8307484482278525e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-50,4.365295171737671e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-10,4.896590861651687e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-11,5.1263295143579024e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-60,6.202161312103202e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-3,6.380875905354771e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-4,6.621492799601877e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-9,6.809948679149455e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-3,9.526945650577615e-05,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-8,0.00014667150874932491,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-7,0.0003065624063509041,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-1,0.0003570664955843926,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-6,0.00047412322430279846,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-5,0.0005831457174296506,mae,ETH,Bidirectional LSTM,1 day ahead
+FVX t-2,0.0008101446263911981,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-4,0.0010462263904850617,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-3,0.004433774285234265,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-2,0.020871686490498753,mae,ETH,Bidirectional LSTM,1 day ahead
+Close t-1,0.08963974559732771,mae,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-59,-1.4095881857159663e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-60,-1.3870408417832026e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-59,-9.285086677100329e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-56,-9.222337924562059e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-54,-9.03434302924617e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-60,-8.27132385934821e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-57,-8.20401248888649e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-53,-7.162316375805447e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-57,-6.964406578365955e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-58,-6.782692773371645e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-55,-6.706003231969041e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-2,-5.2050571867762446e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-52,-4.237818893957344e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-3,-3.7055348690106333e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-55,-3.639402509814484e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-4,-3.3308838990775847e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-58,-2.7350584176783757e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-5,-2.491888309957141e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-51,-2.430396662783012e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-5,-2.426279019494609e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-56,-2.4000572926526683e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-54,-2.317635727533819e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-6,-2.2599063595268257e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-56,-1.9937947444995325e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-7,-1.7806953467156992e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-53,-1.717923072792069e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-50,-1.5039392227577568e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-57,-1.4763159626062687e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-60,-1.3002414948865655e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-59,-1.2088731953100503e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-54,-1.1742859744754905e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-6,-1.052924680568527e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-58,-9.903363135957627e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-11,-6.860201630836185e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-8,-6.273697705966351e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-47,-6.158090868039904e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-12,-5.421503327715906e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-10,-5.396476647625626e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-49,-5.112697212216171e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-51,-5.096948418176466e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-45,-4.821146698565093e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-52,-4.554280213412516e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-48,-4.481345195754983e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-47,-4.265028245604031e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-46,-4.2431623958481997e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-10,-4.183588130131236e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-9,-4.088975551483961e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-14,-3.698060822073402e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-13,-3.5118500622832467e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-11,-3.406880639525347e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-46,-3.3966027535904404e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-50,-3.170045649826189e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-44,-2.957677710617706e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-45,-2.9202319689843916e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-44,-2.79076922584786e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-9,-2.5120931806509993e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-41,-2.2634626643282512e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-15,-2.0708038505300435e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-48,-1.8864297961196895e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-41,-1.6495807995627922e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-9,-1.619339857778651e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-43,-1.5738867785355243e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-39,-1.5359991865774355e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-16,-1.5102713134371344e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-43,-1.5084674838015608e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-17,-1.427714665689717e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-49,-1.3504004618095523e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-19,-1.336126571536674e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-40,-1.2820506976526924e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-42,-1.270507528968335e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-18,-1.1825199117208429e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-42,-1.1547852980960376e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-52,-1.0053431087110338e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-11,-9.807001693574232e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-20,-9.745009254223929e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-13,-9.202498570722722e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-14,-8.795646161429728e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-43,-8.625123624420982e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-38,-8.0799194085001e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-38,-6.641427681961833e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-21,-6.46088919360353e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-13,-6.414620885820347e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-14,-6.070571239701755e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-55,-6.019250328823545e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-37,-5.7574072659665083e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-19,-5.711751013392358e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-17,-5.499287193330704e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-8,-5.314709739412827e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-10,-4.8518029182806344e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-35,-4.2474970540014485e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-22,-4.141767728804181e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-37,-3.8843867019720986e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-17,-3.841699138028374e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-42,-3.693067153151021e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-20,-3.500684412260837e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-38,-3.352904918085212e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-18,-3.307998016721485e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-36,-3.1089566408055644e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-16,-3.0868534243370764e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-37,-2.8126527431442984e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-21,-2.73090906286258e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-46,-2.7066724320396265e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-36,-2.650679922387364e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-24,-2.566200831260329e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-34,-2.5594629752623624e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-23,-2.4253644551595378e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-25,-1.9656540178100007e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-15,-1.91840690738675e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-33,-1.6814299671564018e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-23,-1.6079737332440336e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-29,-1.5121544954675888e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-35,-1.3802514110491416e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-12,-1.351567749786984e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-27,-1.3137141610230357e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-31,-1.29980806787321e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-26,-1.1963819503873e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-34,-1.194000509531154e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-36,-1.1331004584592096e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-32,-1.1263025848128397e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-20,-1.101493348019001e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-28,-1.0436629453995823e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-22,-1.0232739801221795e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-28,-9.357650769602037e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-31,-8.208572534695001e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-36,-7.583039330358657e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-33,-4.791734280087771e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-16,-4.661376352293502e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-25,-4.399578254770005e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-25,-4.2328672387927785e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-21,-4.1739418165254866e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-28,-3.5098172336154795e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-30,-3.383409176742e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-26,-2.8598873453872936e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-39,-2.6578767244826024e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-26,-2.425272375506174e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-24,-1.9057856777068838e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-35,-1.129923558472641e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-27,-9.485016791085932e-10,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-31,-5.140629095361574e-10,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-30,-1.7752024991050247e-10,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-29,-1.5514050981380034e-10,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-22,6.723635147991638e-10,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-26,8.785755184351554e-10,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-28,1.2264829064466062e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-19,1.3480729761650156e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-30,1.3971783855738773e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-29,1.8605784313403817e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-23,2.121928495868626e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-24,2.7441615521811916e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-21,4.53152990587298e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-25,5.965052827226237e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-29,6.20608617892416e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-18,6.207244146200913e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-39,6.5981299457321466e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-27,6.858367283596109e-09,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-34,1.0272296835085563e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-27,1.1491277578253543e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-32,1.1779926907518577e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-24,1.2449917636755958e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-15,1.4816037206669998e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-44,1.4993762277007612e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-22,1.587597289439205e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-32,1.900018495825089e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-51,2.0002237096456918e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-23,2.348624411445399e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-19,2.791926281202166e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-12,2.8299451450513984e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-7,3.207573223988538e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-30,3.230867705403956e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-33,3.429366201353635e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-45,3.878912076368986e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-20,4.039416441636336e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-40,4.10154680604213e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-33,4.284454483533505e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-35,4.3590828310564704e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-34,4.367634107009001e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-18,4.523867172295977e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-37,4.679022937365603e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-42,4.733074514512003e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-32,5.1438458794923064e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-38,5.705509416005852e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-31,8.803060350321464e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-40,9.515366301653377e-08,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-43,1.0797877245572081e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-39,1.1338538124584015e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-40,1.24983666936751e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-17,1.5325466914159307e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-41,1.6416395683907948e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-5,2.3721336593249785e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-54,2.7980534010282106e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-7,3.280951210060841e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-16,3.4532140083163264e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-48,3.519525501972454e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-4,3.839363384472742e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-44,4.1417990225369773e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-15,4.4751637423361915e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-8,4.491367693746024e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-47,4.826892337477656e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-53,5.004965183010414e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-56,5.407522008522153e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-41,5.823145059185436e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-14,6.217028050159185e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-55,6.304893259427742e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-47,7.147412498008723e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-50,7.387941770379538e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-46,7.698206780516314e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-59,8.864374605926711e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-52,9.110244994961058e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-48,9.887784218473236e-07,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-57,1.038193171110373e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-45,1.111145636551467e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-13,1.119602594940039e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-6,1.3067882538455146e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-49,1.490695827867589e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-53,1.5511464091218317e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-12,1.719136309770615e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-49,1.7454962693573594e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-58,1.9511809521884907e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-51,2.2376305592946514e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-11,2.261073132927161e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-4,2.269919898627271e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-10,2.3587690643552157e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-60,2.473131510337032e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-50,2.6053330658158463e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-3,3.600660660493739e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-9,3.6762488738954335e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-1,5.621293832597067e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-8,6.770701700487881e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-2,7.940094727394665e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-3,8.814316877590574e-06,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-7,1.5508236481587907e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Volume t-1,1.627574166505007e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-6,2.5030858841104567e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Gtrend t-1,2.587928782018308e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-5,3.662071305022077e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-4,4.947033466256201e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+FVX t-2,5.634283514303982e-05,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-3,0.0002942577970329119,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-2,0.0017974054512509916,mse,ETH,Bidirectional LSTM,1 day ahead
+Close t-1,0.018842585356810226,mse,ETH,Bidirectional LSTM,1 day ahead
+>>>>>>> f4086e61360961ccdc33b6a3f1cdebe6a373756a
