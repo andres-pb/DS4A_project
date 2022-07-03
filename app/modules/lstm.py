@@ -713,15 +713,14 @@ def get_prediction(
         print('got treasury data')
         yield_df.fillna(method='ffill', inplace=True)
         yield_data = yield_df.iloc[-lags:, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
-        # get the last close
+        # get the last close with lags
         status, close_df = yf.market_value(ticker + '-USD', hist=history, interval='1d')
 
         if status:
-            print('got coin mkt data')
-            print(close_df.info())
+            print('Successfully got coin mkt data')
+            last_close = close_df['Volume'].values[-1]
             sample_df = close_df.iloc[-lags:, :][features]
             sample_df[tr_ticker[-3:]] = yield_data
-            print(sample_df.info())
             all_features = [tr_ticker[-3:]] + features
             use_gtrend = model_meta['google_trend']
             if use_gtrend:
@@ -748,9 +747,11 @@ def get_prediction(
             pred_y = rebuilt_model.predict(X)
 
             # undo scaling
-            prediction = yscaler.inverse_transform(pred_y)
+            prediction = yscaler.inverse_transform(pred_y).reshape(1)[0]
 
-            return prediction.reshape(1)[0]
+            ret = (prediction - last_close)/last_close
+
+            return prediction, ret
         else:
             print('Error trying to get ticker {} data from Yahoo Finance.'.format(ticker))
             return False               

@@ -127,9 +127,31 @@
     vertical-align: center;
 }
 
+.profit {
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px green;
+}
+
+.loss {
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+}
+
 .quote-container {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.forecast-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 35px;
 }
 
 .white-subtitle{

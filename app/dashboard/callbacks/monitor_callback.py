@@ -9,8 +9,6 @@ def register_monitor_callbacks(app):
                         'btn_nclicks_5':'1wk',
                         'btn_nclicks_6':'1mo',
                         'btn_nclicks_7':'3mo',
-                        'btn_nclicks_8':'6mo',
-                        'btn_nclicks_9':'1y',
                              }
     variable_options={
                         'btn_nclicks_1':'Close',
@@ -116,20 +114,20 @@ def register_monitor_callbacks(app):
         if chart=='line':
             if 'Volume' in view:
                 fig=plot_monitor_line_volume(
-                                                                            ticker=ticker, 
-                                                                            exchanges=exchanges, 
-                                                                            interval=interval, 
-                                                                            models=models,
-                                                                            variable=variable
-                                                                        )
+                                                ticker=ticker, 
+                                                exchanges=exchanges, 
+                                                interval=interval, 
+                                                models=models,
+                                                variable=variable
+                                            )
                 return *right_result, *result, *globals_variable.STATISTICS_VALUES,fig
             fig=plot_monitor_line(
-                                                                ticker=ticker, 
-                                                                exchanges=exchanges, 
-                                                                interval=interval, 
-                                                                models=models,
-                                                                variable=variable
-                                                            )
+                                    ticker=ticker, 
+                                    exchanges=exchanges, 
+                                    interval=interval, 
+                                    models=models,
+                                    variable=variable
+                                )
             #print(variables_value)
 
             return *right_result, *result, *globals_variable.STATISTICS_VALUES, fig

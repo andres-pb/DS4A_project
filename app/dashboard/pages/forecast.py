@@ -340,7 +340,7 @@ def update_about_model(sel_coin, sel_model, sel_time):
 def predict_price(n, sel_coin, sel_model, sel_time):
     if n == 1:
         print('>>>>>>>ATTEMPTING PRICE PREDICTION')
-        forecast = get_prediction(
+        forecast, ret = get_prediction(
             pred_models, 
             sel_coin, 
             sel_model,
@@ -348,10 +348,21 @@ def predict_price(n, sel_coin, sel_model, sel_time):
             './app/dashboard/test_models/', 
             './app/dashboard/test_models/scalers/'
             )
+
+        if ret > 0:
+            clname, icon = 'price-quote', 'profit'  
+        else:
+            clname, icon = 'price-quote', 'loss'
         
-        return html.P('${:,.2f}'.format(forecast), className='price-quote',), None
+        return [
+            html.Div(
+                [
+                    html.P('${:,.2f}'.format(forecast), className=clname + ' ' + icon),
+                ], 
+                className='forecast-container'
+            )], None
     else:
-        return html.P('Click Forecast Button.'), 0
+        return html.P('Click Forecast Button.'), None
 
 
 @callback(
