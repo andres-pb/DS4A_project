@@ -608,9 +608,9 @@ def save_scaler(fitted_scaler, fits='x',full_path: str= None, path="./models/", 
     joblib.dump(fitted_scaler, full_path)
 
 
-def load_scaler(coin_ticker: str, root_path: str ="app/dashboard/test_models/"):
+def load_scaler(coin_ticker: str, root_path: str ="app/dashboard/test_models/", fits='x'):
     
-    scaler_path = root_path + coin_ticker + '_scaler.gz'
+    scaler_path = root_path + coin_ticker + '_{}_scaler.gz'.format(fits)
     my_scaler = joblib.load(scaler_path)
     return my_scaler
 
@@ -694,12 +694,14 @@ def get_prediction(
     lags = model_meta['lags']
     features = model_meta['features']
     n_features = model_meta['n_features']
+    test_days = model_meta['test_days']
     # Define a model that is still not trained
     rebuilt_model = builder_func(in_shape=(lags, n_features), **builder_kwargs)
     # load models weight
     load_model(rebuilt_model, model_id=model_meta['model_id'], root_path=models_path)
     # load the scaler
-    scaler = load_scaler(ticker, root_path=scalers_path)
+    xscaler = load_scaler(ticker, root_path=scalers_path)
+    yscaler = load_scaler(ticker, scalers_path, fits='y')
     # get sample for prediction
     yf = yahoo_finance
     # we go back as many days as needed lags, plus an extra just in case
@@ -732,25 +734,23 @@ def get_prediction(
                 print(gtrend_df.info())
                 gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
                 gtrend_data = gtrend_df[coin_name]
-                
                 sample_df['Gtrend'] = gtrend_data
                 all_features = [tr_ticker[-3:]] + ['Gtrend'] + features
             # Dataframe con la muestra
             sample_df = sample_df[all_features]
-            print(sample_df.shape)
-
+            sample_df.fillna(method='ffill', inplace=True)
+            print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+            print(sample_df.info())
+            print(sample_df.head())
             # Extract and scale sample
-            X = prep_data(sample_df, timesteps=lags, scaler=scaler, production=True)
-            print(X.shape)
+            X = prep_data(sample_df, test_days=test_days, timesteps=lags, xscaler=xscaler, yscaler=yscaler, production=True)
             # Make model prediction
             pred_y = rebuilt_model.predict(X)
 
             # undo scaling
-            prediction = scaler.inverse_transform(pred_y)
-            
-            print(prediction)
+            prediction = yscaler.inverse_transform(pred_y)
 
-            return prediction
+            return prediction.reshape(1)[0]
         else:
             print('Error trying to get ticker {} data from Yahoo Finance.'.format(ticker))
             return False               
@@ -791,35 +791,3 @@ def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, sco
     lime_df.rename(columns={'Date': 'Date_dt'}, inplace=True)
     lime_df['Date'] = lime_df['Date_dt'].dt.date.apply(lambda x: str(x))
     return lime_df
-
-def plot_lime(lime_df):
-
-    fig = px.bar(
-        lime_df, 
-        x='LIME Weight', 
-        y='Feature',
-        animation_frame='Date',
-        orientation='h', 
-        color='LIME Weight', 
-        template='plotly_dark',
-        title="LIME - Top Features' Effect on Close t+1",
-        color_continuous_scale='viridis',
-        )
-    fig.update_layout(
-            xaxis_tickformat = '$',
-            title={
-                'y':0.95,
-                'x':0.5,
-                'xanchor': 'center',
-                'yanchor': 'top',
-                'font': dict(
-                #family="Courier New, monospace",
-                size=25)
-                },
-            )
-    fig.update_traces(
-        hovertemplate="<br>".join([
-            "Feature: %{y}",
-            "Contribution: $%{x:,.2f}"])
-            )
-    return fig

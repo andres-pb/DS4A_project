@@ -83,14 +83,46 @@ layout = html.Div([
                         html.Div(
                             className='black-container',
                             children=[
+                                dbc.Row([
+                                    dbc.Col(
+                                        children=[
+                                            dcc.Loading(
+                                                children=[
+                                                    html.H6('CURRENT PRICE', className='white-subtitle'),
+                                                    html.P(id='last-closing-price', children=[]),
+                                                    dcc.Interval(id='update-price-interval', interval=180*1000, n_intervals=0),
+                                                ],
+                                                type='circle',
+                                                color='#A0A0A0'
+                                            ),
+                                        ],
+                                        className = 'quote-container',  
+                                        width={"size": 6, "offset": 0, 'order': 'first'} ),
+                                    dbc.Col(
+                                        [dbc.Button(
+                                            children=[
+                                                html.P(className="fa fa-forward-fast"), 
+                                                ' Forecast',
+                                            ], 
+                                            id='predict-btn',
+                                            color='success',
+                                            className="button-37 lg-block",
+                                            size='large'
+                                        ),], 
+                                        className='main-btn-container',
+                                         width={"size": 6, "offset": 0, 'order': 'last'} 
+                                    ),
+                                 ]),                              
                                 html.Div(
                                     id='prediction-container',
                                     className='silver-container',
-                                    children=[
-                                        html.H3('The last close is: '),
-                                        html.P(id='last-closing-price', children=[]),
-                                        dcc.Interval(id='update-price-interval', interval=60*1000, n_intervals=0),
-                                        html.P(id='prediction-test', children=[]),
+                                    children=[                                        
+                                        html.H3('PREDICTION', className='white-subtitle'),
+                                        dcc.Loading(
+                                            [html.P(id='prediction-test', children=[]),],
+                                            type='circle',
+                                            color='#A0A0A0'
+                                        )
                                     ],
                                 ),
                                 html.Hr(),
@@ -125,7 +157,6 @@ layout = html.Div([
                                             width={"size": 3, "offset": 0, 'order': 'last'}
                                         ),
                                         ],
-                                        #width={"size": 2, "offset": 0, 'order': 'first'},
                                         className='features-container'
                             ),
                             ]
@@ -160,7 +191,17 @@ layout = html.Div([
         ),
         html.Hr(),
         html.H1('EXPLAINABLE MODELS', className='header-extra'),
-        html.H2('We Love Black. Just Not BLACK BOX!'),
+        dcc.Interval(id='update-question', interval=5*1000, n_intervals=0),
+        html.H4(children=['What drives the price of crypto?'], id='questions-header', style={'text-align': 'center'}),
+        dbc.Row([
+            dbc.Col([], width={"size": 5, "offset": 0, 'order':'first'},className='background-box'),
+            dbc.Col(
+                children=[html.H2('We Love Black. Just Not BLACK BOX!', className='subheader-extra')],
+                className='highlight-container',
+                width={"size": 2, "offset": 0, 'order':2},
+                ),
+            dbc.Col([], width={"size": 5, "offset": 0, 'order':'last'}, className='background-box'),
+            ]),         
         dbc.Row(
             children=[
                 dbc.Col(
@@ -214,7 +255,7 @@ layout = html.Div([
                             """],
                             className='graph-info'
                         ),
-                                                html.P(
+                        html.P(
                             ["""
                             Notice how the most accurate models start to percieve higher contributions of features such as the interest rate, 
                             google trends and traded volume in times of negative price trends like in the the most recent history.
@@ -268,7 +309,7 @@ def update_models_plots(sel_coin, sel_model, sel_time):
 
     ft_importance = ft_importance_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
     ft_importance = ft_importance[['Feature', 'Importance', 'Metric']]
-    ft_importance.sort_values(by=['Metric', 'Importance'], inplace=True)
+    ft_importance.sort_values(by=['Importance'], inplace=True)
 
     sublime_df = lime_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
 
@@ -291,16 +332,26 @@ def update_about_model(sel_coin, sel_model, sel_time):
     return text
 
 
-""" @callback(
+@callback(
     Output('prediction-test', 'children'),
-    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
+    Output('predict-btn', 'n_clicks'),
+    [Input('predict-btn', 'n_clicks'), Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
 )
-def predict_price(sel_coin, sel_model, sel_time):
-    print('ATTEMPTING PRICE PREDICTION !!!')
-    text = get_prediction(pred_models, sel_coin, sel_model,sel_time,'./app/dashboard/test_models/', './models/')
-    import time
-    time.sleep(60)
-    return text """
+def predict_price(n, sel_coin, sel_model, sel_time):
+    if n == 1:
+        print('>>>>>>>ATTEMPTING PRICE PREDICTION')
+        forecast = get_prediction(
+            pred_models, 
+            sel_coin, 
+            sel_model,
+            sel_time,
+            './app/dashboard/test_models/', 
+            './app/dashboard/test_models/scalers/'
+            )
+        
+        return html.P('${:,.2f}'.format(forecast), className='price-quote',), None
+    else:
+        return html.P('Click Forecast Button.'), 0
 
 
 @callback(
@@ -312,24 +363,32 @@ def update_close(sel_coin, n):
     usd_ticker = str(sel_coin)[:3] + '-USD'
     status, yahoo_df = yahoo_finance.market_value(usd_ticker, hist=today, interval='1d')
     if status:
+        time_upd = dt.datetime.strftime(dt.datetime.now(), '%H:%M')
         close = yahoo_df['Close'].values[-1]
-        return close
+        return [
+            html.P('${:,.2f}'.format(close), className='price-quote',), 
+            html.Span('Last updated at {}'.format(time_upd), className='footnote')
+            ]
     else:
-        return 'Unable to retrieve current price. Retrying...'
+        return html.P('Price not available...')
 
+@callback(
+    Output('questions-header', 'children'),
+    [Input('update-question', 'n_intervals'), Input('questions-header', 'children')]
+)
+def update_close(n, previous):
+    questions_list = [
+        'What drives the price of crypto?',
+        'How Relevant is Price History?',
+        'Do Main Drivers of Price Change Across Time?',
+        'Do Internet Searches Affect Cryptocurrencies?',
+        'Are Drivers The Same Across Cryptourrencies?',
+        'How Does Crypto React to Macroeconomic Factors?',
+    ]
+    next_i = questions_list.index(previous[0]) + 1
+    
+    if next_i >= len(questions_list):
+        return [questions_list[0]]
+    else:
+        return [questions_list[next_i]]
 
-
-    """
-    Cryptocurrency prices might be affected by many yet unknown factors. 
-    Some of our models are purely statistical and they provide us with valuable 
-    insights about the autoregressive nature of crypto prices, for which we report 
-    an autocorrelation plot below. On the other hand, for our deep learning models, 
-    we wanted to consider both the time structure of the data, and other 
-    sources of information that the team identified as potential predictors.
-    It is difficult to measure feature importance in Recurrent Neural Networks,
-    such as the ones we have used. However, we built our own measure of feature importance as
-    the error perturbation. That is, we measured by how much the model error increased when
-    the data on each one of the feature-lag combinations was shuffled. A greater error perturbation,
-    suggests a greater feature importance. Below we report top 20 feature-lag combinations for the
-    deep learning models following this criteria.
-    """,

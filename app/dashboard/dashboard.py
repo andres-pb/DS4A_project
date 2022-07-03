@@ -44,7 +44,7 @@ dashboard_app.layout = html.Div(
     html.Div(
                 className="C",
                 children=[
-                html.H1(children=[html.P(className='fa fa-coins'),'Crypto Trading for All']),
+                html.H1(children=[html.P(className='fa fa-coins'),'Crypto for All']),
                 html.H6('The future of Crypto in one click')
                 ]),
     html.Div(

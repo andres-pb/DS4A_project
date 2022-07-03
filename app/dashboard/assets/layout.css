@@ -61,20 +61,23 @@ body{
     font-size:1.5rem;
     color:white;
     margin-top:1rem;
+    border-radius: 3px;
 }
 
 .black-container {
     color: white; 
     background-color: #000000;
-    padding: 3rem 3rem 3rem 4rem;
+    padding: 3rem 3rem 3rem 3rem;
     text-align: justify;
     text-justify: inter-word;
+    border-radius: 3px;
 }
 
 .silver-container{
     color: white;
     background-color: #404040;
     padding: 1rem 1rem 1rem 1rem;
+    border-radius: 3px;
 }
 
 .text-just {
