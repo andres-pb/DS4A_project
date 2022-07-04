@@ -246,7 +246,7 @@ class Sentiment_predict():
                 plot_title = ticker + " Tweets by Sentiment"
 
 
-        fig = px.pie(df, values = 'count', names = colname, template='plotly_dark', title = "")
+        fig = px.pie(df, values = 'count', names = colname, color = colname, template='plotly_dark', title = "", color_discrete_map={'negative': '#EF553B', 'neutral':'#636EFA', 'positive': '#00CC96'})
         fig.update_layout(
             legend_traceorder="reversed",
             title={
