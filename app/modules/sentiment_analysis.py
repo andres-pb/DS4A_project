@@ -314,7 +314,7 @@ class Sentiment_predict():
                 df = twt_df
                 plot_title = "Daily " + ticker + " Tweets by Sentiment"
 
-        fig = px.bar(df, x='date', y='count', color=colname, template='plotly_dark', category_orders= {colname: ["neutral", "negative", "positive"]}, title= "")
+        fig = px.bar(df, x='date', y='count', color=colname, template='plotly_dark', category_orders= {colname: ["neutral", "negative", "positive"]}, title= "", color_discrete_map={'negative': '#EF553B', 'neutral':'#636EFA', 'positive': '#00CC96'})
         fig.update_layout(
             legend_traceorder="reversed",
             legend_title = '',
