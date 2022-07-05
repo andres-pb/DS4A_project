@@ -817,8 +817,8 @@ def get_prediction(
         return False, None, None """
 
 
-def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, scope, yscaler):
-
+def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, coin_name, scope, yscaler):
+    ticker = coin_name[:3]
     explainer = lime.lime_tabular.RecurrentTabularExplainer(
                                             X_train,
                                             feature_names=list(dsets[ticker + '-USD'].columns),
@@ -826,7 +826,7 @@ def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, sco
                                             mode='regression',
                                             discretize_continuous=False
                                             )
-
+    
     lime_dfs = []
     for i in range(len(test_dates)):
         exp = explainer.explain_instance(X_test[i], model.predict)
@@ -834,12 +834,11 @@ def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, sco
         lime_df['Predicted Close t+'+scope[0]] = yscaler.inverse_transform(lime_df['LIME Weight'].abs().values.reshape(-1,1))[:,0] * (lime_df['LIME Weight'].values//lime_df['LIME Weight'].abs().values)
         lime_df['Date'] = test_dates[i]
         lime_df['Model'] = model_id
-        lime_df['Ticker'] = ticker
+        lime_df['Coin'] = coin_name
         lime_df['Scope'] = scope
         lime_dfs.append(lime_df)
     lime_df = pd.concat(lime_dfs)
-    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].abs().values.reshape(-1,1)) * (lime_df['LIME Weight'].values//lime_df['LIME Weight'].abs().values)
-        
+    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].values.reshape(-1,1))
     lime_df.rename(columns={'Date': 'Date_dt'}, inplace=True)
     lime_df['Date'] = lime_df['Date_dt'].dt.date.apply(lambda x: str(x))
     return lime_df
