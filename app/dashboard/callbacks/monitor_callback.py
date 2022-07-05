@@ -47,8 +47,8 @@ def register_monitor_callbacks(app):
 
     
 
-    def update_class_left(btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7, btn_nclicks_8, btn_nclicks_9):
-        list_btn=['btn_nclicks_3', 'btn_nclicks_4', 'btn_nclicks_5', 'btn_nclicks_6', 'btn_nclicks_7', 'btn_nclicks_8', 'btn_nclicks_9']
+    def update_class_left(btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7):
+        list_btn=['btn_nclicks_3', 'btn_nclicks_4', 'btn_nclicks_5', 'btn_nclicks_6', 'btn_nclicks_7']
         result=[None for x in range(len(list_btn))]
         interval='1wk'
         for index, value in enumerate(list_btn):
@@ -77,8 +77,6 @@ def register_monitor_callbacks(app):
                         Output('btn_nclicks_5', 'style'), 
                         Output('btn_nclicks_6', 'style'), 
                         Output('btn_nclicks_7', 'style'), 
-                        Output('btn_nclicks_8', 'style'), 
-                        Output('btn_nclicks_9', 'style'),
                         Output('output-deviation', 'children'),
                         Output('output-average', 'children'),
                         Output('output-max', 'children'),
@@ -95,22 +93,20 @@ def register_monitor_callbacks(app):
                         Input('btn_nclicks_4', 'n_clicks'), 
                         Input('btn_nclicks_5', 'n_clicks'), 
                         Input('btn_nclicks_6', 'n_clicks'), 
-                        Input('btn_nclicks_7', 'n_clicks'), 
-                        Input('btn_nclicks_8', 'n_clicks'), 
-                        Input('btn_nclicks_9', 'n_clicks')
+                        Input('btn_nclicks_7', 'n_clicks'),
                     ]
                 )
     def monitor_plot_callback(
                                 ticker, exchanges, chart, view,
                                 btn_nclicks_1, btn_nclicks_2, 
-                                btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7, btn_nclicks_8, btn_nclicks_9):
+                                btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7):
         variables_value=['ivan']
         models=list()
         for i in view:
             if i != 'Volume':
                 models.append(statistical_models[i])
         right_result, variable =update_class_right(btn_nclicks_1, btn_nclicks_2)
-        result, interval = update_class_left(btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7, btn_nclicks_8, btn_nclicks_9)
+        result, interval = update_class_left(btn_nclicks_3, btn_nclicks_4, btn_nclicks_5, btn_nclicks_6, btn_nclicks_7)
         if chart=='line':
             if 'Volume' in view:
                 fig=plot_monitor_line_volume(
@@ -150,6 +146,8 @@ def register_monitor_callbacks(app):
                                                                 )
             return *right_result, *result, *globals_variable.STATISTICS_VALUES, fig
         return None
+    
+        
 
   
 

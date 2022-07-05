@@ -113,6 +113,7 @@
                 .monitor-GRAPH-B { 
                             grid-area: "GRAPH_B"; 
                             width:100%;
+                            height: auto;
                             }
 
                 .monitor-left-group{
@@ -128,12 +129,13 @@
 
                 .monitor-right-group{
                     padding:0rem 0rem 0rem 0rem;
-                    width:13.7rem;
+                    width:10rem;
                     height: 1.9rem;
                     background-color: #c6c9cc;
                     border: 1px solid rgba(122, 120, 120, 0.2);
                     border-radius: 0.4rem;
                     float:right;
+                    margin-right: 2rem;
                 }
                 .graph-button{
                     padding: 0.2rem 0.4rem;
@@ -200,8 +202,8 @@
 }
 
 .dropdown-title{
-    text-align:center;
-    margin:0px;
+    text-align:left;
+    margin-left:1rem;
     padding:0px;
     font-size:1.2rem;
     color:black;
@@ -209,7 +211,6 @@
 
 .dropdown{
     width:25rem;
-    
 }
 
 .dropdown > #dropdown-chart{

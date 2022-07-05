@@ -28,18 +28,18 @@ class Main:
 
         database.init_app()
         globals_variable.COINS_SELECTION=[
-                                            {'name':'NMC - Namecoin', 'ticker':'NMC-USD'},
-                                            {'name':'FTC - Feathercoin', 'ticker':'FTC-USD'},
-                                            {'name':'PPC - Peercoin', 'ticker':'PPC-USD'},
-                                            {'name':'LTC -  Litecoin', 'ticker':'LTC-USD'},
-                                            {'name':'BTC - Bitcoin', 'ticker':'BTC-USD'},
-                                            {'name':'ETH - Ethereum', 'ticker':'ETH-USD'},
-                                        ]
+                                    {'name':'BTC - Bitcoin', 'ticker':'BTC-USD'},
+                                    {'name':'ETH - Ethereum', 'ticker':'ETH-USD'},
+                                    {'name':'LTC -  Litecoin', 'ticker':'LTC-USD'},
+                                    {'name':'NMC - Namecoin', 'ticker':'NMC-USD'},
+                                    {'name':'FTC - Feathercoin', 'ticker':'FTC-USD'},
+                                    {'name':'PPC - Peercoin', 'ticker':'PPC-USD'},
+                                ]
         globals_variable.EXCHANGES=[
-                                    {'name':'Dolar', 'ticker':'USD'},
+                                    {'name':'U.S. Dollar', 'ticker':'USD'},
                                     {'name':'Peso Colombiano', 'ticker':'COP=X'},
-                                    {'name':'Bitcoin', 'ticker':'BTC-USD'}
-                                     ]
+                                    {'name':'BTC - Bitcoin', 'ticker':'BTC-USD'}
+                                ]
         globals_variable.STATISTICAL_MODELS=[
                                     {'name':'Volume', 'function':''},
                                     {'name':'Mean Price', 'function':'mean_price'},
@@ -50,7 +50,7 @@ class Main:
                                     {'name':'Average Directional Movement Index', 'function':'ADX'},
                                     {'name':'Average True Range', 'function':'ATR'},
                                     {'name':'Moving Average Convergence/Divergence', 'function':'MACD'},
-                                     ]
+                                ]
         from app.dashboard import dashboard_app
         print(environ.get("DS4A_ENV"))
         host, debug, port = {

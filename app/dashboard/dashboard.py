@@ -12,7 +12,8 @@ dashboard_app = Dash(__name__, use_pages=True,
 NAVBUTTON_STYLE = {
     'textAlign':'center', 
     'padding-':'0.2em 0.2em 0.2em 0.2em', 
-    'color': '#FFFFFF'
+    'color': '#FFFFFF',
+    "cursor": "pointer"
     }
 
 sidebar = html.Div(
@@ -20,15 +21,58 @@ sidebar = html.Div(
     children=[html.Div(
             className="sidebar_style",
             children=[
-                        html.P("Market: "),
+                        html.P("Menu: "),
                         html.Hr(),
                         dbc.Nav(
                             [   
-                                dbc.NavLink(html.Div([html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], style=NAVBUTTON_STYLE), href="/monitor", active='exact'),
+                                dbc.NavLink(
+                                    html.Div(
+                                        [html.Span(className="fa fa-line-chart fa-3x" ), "Monitor"], 
+                                        style=NAVBUTTON_STYLE), 
+                                        href="/", 
+                                        active='exact',
+                                        id='monitor-tooltip-tg',
+                                        className='menu-item'
+                                        ),
+                                 dbc.Tooltip(
+                                    'Live market data and more',
+                                    target="monitor-tooltip-tg",
+                                    placement='right',
+                                    style={'opacity': 0.96, 'background-color': 'gray'}
+                                ),
                                 html.Hr(),
-                                dbc.NavLink(html.Div([html.Span(className="fa fa-align-center fa-3x"), "Text AI"], style=NAVBUTTON_STYLE), href="/textai", active="exact"),
+                                dbc.NavLink(html.Div(
+                                    [html.Span(className="fa fa-align-center fa-3x"), "Text AI"], 
+                                    style=NAVBUTTON_STYLE), 
+                                    href="/textai", 
+                                    active="exact",
+                                    id='textai-tooltip-tg',
+                                    className='menu-item'
+                                    ),
+                                dbc.Tooltip(
+                                    'Read beyond the news and tweets',
+                                    target="textai-tooltip-tg",
+                                    placement='right',
+                                    style={'opacity': 0.96, 'background-color': 'gray'}
+                                ),
                                 html.Hr(),
-                                dbc.NavLink(html.Div([html.Span(className="fa fa-fast-forward fa-3x"), "Forecast"], style=NAVBUTTON_STYLE), href="/forecast", active="exact"),
+                                dbc.NavLink(
+                                    html.Div(
+                                        [html.Span(className="fa fa-fast-forward fa-3x"), "Forecast"], 
+                                        style=NAVBUTTON_STYLE,
+                                        className='menu-item'
+                                        ), 
+                                    href="/forecast", 
+                                    active="exact",
+                                    id='forecast-tooltip-tg',
+                                    
+                                ),
+                                dbc.Tooltip(
+                                    'Use our AI models to make price predictions with one click',
+                                    target="forecast-tooltip-tg",
+                                    placement='right',
+                                    style={'opacity': 0.96, 'background-color': 'gray'}
+                                ),
                             ],
                             vertical=True,
                             pills=True,

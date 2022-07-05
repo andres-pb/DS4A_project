@@ -345,7 +345,7 @@ def predict_price(n, sel_coin, sel_model, sel_time):
             sel_coin, 
             sel_model,
             sel_time,
-            './app/dashboard/test_models/', 
+            './app/dashboard/prod_models/',
             './app/dashboard/test_models/scalers/'
             )
 

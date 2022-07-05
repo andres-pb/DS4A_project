@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 import pandas as pd
 from app import globals_variable, yahoo_finance
 from app.modules import statistical_models
+from plotly.subplots import make_subplots
 
 
 def filter_test_df(test_df, ticker, model_id, pred_scope):
@@ -207,7 +208,10 @@ def plot_monitor_candle(ticker:str = globals_variable.COINS_SELECTION[-1]['ticke
     fig.update_layout(clickmode='event+select')
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
-    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    stats_vars = [
+        round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)
+        ]
+    globals_variable.STATISTICS_VALUES =  ['${:,.2f}'.format(sv) for sv in stats_vars]
     return fig
 
 
@@ -223,7 +227,7 @@ def plot_monitor_line(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'
             df[x]=df[x]/df_exchanges['Close'] if exchanges == 'BTC-USD' else df[x]*df_exchanges['Close']
         
 
-    fig = px.line(
+    fig = px.area(
             df,
             x=df.index, 
             y=df[variable],
@@ -285,15 +289,15 @@ def plot_monitor_line(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'
         title_text = 'Date',
         rangeslider_visible = True
         )
-    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    stats_vars=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    globals_variable.STATISTICS_VALUES =  ['${:,.2f}'.format(sv) for sv in stats_vars]
+    fig.update_layout(hovermode="x unified")
     return fig
 
 
 
 def plot_monitor_candle_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['ticker'], exchanges:str = "Dolar", interval: str ='1wk', variable:str='Close',  models=[]):
-    import pandas as pd
-    import plotly.graph_objects as go
-    from plotly.subplots import make_subplots
+
 
     status, df=yahoo_finance.market_value(symbol=ticker,interval=interval)
     if not status:
@@ -371,7 +375,9 @@ def plot_monitor_candle_volume(ticker:str = globals_variable.COINS_SELECTION[-1]
                         )
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
-    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    stats_vars=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    globals_variable.STATISTICS_VALUES =  ['${:,.2f}'.format(sv) for sv in stats_vars]
+    fig.update_layout(hovermode="x unified")
     return fig
 
 
@@ -395,7 +401,7 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
 
     # Create subplots and mention plot grid size
     fig = make_subplots(rows=2, cols=1, shared_xaxes=True, 
-                vertical_spacing=0.03, subplot_titles=('Line', 'Volume'), 
+                vertical_spacing=0.03, subplot_titles=('', 'Volume'), 
                 row_width=[0.2, 0.7])
 
     
@@ -404,7 +410,8 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
                                 x = df.index,
                                 y = df[variable],
                                 mode ='lines',
-                                name = 'line',
+                                fill='tozeroy',
+                                name = 'Close',
                                 #line = dict(shape = 'linear', color = 'rgb(100, 10, 100)', width = 1, dash = 'dash'),
                                 connectgaps = True
                             ), row=1, col=1
@@ -463,7 +470,9 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
                         )
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightBlue')
-    globals_variable.STATISTICS_VALUES=[round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    stats_vars = [round(df[variable].mean(),2), round(df[variable].std(),2), round(df[variable].max(),2), round(df[variable].min(),2)]
+    globals_variable.STATISTICS_VALUES =  ['${:,.2f}'.format(sv) for sv in stats_vars]
+    fig.update_layout(hovermode="x unified")
     return fig
 
 
