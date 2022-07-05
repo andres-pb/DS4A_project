@@ -2,12 +2,19 @@ from app.modules.lstm import build_LSTM, build_BLSTM
 from dash import html, dcc
 
 
-COINS_SELECTION = [
+COINS_SELECTION_TICKERS = [
     'BTC-USD',
     'NMC-USD', 
     'FTC-USD', 
     'PPC-USD', 
     'LTC-USD',
+]
+
+COINS_SELECTION = [
+    'BTC - Bitcoin',
+    'ETH - Ethereum',
+    'LTC - Litecoin', 
+    'NMC - Namecoin', 
 ]
 
 pred_models = {
@@ -133,7 +140,7 @@ pred_models = {
                 '1 day ahead': {
                     'ticker': 'ETH',
                     'coin_name': 'Ethereum',
-                    'model_id': 'ETH_Bidirectional_LSTM_60_lags_4_fts_prod',
+                    'model_id': 'ETH_Bidirectional_LSTM_60_lags_5_fts_prod',
                     'test_days': 120,
                     'lags': 60,
                     'n_features': 4,
@@ -162,13 +169,14 @@ pred_models = {
                             """], ),
                         html.P(
                             """
-                            It consumes public data on four features until the last known daily close. 
-                            Historical Closing Price values constitute the autoregressive nature of the model, 
-                            historical traded volume is used as an additional market signal, 
-                            the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
-                            or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                            Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
-                            into account potential investors' and general public perception on the asset.
+                                It consumes public data on five features until the last known daily close. 
+                                Historical Closing Price values constitute the autoregressive nature of the model, 
+                                historical traded volume is used as an additional market signal, 
+                                the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
+                                or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
+                                The daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
+                                into account potential investors' and general public perception on the asset. Finally, the price of Bitcoin (BTC)
+                                is also included as the most representative asset of this kind.
                             """),
                         html.P("""Bidirectional LSTM layers capture the sequential structure of the data to predict next day's 
                                 closing price. But they also read the sequences backwards, 
@@ -193,7 +201,7 @@ pred_models = {
                 '1 day ahead': {
                     'ticker': 'ETH',
                     'coin_name': 'Ethereum',
-                    'model_id': 'ETH_LSTM_60_lags_4_fts_prod',
+                    'model_id': 'ETH_LSTM_60_lags_5_fts_prod',
                     'test_days': 120,
                     'lags': 60,
                     'n_features': 4,
@@ -221,13 +229,14 @@ pred_models = {
                             """], ),
                         html.P(
                             """
-                            It consumes public data on four features until the last known daily close. 
-                            Historical Closing Price values constitute the autoregressive nature of the model, 
-                            historical traded volume is used as an additional market signal, 
-                            the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
-                            or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                            Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
-                            into account potential investors' and general public perception on the asset.
+                                It consumes public data on five features until the last known daily close. 
+                                Historical Closing Price values constitute the autoregressive nature of the model, 
+                                historical traded volume is used as an additional market signal, 
+                                the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
+                                or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
+                                The daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
+                                into account potential investors' and general public perception on the asset. Finally, the price of Bitcoin (BTC)
+                                is also included as the most representative asset of this kind.
                             """),
                         html.P("LSTM layers capture the sequential structure of the data to predict next day's closing price.")
                     ]),
@@ -241,14 +250,14 @@ pred_models = {
                     '1 day ahead': {
                         'ticker': 'LTC',
                         'coin_name': 'Litecoin',
-                        'model_id': 'LTC_LSTM_60_lags_4_fts_prod',
+                        'model_id': 'LTC_LSTM_60_lags_5_fts_prod',
                         'test_days': 365,
                         'lags': 60,
                         'n_features': 4,
                         'features': ['Volume', 'Close'],
                         'treasury_ticker': '^TYX',
                         'google_trend': True,
-                        'ordered_features': ['TYX',	'Gtrend', 'Volume',	'Close'],
+                        'ordered_features': ['Volume', 'Gtrend', 'TYX',	'BTC', 'Close'],
                         'builder_func': build_LSTM,
                         'builder_kwargs': dict(
                                             num_rnns=2,
@@ -269,13 +278,14 @@ pred_models = {
                                 """], ),
                             html.P(
                                 """
-                                It consumes public data on four features until the last known daily close. 
+                                It consumes public data on five features until the last known daily close. 
                                 Historical Closing Price values constitute the autoregressive nature of the model, 
                                 historical traded volume is used as an additional market signal, 
                                 the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
                                 or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                                Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
-                                into account potential investors' and general public perception on the asset.
+                                The daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
+                                into account potential investors' and general public perception on the asset. Finally, the price of Bitcoin (BTC)
+                                is also included as the most representative asset of this kind.
                                 """),
                             html.P("LSTM layers capture the sequential structure of the data to predict next day's closing price.")
                         ]),
@@ -295,7 +305,7 @@ pred_models = {
                         'features': ['Volume', 'Close'],
                         'treasury_ticker': '^TYX',
                         'google_trend': True,
-                        'ordered_features': ['TYX',	'Gtrend', 'Volume',	'Close'],
+                        'ordered_features': ['Volume', 'Gtrend', 'TYX',	'BTC', 'Close'],
                         'builder_func': build_BLSTM,
                         'builder_kwargs': dict(
                                             num_rnns=2,
@@ -317,13 +327,14 @@ pred_models = {
                                 """], ),
                             html.P(
                                 """
-                                It consumes public data on four features until the last known daily close. 
+                                  It consumes public data on five features until the last known daily close. 
                                 Historical Closing Price values constitute the autoregressive nature of the model, 
                                 historical traded volume is used as an additional market signal, 
                                 the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
                                 or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                                Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
-                                into account potential investors' and general public perception on the asset.
+                                The daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
+                                into account potential investors' and general public perception on the asset. Finally, the price of Bitcoin (BTC)
+                                is also included as the most representative asset of this kind.
                                 """),
                             html.P("""Bidirectional LSTM layers capture the sequential structure of the data to predict next day's 
                                     closing price. But they also read the sequences backwards, 
@@ -357,7 +368,7 @@ pred_models = {
                     'features': ['Volume', 'Close'],
                     'treasury_ticker': '^FVX',
                     'google_trend': True,
-                    'ordered_features': ['FVX', 'Volume', 'Gtrend', 'Close'],
+                    'ordered_features': ['Volume', 'Gtrend', 'FVX', 'BTC', 'Close'],
                     'builder_func': build_LSTM,
                     'builder_kwargs': dict(
                                     num_rnns=2,
@@ -378,13 +389,14 @@ pred_models = {
                             """], ),
                         html.P(
                             """
-                            It consumes public data on four features until the last known daily close. 
+                            It consumes public data on five features until the last known daily close. 
                             Historical Closing Price values constitute the autoregressive nature of the model, 
                             historical traded volume is used as an additional market signal, 
                             the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
                             or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                            Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
-                            into account potential investors' and general public perception on the asset.
+                            The daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
+                            into account potential investors' and general public perception on the asset. Finally, the price of Bitcoin (BTC)
+                            is also included as the most representative asset of this kind.
                             """),
                         html.P("LSTM layers capture the sequential structure of the data to predict next day's closing price.")
                     ]),
@@ -404,7 +416,7 @@ pred_models = {
                     'features': ['Volume', 'Close'],
                     'treasury_ticker': '^FVX',
                     'google_trend': True,
-                    'ordered_features': ['FVX', 'Volume', 'Gtrend', 'Close'],
+                    'ordered_features': ['Volume', 'Gtrend', 'FVX', 'BTC', 'Close'],
                     'builder_func': build_BLSTM,
                     'builder_kwargs': dict(
                                         num_rnns=2,
@@ -426,13 +438,14 @@ pred_models = {
                             """], ),
                         html.P(
                             """
-                            It consumes public data on four features until the last known daily close. 
-                            Historical Closing Price values constitute the autoregressive nature of the model, 
-                            historical traded volume is used as an additional market signal, 
-                            the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
-                            or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
-                            Finally, the daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
-                            into account potential investors' and general public perception on the asset.
+                                It consumes public data on five features until the last known daily close. 
+                                Historical Closing Price values constitute the autoregressive nature of the model, 
+                                historical traded volume is used as an additional market signal, 
+                                the historical U.S. Treasury Yield at the most relevant maturity among 5 (FVX), 10 (TNX) 
+                                or 30 (TYX) years is included as a way of capturing international inflation and market risk signals. 
+                                The daily social interest in the cryptocurrency as measured by Google Trends (Gtrend) takes 
+                                into account potential investors' and general public perception on the asset. Finally, the price of Bitcoin (BTC)
+                                is also included as the most representative asset of this kind.
                             """),
                         html.P("""Bidirectional LSTM layers capture the sequential structure of the data to predict next day's 
                                 closing price. But they also read the sequences backwards, 
