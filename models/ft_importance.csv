@@ -4079,483 +4079,483 @@ Close t-4,0.0002056075383913,mse,BTC,Bidirectional LSTM,1 day ahead
 Close t-3,0.0010560798032704,mse,BTC,Bidirectional LSTM,1 day ahead
 Close t-2,0.004265434123137,mse,BTC,Bidirectional LSTM,1 day ahead
 Close t-1,0.0134587575292166,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-2,-0.00042095394353015847,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-2,-0.0004126164880425831,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-3,-0.0002257162594600827,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-7,-0.00019782045298151127,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-10,-0.00016025139196876662,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-4,-0.00015608111307251551,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-8,-0.00013738428721512402,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-9,-0.00011786106988309272,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-1,-0.0001073283831198174,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-1,-7.925665121726738e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-12,-5.028092697875047e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-11,-4.7249746727772574e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-4,-3.339329810991484e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-13,-2.736694363387679e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-14,-2.282089223734282e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-2,-1.9231560556415284e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-15,-1.5353911543544707e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-58,-9.389852190073988e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-16,-8.511706574322597e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-51,-8.47039157397117e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-59,-6.103748982605461e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-56,-5.8932663643193606e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-53,-4.863004161886897e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-58,-4.839978805959433e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-17,-4.799806908383636e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-60,-4.783313568321873e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-54,-4.7184833108539215e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-55,-4.613644456207683e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-48,-4.1685692251519635e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-57,-4.166283019600703e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-54,-3.7256985494504846e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-45,-3.4399228553243233e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-47,-3.051839462697714e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-50,-2.8336701327798253e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-44,-2.3915343088619367e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-46,-2.367202549764802e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-43,-2.294615523455029e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-42,-2.1156382887313474e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-55,-1.9071036822145004e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-52,-1.767073592093965e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-57,-1.6863215459538006e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-41,-1.6003438871176057e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-40,-1.3215901100462057e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-50,-1.28941993190676e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-51,-1.2868071255604796e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-19,-1.075414762102822e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-18,-1.0560636651002486e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-10,-1.0067469453159394e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-59,-9.159519247792236e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-49,-9.069704029647518e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-56,-7.72165925533308e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-49,-7.003954012076152e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-52,-6.832488595592823e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-38,-6.775333456776611e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-39,-6.333605883854232e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-20,-5.858401729633145e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-37,-4.996175635325895e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-14,-3.8726689064252917e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-36,-3.257026411074282e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-15,-2.914095578107623e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-21,-2.6838420188329826e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-35,-2.6144393502555707e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-48,-2.523807630140651e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-47,-1.90163311892394e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-16,-1.6591320298880996e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-34,-1.5039966530863702e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-33,-1.0198109770195862e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-13,-8.581435843521557e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-20,-8.475290585660544e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-32,-8.295660149440498e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-31,-7.568973384511346e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-55,-7.258702630630331e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-23,-5.7808340409720715e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-19,-5.5195534063440244e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-21,-5.339922970123978e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-53,-5.331757950421956e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-22,-5.241942732311933e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-23,-4.923506958728896e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-20,-4.890846879226918e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-19,-4.4662658481298134e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-19,-4.1478300745467767e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-43,-4.033519796983742e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-37,-3.788569202106684e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-11,-3.355823150960613e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-30,-3.290502992303601e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-26,-3.127202595487599e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-17,-3.045552397426543e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-21,-3.012892317924565e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-24,-3.0047272982225426e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-25,-2.792436782500518e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-18,-2.7516116832965176e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-41,-2.5148261081214818e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-27,-2.359690731354447e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-22,-2.3433606916034577e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-46,-2.3188656321504464e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-29,-2.1718952750854337e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-40,-1.9024496207553643e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-38,-1.7636442837393185e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-41,-1.7473142439883294e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-34,-1.6085089069722835e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-21,-1.5105286688132935e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-24,-1.5105286688132935e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-20,-1.298238153091269e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-36,-1.0859476377161892e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-22,-8.654921019451978e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-39,-8.491620625411533e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-25,-8.491620625411533e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-18,-8.246670027411973e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-28,-8.165019830391751e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-26,-8.165019830391751e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-29,-7.838419038841415e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-37,-6.368715468191288e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-28,-5.960464476151284e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-29,-5.71551388162117e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-33,-5.552213484111279e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-26,-3.347658129870812e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-27,-3.1843577323609207e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-28,-2.9394071378308073e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-38,-2.857756940810585e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-35,-2.041254956730576e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-28,-1.8779545592206848e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-25,-1.5513537676703493e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-33,-1.4697035671806802e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-17,-1.388053370160458e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-32,-1.2247529726505668e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-29,-1.1431027756303447e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-27,-1.0614525751406756e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-46,-1.0614525751406756e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-32,-8.981521811002313e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-30,-7.348517835903401e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-35,-5.715513860804489e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-30,-2.4495059453011336e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-30,8.165020048966909e-11,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-31,5.715513895498958e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-31,8.981521845696783e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-24,8.981521845696783e-10,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-45,1.0614525786101225e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-36,1.388053373629905e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-34,1.959604759710354e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-22,2.776106743790363e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-32,3.0210573383204764e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-40,3.7559091253802634e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-23,4.000859719910377e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-31,5.7971640821108394e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-23,9.879673999041438e-09,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-33,1.1104426971692005e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-52,1.1594328164221679e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-39,1.4533735302052486e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-26,1.559518788066261e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-27,1.747314244335274e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-43,1.894284601053342e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-34,2.718951604141484e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-35,3.021057337973532e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-44,4.131500035142732e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-25,4.703051423651794e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-36,4.78470162171285e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-42,6.180920013310054e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-24,6.417705588138145e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-45,6.654491163313181e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-18,6.72797634201916e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-42,7.242372591226287e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-47,7.519983265605323e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-37,8.565105804117512e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-44,8.957026756059583e-08,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-53,1.2353675006224196e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-15,1.287623627548029e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-38,1.4484745182452574e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-39,1.8975506090382344e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-48,1.9351097002573425e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-40,2.3866352969956206e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-16,2.7434466636638843e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-42,3.094542516436649e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-41,3.1410831294667596e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-17,3.3639881709054964e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-51,4.1796736521479416e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-49,4.236012288993951e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-54,4.581392627871217e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-56,5.682037301259213e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-43,5.936785920056253e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-16,6.042931177847877e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-8,6.713279306069797e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-58,6.764718931025204e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-44,7.625312021357356e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-50,7.842501548900593e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-59,8.83046894859657e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-12,9.897637040651164e-07,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-57,1.1158316102766186e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-45,1.2349592496269102e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-47,1.5032618013166577e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-46,1.559927038950748e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-9,1.6223877291228483e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-15,1.6690933541084474e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-48,1.7507435524331816e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-60,2.02548408607256e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-14,2.176630986880368e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-13,2.447791295510926e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-12,2.5796563658010696e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-14,2.798968798494589e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-60,2.952062920349996e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-10,3.186233977593017e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-49,3.3760724002379616e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-50,3.864748837196369e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-13,4.648590741094388e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-51,4.932325180263819e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-3,5.066558106305713e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-52,7.1624370470459164e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-12,8.239811413908449e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-53,8.402866859959918e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-54,9.063253663992715e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-9,9.083501201628819e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-3,9.259064152299101e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-11,9.441539032820773e-06,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-6,1.065755543643715e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-10,1.1492673664879188e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-5,1.3144219298377724e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-55,1.3445501458157066e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-11,1.3948793280614546e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-4,1.3997946700004815e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-5,1.402995357775022e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-56,1.4384315438466244e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-7,1.5117452569206324e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-8,1.7696617322267294e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-58,2.0272111239498514e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-6,2.2513817434441363e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-57,2.2650499866435497e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-59,2.3708278185700926e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-7,2.4060678730116608e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-60,2.586498652419264e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-5,2.743838584586336e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-9,3.113436372313011e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-8,3.944113989264725e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Volume t-1,4.423974535504305e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-6,5.071670568018716e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-7,6.160262512834233e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-6,9.223882879431933e-05,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-5,0.0007546330014634728,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-4,0.003123704140635626,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-3,0.012303239272869065,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-2,0.03314583173853149,mae,BTC,Bidirectional LSTM,1 day ahead
-Close t-1,0.07151328896030452,mae,BTC,Bidirectional LSTM,1 day ahead
-TYX t-2,-3.546407261765833e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-2,-2.859415607048342e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-7,-1.806663737504105e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-1,-1.729087153893704e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-1,-1.724723060413677e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-3,-1.4897318843034267e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-8,-1.3380571102556533e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-9,-1.1540734264889546e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-10,-1.1304816307106504e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-11,-4.907829798900232e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-6,-4.318190557418052e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-12,-4.154545412655497e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-4,-3.95098132961898e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-4,-3.0742880429454437e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-13,-2.159251857876518e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-14,-1.7537178589756676e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-2,-1.3500966719302322e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-3,-1.243933727927823e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-15,-1.0781974167402416e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-59,-7.315452138946651e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-16,-6.520653725381863e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-58,-6.385695145578714e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-60,-6.13749368279454e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-55,-6.017378169605528e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-59,-5.98388930005047e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-58,-5.368612103652656e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-51,-5.222365719370408e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-54,-4.928262092075437e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-53,-4.527589950325834e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-54,-3.9889477205492987e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-57,-3.7956991388323445e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-55,-3.3676905590595847e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-17,-3.34427138630293e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-56,-2.5830218146891733e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-56,-2.554112828811279e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-48,-2.3375363546152775e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-50,-1.9980639239121877e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-52,-1.691443871393479e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-47,-1.6005270324598135e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-45,-1.590533231002854e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-52,-1.4920295491054232e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-43,-1.4683739338902744e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-18,-1.4096954089270163e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-46,-1.280080621777254e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-42,-1.2664932441956885e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-51,-1.1183673028359719e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-19,-9.673053950713661e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-44,-9.400992666557147e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-50,-9.340613112054225e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-41,-9.007960881260522e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-49,-8.561022464244686e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-40,-8.456214193339282e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-57,-6.497612560041159e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-49,-6.230705191991471e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-20,-3.982444018362039e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-39,-3.4557282191740625e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-37,-2.9273251853567314e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-53,-2.9174156447424326e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-38,-2.8454289779521365e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-36,-2.3028870838265672e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-21,-1.9976854908026857e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-48,-1.906534027396392e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-14,-1.5435863313885065e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-35,-1.3111914300189056e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-17,-1.1874072924347376e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-34,-1.047328395005747e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-33,-8.672302503399433e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-19,-8.025020197303077e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-18,-7.412929130127047e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-20,-7.233732925919327e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-44,-5.892334143612482e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-32,-5.669656935776424e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-23,-5.272986028934459e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-21,-5.100056598068316e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-16,-5.0595107633664635e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-52,-4.952909069856626e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-31,-4.2192137416231096e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-23,-4.076721123224061e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-22,-4.0622052247581836e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-20,-3.998211030808128e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-21,-3.753567980415741e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-53,-3.230427597731428e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-19,-3.2065187190568126e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-46,-3.086727523647463e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-43,-3.062092949861206e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-13,-2.998907155048712e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-22,-2.989482015126714e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-45,-2.8814175564865e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-17,-2.872067314117939e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-24,-2.815294033813552e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-19,-2.652944689992588e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-30,-2.5080325506297504e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-24,-2.2920568685212694e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-41,-2.1038538870017318e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-25,-1.6887129187419594e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-26,-1.5639404687744704e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-29,-1.4063875051519015e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-47,-1.2043634135773182e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-55,-1.1534251885851263e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-27,-1.084879381208631e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-25,-1.075595245357032e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-20,-1.0680292977056569e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-34,-1.063511532637361e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-37,-1.0308568800009368e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-39,-8.787656837015018e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-21,-8.688345322057159e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-22,-8.060696270618256e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-35,-7.735292032557892e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-32,-5.463716855249462e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-29,-5.320893988001313e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-26,-4.948393685913141e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-40,-4.836390166389898e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-23,-4.0452740658093733e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-22,-3.756230851532927e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-38,-3.728161107737979e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-18,-3.578549061895517e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-38,-3.354187761957575e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-35,-2.798472461791948e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-33,-2.7726443157464337e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-25,-2.371504910850253e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-36,-2.3615141743135726e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-24,-2.1548900934042353e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-28,-2.099468624124079e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-46,-1.976569115628643e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-26,-1.4764911699955557e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-28,-1.0337774397368299e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-33,-5.5429989699769255e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-31,-4.856433245999103e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-27,-2.2761577453574156e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-27,-2.174902814268409e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-37,-3.55183222243427e-13,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-31,1.610532193718761e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-36,3.425383566200979e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-32,5.482929225659322e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-30,7.428274369312288e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-29,7.480087122618828e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-28,7.926933079122761e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-43,8.602170332386999e-11,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-47,1.1603365024457496e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-34,1.1983914446726807e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-28,1.2209150736849222e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-30,1.277935158952928e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-29,1.7146880822768024e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-40,2.176660319000434e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-30,3.727234418457112e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-32,5.925351777161594e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-31,7.25357460836136e-10,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-39,1.0728236417723719e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-42,1.2095799343690358e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-33,1.3443443201092281e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-41,1.6588277153804787e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-27,2.0589781465083293e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-15,2.4225055733108347e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-34,2.4849656623865055e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-42,2.5010514359416827e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-35,2.560070916433725e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-26,2.6155786683659116e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-23,2.624971233216797e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-45,3.7049026163594664e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-36,4.048522673572377e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-25,4.202155689928856e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-54,4.630659843638321e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-18,4.654904710060977e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-44,4.824971967104519e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-48,5.533662476592954e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-37,5.627464815752964e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-24,5.933515897474546e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-51,8.16428501768194e-09,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-38,1.0756171259446515e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-49,1.1993632380107554e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-39,1.3342528021775997e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-40,1.5342919066100788e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-56,1.6658526357394426e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-17,2.062313276738042e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-41,2.26683680748822e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-16,2.269166758390572e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-42,2.7693365284016218e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-57,3.025381559065409e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-58,3.5491735289540534e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-44,3.930369395905003e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-43,3.9366362353720694e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-16,4.2117024735182154e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-50,4.3560263746230364e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-59,5.587789636194145e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-60,6.602327883465254e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-15,6.765204737916881e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-45,6.88339652745373e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-10,8.718202617913774e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-46,8.777337936040439e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-47,9.917733138605292e-08,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-12,1.0051985429833724e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-48,1.0952057924484056e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-11,1.1474986460504027e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-15,1.2294465336038733e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-14,1.4130983547742167e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-13,1.5889526871581787e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-49,1.594176991696417e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-60,1.880762055227192e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-50,1.9036301715351107e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-14,1.942272675398756e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-51,2.6266443848752506e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-12,3.2988914991708123e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-13,3.326617918534376e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-1,3.4611125098804943e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-52,3.723819009030481e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-9,4.7681301590428785e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-53,4.960748062223094e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-8,4.982181714087083e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-3,5.677063996996226e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-54,6.224916379775434e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-12,6.249581403974932e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-11,8.320019374587467e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-10,8.503480960943147e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-7,8.84943704582402e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-55,9.387588028101062e-07,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-11,1.0383766372054452e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-10,1.0610661295567007e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-5,1.078812043604836e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-56,1.1042806947075302e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-4,1.237037725610032e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-9,1.441298333420063e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-57,1.4688390579496594e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-58,1.6089533500450144e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Volume t-6,1.7063452294411446e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-60,1.809750861258121e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-59,1.934756632324163e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-5,2.0245832367902367e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-8,2.234369590570326e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-9,2.491908267832771e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-7,2.5172376811709177e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-6,2.693640994379763e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-8,3.425182818743693e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Gtrend t-5,3.831571348630446e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-7,4.3608492917430715e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-TYX t-6,4.621534753245274e-06,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-5,4.293808865389766e-05,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-4,0.00020560753839139018,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-3,0.0010560798032704152,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-2,0.00426543412313702,mse,BTC,Bidirectional LSTM,1 day ahead
-Close t-1,0.013458757529216697,mse,BTC,Bidirectional LSTM,1 day ahead
+TYX t-3,-0.0004410194319770869,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-4,-0.0004316704410200038,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-7,-0.00024401253603830234,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-8,-0.0002235019901365154,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-2,-0.00019729279515983203,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-5,-0.00013626898174598154,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-7,-0.0001272075796780528,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-9,-0.00010650084443288368,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-9,-0.00010418393840528478,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-6,-9.963974776092122e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-8,-9.119963079032636e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-1,-9.110647304843081e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-2,-8.690774217494368e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-6,-8.066842737695576e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-10,-7.541873683667918e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-10,-7.212987096453724e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-11,-5.0173801918552974e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-4,-4.7288007154176054e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-11,-4.621735990863879e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-12,-4.404750588821865e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-3,-3.080351711952367e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-12,-2.9156142718169548e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-13,-2.905399832007008e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-5,-2.2551491698937637e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-14,-1.94111098981882e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-13,-1.794997959920705e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-14,-1.3111225546220268e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-15,-1.2290151151891221e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-15,-1.2210509330940617e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-16,-8.962252368665408e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-16,-7.402455752526099e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-17,-5.824108646339948e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-18,-4.520563230123176e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-60,-4.030743690385669e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-18,-3.504998063386805e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-19,-3.1382253725224796e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-17,-2.925771556486212e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-20,-2.3842674412126452e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-19,-2.3396864329283673e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-21,-2.0338247900125728e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-20,-1.999531706715907e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-9,-1.8575420118356611e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-60,-1.7332704099863594e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-21,-1.5566610310178974e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-22,-1.5277568608113024e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-23,-1.4384315438452366e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-22,-1.2002579153382043e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-24,-1.12081227237118e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-23,-1.0665148904853705e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-10,-9.153803733931432e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-25,-8.576536831769732e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-26,-7.640825558999365e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-13,-6.512419818173465e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-24,-6.214396594296512e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-16,-5.313794906799951e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-25,-5.142329490351316e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-27,-4.793683143489158e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-13,-4.138032050973739e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-28,-3.7387625811610703e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-26,-3.624452303528647e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-29,-2.8348948857490064e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-27,-2.5491191916332534e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-14,-2.3899013048764295e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-18,-2.347443201766719e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-30,-2.158831243631587e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-19,-2.0657500175366716e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-17,-1.9228621704961424e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-12,-1.9032661228990388e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-31,-1.7464977421222105e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-28,-1.7383327222814104e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-15,-1.6770950735447987e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-32,-1.5595187879621775e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-20,-1.539922740365074e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-29,-1.3170176989263371e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-34,-9.740868659943724e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-21,-9.218307390340685e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-30,-9.095832093075629e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-33,-8.287495129738476e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-19,-7.038247095206285e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-31,-6.589171004656169e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-22,-6.26257021137111e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-18,-5.895144318882051e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-35,-5.584873565001036e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-32,-4.8255267209168506e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-36,-4.196820193799744e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-23,-4.017189757232753e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-37,-3.421143309617625e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-33,-2.7679417230475067e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-38,-1.8534595018493416e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-26,-1.7881393431923298e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-34,-1.649334006176284e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-35,-1.535023728266305e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-39,-1.4860336093602822e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-24,-1.298238153091269e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-26,-1.2900731333892468e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-40,-1.1594328160752232e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-29,-8.573270822431756e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-43,-7.675118641331524e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-36,-7.593468444311302e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-42,-7.511818243821633e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-32,-6.613666062721402e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-25,-5.552213484111279e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-41,-5.552213484111279e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-36,-5.1439624920712745e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-33,-4.899011897541161e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-11,-4.4907609055011566e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-38,-4.4091107084809344e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-37,-4.4091107084809344e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-33,-3.837559318931039e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-34,-3.6742589248905944e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-44,-3.6742589248905944e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-31,-3.510958527380703e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-38,-3.347658129870812e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-28,-3.1843577323609207e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-35,-3.1843577323609207e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-37,-2.857756940810585e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-34,-2.2045553542404672e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-32,-2.2045553542404672e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-30,-2.122905153750798e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-47,-2.041254956730576e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-31,-2.041254956730576e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-30,-1.959604759710354e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-29,-1.8779545592206848e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-40,-1.8779545592206848e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-39,-1.7963043622004626e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-35,-1.388053370160458e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-42,-1.388053370160458e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-40,-1.388053370160458e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-51,-1.388053370160458e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-43,-1.0614525786101225e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-39,-1.0614525786101225e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-46,-1.0614525786101225e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-52,-9.798023781204535e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-58,-8.981521811002313e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-45,-8.981521811002313e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-54,-8.165019806105622e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-57,-8.165019806105622e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-46,-7.348517835903401e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-45,-7.348517835903401e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-45,-7.348517835903401e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-49,-6.53201586570118e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-51,-6.53201586570118e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-53,-6.53201586570118e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-44,-5.715513860804489e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-39,-4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-59,-4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-53,-4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-50,-4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-36,-3.266007915503355e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-57,-3.266007915503355e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-54,-3.266007915503355e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-55,-2.4495059453011336e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-41,-1.6330039404044427e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-60,-1.6330039404044427e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-53,-8.165019702022214e-11,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-42,-8.165019702022214e-11,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-41,-8.165019702022214e-11,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-48,-8.165019702022214e-11,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-50,0.0,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-37,0.0,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-43,0.0,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-56,0.0,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-41,8.165020048966909e-11,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-60,1.6330039750989123e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-48,2.4495059453011336e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-50,2.4495059453011336e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-46,2.4495059453011336e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-52,2.4495059453011336e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-49,2.4495059453011336e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-57,3.2660079501978245e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-55,4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-56,4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-51,4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-44,4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-48,4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-50,4.082509920400046e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-27,4.899011925296737e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-58,4.899011925296737e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-40,5.715513895498958e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-48,5.715513895498958e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-51,6.53201586570118e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-54,6.53201586570118e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-53,6.53201586570118e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-59,7.34851787059787e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-47,8.165019840800092e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-59,8.981521811002313e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-58,8.981521811002313e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-38,9.798023815899004e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-57,9.798023815899004e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-52,9.798023815899004e-10,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-54,1.0614525786101225e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-52,1.0614525786101225e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-47,1.0614525786101225e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-55,1.1431027790997916e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-43,1.1431027790997916e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-56,1.2247529761200138e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-49,1.2247529761200138e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-56,1.2247529761200138e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-59,1.2247529761200138e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-47,1.306403173140236e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-46,1.306403173140236e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-45,1.306403173140236e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-55,1.306403173140236e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-44,1.388053373629905e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-42,1.6330039681600184e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-58,1.8779545626901317e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-49,2.2862055547301363e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-25,4.98066209803083e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-28,9.144822211981651e-09,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-27,2.0004298589143543e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-23,2.6862915249864505e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-24,5.6501937240049926e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-16,7.275032670728265e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-21,8.891706597402571e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-22,9.242802450140641e-08,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-20,1.8697895416003307e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-17,2.8014183044502983e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-8,3.5468846151451294e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-15,6.107434834534686e-07,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-11,1.183601274882401e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-14,1.789853997426899e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-12,2.2132102757282945e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-7,2.5153641366494617e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-10,3.319815413592442e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-8,3.9130041044055375e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-9,5.155230221685209e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-5,7.896064078971587e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-6,9.076816557779949e-06,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-6,1.087984015385457e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Volume t-4,1.088081995623616e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-7,1.3049824597086146e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-3,3.1236528281932546e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-1,3.569237065150638e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-2,9.551848829544157e-05,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-5,0.0002566274728481137,mae,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-1,0.0004390517444518814,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-4,0.0016464161827892572,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-3,0.0076928242976156865,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-2,0.028370058208642055,mae,BTC,Deep Learning LSTM,1 day ahead
+Close t-1,0.092279268106501,mae,BTC,Deep Learning LSTM,1 day ahead
+TYX t-3,-2.9531685968608046e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-4,-2.4863626457591066e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-7,-1.6876995135018096e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-8,-1.2936080295504579e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-2,-1.055362794669687e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-6,-1.0016518431792349e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-5,-8.63911833855896e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-7,-8.11645750392186e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-9,-6.838614668241874e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-6,-6.774574205288867e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-9,-6.379974692717638e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-1,-5.704232400150812e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-8,-5.372132583781209e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-2,-5.100572301696771e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-10,-4.399784457683148e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-10,-4.28361300505557e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-11,-3.318294467439891e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-11,-2.885674959861328e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-12,-2.5339813836904425e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-5,-2.2361973637052097e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-3,-1.8447456363278325e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-13,-1.6445059044717164e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-12,-1.593465903833996e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-13,-1.1112580254480503e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-14,-1.0916197844832234e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-15,-7.860079358771232e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-14,-7.300632723408187e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-15,-6.797818674262289e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-16,-5.797573102426287e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-6,-4.6836927752608865e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-16,-4.566174619637445e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-17,-3.5560837446609907e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-18,-3.107543098541639e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-18,-3.0925006517590944e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-17,-2.9847116787416923e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-60,-2.1073545513976798e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-19,-1.8852054121183855e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-19,-1.8790218004954232e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-20,-1.5600131770545592e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-20,-1.3931385440006314e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-22,-1.1410995891540567e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-21,-1.0756022730449254e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-4,-1.0616540820464551e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-21,-1.0338487257434414e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-9,-9.009488242570866e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-23,-8.713325003433924e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-22,-7.91062263381069e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-24,-6.999354417521093e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-10,-6.427299398519687e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-25,-5.941119786542423e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-23,-5.836023436690471e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-13,-4.817725942414964e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-26,-4.8172649452890744e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-11,-4.755681310320177e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-14,-3.788453248700953e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-24,-3.468560858194483e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-12,-2.9286888014886346e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-27,-2.901951572434596e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-25,-2.77406965230962e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-28,-2.2026926053638797e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-26,-2.0033886853274008e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-29,-1.9952703881795895e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-15,-1.7063313680846376e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-27,-1.5824983266290657e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-30,-1.1995730266967444e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-17,-1.0743963526900317e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-31,-1.0735846050374288e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-32,-9.658730330732584e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-28,-9.352630760562503e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-29,-8.301191547523123e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-20,-7.272685582232485e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-34,-6.443757685748418e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-33,-5.868524776374284e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-18,-5.561823892283671e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-8,-5.535601877598197e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-30,-4.906470624319731e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-31,-3.741958822986967e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-35,-3.3110856184669427e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-18,-3.3062833647116985e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-32,-2.9560554899070793e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-22,-2.8821492486456185e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-23,-2.7371293390447346e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-36,-2.5799902864066457e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-21,-2.308662139390537e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-37,-2.0896725430770424e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-19,-1.9729881587000897e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-33,-1.5004549191663386e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-38,-1.2556285504611644e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-60,-1.0835155801009952e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-39,-8.492804824200909e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-40,-7.859558392563776e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-35,-7.687991585578549e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-34,-6.916227088650875e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-24,-4.935231093152609e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-29,-4.93409655906267e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-36,-3.7393850375096876e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-43,-3.410082383571017e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-26,-2.463151833106275e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-41,-2.405098890228066e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-34,-2.2620463174024413e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-31,-2.0294530043030862e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-42,-1.6667617145412622e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-44,-1.586539429563119e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-37,-1.5461925533324927e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-38,-1.5020352019459726e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-37,-1.268135793857511e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-32,-1.1320481672297961e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-36,-9.957115438153502e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-33,-9.793387845472012e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-34,-6.070624873014824e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-32,-5.951854102886206e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-38,-5.868289719174885e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-33,-3.494698150655062e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-54,-1.8951720076078316e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-45,-1.7639334112286298e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-47,-1.5658146329013134e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-30,-1.529455013159209e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-35,-1.0547132720147012e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-40,-9.92997069119983e-12,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-40,3.4121126063491047e-12,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-57,8.227546790563756e-12,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-39,1.0304356760221234e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-58,1.552359738150877e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-52,1.696183254615291e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-51,2.0199370930236438e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-49,2.0264810879702666e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-35,2.689222802776392e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-46,3.098915254181461e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-42,3.138776608416216e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-53,3.338946198520876e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-43,3.448475359435488e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-59,3.583693270522298e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-54,3.822833282568494e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-45,4.054392531340628e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-56,4.064383584464343e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-46,4.092790949900005e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-50,4.83062490832728e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-39,4.8460847205770985e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-57,5.126927409091625e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-54,5.4354858721600285e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-36,5.558559840711241e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-45,5.6477654259042e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-30,5.817098842550439e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-59,5.856784751189642e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-48,6.192998652961024e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-48,6.277743505155725e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-49,6.304816911606448e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-60,6.74337195241334e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-28,6.863184120412674e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-51,6.941203536427187e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-37,7.074688653917888e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-41,7.303494462852778e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-55,7.324248911359799e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-39,7.75002449368567e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-48,8.212711305292941e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-58,8.228058447252995e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-57,8.443950551793866e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-51,8.652712899480386e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-46,8.691128762852718e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-56,8.73008262902708e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-56,8.748219444860983e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-52,8.820382054949838e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-43,8.890782771456274e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-55,8.916931299243758e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-52,9.024147032930807e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-44,9.11863230323301e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-53,9.385367190448829e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-59,9.709782045237703e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-42,9.774448936870905e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-31,9.793631140439518e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-43,9.958347514660293e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-53,9.958588034070237e-11,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-41,1.0331286087045255e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-50,1.0770289033453645e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-59,1.1078108320006913e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-55,1.1596685590975486e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-53,1.1723502073637815e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-54,1.1844578237055897e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-48,1.190722890296106e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-42,1.1915129527560048e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-50,1.1931394424975067e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-47,1.2012400340925822e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-55,1.2168237402930548e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-49,1.2171467653199208e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-44,1.23984689594063e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-47,1.250151372396771e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-56,1.2889243372702502e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-45,1.3355730703237118e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-46,1.3793971357940055e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-38,1.3894743211909089e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-25,1.4160267901817958e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-47,1.4624143205004686e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-57,1.4718718388193053e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-50,1.4830103356282265e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-60,1.4842472140664392e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-51,1.4884328351002368e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-58,1.4961517203100627e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-41,1.515740419462397e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-44,1.57850394864531e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-40,1.6965800032214817e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-52,1.844952315921411e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-58,1.963024966102761e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-49,1.9981982735117754e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-27,2.723329873242919e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-25,3.19666629104709e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-26,3.581122685718252e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-29,3.814193292803192e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-16,4.571850117452217e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-28,6.967581235280476e-10,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-23,1.5976614950712759e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-27,1.6551377442003065e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-19,4.450591055090748e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-24,4.817787016553332e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-21,5.2838834060106935e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-22,7.1889719773909205e-09,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-20,2.2300632660171918e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-16,2.4593037790910863e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-15,2.74035687219433e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-8,3.152853227659288e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-17,3.455107606628333e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-13,6.29257154150225e-08,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-14,1.0861730404855552e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-12,1.4766956736860133e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-11,1.6443961566264646e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-10,2.0938142807655317e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-6,2.4674906307325765e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-7,2.542696324708523e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-7,3.458938026300101e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-9,3.5856996832427275e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-5,3.85777589427083e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+Volume t-4,9.706459773532999e-07,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-1,1.64369367782434e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-3,7.777404309213649e-06,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-5,1.0665382183103287e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+Gtrend t-1,1.7112339929487453e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+TYX t-2,4.148080385910297e-05,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-4,0.00013374177743114837,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-3,0.0008148550312505085,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-2,0.004885578526286511,mse,BTC,Deep Learning LSTM,1 day ahead
+Close t-1,0.022215666950133627,mse,BTC,Deep Learning LSTM,1 day ahead

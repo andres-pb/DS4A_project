@@ -702,6 +702,7 @@ def get_prediction(
     n_features = model_meta['n_features']
     test_days = model_meta['test_days']
     ord_fts = model_meta['ordered_features']
+    use_btc = model_meta['use_btc']
     # Define a model that is still not trained
     rebuilt_model = builder_func(in_shape=(lags, n_features), **builder_kwargs)
     # load models weight
@@ -721,14 +722,14 @@ def get_prediction(
     if status:
         print('got treasury data')
         yield_df.fillna(method='ffill', inplace=True)
-        yield_data = yield_df.iloc[-lags:, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+        yield_data = yield_df.iloc[-(lags+1):-1, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
         # get the last close with lags
         status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
 
         if status:
             print('Successfully got coin mkt data')
             last_close = close_df['Close'].values[-1]
-            sample_df = close_df.iloc[-lags:, :][features]
+            sample_df = close_df.iloc[-(lags+1):-1, :][features]
             sample_df[tr_ticker[-3:]] = yield_data
             # query our database bc google trends takes about 1 minute to load results
             use_gtrend = model_meta['google_trend']
@@ -776,17 +777,25 @@ def get_prediction(
                     """.format(row['Date'], row['Ticker'], row['Gtrend'])
                     cursor.execute(insert_query)
                     conn.commit()
-                    print('>> Google Trend database updated.')
+                  print('>> Google Trend database updated.')
                 
                 else:
                   gtrend_df = gt_data_local
 
-                gtrend_df = gtrend_df.iloc[-lags:, :]
+                gtrend_df = gtrend_df.iloc[-(lags+1):-1, :]
                 print('>> Successfully collected Google Trends data.')
                 gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
                 gtrend_data = gtrend_df[coin_name]
                 sample_df['Gtrend'] = gtrend_data
-                
+            
+            if use_btc:
+              status, btc_df = yf.market_value('BTC-USD', hist=history, interval='1d')
+              if status:
+                print('Successfully collected BTC data.')
+                sample_df['BTC'] = btc_df['Close']
+              else:
+                print('Prediction failed. Error collecting BTC feature data.')
+                return
             # Dataframe con la muestra
             sample_df = sample_df[ord_fts]
             sample_df.fillna(method='ffill', inplace=True)
@@ -796,7 +805,7 @@ def get_prediction(
             X = prep_data(sample_df, test_days=test_days, timesteps=lags, xscaler=xscaler, yscaler=yscaler, production=True)
             # Make model prediction
             pred_y = rebuilt_model.predict(X)
-
+            print('PRED_Y', pred_y)
             # undo scaling
             prediction = yscaler.inverse_transform(pred_y).reshape(1)[0]
 

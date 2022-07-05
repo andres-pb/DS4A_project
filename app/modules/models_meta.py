@@ -216,10 +216,10 @@ pred_models = {
                     'builder_func': build_LSTM,
                     'builder_kwargs': dict(
                                 num_rnns=2,
-                                dim_rnn=200, 
+                                dim_rnn=128, 
                                 dense_units=100, 
                                 drop=False, 
-                                drop_rate=0.1,
+                                drop_rate=0.3,
                             ),
                     'about': html.Div([
                         html.P([
@@ -266,7 +266,7 @@ pred_models = {
                         'builder_func': build_LSTM,
                         'builder_kwargs': dict(
                                             num_rnns=2,
-                                            dim_rnn=200, 
+                                            dim_rnn=128, 
                                             dense_units=100, 
                                             drop=True, 
                                             drop_rate=0.3,
@@ -303,7 +303,7 @@ pred_models = {
                     '1 day ahead': {
                         'ticker': 'LTC',
                         'coin_name': 'Litecoin',
-                        'model_id': 'LTC_Bidirectional_LSTM_60_lags_4_fts_prod',
+                        'model_id': 'LTC_Bidirectional_LSTM_60_lags_5_fts_prod',
                         'test_days': 365,
                         'lags': 60,
                         'n_features': 5,
@@ -367,7 +367,7 @@ pred_models = {
                 '1 day ahead': {
                     'ticker': 'NMC',
                     'coin_name': 'Namecoin',
-                    'model_id': 'NMC_LSTM_60_lags_4_fts_prod',
+                    'model_id': 'NMC_LSTM_60_lags_5_fts_prod',
                     'test_days': 365,
                     'lags': 60,
                     'n_features': 5,
@@ -416,7 +416,7 @@ pred_models = {
                 '1 day ahead': {
                     'ticker': 'NMC',
                     'coin_name': 'Namecoin',
-                    'model_id': 'NMC_Bidirectional_LSTM_60_lags_4_fts_prod',
+                    'model_id': 'NMC_Bidirectional_LSTM_60_lags_5_fts_prod',
                     'test_days': 365,
                     'lags': 60,
                     'n_features': 5,
