@@ -4,6 +4,7 @@ from dash import html, dcc, callback
 from matplotlib.pyplot import plot, text
 import pandas as pd
 import datetime as dt
+import sqlite3 as sql
 from app.dashboard.crypto_plots import plot_model_test, plot_importance, plot_lime
 from dash.dependencies import Input, Output
 from app.modules.models_meta import pred_models
@@ -20,10 +21,12 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
+# Connect to db
+conn = sql.connect('database.db', detect_types=sql.PARSE_DECLTYPES)
+
 # Read predictions obtained during model testing
-preds_df = pd.read_csv('./app/dashboard/test_models/predictions.csv', parse_dates=['Date'], index_col='Date')
-ft_importance_df = pd.read_csv('./app/dashboard/test_models/ft_importance.csv')
-lime_df = pd.read_csv('./app/dashboard/test_models/lime.csv')
+preds_df = pd.read_sql('SELECT * FROM test_set_predictions', conn, index_col='Date')
+
 
 layout = html.Div([
         # Menus and controls row
@@ -307,11 +310,32 @@ def update_models_plots(sel_coin, sel_model, sel_time):
     model_preds = preds_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
     model_preds = model_preds[['Observed', 'Predicted']]
 
-    ft_importance = ft_importance_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
-    ft_importance = ft_importance[['Feature', 'Importance', 'Metric']]
-    ft_importance.sort_values(by=['Importance'], inplace=True)
+    query_ftimp = """
+        SELECT
+            Metric,
+            Feature,
+            Importance
+        FROM feature_importance_ep
+        WHERE Model = "{}"
+            AND Coin = "{}"
+            AND Scope = "{}"
+        ORDER BY Metric, Importance
+    """.format(sel_model, sel_coin[:3], sel_time)
 
-    sublime_df = lime_df.query('(Coin == @sel_coin) & (Model == @sel_model) & (Scope == @sel_time)')
+    conn = sql.connect('database.db', detect_types=sql.PARSE_DECLTYPES)
+    ft_importance = pd.read_sql(query_ftimp, conn)
+
+    query_lime = """
+        SELECT *
+        FROM lime_weigths
+        WHERE Model = "{}"
+            AND Coin = "{}"
+            AND Scope = "{}"
+        ORDER BY LIME_Weight
+    """.format(sel_model, sel_coin, sel_time)
+
+    sublime_df = pd.read_sql(query_lime, conn)
+    sublime_df.rename(columns={col: col.replace('_', ' ') for col in sublime_df.columns.to_list()}, inplace=True)
 
     fig_test = plot_model_test(model_preds, px_theme='plotly_white')
     fig_imp = plot_importance(ft_importance, px_theme='plotly_white')
@@ -382,6 +406,7 @@ def update_close(sel_coin, n):
             ]
     else:
         return html.P('Price not available...')
+
 
 @callback(
     Output('questions-header', 'children'),
