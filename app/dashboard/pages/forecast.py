@@ -10,6 +10,7 @@ from dash.dependencies import Input, Output
 from app.modules.models_meta import pred_models
 from app.api import yahoo_finance, GoogleTrends
 from app.modules.lstm import get_prediction
+from app.modules.neural_prophet import get_npro_prediction
 
 dash.register_page(__name__)
 
@@ -68,7 +69,7 @@ layout = html.Div([
                             html.H3('Time Scope:'),
                             dcc.Dropdown(
                                 id='time-dropdown',
-                                options=[],
+                                options=['1 day ahead'],
                                 value='1 day ahead',
                                 clearable=False,
                             )
@@ -288,16 +289,16 @@ layout = html.Div([
 # -------------------------------------------- CALLBACKS ----------------------------------------------
 
 @callback(
-    Output('time-dropdown', 'options'),
-    Output('time-dropdown', 'value'),
-    [Input('coin-dropdown', 'value'), Input('model-dropdown', 'value')],
+    Output('model-dropdown', 'options'),
+    Output('model-dropdown', 'value'),
+    [Input('coin-dropdown', 'value')],
 )
-def populate_time_ddown(sel_coin, sel_model):
-    pred_dff = preds_df.query('(Coin == @sel_coin) & (Model == @sel_model)')
-    times_list = sorted(pred_dff['Scope'].unique())
-    time_opts = [{'label': t, 'value': t} for t in times_list]
-    time_value = times_list[0]
-    return time_opts, time_value
+def populate_mdl_ddown(sel_coin):
+    pred_dff = preds_df.query('(Coin == @sel_coin)')
+    mdls_list = sorted(pred_dff['Model'].unique())
+    mdl_opts = [{'label': t, 'value': t} for t in mdls_list]
+    mdl_value = mdls_list[0]
+    return mdl_opts, mdl_value
 
 @callback(
     Output('test-plot', 'figure'),
@@ -362,16 +363,24 @@ def update_about_model(sel_coin, sel_model, sel_time):
     [Input('predict-btn', 'n_clicks'), Input('coin-dropdown', 'value'), Input('model-dropdown', 'value'), Input('time-dropdown', 'value')],
 )
 def predict_price(n, sel_coin, sel_model, sel_time):
+
     if n == 1:
-        print('>>>>>>>ATTEMPTING PRICE PREDICTION')
-        forecast, ret = get_prediction(
-            pred_models, 
-            sel_coin, 
-            sel_model,
-            sel_time,
-            './app/dashboard/prod_models/',
-            './app/dashboard/test_models/scalers/'
-            )
+        print('>>>> ATTEMPTING PRICE PREDICTION')
+
+        if sel_model == 'Neural Prophet':
+            forecast, ret = get_npro_prediction(
+                sel_coin, 
+                './app/dashboard/prod_models/',
+                )
+        elif sel_model in ['Deep Learning LSTM', 'Bidirectional LSTM']:   
+            forecast, ret = get_prediction(
+                pred_models, 
+                sel_coin, 
+                sel_model,
+                sel_time,
+                './app/dashboard/prod_models/',
+                './app/dashboard/test_models/scalers/'
+                )
 
         if ret > 0:
             clname, icon = 'price-quote', 'profit'  
@@ -385,8 +394,9 @@ def predict_price(n, sel_coin, sel_model, sel_time):
                 ], 
                 className='forecast-container'
             )], None
+    
     else:
-        return html.P('Click Forecast Button.'), None
+        return html.P('Click the Forecast Button.'), None
 
 
 @callback(

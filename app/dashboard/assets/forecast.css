@@ -169,3 +169,175 @@
     font-weight: lighter;
     text-align: right;
 }
+
+.dropdown-title-fc{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    font-size:1.2rem;
+    color:black;
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-fc{
+    width: 100%;
+    height: auto;
+}
+.features-container {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 0 4px;
+    margin-top: 0;
+}
+
+.feature-container {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem 1rem 1rem 1rem
+}
+
+.feature-img-on{
+    opacity: 1;
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+.feature-img-off{
+    opacity: 0.2;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+.graph-cointainer{
+    width: 100%;
+    height: auto;
+}
+
+.side-graph-desc {
+    padding-top: 2em;
+    margin-top: 2em
+}
+
+.header-extra {
+    font-size: 50px;
+    text-align: center;
+}
+
+.highlight-container {
+    background-color: black;
+    outline: 5px solid white;
+    outline-offset: -10px;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.subheader-extra {
+    text-align: center;
+    color: white;
+}
+
+.highlight-white {
+    vertical-align: bottom;
+    text-align: right;
+    background-color: white;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+
+/* CSS */
+.button-37 {
+  background-color: #13aa52;
+  /* border: 1px solid #13aa52; */
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  outline: 0;
+  padding: 2rem 1rem 1rem 1rem;
+  vertical-align: bottom;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  height: auto;
+  font-size: larger;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.main-btn-container{
+    width: 100;
+    height: auto;
+    align-content: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+}
+
+.price-quote {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+}
+
+.profit {
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px green;
+}
+
+.loss {
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+}
+
+.quote-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.forecast-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 35px;
+}
+
+.white-subtitle{
+    color: whitesmoke;
+}
+
+.background-box {
+    background-image: url(/assets/coins.png);
+    background-size: 40%;
+    opacity: 0.3;
+}
+
+.footnote {
+    font-size: xx-small;
+    font-weight: lighter;
+    text-align: right;
+}

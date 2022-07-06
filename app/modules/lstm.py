@@ -718,10 +718,11 @@ def get_prediction(
     ticker_usd = ticker  + '-USD'
     # get treasury bonds price
     tr_ticker = model_meta['treasury_ticker']
+
     status, yield_df = yf.market_value(tr_ticker, hist=history, interval='1d')
     if status:
         print('got treasury data')
-        yield_df.fillna(method='ffill', inplace=True)
+        yield_df.to_csv('YIELD_NAAAA.csv')
         yield_data = yield_df.iloc[-(lags+1):-1, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
         # get the last close with lags
         status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
@@ -731,6 +732,8 @@ def get_prediction(
             last_close = close_df['Close'].values[-1]
             sample_df = close_df.iloc[-(lags+1):-1, :][features]
             sample_df[tr_ticker[-3:]] = yield_data
+            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='ffill')
+            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='bfill')
             # query our database bc google trends takes about 1 minute to load results
             use_gtrend = model_meta['google_trend']
             if use_gtrend:
@@ -799,8 +802,9 @@ def get_prediction(
             # Dataframe con la muestra
             sample_df = sample_df[ord_fts]
             sample_df.fillna(method='ffill', inplace=True)
+
             print('>> Successfully collected all features data.')
-            print(sample_df.tail(7))
+            print(sample_df.info())
             # Extract and scale sample
             X = prep_data(sample_df, test_days=test_days, timesteps=lags, xscaler=xscaler, yscaler=yscaler, production=True)
             # Make model prediction
