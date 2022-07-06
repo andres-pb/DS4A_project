@@ -2555,6 +2555,7 @@
 2553,2553.0,2553.0,2553.0,2553.0,2553.0,2022-06-27,2022-06-27,season_weekly,50.20334243774414,BTC,Neural Prophet,1 day ahead
 2554,2554.0,2554.0,2554.0,2554.0,2554.0,2022-06-28,2022-06-28,season_weekly,-7.60014533996582,BTC,Neural Prophet,1 day ahead
 <<<<<<< HEAD
+<<<<<<< HEAD
 2555,2555.0,2555.0,2555.0,0.0,,2022-03-01,2022-03-01 00:00:00,residual1,-1528.1484375,ETH,Neural Prophet,1 day ahead
 2556,2556.0,2556.0,2556.0,1.0,,2022-03-02,2022-03-02 00:00:00,residual1,53.80859375,ETH,Neural Prophet,1 day ahead
 2557,2557.0,2557.0,2557.0,2.0,,2022-03-03,2022-03-03 00:00:00,residual1,1083.8125,ETH,Neural Prophet,1 day ahead
@@ -2916,6 +2917,8 @@
 2913,2913.0,2913.0,2913.0,358.0,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,83.5829849243164,ETH,Neural Prophet,1 day ahead
 2914,2914.0,2914.0,2914.0,359.0,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,82.54884338378906,ETH,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 2555,2555.0,2555.0,2555.0,0.0,,2022-03-01,2022-03-01 00:00:00,residual1,-46.174560546875,ETH,Neural Prophet,1 day ahead
 2556,2556.0,2556.0,2556.0,1.0,,2022-03-02,2022-03-02 00:00:00,residual1,32.008056640625,ETH,Neural Prophet,1 day ahead
 2557,2557.0,2557.0,2557.0,2.0,,2022-03-03,2022-03-03 00:00:00,residual1,110.4326171875,ETH,Neural Prophet,1 day ahead
@@ -3276,6 +3279,9 @@
 2912,2912.0,2912.0,2912.0,357.0,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Gtrend1,83.53765106201172,ETH,Neural Prophet,1 day ahead
 2913,2913.0,2913.0,2913.0,358.0,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,83.5829849243164,ETH,Neural Prophet,1 day ahead
 2914,2914.0,2914.0,2914.0,359.0,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,82.62628173828125,ETH,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 2915,2915.0,2915.0,2915.0,360.0,,2022-03-01,2022-03-01 00:00:00,lagged_regressor_TYX1,15.62122631072998,ETH,Neural Prophet,1 day ahead
 2916,2916.0,2916.0,2916.0,361.0,,2022-03-02,2022-03-02 00:00:00,lagged_regressor_TYX1,14.642549514770508,ETH,Neural Prophet,1 day ahead
@@ -3398,6 +3404,7 @@
 3033,3033.0,3033.0,3033.0,478.0,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_TYX1,29.10943603515625,ETH,Neural Prophet,1 day ahead
 3034,3034.0,3034.0,3034.0,479.0,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_TYX1,29.71169853210449,ETH,Neural Prophet,1 day ahead
 <<<<<<< HEAD
+<<<<<<< HEAD
 3035,3035.0,3035.0,3035.0,480.0,,2022-03-01,2022-03-01 00:00:00,lagged_regressor_Volume1,25.35283088684082,ETH,Neural Prophet,1 day ahead
 3036,3036.0,3036.0,3036.0,481.0,,2022-03-02,2022-03-02 00:00:00,lagged_regressor_Volume1,23.03144264221192,ETH,Neural Prophet,1 day ahead
 3037,3037.0,3037.0,3037.0,482.0,,2022-03-03,2022-03-03 00:00:00,lagged_regressor_Volume1,20.648624420166016,ETH,Neural Prophet,1 day ahead
@@ -3519,6 +3526,8 @@
 3153,3153.0,3153.0,3153.0,598.0,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,12.583368301391602,ETH,Neural Prophet,1 day ahead
 3154,3154.0,3154.0,3154.0,599.0,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,14.70779514312744,ETH,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 3035,3035.0,3035.0,3035.0,480.0,,2022-03-01,2022-03-01 00:00:00,lagged_regressor_Volume1,13.479079246520996,ETH,Neural Prophet,1 day ahead
 3036,3036.0,3036.0,3036.0,481.0,,2022-03-02,2022-03-02 00:00:00,lagged_regressor_Volume1,13.111310958862305,ETH,Neural Prophet,1 day ahead
 3037,3037.0,3037.0,3037.0,482.0,,2022-03-03,2022-03-03 00:00:00,lagged_regressor_Volume1,11.577987670898438,ETH,Neural Prophet,1 day ahead
@@ -3639,6 +3648,9 @@
 3152,3152.0,3152.0,3152.0,597.0,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Volume1,8.574414253234863,ETH,Neural Prophet,1 day ahead
 3153,3153.0,3153.0,3153.0,598.0,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,8.295831680297852,ETH,Neural Prophet,1 day ahead
 3154,3154.0,3154.0,3154.0,599.0,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,8.581846237182617,ETH,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 3155,3155.0,3155.0,3155.0,600.0,,2022-03-01,2022-03-01 00:00:00,trend,88.81527709960938,ETH,Neural Prophet,1 day ahead
 3156,3156.0,3156.0,3156.0,601.0,,2022-03-02,2022-03-02 00:00:00,trend,88.83921813964844,ETH,Neural Prophet,1 day ahead
@@ -3880,6 +3892,7 @@
 3392,3392.0,3392.0,3392.0,837.0,,2022-06-26,2022-06-26 00:00:00,season_weekly,2.62285590171814,ETH,Neural Prophet,1 day ahead
 3393,3393.0,3393.0,3393.0,838.0,,2022-06-27,2022-06-27 00:00:00,season_weekly,3.564570665359497,ETH,Neural Prophet,1 day ahead
 3394,3394.0,3394.0,3394.0,839.0,,2022-06-28,2022-06-28 00:00:00,season_weekly,1.5588126182556152,ETH,Neural Prophet,1 day ahead
+<<<<<<< HEAD
 <<<<<<< HEAD
 3395,3395.0,3395.0,0.0,,,2021-06-29,2021-06-29 00:00:00,residual1,-1750.78125,LTC,Neural Prophet,1 day ahead
 3396,3396.0,3396.0,1.0,,,2021-06-30,2021-06-30 00:00:00,residual1,495.35546875,LTC,Neural Prophet,1 day ahead
@@ -4977,6 +4990,8 @@
 4488,4488.0,4488.0,1093.0,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.861918568611145,LTC,Neural Prophet,1 day ahead
 4489,4489.0,4489.0,1094.0,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.5166994333267212,LTC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 3395,3395.0,3395.0,0.0,,,2021-06-29,2021-06-29 00:00:00,residual1,-6.027862548828125,LTC,Neural Prophet,1 day ahead
 3396,3396.0,3396.0,1.0,,,2021-06-30,2021-06-30 00:00:00,residual1,-1.3491058349609375,LTC,Neural Prophet,1 day ahead
 3397,3397.0,3397.0,2.0,,,2021-07-01,2021-07-01 00:00:00,residual1,6.0270538330078125,LTC,Neural Prophet,1 day ahead
@@ -6072,6 +6087,9 @@
 4487,4487.0,4487.0,1092.0,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Gtrend1,0.7938205003738403,LTC,Neural Prophet,1 day ahead
 4488,4488.0,4488.0,1093.0,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.8013869524002075,LTC,Neural Prophet,1 day ahead
 4489,4489.0,4489.0,1094.0,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.5788073539733887,LTC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 4490,4490.0,4490.0,1095.0,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_TYX1,0.2363698780536651,LTC,Neural Prophet,1 day ahead
 4491,4491.0,4491.0,1096.0,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_TYX1,0.2359627038240432,LTC,Neural Prophet,1 day ahead
@@ -6439,6 +6457,7 @@
 4853,4853.0,4853.0,1458.0,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_TYX1,0.4723325669765472,LTC,Neural Prophet,1 day ahead
 4854,4854.0,4854.0,1459.0,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_TYX1,0.4821049571037292,LTC,Neural Prophet,1 day ahead
 <<<<<<< HEAD
+<<<<<<< HEAD
 4855,4855.0,4855.0,1460.0,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,2.560209512710572,LTC,Neural Prophet,1 day ahead
 4856,4856.0,4856.0,1461.0,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,2.863045215606689,LTC,Neural Prophet,1 day ahead
 4857,4857.0,4857.0,1462.0,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,2.5727877616882324,LTC,Neural Prophet,1 day ahead
@@ -6805,6 +6824,8 @@
 5218,5218.0,5218.0,1823.0,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,1.3617384433746338,LTC,Neural Prophet,1 day ahead
 5219,5219.0,5219.0,1824.0,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,1.5837150812149048,LTC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 4855,4855.0,4855.0,1460.0,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,0.1417924761772155,LTC,Neural Prophet,1 day ahead
 4856,4856.0,4856.0,1461.0,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,0.1648025214672088,LTC,Neural Prophet,1 day ahead
 4857,4857.0,4857.0,1462.0,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,0.1427246183156967,LTC,Neural Prophet,1 day ahead
@@ -7170,6 +7191,9 @@
 5217,5217.0,5217.0,1822.0,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Volume1,0.0423135384917259,LTC,Neural Prophet,1 day ahead
 5218,5218.0,5218.0,1823.0,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,0.0367335118353366,LTC,Neural Prophet,1 day ahead
 5219,5219.0,5219.0,1824.0,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,0.0344429276883602,LTC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 5220,5220.0,5220.0,1825.0,,,2021-06-29,2021-06-29 00:00:00,trend,2.140064239501953,LTC,Neural Prophet,1 day ahead
 5221,5221.0,5221.0,1826.0,,,2021-06-30,2021-06-30 00:00:00,trend,2.140525579452514,LTC,Neural Prophet,1 day ahead
@@ -7901,6 +7925,7 @@
 5947,5947.0,5947.0,2552.0,,,2022-06-26,2022-06-26 00:00:00,season_weekly,-0.3682728409767151,LTC,Neural Prophet,1 day ahead
 5948,5948.0,5948.0,2553.0,,,2022-06-27,2022-06-27 00:00:00,season_weekly,0.0940934866666793,LTC,Neural Prophet,1 day ahead
 5949,5949.0,5949.0,2554.0,,,2022-06-28,2022-06-28 00:00:00,season_weekly,0.3653346598148346,LTC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
 <<<<<<< HEAD
 5950,5950.0,0.0,,,,2021-06-29,2021-06-29 00:00:00,residual1,-1869.10546875,NMC,Neural Prophet,1 day ahead
 5951,5951.0,1.0,,,,2021-06-30,2021-06-30 00:00:00,residual1,381.72265625,NMC,Neural Prophet,1 day ahead
@@ -8998,6 +9023,8 @@
 7043,7043.0,1093.0,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.1689352244138717,NMC,Neural Prophet,1 day ahead
 7044,7044.0,1094.0,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.1683708727359771,NMC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 5950,5950.0,0.0,,,,2021-06-29,2021-06-29 00:00:00,residual1,-0.0750530958175659,NMC,Neural Prophet,1 day ahead
 5951,5951.0,1.0,,,,2021-06-30,2021-06-30 00:00:00,residual1,0.024310827255249,NMC,Neural Prophet,1 day ahead
 5952,5952.0,2.0,,,,2021-07-01,2021-07-01 00:00:00,residual1,0.0340608358383178,NMC,Neural Prophet,1 day ahead
@@ -10093,6 +10120,9 @@
 7042,7042.0,1092.0,,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Gtrend1,0.169046550989151,NMC,Neural Prophet,1 day ahead
 7043,7043.0,1093.0,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.1694300025701522,NMC,Neural Prophet,1 day ahead
 7044,7044.0,1094.0,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.1691697239875793,NMC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 7045,7045.0,1095.0,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_TYX1,0.0101141389459371,NMC,Neural Prophet,1 day ahead
 7046,7046.0,1096.0,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_TYX1,0.0100967148318886,NMC,Neural Prophet,1 day ahead
@@ -10460,6 +10490,7 @@
 7408,7408.0,1458.0,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_TYX1,0.0202108528465032,NMC,Neural Prophet,1 day ahead
 7409,7409.0,1459.0,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_TYX1,0.020629009231925,NMC,Neural Prophet,1 day ahead
 <<<<<<< HEAD
+<<<<<<< HEAD
 7410,7410.0,1460.0,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,112.14779663085938,NMC,Neural Prophet,1 day ahead
 7411,7411.0,1461.0,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,125.41305541992188,NMC,Neural Prophet,1 day ahead
 7412,7412.0,1462.0,,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,112.6987762451172,NMC,Neural Prophet,1 day ahead
@@ -10826,6 +10857,8 @@
 7773,7773.0,1823.0,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,59.65054702758789,NMC,Neural Prophet,1 day ahead
 7774,7774.0,1824.0,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,69.3739013671875,NMC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 7410,7410.0,1460.0,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,5.351192157831974e-05,NMC,Neural Prophet,1 day ahead
 7411,7411.0,1461.0,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,3.857874980894849e-05,NMC,Neural Prophet,1 day ahead
 7412,7412.0,1462.0,,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,2.9978853490320034e-05,NMC,Neural Prophet,1 day ahead
@@ -11191,6 +11224,9 @@
 7772,7772.0,1822.0,,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Volume1,2.458199924149085e-05,NMC,Neural Prophet,1 day ahead
 7773,7773.0,1823.0,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,1.9519344277796336e-05,NMC,Neural Prophet,1 day ahead
 7774,7774.0,1824.0,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,2.438346200506203e-05,NMC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 7775,7775.0,1825.0,,,,2021-06-29,2021-06-29 00:00:00,trend,0.1753759384155273,NMC,Neural Prophet,1 day ahead
 7776,7776.0,1826.0,,,,2021-06-30,2021-06-30 00:00:00,trend,0.1753827035427093,NMC,Neural Prophet,1 day ahead
@@ -11922,6 +11958,7 @@
 8502,8502.0,2552.0,,,,2022-06-26,2022-06-26 00:00:00,season_weekly,0.0054856315255165,NMC,Neural Prophet,1 day ahead
 8503,8503.0,2553.0,,,,2022-06-27,2022-06-27 00:00:00,season_weekly,-0.0038218582049012,NMC,Neural Prophet,1 day ahead
 8504,8504.0,2554.0,,,,2022-06-28,2022-06-28 00:00:00,season_weekly,-0.0016758950660005,NMC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
 <<<<<<< HEAD
 8505,0.0,,,,,2021-06-29,2021-06-29 00:00:00,residual1,-1759.4296875,PPC,Neural Prophet,1 day ahead
 8506,1.0,,,,,2021-06-30,2021-06-30 00:00:00,residual1,503.08984375,PPC,Neural Prophet,1 day ahead
@@ -13019,6 +13056,8 @@
 9598,1093.0,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.1160874515771865,PPC,Neural Prophet,1 day ahead
 9599,1094.0,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.1207987517118454,PPC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 8505,0.0,,,,,2021-06-29,2021-06-29 00:00:00,residual1,-0.0868598818778991,PPC,Neural Prophet,1 day ahead
 8506,1.0,,,,,2021-06-30,2021-06-30 00:00:00,residual1,0.0283205509185791,PPC,Neural Prophet,1 day ahead
 8507,2.0,,,,,2021-07-01,2021-07-01 00:00:00,residual1,0.0590693354606628,PPC,Neural Prophet,1 day ahead
@@ -14114,6 +14153,9 @@
 9597,1092.0,,,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Gtrend1,0.1139189675450325,PPC,Neural Prophet,1 day ahead
 9598,1093.0,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.1119569987058639,PPC,Neural Prophet,1 day ahead
 9599,1094.0,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.1128218099474906,PPC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 9600,1095.0,,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_TYX1,0.0090759294107556,PPC,Neural Prophet,1 day ahead
 9601,1096.0,,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_TYX1,0.0090602952986955,PPC,Neural Prophet,1 day ahead
@@ -14481,6 +14523,7 @@
 9963,1458.0,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_TYX1,0.0181362237781286,PPC,Neural Prophet,1 day ahead
 9964,1459.0,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_TYX1,0.0185114555060863,PPC,Neural Prophet,1 day ahead
 <<<<<<< HEAD
+<<<<<<< HEAD
 9965,1460.0,,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,204.7426605224609,PPC,Neural Prophet,1 day ahead
 9966,1461.0,,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,228.96041870117188,PPC,Neural Prophet,1 day ahead
 9967,1462.0,,,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,205.74855041503903,PPC,Neural Prophet,1 day ahead
@@ -14847,6 +14890,8 @@
 10328,1823.0,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,108.90101623535156,PPC,Neural Prophet,1 day ahead
 10329,1824.0,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,126.6524887084961,PPC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 9965,1460.0,,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,0.0003346620360389,PPC,Neural Prophet,1 day ahead
 9966,1461.0,,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,0.0002250793768325,PPC,Neural Prophet,1 day ahead
 9967,1462.0,,,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,9.74041104200296e-05,PPC,Neural Prophet,1 day ahead
@@ -15212,6 +15257,9 @@
 10327,1822.0,,,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Volume1,-1.2655768841796087e-05,PPC,Neural Prophet,1 day ahead
 10328,1823.0,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,-1.3567951100412756e-05,PPC,Neural Prophet,1 day ahead
 10329,1824.0,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,5.7993020163849e-07,PPC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 10330,1825.0,,,,,2021-06-29,2021-06-29 00:00:00,trend,0.1118024289608001,PPC,Neural Prophet,1 day ahead
 10331,1826.0,,,,,2021-06-30,2021-06-30 00:00:00,trend,0.1118058636784553,PPC,Neural Prophet,1 day ahead
@@ -15943,6 +15991,7 @@
 11057,2552.0,,,,,2022-06-26,2022-06-26 00:00:00,season_weekly,0.0007930911961011,PPC,Neural Prophet,1 day ahead
 11058,2553.0,,,,,2022-06-27,2022-06-27 00:00:00,season_weekly,-0.0009729196317493,PPC,Neural Prophet,1 day ahead
 11059,2554.0,,,,,2022-06-28,2022-06-28 00:00:00,season_weekly,-0.0117156021296978,PPC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
 <<<<<<< HEAD
 0,,,,,,2021-06-29,2021-06-29 00:00:00,residual1,-1658.09375,FTC,Neural Prophet,1 day ahead
 1,,,,,,2021-06-30,2021-06-30 00:00:00,residual1,592.953125,FTC,Neural Prophet,1 day ahead
@@ -17040,6 +17089,8 @@
 1093,,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.002570532960817218,FTC,Neural Prophet,1 day ahead
 1094,,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.003077578730881214,FTC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 0,,,,,,2021-06-29,2021-06-29 00:00:00,residual1,-0.00029689632356158513,FTC,Neural Prophet,1 day ahead
 1,,,,,,2021-06-30,2021-06-30 00:00:00,residual1,0.0015272013843060164,FTC,Neural Prophet,1 day ahead
 2,,,,,,2021-07-01,2021-07-01 00:00:00,residual1,0.001792663708329284,FTC,Neural Prophet,1 day ahead
@@ -18135,6 +18186,9 @@
 1092,,,,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Gtrend1,0.002125999890267849,FTC,Neural Prophet,1 day ahead
 1093,,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Gtrend1,0.002125999890267849,FTC,Neural Prophet,1 day ahead
 1094,,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Gtrend1,0.0022676947992295027,FTC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 1095,,,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_TYX1,0.00013740458234678954,FTC,Neural Prophet,1 day ahead
 1096,,,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_TYX1,0.00013716788089368492,FTC,Neural Prophet,1 day ahead
@@ -18502,6 +18556,7 @@
 1458,,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_TYX1,0.00027457246324047446,FTC,Neural Prophet,1 day ahead
 1459,,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_TYX1,0.00028025329811498523,FTC,Neural Prophet,1 day ahead
 <<<<<<< HEAD
+<<<<<<< HEAD
 1460,,,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,0.20089565217494965,FTC,Neural Prophet,1 day ahead
 1461,,,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,0.2246583253145218,FTC,Neural Prophet,1 day ahead
 1462,,,,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,0.20188264548778534,FTC,Neural Prophet,1 day ahead
@@ -18868,6 +18923,8 @@
 1823,,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,0.10685484111309052,FTC,Neural Prophet,1 day ahead
 1824,,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,0.12427275627851486,FTC,Neural Prophet,1 day ahead
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 1460,,,,,,2021-06-29,2021-06-29 00:00:00,lagged_regressor_Volume1,3.141302045150951e-07,FTC,Neural Prophet,1 day ahead
 1461,,,,,,2021-06-30,2021-06-30 00:00:00,lagged_regressor_Volume1,2.1401588412572892e-07,FTC,Neural Prophet,1 day ahead
 1462,,,,,,2021-07-01,2021-07-01 00:00:00,lagged_regressor_Volume1,3.999238629148749e-08,FTC,Neural Prophet,1 day ahead
@@ -19233,6 +19290,9 @@
 1822,,,,,,2022-06-26,2022-06-26 00:00:00,lagged_regressor_Volume1,-4.741946071917802e-11,FTC,Neural Prophet,1 day ahead
 1823,,,,,,2022-06-27,2022-06-27 00:00:00,lagged_regressor_Volume1,-4.741946071917802e-11,FTC,Neural Prophet,1 day ahead
 1824,,,,,,2022-06-28,2022-06-28 00:00:00,lagged_regressor_Volume1,-4.741946071917802e-11,FTC,Neural Prophet,1 day ahead
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 1825,,,,,,2021-06-29,2021-06-29 00:00:00,trend,0.002142679877579212,FTC,Neural Prophet,1 day ahead
 1826,,,,,,2021-06-30,2021-06-30 00:00:00,trend,0.002142705023288727,FTC,Neural Prophet,1 day ahead
