@@ -14,8 +14,12 @@ COINS_SELECTION = [
     'BTC - Bitcoin',
     'ETH - Ethereum',
     'LTC - Litecoin', 
-    'NMC - Namecoin', 
+    'NMC - Namecoin',
+    'FTC - Feathercoin',
+    'PPC - Peercoin' 
 ]
+
+COINS_DICT = {c[:3]: c for c in COINS_SELECTION}
 
 pred_models = {
 
