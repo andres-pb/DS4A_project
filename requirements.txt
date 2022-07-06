@@ -22,7 +22,4 @@ SciPy >= 1.3.2
 scikit-learn == 1.1.1
 lime ==  0.2.0.1
 neuralprophet == 0.3.2
-<<<<<<< HEAD
-=======
 transformers == 4.19.4
->>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
