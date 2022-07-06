@@ -33,13 +33,13 @@ class Twitter:
         twitter_data = []
         result_type = 'popular' if popular else 'mixed'
         results = tweepy.Cursor(
-                                    self.api.search_tweets,
-                                    q=query,
-                                    count=100,
-                                    lang='en',
-                                    result_type=result_type,
-                                    tweet_mode='extended'
-                                ).items(limit)
+                                self.api.search_tweets,
+                                q=query,
+                                count=100,
+                                lang='en',
+                                result_type=result_type,
+                                tweet_mode='extended'
+                            ).items(limit)
         if not results:return pd.DataFrame()
         for status in results:
             json_response = json.loads(json.dumps(status._json))
