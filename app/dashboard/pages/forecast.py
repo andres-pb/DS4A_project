@@ -419,8 +419,9 @@ def update_lime_descr(sel_model):
             html.H3('Feature Contribution Across Time', className='graph-title'),
             html.P(
                 ["""
-                    Neural Prophet summarizes the contribution of distinct features in an autorregressive term (ar), a trend component (trend) 
-                    and the lags of the additional multivariate components that we have included (Google trends, risk free interest rate and volume).
+                    Our specification of Neural Prophet summarizes the contribution of distinct features in an autorregressive term (ar), a trend component (trend),
+                    a weekly seasonality component, and the lags of the additional multivariate components that we have included 
+                    (Google trends, risk free interest rate and volume).
                 """],
                 className='graph-info'
             ),
