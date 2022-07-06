@@ -18,9 +18,6 @@ nlp_fin = pipeline("sentiment-analysis", model=finbert_model, tokenizer=finbert_
 #Load Polygon csv
 polygon_prev = pd.read_csv("./sentiment_models/polygon_df_01_07_2022.csv")
 
-#Load Polygon csv
-polygon_prev = pd.read_csv("./sentiment_models/polygon_df_01_07_2022.csv")
-
 class Sentiment_predict():
 
     def __init__(self) -> None:       
