@@ -1,12 +1,12 @@
 import dash
-from dash import Input, Output, html, dcc
+from dash import Input, Output, html, dcc,  callback
 from app import globals_variable
 from app.dashboard.crypto_plots import plot_monitor_candle, plot_monitor_candle_volume, plot_monitor_line, plot_monitor_line_volume
-dash.register_page(__name__)
+dash.register_page(__name__, path='/')
 
 # padding for the page content
 CONTENT_STYLE = {
-    "margin-left": "12rem",
+    "margin-left": "2rem",
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
@@ -20,35 +20,36 @@ layout = html.Div(
                                         html.Div( 
                                         className="column",
                                         children=[ 
-                                                    html.Div( 
+                                                    html.Div(
+                                                            id='title-coin',
                                                             className="item monitor-title",
                                                             children=[ 
-                                                                            html.P( children='BTC-USD'),
-                                                                            ],
-                                                                    ),
+                                                                html.P(children=['BTC - Bitcoin - USD']),
+                                                                    ],
+                                                            ),
                                                     html.Div( 
                                                             className="item",
                                                             children=[ 
                                                                         html.Div(
                                                                                 className="dropdown",
                                                                                 children=[
-                                                                                            html.P( className="dropdown-title", children='Crypto Currency'),
+                                                                                            html.H3( className="dropdown-title", children='Cryptocurrency'),
                                                                                             dcc.Dropdown(
                                                                                                 id="dropdown_coins",
                                                                                                 className="dropdown-item", 
                                                                                                 options=[{'label': x['name'], 'value': x['ticker']} for x in globals_variable.COINS_SELECTION],
-                                                                                                value= globals_variable.COINS_SELECTION[-1]['ticker']
+                                                                                                value= 'BTC-USD'
                                                                                             ),
                                                                                         ]),
                                                                         html.Div(
                                                                             className="dropdown",
                                                                             children=[
-                                                                                    html.P( className="dropdown-title", children='Currency'),
+                                                                                    html.H3(className="dropdown-title", children='Currency'),
                                                                                     dcc.Dropdown(
                                                                                         id="dropdown_exchanges",
                                                                                         className="dropdown-item", 
                                                                                         options=[{'label': x['name'], 'value': x['ticker']} for x in globals_variable.EXCHANGES],
-                                                                                        value=globals_variable.EXCHANGES[0]['ticker']
+                                                                                        value='USD'
                                                                                     ),
                                                                                 ])
                                                                             ],
@@ -112,8 +113,6 @@ layout = html.Div(
                                                                                                                                                 html.Button('1W', className="graph-button", id='btn_nclicks_5', n_clicks=0, style={'background-color': 'white'}),
                                                                                                                                                 html.Button('1M', className="graph-button", id='btn_nclicks_6', n_clicks=0),
                                                                                                                                                 html.Button('3M', className="graph-button", id='btn_nclicks_7', n_clicks=0),
-                                                                                                                                                html.Button('6M', className="graph-button", id='btn_nclicks_8', n_clicks=0),
-                                                                                                                                                html.Button('1Y', className="graph-button", id='btn_nclicks_9', n_clicks=0)
                                                                                                                                             ]
                                                                                                                                         )
                                                                                                                         ]
@@ -136,7 +135,7 @@ layout = html.Div(
                                                                                                                             className="radio-item",
                                                                                                                             id="checklist_view",
                                                                                                                             options=[x['name'] for x in globals_variable.STATISTICAL_MODELS],
-                                                                                                                            value=[]
+                                                                                                                            value=['Volume']
                                                                                                                             )
                                                                                                         ]
                                                                                             ),
@@ -168,4 +167,14 @@ layout = html.Div(
                                     ]
                                  ),
                             ],
+                            style=CONTENT_STYLE,
 )
+
+@callback(Output('title-coin', 'children'),
+            [
+                Input('dropdown_coins', 'value'), 
+                Input('dropdown_exchanges', 'value'), 
+            ]
+        )
+def update_title(coin, exchange):
+    return coin[:3] + ' - ' + exchange[:3]

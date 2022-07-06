@@ -1,4 +1,5 @@
 from cgi import test
+from re import X
 import pandas as pd
 import numpy as np
 from app.modules import Statistical
@@ -33,6 +34,7 @@ from ..api import GoogleTrends, CoinMarketCap, yahoo_finance
 from dotenv import load_dotenv
 import plotly.graph_objects as go
 import datetime as dt
+import sqlite3 as sql
 
 
 TEST_VAR = 888
@@ -405,8 +407,8 @@ def select_features(data_dict, keep=['Volume', 'Gtrend']):
         corr_yield = np.abs(corr[yield_curve])
         ir_index = corr_yield.loc['Close', :].argmax()
         selected_features = keep + [yield_curve[ir_index]]
-        
-        data_dict[coin] = dset[list(set(selected_features)) + ['Close']]
+        ordered_features = selected_features + ['Close']
+        data_dict[coin] = dset[ordered_features]
 
 # Reframes data to have n_in lags of each feature and n_out future target values in the columns
 def series_to_supervised(df, n_in=1, n_out=1, target_idx=-1, 
@@ -511,7 +513,7 @@ def prep_data(df, timesteps, test_days=365, xscaler=None, yscaler=None, producti
 
 
 # To build test predictions dataframe
-def gen_test_df(model, X_test, y_test, yscaler, test_dates, model_id, ticker, pred_scope, lags):
+def gen_test_df(model, X_test, y_test, yscaler, test_dates, model_id, coin_name, pred_scope, lags):
     
     predicted = model.predict(X_test)
     pred_y = yscaler.inverse_transform(predicted)
@@ -520,7 +522,7 @@ def gen_test_df(model, X_test, y_test, yscaler, test_dates, model_id, ticker, pr
     test_df = pd.DataFrame()
     test_df['Observed'] = true_y.reshape(len(test_dates))
     test_df['Predicted'] = pred_y.reshape(len(test_dates))
-    test_df['Ticker'] = ticker
+    test_df['Coin'] = coin_name
     test_df['Model'] = model_id
     test_df['Scope'] = pred_scope
     test_df['Date'] = test_dates
@@ -543,7 +545,7 @@ def load_test_df(path, ticker, model_id, pred_scope, importance=False):
 
 
 # To build feature importance dataframe
-def gen_importance_df(model, dset, timesteps, ticker, model_id, pred_scope):
+def gen_importance_df(model, dset, timesteps, coin_name, model_id, pred_scope):
 
     reframed = series_to_supervised(dset, n_in=timesteps, min_input=60)
     feature_names = reframed.iloc[:, :-1].columns
@@ -581,20 +583,20 @@ def gen_importance_df(model, dset, timesteps, ticker, model_id, pred_scope):
             X_test[:,t,k] = save_col
 
     importance_df = pd.DataFrame(results)
-    importance_df['Ticker'] = ticker
+    importance_df['Coin'] = coin_name
     importance_df['Model'] = model_id
     importance_df['Scope'] = pred_scope
 
-    return importance_df.sort_values(['Ticker', 'Scope', 'Model', 'Metric', 'Importance'])
+    return importance_df.sort_values(['Coin', 'Scope', 'Model', 'Metric', 'Importance'])
 
 
 #To save and load models
-def save_model(model, full_path: str= None, path="./models/", coin_ticker='BTC'):
+def save_model(model, full_path: str= None, path="./models/", coin_ticker='BTC', suffix=''):
     
     # serialize model
     model_json = model.to_json()
     if not full_path:
-        full_path = path + coin_ticker + '_' + model.name + '.json'
+        full_path = path + coin_ticker + '_' + model.name + suffix +'.json'
     with open(full_path, "w") as json_file:
         json_file.write(model_json)
     # serialize weights
@@ -608,9 +610,9 @@ def save_scaler(fitted_scaler, fits='x',full_path: str= None, path="./models/", 
     joblib.dump(fitted_scaler, full_path)
 
 
-def load_scaler(coin_ticker: str, root_path: str ="app/dashboard/test_models/"):
+def load_scaler(coin_ticker: str, root_path: str ="app/dashboard/test_models/", fits='x'):
     
-    scaler_path = root_path + coin_ticker + '_scaler.gz'
+    scaler_path = root_path + coin_ticker + '_{}_scaler.gz'.format(fits)
     my_scaler = joblib.load(scaler_path)
     return my_scaler
 
@@ -629,12 +631,14 @@ def train_model(
     prep_dsets: dict, 
     coin_name: str,
     model_builder,
-    n_epochs=1,
-    batch_size=1,
+    n_epochs: int = 1,
+    batch_size: int =1,
     early_stop: bool = False,
     patience: int = None,
     model_kwargs: dict = {},
-    save=False
+    save: bool =False,
+    on_test_set: bool = False,
+    suffix=''
     ):
 
     X_train, y_train, X_test, y_test, xscaler, yscaler, test_dates = prep_dsets[coin_name]
@@ -652,9 +656,11 @@ def train_model(
                                 verbose=0, 
                                 mode='auto', 
                                 restore_best_weights=True)
+    if on_test_set:
+      X_train, y_train = np.append(X_train, X_test, axis=0), np.append(y_train, y_test, axis=0)
+      suffix = '_prod'
     # Train the model
     history = model.fit(
-
                     X_train, y_train, 
                     validation_data=(X_test, y_test),
                     callbacks=[monitor] if early_stop else None,
@@ -669,7 +675,7 @@ def train_model(
     plt.show()
 
     if save:
-      save_model(model, coin_ticker=coin_name[:3])
+      save_model(model, coin_ticker=coin_name[:3], suffix=suffix)
       save_scaler(xscaler, coin_ticker=coin_name[:3], fits='x')
       save_scaler(yscaler, coin_ticker=coin_name[:3], fits='y')
 
@@ -694,63 +700,118 @@ def get_prediction(
     lags = model_meta['lags']
     features = model_meta['features']
     n_features = model_meta['n_features']
+    test_days = model_meta['test_days']
+    ord_fts = model_meta['ordered_features']
+    use_btc = model_meta['use_btc']
     # Define a model that is still not trained
     rebuilt_model = builder_func(in_shape=(lags, n_features), **builder_kwargs)
     # load models weight
     load_model(rebuilt_model, model_id=model_meta['model_id'], root_path=models_path)
     # load the scaler
-    scaler = load_scaler(ticker, root_path=scalers_path)
+    xscaler = load_scaler(ticker, root_path=scalers_path)
+    yscaler = load_scaler(ticker, scalers_path, fits='y')
     # get sample for prediction
     yf = yahoo_finance
     # we go back as many days as needed lags, plus an extra just in case
     history = dt.datetime.today() - dt.timedelta(days=lags + 1)
+    history_str = dt.datetime.strftime(history, '%Y-%m-%d')
+    ticker_usd = ticker  + '-USD'
     # get treasury bonds price
     tr_ticker = model_meta['treasury_ticker']
     status, yield_df = yf.market_value(tr_ticker, hist=history, interval='1d')
     if status:
         print('got treasury data')
         yield_df.fillna(method='ffill', inplace=True)
-        yield_data = yield_df.iloc[-lags:, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
-        # get the last close
-        status, close_df = yf.market_value(ticker + '-USD', hist=history, interval='1d')
+        yield_data = yield_df.iloc[-(lags+1):-1, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+        # get the last close with lags
+        status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
 
         if status:
-            print('got coin mkt data')
-            print(close_df.info())
-            sample_df = close_df.iloc[-lags:, :][features]
+            print('Successfully got coin mkt data')
+            last_close = close_df['Close'].values[-1]
+            sample_df = close_df.iloc[-(lags+1):-1, :][features]
             sample_df[tr_ticker[-3:]] = yield_data
-            print(sample_df.info())
-            all_features = [tr_ticker[-3:]] + features
+            # query our database bc google trends takes about 1 minute to load results
             use_gtrend = model_meta['google_trend']
             if use_gtrend:
                 print('attempting google trends')
-                # Get daily google trend interest
-                gt = GoogleTrends()
-                gtrend_df = gt.get_daily_trend_df([coin_name], start_dt=history)
-                gtrend_df.fillna(method='ffill', inplace=True)
-                gtrend_df = gtrend_df.iloc[-lags:, :]
-                print(gtrend_df.info())
+                conn = sql.connect('./database.db', detect_types=sql.PARSE_DECLTYPES)
+                dbquery = """
+                  SELECT
+                    Date date,
+                    Gtrend {}
+                  FROM google_trend_hist
+                  WHERE Ticker = "{}"
+                    AND Date >= DATE("{}")
+                """.format(coin_name, ticker_usd, history_str)
+                gt_data_local = pd.read_sql(dbquery, conn)
+                gt_data_local['date'] = pd.to_datetime(gt_data_local['date']).dt.date
+                print('DB DATA >>>', gt_data_local.info())
+                max_local = gt_data_local['date'].max()
+
+                if max_local < dt.date.today():
+                  # Get daily google trend interest for the remaining days
+                  gt = GoogleTrends()
+                  gtrend_df_api = gt.get_daily_trend_df([coin_name], start_dt=max_local + dt.timedelta(days=1))
+                  gtrend_df_api.reset_index(inplace=True)
+
+                  gtrend_df = pd.concat([gt_data_local, gtrend_df_api]).reset_index(drop=True)
+                  print('CONCAT RESULT >>> \n')
+                  print(gtrend_df.info())
+                  gtrend_df.fillna(method='ffill', inplace=True)
+                
+                  # Update our local database for later use
+                  gtrend_df_api.reset_index(inplace=True)
+                  gtrend_df_api.rename(columns={coin_name: 'Gtrend', 'date':'Date'}, inplace=True)
+                  ('>> FROM GT API >>>')
+                  print(gtrend_df_api.info())
+                  gtrend_df_api['Ticker'] = ticker_usd
+                  gtrend_df_api = gtrend_df_api[['Date', 'Ticker', 'Gtrend']]
+                  cursor = conn.cursor()
+                  for _, row in gtrend_df_api.iterrows():
+                    insert_query = """
+                      INSERT INTO google_trend_hist
+                        (Date, Ticker, Gtrend)
+                      VALUES
+                        ({}, "{}", {})
+                    """.format(row['Date'], row['Ticker'], row['Gtrend'])
+                    cursor.execute(insert_query)
+                    conn.commit()
+                  print('>> Google Trend database updated.')
+                
+                else:
+                  gtrend_df = gt_data_local
+
+                gtrend_df = gtrend_df.iloc[-(lags+1):-1, :]
+                print('>> Successfully collected Google Trends data.')
                 gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
                 gtrend_data = gtrend_df[coin_name]
-                
                 sample_df['Gtrend'] = gtrend_data
-                all_features = [tr_ticker[-3:]] + ['Gtrend'] + features
+            
+            if use_btc:
+              status, btc_df = yf.market_value('BTC-USD', hist=history, interval='1d')
+              if status:
+                print('Successfully collected BTC data.')
+                sample_df['BTC'] = btc_df['Close']
+              else:
+                print('Prediction failed. Error collecting BTC feature data.')
+                return
             # Dataframe con la muestra
-            sample_df = sample_df[all_features]
-            print(sample_df.shape)
-
+            sample_df = sample_df[ord_fts]
+            sample_df.fillna(method='ffill', inplace=True)
+            print('>> Successfully collected all features data.')
+            print(sample_df.tail(7))
             # Extract and scale sample
-            X = prep_data(sample_df, timesteps=lags, scaler=scaler, production=True)
-            print(X.shape)
+            X = prep_data(sample_df, test_days=test_days, timesteps=lags, xscaler=xscaler, yscaler=yscaler, production=True)
             # Make model prediction
             pred_y = rebuilt_model.predict(X)
-
+            print('PRED_Y', pred_y)
             # undo scaling
-            prediction = scaler.inverse_transform(pred_y)
-            
-            print(prediction)
+            prediction = yscaler.inverse_transform(pred_y).reshape(1)[0]
 
-            return prediction
+            ret = (prediction - last_close)/last_close
+
+            return prediction, ret
         else:
             print('Error trying to get ticker {} data from Yahoo Finance.'.format(ticker))
             return False               
@@ -765,8 +826,8 @@ def get_prediction(
         return False, None, None """
 
 
-def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, scope, yscaler):
-
+def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, coin_name, scope, yscaler):
+    ticker = coin_name[:3]
     explainer = lime.lime_tabular.RecurrentTabularExplainer(
                                             X_train,
                                             feature_names=list(dsets[ticker + '-USD'].columns),
@@ -774,7 +835,7 @@ def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, sco
                                             mode='regression',
                                             discretize_continuous=False
                                             )
-
+    
     lime_dfs = []
     for i in range(len(test_dates)):
         exp = explainer.explain_instance(X_test[i], model.predict)
@@ -782,44 +843,12 @@ def get_lime_df(model, model_id, X_train, X_test, dsets, test_dates, ticker, sco
         lime_df['Predicted Close t+'+scope[0]] = yscaler.inverse_transform(lime_df['LIME Weight'].abs().values.reshape(-1,1))[:,0] * (lime_df['LIME Weight'].values//lime_df['LIME Weight'].abs().values)
         lime_df['Date'] = test_dates[i]
         lime_df['Model'] = model_id
-        lime_df['Ticker'] = ticker
+        lime_df['Coin'] = coin_name
         lime_df['Scope'] = scope
         lime_dfs.append(lime_df)
     lime_df = pd.concat(lime_dfs)
-    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].abs().values.reshape(-1,1)) * (lime_df['LIME Weight'].values//lime_df['LIME Weight'].abs().values)
-        
+    lime_df['LIME Weight'] = yscaler.inverse_transform(lime_df['LIME Weight'].values.reshape(-1,1))
     lime_df.rename(columns={'Date': 'Date_dt'}, inplace=True)
     lime_df['Date'] = lime_df['Date_dt'].dt.date.apply(lambda x: str(x))
     return lime_df
 
-def plot_lime(lime_df):
-
-    fig = px.bar(
-        lime_df, 
-        x='LIME Weight', 
-        y='Feature',
-        animation_frame='Date',
-        orientation='h', 
-        color='LIME Weight', 
-        template='plotly_dark',
-        title="LIME - Top Features' Effect on Close t+1",
-        color_continuous_scale='viridis',
-        )
-    fig.update_layout(
-            xaxis_tickformat = '$',
-            title={
-                'y':0.95,
-                'x':0.5,
-                'xanchor': 'center',
-                'yanchor': 'top',
-                'font': dict(
-                #family="Courier New, monospace",
-                size=25)
-                },
-            )
-    fig.update_traces(
-        hovertemplate="<br>".join([
-            "Feature: %{y}",
-            "Contribution: $%{x:,.2f}"])
-            )
-    return fig
