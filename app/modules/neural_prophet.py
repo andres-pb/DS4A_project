@@ -10,6 +10,7 @@ import sqlite3 as sql
 set_log_level("ERROR")
 set_random_seed(888)
 
+<<<<<<< HEAD
 def load_npro_model(ticker, path_to_model):
     with open(ticker + '_' + path_to_model, 'rb') as f:
         m = pickle.load(f)
@@ -19,6 +20,20 @@ def get_npro_prediction(model, coin_label):
     
     ticker = coin_label[:3]
     coin_name = coin_label[6:]
+=======
+
+def load_npro_model(ticker, path_to_models):
+    with open(path_to_models + ticker + '_NeuralProphet.pkl', 'rb') as f:
+        m = pickle.load(f)
+    return m
+
+
+def get_npro_prediction(coin_label, path_npro_models):
+    
+    ticker = coin_label[:3]
+    coin_name = coin_label[6:]
+    print('coin name', coin_name)
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
     features = ['Close', 'Gtrend', 'TYX', 'Volume']
     # get sample for prediction
     yf = yahoo_finance
@@ -28,15 +43,24 @@ def get_npro_prediction(model, coin_label):
     ticker_usd = ticker  + '-USD'
     # get treasury bonds price
     tr_ticker = '^TYX'
+<<<<<<< HEAD
     status, yield_df = yf.market_value(tr_ticker, hist=history, interval='1d')
     if status:
         print('got treasury data')
         yield_df.fillna(method='ffill', inplace=True)
         yield_data = yield_df.iloc[:-1, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+=======
+    status, yield_df = yf.market_value(tr_ticker, hist=history - dt.timedelta(7), interval='1d')
+    if status:
+        print('got treasury data')
+        yield_df.fillna(method='ffill', inplace=True)
+        yield_data = yield_df.rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
         # get the last close with lags
         status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
 
         if status:
+<<<<<<< HEAD
             print('Successfully got coin mkt data')
             last_close = close_df['Close'].values[-1]
             sample_df = close_df.iloc[:-1, :][features]
@@ -94,12 +118,55 @@ def get_npro_prediction(model, coin_label):
             gtrend_df = gtrend_df.iloc[:-1, :]
             print('>> Successfully collected Google Trends data.')
             gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
+=======
+            print('Successfully got coin mkt data for npro')
+            last_close = close_df['Close'].values[-1]
+            sample_df = close_df.iloc[:-1, :][['Close', 'Volume',]]
+            sample_df = sample_df.merge(yield_data, how='left', left_index=True, right_index=True)
+            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='ffill')
+            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='bfill')
+
+            # query our database bc google trends takes about 1 minute to load results
+            print('Getting google trends data npro...')
+            
+            # Get daily google trend interest for the remaining days
+            gt = GoogleTrends()
+            gtrend_df = gt.get_last_day_df([coin_name])
+            print(gtrend_df.info())
+            gtrend_df.fillna(method='ffill', inplace=True)
+        
+            gtrend_df = gtrend_df.iloc[:-1, :]
+            print('>> Successfully collected Google Trends data.')
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
             gtrend_data = gtrend_df[coin_name]
             sample_df['Gtrend'] = gtrend_data
         
             # Dataframe con la muestra
             sample_df = sample_df[features]
             sample_df.fillna(method='ffill', inplace=True)
+<<<<<<< HEAD
             # Make df with future date and predict with neural prophet
             future_df = m.make_future_df()
+=======
+            sample_df.fillna(method='bfill', inplace=True)
+            sample_df = sample_df.reset_index().rename(columns={'Date': 'ds', 'Close': 'y'})
+            sample_df = sample_df[['ds', 'y', 'Gtrend', 'TYX', 'Volume']]
+
+            # Make df with future date and predict with neural prophet
+            m = load_npro_model(ticker=ticker, path_to_models=path_npro_models)
+            future_df = m.make_future_dataframe(sample_df)
+            predicted_df = m.predict(future_df)
+            print('\n>>> Prediction DF: \n', predicted_df)
+            prediction = predicted_df['yhat1'].values[-1]
+
+            ret = (prediction - last_close)/last_close
+
+            return prediction, ret
+        else:
+            print('Error trying to get ticker {} data from Yahoo Finance.'.format(ticker))
+            return False, False               
+    else:
+        print('Error trying to get treasury yield {} data from Yahoo Finance.'.format(tr_ticker))
+        return False, False
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 
