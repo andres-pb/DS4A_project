@@ -8943,3 +8943,391 @@ Version .: 1.1
 [44360] urllib3.connectionpool - 2022-07-05 21:14:24,398 - DEBUG - https://trends.google.com:443 "GET /trends/api/widgetdata/multiline?req=%7B%22time%22%3A+%222022-07-06T00%5C%5C%3A00%5C%5C%3A00+2022-07-13T00%5C%5C%3A00%5C%5C%3A00%22%2C+%22resolution%22%3A+%22HOUR%22%2C+%22locale%22%3A+%22en-US%22%2C+%22comparisonItem%22%3A+%5B%7B%22geo%22%3A+%7B%7D%2C+%22complexKeywordsRestriction%22%3A+%7B%22keyword%22%3A+%5B%7B%22type%22%3A+%22BROAD%22%2C+%22value%22%3A+%22Bitcoin%22%7D%5D%7D%7D%5D%2C+%22requestOptions%22%3A+%7B%22property%22%3A+%22%22%2C+%22backend%22%3A+%22CM%22%2C+%22category%22%3A+0%7D%2C+%22userConfig%22%3A+%7B%22userType%22%3A+%22USER_TYPE_SCRAPER%22%7D%7D&token=APP6_UEAAAAAYsZBfnsJB_ETIrp41gnxXjaApt0x2k3P&tz=360 HTTP/1.1" 200 None
 [37012] urllib3.connectionpool - 2022-07-05 21:14:28,395 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
 [37012] urllib3.connectionpool - 2022-07-05 21:14:28,690 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:14,677 - INFO - ...... Initialization Completed  ......
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:14,677 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[74016] urllib3.connectionpool - 2022-07-05 22:55:14,732 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:15,393 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:32,652 - INFO - ...... Initialization Completed  ......
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:32,652 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[74016] urllib3.connectionpool - 2022-07-05 22:55:32,656 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:33,078 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:34,730 - INFO - ...... Initialization Completed  ......
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:34,730 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[74016] urllib3.connectionpool - 2022-07-05 22:55:34,731 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:35,260 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[74016] tweepy.api - 2022-07-05 22:55:36,554 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:36,554 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:36,554 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:36,561 - DEBUG - Collected params: [('q', 'bitcoin OR BTC'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '142749759408160037641657079736'), ('oauth_timestamp', '1657079736'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:36,561 - DEBUG - Normalized params: count=100&lang=en&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=142749759408160037641657079736&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079736&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:36,562 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:36,562 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D142749759408160037641657079736%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079736%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:36,563 - DEBUG - Signature: igbzXvobn39H9c0gmwEDNWAM1sU=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:36,563 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:36,563 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'OAuth oauth_nonce="142749759408160037641657079736", oauth_timestamp="1657079736", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="igbzXvobn39H9c0gmwEDNWAM1sU%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:36,563 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:36,566 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:37,462 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 6165
+[74016] tweepy.api - 2022-07-05 22:55:37,476 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC', 'max_id': '1543917089244708863', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,481 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,481 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,481 - DEBUG - Collected params: [('q', 'bitcoin OR BTC'), ('max_id', '1543917089244708863'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '59307355179154504541657079737'), ('oauth_timestamp', '1657079737'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,481 - DEBUG - Normalized params: count=100&lang=en&max_id=1543917089244708863&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=59307355179154504541657079737&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079737&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,481 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,481 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1543917089244708863%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D59307355179154504541657079737%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079737%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,481 - DEBUG - Signature: +cBEsMv2fkA97Z8MlAmufuRK8jE=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,481 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1543917089244708863&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,481 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707973517703355; guest_id_ads=v1%3A165707973517703355; guest_id_marketing=v1%3A165707973517703355; personalization_id="v1_VGQeUEbQCsvB4tiwfTx/gA=="; lang=en', 'Authorization': 'OAuth oauth_nonce="59307355179154504541657079737", oauth_timestamp="1657079737", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="%2BcBEsMv2fkA97Z8MlAmufuRK8jE%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,481 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:37,481 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:37,884 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1543917089244708863&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 7161
+[74016] tweepy.api - 2022-07-05 22:55:37,898 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC', 'max_id': '1541885167907868672', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,906 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,906 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,906 - DEBUG - Collected params: [('q', 'bitcoin OR BTC'), ('max_id', '1541885167907868672'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '128386039156019893291657079737'), ('oauth_timestamp', '1657079737'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,906 - DEBUG - Normalized params: count=100&lang=en&max_id=1541885167907868672&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=128386039156019893291657079737&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079737&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,910 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,910 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541885167907868672%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D128386039156019893291657079737%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079737%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:37,910 - DEBUG - Signature: 3wTR8oP6KOhgxO6UVzq4w58gK6U=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,910 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1541885167907868672&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,910 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707973517703355; guest_id_ads=v1%3A165707973517703355; guest_id_marketing=v1%3A165707973517703355; personalization_id="v1_VGQeUEbQCsvB4tiwfTx/gA=="; lang=en', 'Authorization': 'OAuth oauth_nonce="128386039156019893291657079737", oauth_timestamp="1657079737", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="3wTR8oP6KOhgxO6UVzq4w58gK6U%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:37,910 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:37,917 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:38,313 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1541885167907868672&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 7533
+[74016] tweepy.api - 2022-07-05 22:55:38,329 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC', 'max_id': '1541034969677668359', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,329 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,329 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,329 - DEBUG - Collected params: [('q', 'bitcoin OR BTC'), ('max_id', '1541034969677668359'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '97960138579796641451657079738'), ('oauth_timestamp', '1657079738'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,329 - DEBUG - Normalized params: count=100&lang=en&max_id=1541034969677668359&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=97960138579796641451657079738&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079738&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,329 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,329 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541034969677668359%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D97960138579796641451657079738%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079738%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,329 - DEBUG - Signature: 8cxpvuUVaHC30xUZEbqEaEFWF4c=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,329 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1541034969677668359&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,329 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707973517703355; guest_id_ads=v1%3A165707973517703355; guest_id_marketing=v1%3A165707973517703355; personalization_id="v1_VGQeUEbQCsvB4tiwfTx/gA=="; lang=en', 'Authorization': 'OAuth oauth_nonce="97960138579796641451657079738", oauth_timestamp="1657079738", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="8cxpvuUVaHC30xUZEbqEaEFWF4c%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,337 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:38,337 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:38,685 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1541034969677668359&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 2444
+[74016] tweepy.api - 2022-07-05 22:55:38,694 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC', 'max_id': '1541030741026512895', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,694 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,702 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,703 - DEBUG - Collected params: [('q', 'bitcoin OR BTC'), ('max_id', '1541030741026512895'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '31836964827035798381657079738'), ('oauth_timestamp', '1657079738'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,703 - DEBUG - Normalized params: count=100&lang=en&max_id=1541030741026512895&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=31836964827035798381657079738&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079738&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,703 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,703 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541030741026512895%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D31836964827035798381657079738%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079738%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:38,703 - DEBUG - Signature: 3vOI5HNHuSB5tdIQ6ZVsutvBw54=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,703 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1541030741026512895&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,703 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707973517703355; guest_id_ads=v1%3A165707973517703355; guest_id_marketing=v1%3A165707973517703355; personalization_id="v1_VGQeUEbQCsvB4tiwfTx/gA=="; lang=en', 'Authorization': 'OAuth oauth_nonce="31836964827035798381657079738", oauth_timestamp="1657079738", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="3vOI5HNHuSB5tdIQ6ZVsutvBw54%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:38,703 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:38,709 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:39,016 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC&max_id=1541030741026512895&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 230
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:46,735 - INFO - ...... Initialization Completed  ......
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:46,735 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[74016] urllib3.connectionpool - 2022-07-05 22:55:46,744 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:47,344 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:49,953 - INFO - ...... Initialization Completed  ......
+[74016] app.modules.sentiment_analysis - 2022-07-05 22:55:49,953 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[74016] urllib3.connectionpool - 2022-07-05 22:55:49,953 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:50,517 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[74016] tweepy.api - 2022-07-05 22:55:53,044 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,048 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,049 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,051 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '50693895775575036421657079753'), ('oauth_timestamp', '1657079753'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,052 - DEBUG - Normalized params: count=100&lang=en&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=50693895775575036421657079753&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079753&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,053 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,053 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D50693895775575036421657079753%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079753%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,053 - DEBUG - Signature: pZXSDOaH8b1kSxHhTFrO0m+FBt4=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,053 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,053 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'OAuth oauth_nonce="50693895775575036421657079753", oauth_timestamp="1657079753", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="pZXSDOaH8b1kSxHhTFrO0m%2BFBt4%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,053 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:53,063 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:53,592 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 8678
+[74016] tweepy.api - 2022-07-05 22:55:53,600 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'max_id': '1543889873303732224', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,600 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,600 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,603 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('max_id', '1543889873303732224'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '114317374306889267281657079753'), ('oauth_timestamp', '1657079753'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,603 - DEBUG - Normalized params: count=100&lang=en&max_id=1543889873303732224&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=114317374306889267281657079753&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079753&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,603 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,605 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1543889873303732224%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D114317374306889267281657079753%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079753%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:53,605 - DEBUG - Signature: 80IJbLEBWvbUr1Hm6VtkftGln5A=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,605 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1543889873303732224&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,605 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707975128164637; guest_id_ads=v1%3A165707975128164637; guest_id_marketing=v1%3A165707975128164637; personalization_id="v1_wSRCERsDI8V4mmGKlejZhw=="; lang=en', 'Authorization': 'OAuth oauth_nonce="114317374306889267281657079753", oauth_timestamp="1657079753", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="80IJbLEBWvbUr1Hm6VtkftGln5A%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:53,605 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:53,609 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:54,087 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1543889873303732224&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 6891
+[74016] tweepy.api - 2022-07-05 22:55:54,097 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'max_id': '1541400160902815744', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,097 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,097 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,097 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('max_id', '1541400160902815744'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '68496402591231350691657079754'), ('oauth_timestamp', '1657079754'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,105 - DEBUG - Normalized params: count=100&lang=en&max_id=1541400160902815744&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=68496402591231350691657079754&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079754&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,105 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,106 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541400160902815744%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D68496402591231350691657079754%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079754%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,107 - DEBUG - Signature: qsKtO2JvCfiejJ8PxjySBbT6Nnc=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,107 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541400160902815744&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,108 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707975128164637; guest_id_ads=v1%3A165707975128164637; guest_id_marketing=v1%3A165707975128164637; personalization_id="v1_wSRCERsDI8V4mmGKlejZhw=="; lang=en', 'Authorization': 'OAuth oauth_nonce="68496402591231350691657079754", oauth_timestamp="1657079754", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="qsKtO2JvCfiejJ8PxjySBbT6Nnc%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,108 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:54,109 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:54,475 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541400160902815744&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 7983
+[74016] tweepy.api - 2022-07-05 22:55:54,486 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'max_id': '1541042339883499520', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,486 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,486 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,494 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('max_id', '1541042339883499520'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '118414331499897643111657079754'), ('oauth_timestamp', '1657079754'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,494 - DEBUG - Normalized params: count=100&lang=en&max_id=1541042339883499520&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=118414331499897643111657079754&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079754&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,494 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,494 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541042339883499520%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D118414331499897643111657079754%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079754%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:55:54,494 - DEBUG - Signature: zMCaluoydGFdMyU4n3G+vuBoxJ0=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,494 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541042339883499520&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,494 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707975128164637; guest_id_ads=v1%3A165707975128164637; guest_id_marketing=v1%3A165707975128164637; personalization_id="v1_wSRCERsDI8V4mmGKlejZhw=="; lang=en', 'Authorization': 'OAuth oauth_nonce="118414331499897643111657079754", oauth_timestamp="1657079754", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="zMCaluoydGFdMyU4n3G%2BvuBoxJ0%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:55:54,494 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:55:54,502 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:55:54,807 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541042339883499520&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 246
+[74016] tweepy.api - 2022-07-05 22:56:03,858 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:03,858 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:03,858 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:03,866 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '157632136480451967531657079763'), ('oauth_timestamp', '1657079763'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:03,867 - DEBUG - Normalized params: count=100&lang=en&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=157632136480451967531657079763&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079763&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:03,867 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:03,867 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D157632136480451967531657079763%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079763%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:03,868 - DEBUG - Signature: c1GV+uLcjCuz3+w4mYNfrerqJcI=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:03,868 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:03,868 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'OAuth oauth_nonce="157632136480451967531657079763", oauth_timestamp="1657079763", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="c1GV%2BuLcjCuz3%2Bw4mYNfrerqJcI%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:03,868 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:56:03,868 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:56:04,366 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 8677
+[74016] tweepy.api - 2022-07-05 22:56:04,383 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'max_id': '1543889873303732224', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,383 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,383 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,392 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('max_id', '1543889873303732224'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '16558524927704567891657079764'), ('oauth_timestamp', '1657079764'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,392 - DEBUG - Normalized params: count=100&lang=en&max_id=1543889873303732224&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=16558524927704567891657079764&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079764&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,392 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,392 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1543889873303732224%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D16558524927704567891657079764%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079764%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,392 - DEBUG - Signature: zzlOnmyBvygquYUcuJnTzd0AqQE=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,392 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1543889873303732224&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,392 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707976210901613; guest_id_ads=v1%3A165707976210901613; guest_id_marketing=v1%3A165707976210901613; personalization_id="v1_6J9w+p1gtXbBLFMfiA47yQ=="; lang=en', 'Authorization': 'OAuth oauth_nonce="16558524927704567891657079764", oauth_timestamp="1657079764", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="zzlOnmyBvygquYUcuJnTzd0AqQE%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,392 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:56:04,399 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:56:04,851 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1543889873303732224&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 6894
+[74016] tweepy.api - 2022-07-05 22:56:04,868 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'max_id': '1541400160902815744', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,868 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,868 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,868 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('max_id', '1541400160902815744'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '161422564847936997441657079764'), ('oauth_timestamp', '1657079764'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,868 - DEBUG - Normalized params: count=100&lang=en&max_id=1541400160902815744&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=161422564847936997441657079764&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079764&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,868 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,868 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541400160902815744%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D161422564847936997441657079764%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079764%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:04,876 - DEBUG - Signature: tQvN7rrUU22oRP1XB6J+NBzeohw=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,876 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541400160902815744&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,876 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707976210901613; guest_id_ads=v1%3A165707976210901613; guest_id_marketing=v1%3A165707976210901613; personalization_id="v1_6J9w+p1gtXbBLFMfiA47yQ=="; lang=en', 'Authorization': 'OAuth oauth_nonce="161422564847936997441657079764", oauth_timestamp="1657079764", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="tQvN7rrUU22oRP1XB6J%2BNBzeohw%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:04,876 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:56:04,876 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:56:05,292 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541400160902815744&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 7982
+[74016] tweepy.api - 2022-07-05 22:56:05,305 - DEBUG - PARAMS: {'q': 'bitcoin OR BTC AND crypto', 'max_id': '1541042339883499520', 'count': '100', 'lang': 'en', 'result_type': 'popular', 'tweet_mode': 'extended'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:05,305 - DEBUG - Signing request <PreparedRequest [GET]> using client <Client client_key=GUukcmQySO7TkElOl1CLYYq6b, client_secret=****, resource_owner_key=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:05,305 - DEBUG - Including body in call to sign: False
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:05,305 - DEBUG - Collected params: [('q', 'bitcoin OR BTC AND crypto'), ('max_id', '1541042339883499520'), ('count', '100'), ('lang', 'en'), ('result_type', 'popular'), ('tweet_mode', 'extended'), ('oauth_nonce', '168828925790021246441657079765'), ('oauth_timestamp', '1657079765'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'GUukcmQySO7TkElOl1CLYYq6b'), ('oauth_token', '1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf')]
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:05,305 - DEBUG - Normalized params: count=100&lang=en&max_id=1541042339883499520&oauth_consumer_key=GUukcmQySO7TkElOl1CLYYq6b&oauth_nonce=168828925790021246441657079765&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1657079765&oauth_token=1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf&oauth_version=1.0&q=bitcoin%20OR%20BTC%20AND%20crypto&result_type=popular&tweet_mode=extended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:05,313 - DEBUG - Normalized URI: https://api.twitter.com/1.1/search/tweets.json
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:05,315 - DEBUG - Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fsearch%2Ftweets.json&count%3D100%26lang%3Den%26max_id%3D1541042339883499520%26oauth_consumer_key%3DGUukcmQySO7TkElOl1CLYYq6b%26oauth_nonce%3D168828925790021246441657079765%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1657079765%26oauth_token%3D1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf%26oauth_version%3D1.0%26q%3Dbitcoin%2520OR%2520BTC%2520AND%2520crypto%26result_type%3Dpopular%26tweet_mode%3Dextended
+[74016] oauthlib.oauth1.rfc5849 - 2022-07-05 22:56:05,315 - DEBUG - Signature: SiK/92qgiq/7waonyDp8BuHoJTo=
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:05,315 - DEBUG - Updated url: https://api.twitter.com/1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541042339883499520&count=100&lang=en&result_type=popular&tweet_mode=extended
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:05,316 - DEBUG - Updated headers: {'User-Agent': 'Python/3.10.4 Requests/2.27.1 Tweepy/4.10.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'guest_id=v1%3A165707976210901613; guest_id_ads=v1%3A165707976210901613; guest_id_marketing=v1%3A165707976210901613; personalization_id="v1_6J9w+p1gtXbBLFMfiA47yQ=="; lang=en', 'Authorization': 'OAuth oauth_nonce="168828925790021246441657079765", oauth_timestamp="1657079765", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="GUukcmQySO7TkElOl1CLYYq6b", oauth_token="1514382114564804608-lOQVa5Hj63FBYFcos0D4wQNlm1RUEf", oauth_signature="SiK%2F92qgiq%2F7waonyDp8BuHoJTo%3D"'}
+[74016] requests_oauthlib.oauth1_auth - 2022-07-05 22:56:05,316 - DEBUG - Updated body: None
+[74016] urllib3.connectionpool - 2022-07-05 22:56:05,317 - DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+[74016] urllib3.connectionpool - 2022-07-05 22:56:05,617 - DEBUG - https://api.twitter.com:443 "GET /1.1/search/tweets.json?q=bitcoin+OR+BTC+AND+crypto&max_id=1541042339883499520&count=100&lang=en&result_type=popular&tweet_mode=extended HTTP/1.1" 200 247
+[63148] __main__ - 2022-07-05 22:57:21,059 - INFO - ...... Initialization Completed  ......
+[63148] __main__ - 2022-07-05 22:57:21,059 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[63148] sqlalchemy.engine.Engine - 2022-07-05 22:57:21,059 - INFO - BEGIN (implicit)
+[63148] sqlalchemy.engine.Engine - 2022-07-05 22:57:21,059 - INFO - PRAGMA main.table_info("crypto")
+[63148] sqlalchemy.engine.Engine - 2022-07-05 22:57:21,065 - INFO - [raw sql] ()
+[63148] sqlalchemy.engine.Engine - 2022-07-05 22:57:21,065 - INFO - COMMIT
+[63148] urllib3.connectionpool - 2022-07-05 22:57:22,498 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[63148] urllib3.connectionpool - 2022-07-05 22:57:22,875 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[63148] app.dashboard.dashboard - 2022-07-05 22:57:27,758 - INFO - Dash is running on http://127.0.0.1:8888/
+
+[77292] __main__ - 2022-07-05 22:57:40,647 - INFO - ...... Initialization Completed  ......
+[77292] __main__ - 2022-07-05 22:57:40,647 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[77292] sqlalchemy.engine.Engine - 2022-07-05 22:57:40,647 - INFO - BEGIN (implicit)
+[77292] sqlalchemy.engine.Engine - 2022-07-05 22:57:40,649 - INFO - PRAGMA main.table_info("crypto")
+[77292] sqlalchemy.engine.Engine - 2022-07-05 22:57:40,649 - INFO - [raw sql] ()
+[77292] sqlalchemy.engine.Engine - 2022-07-05 22:57:40,649 - INFO - COMMIT
+[77292] urllib3.connectionpool - 2022-07-05 22:57:41,387 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[77292] urllib3.connectionpool - 2022-07-05 22:57:41,680 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[65220] urllib3.connectionpool - 2022-07-05 22:58:02,001 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[65220] urllib3.connectionpool - 2022-07-05 22:58:02,257 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[69268] urllib3.connectionpool - 2022-07-05 22:58:09,314 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[69268] urllib3.connectionpool - 2022-07-05 22:58:09,581 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656993489&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1019
+[70428] h5py._conv - 2022-07-05 22:58:15,876 - DEBUG - Creating converter from 3 to 5
+[70428] urllib3.connectionpool - 2022-07-05 22:58:15,925 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:16,230 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/%5ETYX?period1=1651809495&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1783
+[70428] urllib3.connectionpool - 2022-07-05 22:58:16,688 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:17,055 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1651809495&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 2536
+[70428] urllib3.connectionpool - 2022-07-05 22:58:17,145 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:17,432 - DEBUG - https://trends.google.com:443 "GET /?geo=US HTTP/1.1" 301 237
+[70428] urllib3.connectionpool - 2022-07-05 22:58:17,886 - DEBUG - https://trends.google.com:443 "GET /trends/?geo=US HTTP/1.1" 200 None
+[70428] urllib3.connectionpool - 2022-07-05 22:58:17,953 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:18,590 - DEBUG - https://trends.google.com:443 "GET /trends/api/explore?hl=en-US&tz=360&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bitcoin%22%2C+%22time%22%3A+%222022-06-29T00+2022-07-06T00%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3A+%22%22%7D HTTP/1.1" 200 None
+[70428] urllib3.connectionpool - 2022-07-05 22:58:18,595 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:19,210 - DEBUG - https://trends.google.com:443 "GET /trends/api/widgetdata/multiline?req=%7B%22time%22%3A+%222022-06-29T00%5C%5C%3A00%5C%5C%3A00+2022-07-06T00%5C%5C%3A00%5C%5C%3A00%22%2C+%22resolution%22%3A+%22HOUR%22%2C+%22locale%22%3A+%22en-US%22%2C+%22comparisonItem%22%3A+%5B%7B%22geo%22%3A+%7B%7D%2C+%22complexKeywordsRestriction%22%3A+%7B%22keyword%22%3A+%5B%7B%22type%22%3A+%22BROAD%22%2C+%22value%22%3A+%22Bitcoin%22%7D%5D%7D%7D%5D%2C+%22requestOptions%22%3A+%7B%22property%22%3A+%22%22%2C+%22backend%22%3A+%22CM%22%2C+%22category%22%3A+0%7D%2C+%22userConfig%22%3A+%7B%22userType%22%3A+%22USER_TYPE_SCRAPER%22%7D%7D&token=APP6_UEAAAAAYsZZ2GMs489uYhOvirmCYL7d9B2jCHig&tz=360 HTTP/1.1" 200 None
+[70428] urllib3.connectionpool - 2022-07-05 22:58:19,303 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:19,921 - DEBUG - https://trends.google.com:443 "GET /trends/api/explore?hl=en-US&tz=360&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bitcoin%22%2C+%22time%22%3A+%222022-07-06T00+2022-07-13T00%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3A+%22%22%7D HTTP/1.1" 200 None
+[70428] urllib3.connectionpool - 2022-07-05 22:58:19,930 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[70428] urllib3.connectionpool - 2022-07-05 22:58:20,474 - DEBUG - https://trends.google.com:443 "GET /trends/api/widgetdata/multiline?req=%7B%22time%22%3A+%222022-07-06T00%5C%5C%3A00%5C%5C%3A00+2022-07-13T00%5C%5C%3A00%5C%5C%3A00%22%2C+%22resolution%22%3A+%22HOUR%22%2C+%22locale%22%3A+%22en-US%22%2C+%22comparisonItem%22%3A+%5B%7B%22geo%22%3A+%7B%7D%2C+%22complexKeywordsRestriction%22%3A+%7B%22keyword%22%3A+%5B%7B%22type%22%3A+%22BROAD%22%2C+%22value%22%3A+%22Bitcoin%22%7D%5D%7D%7D%5D%2C+%22requestOptions%22%3A+%7B%22property%22%3A+%22%22%2C+%22backend%22%3A+%22CM%22%2C+%22category%22%3A+0%7D%2C+%22userConfig%22%3A+%7B%22userType%22%3A+%22USER_TYPE_SCRAPER%22%7D%7D&token=APP6_UEAAAAAYsZZ2Qg-jeITugRD12RIG_JY5vrZZN7r&tz=360 HTTP/1.1" 200 None
