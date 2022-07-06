@@ -8338,3 +8338,84 @@ Version .: 1.1
 [41340] urllib3.connectionpool - 2022-07-05 20:12:21,512 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
 [24184] urllib3.connectionpool - 2022-07-05 20:12:59,253 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
 [24184] urllib3.connectionpool - 2022-07-05 20:12:59,493 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656983579&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 915
+[17668] app.modules.sentiment_analysis - 2022-07-05 20:28:18,927 - INFO - ...... Initialization Completed  ......
+[17668] app.modules.sentiment_analysis - 2022-07-05 20:28:18,927 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[17668] urllib3.connectionpool - 2022-07-05 20:28:18,930 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[17668] urllib3.connectionpool - 2022-07-05 20:28:19,502 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[10156] app.modules.sentiment_analysis - 2022-07-05 20:30:27,030 - INFO - ...... Initialization Completed  ......
+[10156] app.modules.sentiment_analysis - 2022-07-05 20:30:27,030 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[10156] urllib3.connectionpool - 2022-07-05 20:30:27,035 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[10156] urllib3.connectionpool - 2022-07-05 20:30:27,610 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
+[5184] app.modules.sentiment_analysis - 2022-07-05 20:33:09,630 - INFO - ...... Initialization Completed  ......
+[5184] app.modules.sentiment_analysis - 2022-07-05 20:33:09,631 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[5184] urllib3.connectionpool - 2022-07-05 20:33:09,635 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[5184] urllib3.connectionpool - 2022-07-05 20:33:10,185 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
