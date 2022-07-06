@@ -41,7 +41,9 @@ layout = html.Div([
                                 id='coin-dropdown',
                                 options=[{'label': c, 'value': c} for c in sorted(preds_df['Coin'].unique())],
                                 value='BTC - Bitcoin',
-                                clearable=False,                             
+                                clearable=False,
+                                persistence=True,
+                                persistence_type='session'                         
                             )
                         ],
                     ),
@@ -57,6 +59,8 @@ layout = html.Div([
                                 options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
                                 value='Deep Learning LSTM',
                                 clearable=False,
+                                persistence=True,
+                                persistence_type='session'  
                             )
                         ],
                     ),
@@ -72,6 +76,8 @@ layout = html.Div([
                                 options=['1 day ahead'],
                                 value='1 day ahead',
                                 clearable=False,
+                                persistence=True,
+                                persistence_type='session'  
                             )
                         ],
                     ),
@@ -360,16 +366,22 @@ def populate_mdl_ddown(sel_coin):
     mdls_list = sorted(pred_dff['Model'].unique())
     mdl_opts = [{'label': t, 'value': t} for t in mdls_list]
 <<<<<<< HEAD
+<<<<<<< HEAD
     mdl_value = mdls_list[0]
     return mdl_opts, mdl_value
 =======
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
     if 'Neural Prophet' in mdls_list:
         mdl_value = 'Neural Prophet'
     else:
         mdl_value = mdls_list[0]
     return mdl_opts, mdl_value
 
+<<<<<<< HEAD
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
 
 @callback(
     Output('test-plot', 'figure'),
@@ -559,13 +571,19 @@ def predict_price(n, sel_coin, sel_model, sel_time):
 
     if n == 1:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
 
         now = dt.datetime.today()
         pred_val = (now + dt.timedelta(1)).replace(hour=5, minute=0, second=0)
         pred_val_str = dt.datetime.strftime(pred_val, '%Y-%m-%d %H:%M')
 
+<<<<<<< HEAD
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
         print('>>>> ATTEMPTING PRICE PREDICTION')
 
         if sel_model == 'Neural Prophet':
@@ -595,6 +613,7 @@ def predict_price(n, sel_coin, sel_model, sel_time):
                 ], 
                 className='forecast-container'
 <<<<<<< HEAD
+<<<<<<< HEAD
             )], None
     
     else:
@@ -605,6 +624,12 @@ def predict_price(n, sel_coin, sel_model, sel_time):
     else:
         return html.P('Click the Forecast Button.'), '', None
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+            )], html.P(['As of {} local time UTC-5'.format(pred_val_str)], className='footnote'), None
+    
+    else:
+        return html.P('Click the Forecast Button.'), '', None
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
 
 
 @callback(

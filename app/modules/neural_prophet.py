@@ -15,6 +15,7 @@ set_random_seed(888)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 def load_npro_model(ticker, path_to_model):
     with open(ticker + '_' + path_to_model, 'rb') as f:
         m = pickle.load(f)
@@ -33,6 +34,8 @@ def get_npro_prediction(model, coin_label):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
 
 def load_npro_model(ticker, path_to_models):
     with open(path_to_models + ticker + '_NeuralProphet.pkl', 'rb') as f:
@@ -49,6 +52,7 @@ def get_npro_prediction(coin_label, path_npro_models):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -58,6 +62,8 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
     features = ['Close', 'Gtrend', 'TYX', 'Volume']
     # get sample for prediction
     yf = yahoo_finance
@@ -67,6 +73,7 @@ def get_npro_prediction(coin_label, path_npro_models):
     ticker_usd = ticker  + '-USD'
     # get treasury bonds price
     tr_ticker = '^TYX'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,11 +93,14 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
     status, yield_df = yf.market_value(tr_ticker, hist=history - dt.timedelta(7), interval='1d')
     if status:
         print('got treasury data')
         yield_df.fillna(method='ffill', inplace=True)
         yield_data = yield_df.rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,10 +114,13 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
         # get the last close with lags
         status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
 
         if status:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -179,6 +192,8 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
             print('Successfully got coin mkt data for npro')
             last_close = close_df['Close'].values[-1]
             sample_df = close_df.iloc[:-1, :][['Close', 'Volume',]]
@@ -201,6 +216,7 @@ def get_npro_prediction(coin_label, path_npro_models):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -210,12 +226,15 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
             gtrend_data = gtrend_df[coin_name]
             sample_df['Gtrend'] = gtrend_data
         
             # Dataframe con la muestra
             sample_df = sample_df[features]
             sample_df.fillna(method='ffill', inplace=True)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -232,6 +251,8 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
             sample_df.fillna(method='bfill', inplace=True)
             sample_df = sample_df.reset_index().rename(columns={'Date': 'ds', 'Close': 'y'})
             sample_df = sample_df[['ds', 'y', 'Gtrend', 'TYX', 'Volume']]
@@ -256,6 +277,7 @@ def get_npro_prediction(coin_label, path_npro_models):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -265,4 +287,6 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
+=======
+>>>>>>> 8d31783db698437b09448df3e24b6b6699ee0f70
 
