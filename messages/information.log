@@ -6510,3 +6510,30 @@ Version .: 1.1
 [20584] urllib3.connectionpool - 2022-07-05 20:01:09,442 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/ETH-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
 [15524] urllib3.connectionpool - 2022-07-05 20:01:20,646 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
 [15524] urllib3.connectionpool - 2022-07-05 20:01:20,852 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656982880&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 916
+[71356] app.modules.sentiment_analysis - 2022-07-05 20:31:51,791 - INFO - ...... Initialization Completed  ......
+[71356] app.modules.sentiment_analysis - 2022-07-05 20:31:51,796 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[71356] urllib3.connectionpool - 2022-07-05 20:31:51,807 - DEBUG - Starting new HTTPS connection (1): api.polygon.io:443
+[71356] urllib3.connectionpool - 2022-07-05 20:31:52,758 - DEBUG - https://api.polygon.io:443 "GET /v2/reference/news?limit=1000&order=desc&sort=published_utc&published_utc.gte=&apiKey=PWRjSfmBc9xYnPZMQhA9ukDOuOIId90D HTTP/1.1" 200 None
