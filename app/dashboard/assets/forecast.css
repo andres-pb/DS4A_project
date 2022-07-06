@@ -8,6 +8,14 @@
     height: auto;
 }
 
+.Select-control {
+    background-color: rgb(25, 25, 25) !important;
+}
+  
+.Select-menu-outer {
+    background-color: rgb(25, 25, 25);
+}
+
 .dropdown-fc{
     width: 100%;
     height: auto;
@@ -184,6 +192,12 @@
     width: 100%;
     height: auto;
 }
+
+.dropdown-fc-md{
+    width: 60%;
+    height: auto;
+}
+
 .features-container {
     width: 100%;
     height: auto;
@@ -340,4 +354,16 @@
     font-size: xx-small;
     font-weight: lighter;
     text-align: right;
+}
+
+.table-small {
+    width: 80%;
+    height: auto;
+}
+
+.plot-container-small {
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
