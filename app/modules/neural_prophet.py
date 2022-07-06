@@ -101,5 +101,5 @@ def get_npro_prediction(model, coin_label):
             sample_df = sample_df[features]
             sample_df.fillna(method='ffill', inplace=True)
             # Make df with future date and predict with neural prophet
-            future_df = m.make_future_df()
+            #future_df = m.make_future_df()
 
