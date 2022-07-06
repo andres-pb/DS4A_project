@@ -1824,3 +1824,5 @@ Version .: 1.1
 [41340] sqlalchemy.engine.Engine - 2022-07-05 20:12:20,171 - INFO - COMMIT
 [41340] urllib3.connectionpool - 2022-07-05 20:12:21,246 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
 [41340] urllib3.connectionpool - 2022-07-05 20:12:21,512 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[24184] urllib3.connectionpool - 2022-07-05 20:12:59,253 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[24184] urllib3.connectionpool - 2022-07-05 20:12:59,493 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656983579&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 915
