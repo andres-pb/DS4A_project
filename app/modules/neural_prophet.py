@@ -13,6 +13,7 @@ set_random_seed(888)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 def load_npro_model(ticker, path_to_model):
     with open(ticker + '_' + path_to_model, 'rb') as f:
         m = pickle.load(f)
@@ -23,6 +24,8 @@ def get_npro_prediction(model, coin_label):
     ticker = coin_label[:3]
     coin_name = coin_label[6:]
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
@@ -41,6 +44,9 @@ def get_npro_prediction(coin_label, path_npro_models):
     print('coin name', coin_name)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -58,12 +64,15 @@ def get_npro_prediction(coin_label, path_npro_models):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     status, yield_df = yf.market_value(tr_ticker, hist=history, interval='1d')
     if status:
         print('got treasury data')
         yield_df.fillna(method='ffill', inplace=True)
         yield_data = yield_df.iloc[:-1, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
@@ -75,6 +84,9 @@ def get_npro_prediction(coin_label, path_npro_models):
         yield_data = yield_df.rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -84,6 +96,7 @@ def get_npro_prediction(coin_label, path_npro_models):
         status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
 
         if status:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -149,6 +162,8 @@ def get_npro_prediction(coin_label, path_npro_models):
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
             print('Successfully got coin mkt data for npro')
             last_close = close_df['Close'].values[-1]
             sample_df = close_df.iloc[:-1, :][['Close', 'Volume',]]
@@ -169,6 +184,9 @@ def get_npro_prediction(coin_label, path_npro_models):
             print('>> Successfully collected Google Trends data.')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -183,9 +201,12 @@ def get_npro_prediction(coin_label, path_npro_models):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             # Make df with future date and predict with neural prophet
             future_df = m.make_future_df()
 =======
+=======
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
@@ -212,6 +233,9 @@ def get_npro_prediction(coin_label, path_npro_models):
         return False, False
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
