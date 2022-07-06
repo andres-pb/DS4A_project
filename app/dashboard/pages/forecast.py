@@ -41,7 +41,9 @@ layout = html.Div([
                                 id='coin-dropdown',
                                 options=[{'label': c, 'value': c} for c in sorted(preds_df['Coin'].unique())],
                                 value='BTC - Bitcoin',
-                                clearable=False,                             
+                                clearable=False,
+                                persistence=True,
+                                persistence_type='session'                         
                             )
                         ],
                     ),
@@ -57,6 +59,8 @@ layout = html.Div([
                                 options=[{'label': m, 'value': m} for m in sorted(preds_df['Model'].unique())],
                                 value='Deep Learning LSTM',
                                 clearable=False,
+                                persistence=True,
+                                persistence_type='session'  
                             )
                         ],
                     ),
@@ -72,6 +76,8 @@ layout = html.Div([
                                 options=['1 day ahead'],
                                 value='1 day ahead',
                                 clearable=False,
+                                persistence=True,
+                                persistence_type='session'  
                             )
                         ],
                     ),
