@@ -26,6 +26,7 @@ neuralprophet == 0.3.2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 transformers == 4.19.4
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
@@ -38,3 +39,6 @@ transformers == 4.19.4
 =======
 transformers == 4.19.4
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
+transformers == 4.19.4
+>>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2

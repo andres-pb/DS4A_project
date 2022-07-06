@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dropdown-title-fc{
     text-align:center;
     margin:0px;
@@ -348,6 +349,8 @@
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
+>>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
 .dropdown-title-fc{
     text-align:center;
     margin:0px;
@@ -358,6 +361,17 @@
     height: auto;
 }
 
+<<<<<<< HEAD
+=======
+.Select-control {
+    background-color: rgb(25, 25, 25) !important;
+}
+  
+.Select-menu-outer {
+    background-color: rgb(25, 25, 25);
+}
+
+>>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
 .dropdown-fc{
     width: 100%;
     height: auto;
@@ -534,6 +548,15 @@
     width: 100%;
     height: auto;
 }
+<<<<<<< HEAD
+=======
+
+.dropdown-fc-md{
+    width: 60%;
+    height: auto;
+}
+
+>>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
 .features-container {
     width: 100%;
     height: auto;
@@ -692,9 +715,24 @@
     text-align: right;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
 =======
 >>>>>>> 101d0d24ec4255a9525688f98c4b195999fa377a
+=======
+}
+
+.table-small {
+    width: 80%;
+    height: auto;
+}
+
+.plot-container-small {
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+>>>>>>> 043a282815e330e79882eb927d74c15f11ae2ce2
 }
