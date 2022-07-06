@@ -38,7 +38,9 @@ layout = html.Div(
                                                                                                 id="dropdown_coins",
                                                                                                 className="dropdown-item", 
                                                                                                 options=[{'label': x['name'], 'value': x['ticker']} for x in globals_variable.COINS_SELECTION],
-                                                                                                value= 'BTC-USD'
+                                                                                                value= 'BTC-USD',
+                                                                                                persistence=True,
+                                                                                                persistence_type='session'  
                                                                                             ),
                                                                                         ]),
                                                                         html.Div(
@@ -49,7 +51,9 @@ layout = html.Div(
                                                                                         id="dropdown_exchanges",
                                                                                         className="dropdown-item", 
                                                                                         options=[{'label': x['name'], 'value': x['ticker']} for x in globals_variable.EXCHANGES],
-                                                                                        value='USD'
+                                                                                        value='USD',
+                                                                                        persistence=True,
+                                                                                        persistence_type='session'
                                                                                     ),
                                                                                 ])
                                                                             ],
@@ -156,7 +160,9 @@ layout = html.Div(
                                                                                                                                                 {'label': 'Line', 'value': 'line'},
                                                                                                                                                 {'label': 'Candle', 'value': 'candle'}
                                                                                                                                             ],
-                                                                                                                                    value='line'
+                                                                                                                                    value='line',
+                                                                                                                                    persistence=True,
+                                                                                                                                    persistence_type='memory'
                                                                                                                                 ),
                                                                                                                             ])
                                                                                                         ]
