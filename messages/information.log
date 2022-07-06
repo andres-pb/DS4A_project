@@ -9399,3 +9399,89 @@ Version .: 1.1
 [59704] urllib3.connectionpool - 2022-07-05 23:11:59,314 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/ETH-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
 [76652] urllib3.connectionpool - 2022-07-05 23:12:02,564 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
 [76652] urllib3.connectionpool - 2022-07-05 23:12:02,823 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656994322&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1019
+[72956] __main__ - 2022-07-05 23:18:46,037 - INFO - ...... Initialization Completed  ......
+[72956] __main__ - 2022-07-05 23:18:46,037 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[72956] sqlalchemy.engine.Engine - 2022-07-05 23:18:46,037 - INFO - BEGIN (implicit)
+[72956] sqlalchemy.engine.Engine - 2022-07-05 23:18:46,037 - INFO - PRAGMA main.table_info("crypto")
+[72956] sqlalchemy.engine.Engine - 2022-07-05 23:18:46,050 - INFO - [raw sql] ()
+[72956] sqlalchemy.engine.Engine - 2022-07-05 23:18:46,050 - INFO - COMMIT
+[72956] urllib3.connectionpool - 2022-07-05 23:18:47,010 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[72956] urllib3.connectionpool - 2022-07-05 23:18:47,313 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[72956] app.dashboard.dashboard - 2022-07-05 23:18:48,783 - INFO - Dash is running on http://127.0.0.1:8888/
+
+[76292] __main__ - 2022-07-05 23:18:54,548 - INFO - ...... Initialization Completed  ......
+[76292] __main__ - 2022-07-05 23:18:54,548 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[76292] sqlalchemy.engine.Engine - 2022-07-05 23:18:54,548 - INFO - BEGIN (implicit)
+[76292] sqlalchemy.engine.Engine - 2022-07-05 23:18:54,548 - INFO - PRAGMA main.table_info("crypto")
+[76292] sqlalchemy.engine.Engine - 2022-07-05 23:18:54,548 - INFO - [raw sql] ()
+[76292] sqlalchemy.engine.Engine - 2022-07-05 23:18:54,548 - INFO - COMMIT
+[76292] urllib3.connectionpool - 2022-07-05 23:18:55,020 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[76292] urllib3.connectionpool - 2022-07-05 23:18:55,273 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[76244] urllib3.connectionpool - 2022-07-05 23:19:05,102 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[76244] urllib3.connectionpool - 2022-07-05 23:19:05,329 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[78164] urllib3.connectionpool - 2022-07-05 23:19:18,770 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[78164] urllib3.connectionpool - 2022-07-05 23:19:19,061 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1656994758&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1014
+[58964] h5py._conv - 2022-07-05 23:19:24,072 - DEBUG - Creating converter from 3 to 5
+[58964] urllib3.connectionpool - 2022-07-05 23:19:24,138 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:24,506 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/%5ETYX?period1=1651810764&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1776
+[58964] urllib3.connectionpool - 2022-07-05 23:19:24,879 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:25,516 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1651810764&period2=1657083600&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 2543
+[58964] urllib3.connectionpool - 2022-07-05 23:19:25,631 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:25,921 - DEBUG - https://trends.google.com:443 "GET /?geo=US HTTP/1.1" 301 237
+[58964] urllib3.connectionpool - 2022-07-05 23:19:26,038 - DEBUG - https://trends.google.com:443 "GET /trends/?geo=US HTTP/1.1" 200 None
+[58964] urllib3.connectionpool - 2022-07-05 23:19:26,143 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:26,394 - DEBUG - https://trends.google.com:443 "GET /trends/api/explore?hl=en-US&tz=360&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bitcoin%22%2C+%22time%22%3A+%222022-06-29T00+2022-07-06T00%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3A+%22%22%7D HTTP/1.1" 200 None
+[58964] urllib3.connectionpool - 2022-07-05 23:19:26,406 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:26,920 - DEBUG - https://trends.google.com:443 "GET /trends/api/widgetdata/multiline?req=%7B%22time%22%3A+%222022-06-29T00%5C%5C%3A00%5C%5C%3A00+2022-07-06T00%5C%5C%3A00%5C%5C%3A00%22%2C+%22resolution%22%3A+%22HOUR%22%2C+%22locale%22%3A+%22en-US%22%2C+%22comparisonItem%22%3A+%5B%7B%22geo%22%3A+%7B%7D%2C+%22complexKeywordsRestriction%22%3A+%7B%22keyword%22%3A+%5B%7B%22type%22%3A+%22BROAD%22%2C+%22value%22%3A+%22Bitcoin%22%7D%5D%7D%7D%5D%2C+%22requestOptions%22%3A+%7B%22property%22%3A+%22%22%2C+%22backend%22%3A+%22CM%22%2C+%22category%22%3A+0%7D%2C+%22userConfig%22%3A+%7B%22userType%22%3A+%22USER_TYPE_SCRAPER%22%7D%7D&token=APP6_UEAAAAAYsZezNyKI5wSeFevb4dVQztnD-5r1rZa&tz=360 HTTP/1.1" 200 None
+[58964] urllib3.connectionpool - 2022-07-05 23:19:27,039 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:27,289 - DEBUG - https://trends.google.com:443 "GET /trends/api/explore?hl=en-US&tz=360&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bitcoin%22%2C+%22time%22%3A+%222022-07-06T00+2022-07-13T00%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3A+%22%22%7D HTTP/1.1" 200 None
+[58964] urllib3.connectionpool - 2022-07-05 23:19:27,305 - DEBUG - Starting new HTTPS connection (1): trends.google.com:443
+[58964] urllib3.connectionpool - 2022-07-05 23:19:27,851 - DEBUG - https://trends.google.com:443 "GET /trends/api/widgetdata/multiline?req=%7B%22time%22%3A+%222022-07-06T00%5C%5C%3A00%5C%5C%3A00+2022-07-13T00%5C%5C%3A00%5C%5C%3A00%22%2C+%22resolution%22%3A+%22HOUR%22%2C+%22locale%22%3A+%22en-US%22%2C+%22comparisonItem%22%3A+%5B%7B%22geo%22%3A+%7B%7D%2C+%22complexKeywordsRestriction%22%3A+%7B%22keyword%22%3A+%5B%7B%22type%22%3A+%22BROAD%22%2C+%22value%22%3A+%22Bitcoin%22%7D%5D%7D%7D%5D%2C+%22requestOptions%22%3A+%7B%22property%22%3A+%22%22%2C+%22backend%22%3A+%22CM%22%2C+%22category%22%3A+0%7D%2C+%22userConfig%22%3A+%7B%22userType%22%3A+%22USER_TYPE_SCRAPER%22%7D%7D&token=APP6_UEAAAAAYsZezcb7oB1jS8oMqhgBoaPjixGQiTWi&tz=360 HTTP/1.1" 200 None
+[67664] urllib3.connectionpool - 2022-07-05 23:19:34,638 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[67664] urllib3.connectionpool - 2022-07-05 23:19:34,928 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/BTC-USD?period1=1579237200&period2=1657083600&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
