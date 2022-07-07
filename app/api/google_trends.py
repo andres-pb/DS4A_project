@@ -106,29 +106,35 @@ class GoogleTrends:
     
     def get_last_day_df(self, kw_list:list):
         
-        start_dt = self.today
+        start_dt = self.today - dt.timedelta(1)
         end_dt  = self.today + dt.timedelta(1)
-        
-        # Daily is faster but doesnt bring data from last days
-        day_df = self.pytrend.get_historical_interest(
-            kw_list, 
-            year_start=start_dt.year,
-            month_start=start_dt.month, 
-            day_start=start_dt.day,
-            hour_start=0,
-            year_end=end_dt.year,
-            month_end=end_dt.month,
-            day_end=end_dt.day,
-            hour_end=0,
-            cat=0,
-            geo='',
-            gprop='',
-            sleep=60,
-            frequency='hourly'
-        )
-        day_df.reset_index(inplace=True)
-        # Los isPartial vienen en ceros
-        day_df = day_df[~day_df['isPartial']]
+        status = False
+        while not status:
+            try:
+                # Daily is faster but doesnt bring data from last days
+                day_df = self.pytrend.get_historical_interest(
+                    kw_list, 
+                    year_start=start_dt.year,
+                    month_start=start_dt.month, 
+                    day_start=start_dt.day,
+                    hour_start=0,
+                    year_end=end_dt.year,
+                    month_end=end_dt.month,
+                    day_end=end_dt.day,
+                    hour_end=0,
+                    cat=0,
+                    geo='',
+                    gprop='',
+                    sleep=60,
+                    frequency='hourly'
+                )
+                day_df.reset_index(inplace=True)
+                # Los isPartial vienen en ceros
+                day_df = day_df[~day_df['isPartial']]
+                status = True
+            except KeyError:
+                time.sleep(60)
+                
         day_df['date'] = day_df['date'].dt.date
         ###
         day_df = day_df[['date'] + kw_list].groupby('date').mean().reset_index()
