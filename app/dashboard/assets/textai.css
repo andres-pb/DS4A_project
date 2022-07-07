@@ -9,8 +9,8 @@
 }
 
 .cards-container {
-    height: 900px;
-    max-height: 900px;
+    height: 950px;
+    max-height: 950px;
     overflow: scroll;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 2%;

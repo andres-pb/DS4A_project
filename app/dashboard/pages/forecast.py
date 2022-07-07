@@ -365,8 +365,8 @@ def populate_mdl_ddown(sel_coin):
     pred_dff = preds_df.query('(Coin == @sel_coin)')
     mdls_list = sorted(pred_dff['Model'].unique())
     mdl_opts = [{'label': t, 'value': t} for t in mdls_list]
-    if 'Neural Prophet' in mdls_list:
-        mdl_value = 'Neural Prophet'
+    if 'Deep Learning LSTM' in mdls_list:
+        mdl_value = 'Deep Learning LSTM'
     else:
         mdl_value = mdls_list[0]
     return mdl_opts, mdl_value

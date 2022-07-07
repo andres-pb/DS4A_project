@@ -24,7 +24,7 @@ CONTENT_STYLE = {
 }
 
 # Read tweets and news
-news_df = pd.read_csv('./sentiment_models/polygon_df_01_07_2022.csv', parse_dates=['published_utc'])
+news_df = pd.read_csv('./crypto_news.csv', parse_dates=['created_at']).sort_values('created_at', ascending=False)
 tweets_df = pd.read_csv('./tweets_all.csv', parse_dates=['created_at']).sort_values('created_at', ascending=False)
 
 
@@ -33,10 +33,13 @@ layout = html.Div([
         dbc.Row([
                 dbc.Col(
                     [
-                    html.H3('Read the Content:'),
+                    html.H3('Read the Contents:'),
                     html.Br(),
                     dcc.Dropdown(
-                        options=[{'label':s.capitalize(), 'value': s} for s in ['positive', 'negative', 'neutral']],
+                        options=[
+                            {'label':html.Div('Positive', style={'color': 'black', 'background-color': '#50bc74'}), 'value': 'positive'},
+                            {'label':html.Div('Neutral', style={'color': 'black', 'background-color': '#1f9bcf'}), 'value': 'neutral'},
+                            {'label':html.Div('Negative', style={'color': 'white', 'background-color': '#d9534f'}), 'value': 'negative'},],
                         value=['positive', 'negative', 'neutral'],
                         multi=True,
                         id='sent-dropdown',
@@ -84,6 +87,19 @@ layout = html.Div([
                         type='circle',
                         color='#A0A0A0',
                     ),
+                    dcc.Loading(
+                        [
+                            html.Div(
+                            children=[
+                                html.H3('Popular Cryptocurrencies'),
+                                dcc.Graph(id='sentiment-bar')
+                                ],
+                                className='graph-container',
+                            ),    
+                        ],
+                        type='circle',
+                        color='#A0A0A0',
+                    ),
                 ],
                     className='ly-margins',
                     width={"size": 6, "offset": 0, 'order': 'last'},
@@ -101,6 +117,7 @@ layout = html.Div([
        
 
 #============================================CALLBACKS=================================================#
+
 @callback(
    Output('wordcloud-row', 'children'),
    [Input('src-dropdown', 'value')] 
@@ -208,22 +225,33 @@ def plot_words(sel_src):
 
 @callback(
     Output('sentiment-pie', 'figure'),
-    [Input('src-dropdown', 'value')]
+    [Input('src-dropdown', 'value'), Input('sent-dropdown', 'value'),]
 )
-def update_count_bars(sel_src):
+def update_pie(sel_src, sel_sents):
+
+    colors_dict = {'negative': '#d9534f', 'neutral':'#1f9bcf', 'positive': '#50bc74'}
 
     print('SELECTED SOURCEEEE', sel_src)
     if sel_src == 'Twitter':
-        total = tweets_df['id'].count() 
-        sub_tweets_df = tweets_df[['id', 'Sentiment']].groupby(['Sentiment']).nunique().reset_index().sort_values('Sentiment')
+        sub_tweets_df = tweets_df[tweets_df['Sentiment'].isin(sel_sents)]
+        total = sub_tweets_df['id'].count() 
+        sub_tweets_df = sub_tweets_df[['id', 'Sentiment']].groupby(['Sentiment']).nunique().reset_index().sort_values('Sentiment')
+        sub_tweets_df['color'] = sub_tweets_df['Sentiment']
+        sub_tweets_df['color'] = sub_tweets_df['color'].map(colors_dict)
         labels=sub_tweets_df['Sentiment']
         values=sub_tweets_df['id']
+        mk_colors = sub_tweets_df['color']
     else:
-        total = news_df['id'].count()
-        sub_df = news_df[['id', 'description_FinBERT']].groupby(['description_FinBERT']).nunique().reset_index().sort_values('description_FinBERT')
-        sub_df.rename(columns={'description_FinBERT': 'Sentiment'}, inplace=True)
+        
+        sub_df = news_df[news_df['description_finbert'].isin(sel_sents)]
+        total = sub_df['title'].count()
+        sub_df = sub_df[['title', 'description_finbert']].groupby(['description_finbert']).nunique().reset_index().sort_values('description_finbert')
+        sub_df.rename(columns={'description_finbert': 'Sentiment'}, inplace=True)
+        sub_df['color'] = sub_df['Sentiment']
+        sub_df['color'] = sub_df['color'].map(colors_dict)
         labels = sub_df['Sentiment']
-        values = sub_df['id']
+        values = sub_df['title']
+        mk_colors = sub_df['color']
 
     fig = go.Figure(
         go.Pie(
@@ -231,7 +259,7 @@ def update_count_bars(sel_src):
             values=values,
             hole=.5,
             sort=False,
-            marker_colors=['#d9534f', '#1f9bcf', '#50bc74']
+            marker_colors=mk_colors
         )
     )
 
@@ -244,6 +272,48 @@ def update_count_bars(sel_src):
             color='darkgray'),
         )
     fig.update_layout(margin=dict(l=20, r=20, t=20, b=20),)
+   
+    return fig
+
+
+
+@callback(
+    Output('sentiment-bar', 'figure'),
+    [Input('src-dropdown', 'value'), Input('sent-dropdown', 'value'),]
+)
+def update_bars(sel_src, sel_sents):
+
+    colors_dict = {'negative': '#d9534f', 'neutral':'#1f9bcf', 'positive': '#50bc74'}
+
+    if sel_src == 'Twitter':
+        sub_tweets_df = tweets_df[tweets_df['Sentiment'].isin(sel_sents)]
+        sub_tweets_df = sub_tweets_df[['id', 'ticker', 'Sentiment']].groupby(['ticker', 'Sentiment']).nunique().reset_index().sort_values('id', ascending=False)
+        df = sub_tweets_df.copy(deep=True)
+        print(df.info())
+        x='ticker'
+        y='id'
+        color='Sentiment'
+    else:
+        sub_df = news_df[news_df['description_finbert'].isin(sel_sents)]
+        sub_df = sub_df[['title','keyword', 'description_finbert']].groupby(['description_finbert','keyword']).nunique().reset_index().sort_values('title', ascending=False)
+        sub_df['keyword'] = sub_df['keyword'].str.capitalize()
+        sub_df.rename(columns={'description_finbert': 'Sentiment', 'keyword': 'Cryptocurrency'}, inplace=True)
+        df = sub_df.copy(deep=True)
+        x='Cryptocurrency'
+        y='title'
+        color='Sentiment'
+
+    fig = px.bar(
+        df,
+        x=x,
+        y=y,
+        color=color,
+        template='plotly_white',
+        color_discrete_map=colors_dict,
+    )
+    fig.update_layout(margin=dict(l=20, r=20, t=20, b=20),)
+    fig.update_yaxes(title_text = 'Count')
+    fig.update_yaxes(title_text = 'Cryptocurrency')
    
     return fig
 
@@ -264,11 +334,13 @@ def populate_cards(sel_src, sel_sents):
             header = tweet['user_name']
             ftext = tweet['full_text']
             sent = tweet['Sentiment']
-            
+            text_style = {}
+
             if sent == 'positive':
                 color = 'success'
             elif sent == 'negative':
                 color = 'danger'
+                text_style = {'color': 'white'}
             else:
                 color = 'info'
 
@@ -285,12 +357,12 @@ def populate_cards(sel_src, sel_sents):
                             dbc.Col(
                             [
                                 dbc.CardBody([
-                                    html.H4(header, className='card-title'),
-                                    html.P(ftext, className="card-text",),
+                                    html.H4(header, className='card-title', style=text_style),
+                                    html.P(ftext, className="card-text", style=text_style),
                                 ],),
                             ] 
                             ),            
-                            dbc.CardFooter(footer)
+                            dbc.CardFooter(footer, style=text_style)
                         ],
                         className="g-0 d-flex align-items-center",
                     )
@@ -304,33 +376,34 @@ def populate_cards(sel_src, sel_sents):
         return twt_cards
     
     else:
-        ndf_cards = news_df[news_df['description_FinBERT'].isin(sel_sents)]
+        ndf_cards = news_df[news_df['description_finbert'].isin(sel_sents)]
         ncards = []
 
         for idx, article in ndf_cards.iterrows():
 
             title=article['title']
-            footer = dt.datetime.strftime(article['published_utc'], '%Y-%m-%d %H:%M')
-            ftext = article['description']
-            header = article['author']
-            sent = article['description_FinBERT']
-            link = article['article_url']
-            image_url = article['image_url']
+            footer = dt.datetime.strftime(article['created_at'], '%Y-%m-%d %H:%M')
+            #ftext = article['']
+            header = article['source_name']
+            sent = article['description_finbert']
+            link = article['url']
+            text_style = {}
             
             if sent == 'positive':
                 color = 'success'
             elif sent == 'negative':
                 color = 'danger'
+                text_style = {'color': 'white'}
             else:
                 color = 'info'
             
             card = dbc.Card([
-                    dbc.CardHeader(html.H4(title)),
+                    dbc.CardHeader(html.H4(header, style=text_style)),
                     dbc.Row(
                         children=[
                             dbc.Col([
                                 dbc.CardImg(
-                                    src=image_url,
+                                    src='https://picsum.photos/360/360',
                                     className="img-fluid rounded-start",
                                 )],
                                 className="col-md-4"
@@ -338,13 +411,13 @@ def populate_cards(sel_src, sel_sents):
                             dbc.Col(
                             [
                                 dbc.CardBody([
-                                    html.H6(header, className='card-title'),
-                                    html.P(ftext, className="card-text",),
-                                    html.A('Read...', href=link, target="_blank",)
+                                    html.H6(title, className='card-title', style=text_style),
+                                    #html.P(ftext, className="card-text",),
+                                    html.A('Read More...', href=link, target="_blank", style=text_style)
                                 ],),
                             ] 
                             ),            
-                            dbc.CardFooter(footer)
+                            dbc.CardFooter(footer, style=text_style)
                         ],
                         className="g-0 d-flex align-items-center",
                     )

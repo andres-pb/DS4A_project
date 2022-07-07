@@ -42,10 +42,11 @@ def get_npro_prediction(coin_label, path_npro_models):
         if status:
             print('Successfully got coin mkt data for npro')
             last_close = close_df['Close'].values[-1]
-            sample_df = close_df.iloc[:-1, :][['Close', 'Volume',]]
+            sample_df = close_df.iloc[:, :][['Close', 'Volume',]]
             sample_df = sample_df.merge(yield_data, how='left', left_index=True, right_index=True)
-            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='ffill')
             sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='bfill')
+            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='ffill')
+            
 
             # query our database bc google trends takes about 1 minute to load results
             print('Getting google trends data npro...')
@@ -56,7 +57,7 @@ def get_npro_prediction(coin_label, path_npro_models):
             print(gtrend_df.info())
             gtrend_df.fillna(method='ffill', inplace=True)
         
-            gtrend_df = gtrend_df.iloc[:-1, :]
+            gtrend_df = gtrend_df.iloc[:, :]
             print('>> Successfully collected Google Trends data.')
             gtrend_data = gtrend_df[coin_name]
             sample_df['Gtrend'] = gtrend_data

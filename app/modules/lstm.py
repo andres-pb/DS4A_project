@@ -723,17 +723,17 @@ def get_prediction(
     if status:
         print('got treasury data')
         yield_df.to_csv('YIELD_NAAAA.csv')
-        yield_data = yield_df.iloc[-(lags+1):-1, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
+        yield_data = yield_df.iloc[-(lags+1):, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
         # get the last close with lags
         status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
 
         if status:
             print('Successfully got coin mkt data')
             last_close = close_df['Close'].values[-1]
-            sample_df = close_df.iloc[-(lags+1):-1, :][features]
+            sample_df = close_df.iloc[-(lags+1):, :][features]
             sample_df[tr_ticker[-3:]] = yield_data
             sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='ffill')
-            sample_df[tr_ticker[-3:]] = sample_df[tr_ticker[-3:]].fillna(method='bfill')
+            
             # query our database bc google trends takes about 1 minute to load results
             use_gtrend = model_meta['google_trend']
             if use_gtrend:
@@ -785,7 +785,7 @@ def get_prediction(
                 else:
                   gtrend_df = gt_data_local
 
-                gtrend_df = gtrend_df.iloc[-(lags+1):-1, :]
+                gtrend_df = gtrend_df.iloc[-(lags+1):, :]
                 print('>> Successfully collected Google Trends data.')
                 gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
                 gtrend_data = gtrend_df[coin_name]
@@ -797,11 +797,12 @@ def get_prediction(
                 print('Successfully collected BTC data.')
                 sample_df['BTC'] = btc_df['Close']
               else:
+
                 print('Prediction failed. Error collecting BTC feature data.')
                 return
             # Dataframe con la muestra
-            sample_df = sample_df[ord_fts]
             sample_df.fillna(method='ffill', inplace=True)
+            sample_df = sample_df.iloc[-lags:,:][ord_fts]
 
             print('>> Successfully collected all features data.')
             print(sample_df.info())
