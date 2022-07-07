@@ -43,7 +43,9 @@ layout = html.Div([
                         value=['positive', 'negative', 'neutral'],
                         multi=True,
                         id='sent-dropdown',
-                        className='white-selector'
+                        className='white-selector',
+                        persistence=True,
+                        persistence_type='memory'
                     ),
                     html.Br(),
                     dcc.Loading(
@@ -313,7 +315,7 @@ def update_bars(sel_src, sel_sents):
     )
     fig.update_layout(margin=dict(l=20, r=20, t=20, b=20),)
     fig.update_yaxes(title_text = 'Count')
-    fig.update_yaxes(title_text = 'Cryptocurrency')
+    fig.update_xaxes(title_text = 'Cryptocurrency')
    
     return fig
 
@@ -403,7 +405,7 @@ def populate_cards(sel_src, sel_sents):
                         children=[
                             dbc.Col([
                                 dbc.CardImg(
-                                    src='https://picsum.photos/360/360',
+                                    src='https://picsum.photos/200',
                                     className="img-fluid rounded-start",
                                 )],
                                 className="col-md-4"
