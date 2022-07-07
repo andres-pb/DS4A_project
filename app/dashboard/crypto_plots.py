@@ -477,15 +477,15 @@ def plot_monitor_line_volume(ticker:str = globals_variable.COINS_SELECTION[-1]['
 
 
 
-def plot_lime(lime_df, px_theme='plotly_dark'):
+def plot_lime(lime_df, px_theme='plotly_dark', contrib_var='LIME Weight'):
 
     fig = px.bar(
         lime_df, 
-        x='LIME Weight', 
+        x=contrib_var, 
         y='Feature',
         animation_frame='Date',
         orientation='h', 
-        color='LIME Weight', 
+        color=contrib_var, 
         template=px_theme,
         title="",
         color_continuous_scale='viridis',
@@ -510,6 +510,23 @@ def plot_lime(lime_df, px_theme='plotly_dark'):
             )
     
     return fig
+
+
+def error_bars(err_table, metric='RMSE'):
+
+    fig = px.bar(
+        err_table[err_table['Metric']==metric],
+        x="Metric",
+        y="Error",
+        color="Model", 
+        barmode="group",
+        template='plotly_white',
+        color_continuous_scale='viridis',
+        )
+    if metric in ['MAE', 'MSE', 'RMSE']:  
+        fig.update_layout(yaxis_tickformat = '$')
+    return fig
+
 
 
 if '__main__'==__name__:
