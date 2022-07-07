@@ -7,3 +7,33 @@
     width: 100%;
     height: auto;
 }
+
+.cards-container {
+    height: 900px;
+    max-height: 900px;
+    overflow: scroll;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2%;
+    border-style: double;
+    border-color: lightgray;
+    align-items: center;
+    align-content: center;
+}
+
+.post-card {
+    border-radius: 2.5%;
+}
+
+.ly-margins {
+    padding: 0 1rem 0 1rem;
+}
+
+.ly-margins-l {
+    margin-left: 2rem;
+    width: 90%;
+}
+
+.white-selector {
+    color:black;
+    background-color: white;
+}

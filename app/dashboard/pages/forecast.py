@@ -694,3 +694,4 @@ def populate_ep_row(sel_coin, sel_model, sel_time):
                     width={"size": 8, "offset": 0, 'order':'last'},
                 )
             ]
+
