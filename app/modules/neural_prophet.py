@@ -76,6 +76,17 @@ def get_npro_prediction(coin_label, path_npro_models):
             prediction = predicted_df['yhat1'].values[-1]
 
             ret = (prediction - last_close)/last_close
+<<<<<<< HEAD
+=======
+
+            return prediction, ret
+        else:
+            print('Error trying to get ticker {} data from Yahoo Finance.'.format(ticker))
+            return False, False               
+    else:
+        print('Error trying to get treasury yield {} data from Yahoo Finance.'.format(tr_ticker))
+        return False, False
+>>>>>>> dev
 
             return prediction, ret
         else:

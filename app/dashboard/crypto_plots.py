@@ -529,6 +529,52 @@ def error_bars(err_table, metric='RMSE'):
 
 
 
+def plot_twt_wordcloud(text_df, sentiment='all', text_col='full_text', max_words=500, width=500, height=750):
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from PIL import Image
+    from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+    import os
+    from os import path
+    import random
+    from scipy.ndimage import gaussian_gradient_magnitude
+    
+    if sentiment == 'positive':
+        path_to_logo = './sentiment_models/twt_green.png'
+    elif sentiment == 'positive':
+        path_to_logo = './sentiment_models/twt_red.png'
+    else:
+        path_to_logo = './sentiment_models/twt_logo.png'
+
+    df2 = text_df.dropna(subset=[text_col], axis = 0)[text_col].copy()
+    text = " ".join(s for s in df2)
+    stopwords = set(STOPWORDS)
+    stopwords.update(['t', 'https', 'co'])
+    fura_color = np.array(Image.open(os.path.join(path_to_logo)))
+    wordcloud = WordCloud(
+            stopwords=stopwords,
+            background_color="black",
+            width=width, 
+            height=height, 
+            max_words=max_words,
+            mask=fura_color,
+            max_font_size=150,
+            min_font_size=1).generate(text)
+    # ploting it in a specific image
+    image_colors = ImageColorGenerator(fura_color)
+
+    # show
+    fig, ax = plt.subplots(figsize=(10,10), dpi=60)
+    ax.imshow(wordcloud.recolor(color_func=image_colors), interpolation="bilinear")
+    ax.set_axis_off()
+
+    img_path = './app/dashboard/assets/wcloud_' + sentiment + '.png'
+    wordcloud.to_file(img_path)
+    
+    return 'wcloud_' + sentiment + '.png'
+
+
 if '__main__'==__name__:
     pass
     # plot_monitor()
