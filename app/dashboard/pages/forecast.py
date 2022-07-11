@@ -561,7 +561,7 @@ def predict_price(n, sel_coin, sel_model, sel_time):
     if n == 1:
 
         now = dt.datetime.today()
-        pred_val = (now + dt.timedelta(1)).replace(hour=5, minute=0, second=0)
+        pred_val = (now + dt.timedelta(days=1))
         pred_val_str = dt.datetime.strftime(pred_val, '%Y-%m-%d %H:%M')
 
         print('>>>> ATTEMPTING PRICE PREDICTION')
@@ -592,7 +592,7 @@ def predict_price(n, sel_coin, sel_model, sel_time):
                     html.P('${:,.2f}'.format(forecast), className=clname + ' ' + icon),
                 ], 
                 className='forecast-container'
-            )], html.P(['As of {} local time UTC-5'.format(pred_val_str)], className='footnote'), None
+            )], html.P(['Expected for {} UTC time'.format(pred_val_str)], className='footnote'), None
     
     else:
         return html.P('Click the Forecast Button.'), '', None
@@ -603,15 +603,17 @@ def predict_price(n, sel_coin, sel_model, sel_time):
     [Input('coin-dropdown', 'value'),  Input('update-price-interval', 'n_intervals')]
 )
 def update_close(sel_coin, n):
-    today = dt.datetime.today() - dt.timedelta(1)
+    print(dt.datetime.today())
+    hist_control = dt.datetime.today() - dt.timedelta(days=10)
+    print('GETTING YF FROM: ', hist_control)
     usd_ticker = str(sel_coin)[:3] + '-USD'
-    status, yahoo_df = yahoo_finance.market_value(usd_ticker, hist=today, interval='1d')
+    status, yahoo_df = yahoo_finance.market_value(symbol=usd_ticker, today=dt.datetime.today(), hist=hist_control, interval='1d')
     if status:
         time_upd = dt.datetime.strftime(dt.datetime.now(), '%H:%M')
         close = yahoo_df['Close'].values[-1]
         return [
             html.P('${:,.2f}'.format(close), className='price-quote',), 
-            html.Span('Last updated at {}'.format(time_upd), className='footnote')
+            html.Span('Last updated at {} UTC'.format(time_upd), className='footnote')
             ]
     else:
         return html.P('Price not available...')

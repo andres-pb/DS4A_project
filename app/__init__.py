@@ -1,6 +1,5 @@
 import os, sys
 from .modules import Statistical, Predict, LSTM_model, prep_data, train_model, get_prediction
-from .modules import Sentiment_predict
 from .api import Polygon, Alphavantage, yahoo_finance, Twitter, GoogleTrends, CoinMarketCap
 from .db import database
 from .util import globals_variable

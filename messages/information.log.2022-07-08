@@ -1,0 +1,64 @@
+[16612] __main__ - 2022-07-08 00:08:19,343 - INFO - ...... Initialization Completed  ......
+[16612] __main__ - 2022-07-08 00:08:19,343 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[16612] sqlalchemy.engine.Engine - 2022-07-08 00:08:19,356 - INFO - BEGIN (implicit)
+[16612] sqlalchemy.engine.Engine - 2022-07-08 00:08:19,357 - INFO - PRAGMA main.table_info("crypto")
+[16612] sqlalchemy.engine.Engine - 2022-07-08 00:08:19,359 - INFO - [raw sql] ()
+[16612] sqlalchemy.engine.Engine - 2022-07-08 00:08:19,361 - INFO - COMMIT
+[16612] urllib3.connectionpool - 2022-07-08 00:08:21,170 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[16612] urllib3.connectionpool - 2022-07-08 00:08:21,669 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579496400&period2=1657342800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None
+[16612] app.dashboard.dashboard - 2022-07-08 00:08:23,659 - INFO - Dash is running on http://127.0.0.1:8888/
+
+[11224] __main__ - 2022-07-08 00:08:34,770 - INFO - ...... Initialization Completed  ......
+[11224] __main__ - 2022-07-08 00:08:34,771 - INFO - [1;32m
+
+ #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+                                                                
+ ######   #####  #          #                                   
+ #     # #     # #    #    # #                                  
+ #     # #       #    #   #   #                                 
+ #     #  #####  #    #  #     #                                
+ #     #       # ####### #######                                
+ #     # #     #      #  #     #                                
+ ######   #####       #  #     # 
+
+
+Author.: TEAM 39
+Company .: DS4A
+Version .: 1.1
+
+    
+[11224] sqlalchemy.engine.Engine - 2022-07-08 00:08:34,772 - INFO - BEGIN (implicit)
+[11224] sqlalchemy.engine.Engine - 2022-07-08 00:08:34,772 - INFO - PRAGMA main.table_info("crypto")
+[11224] sqlalchemy.engine.Engine - 2022-07-08 00:08:34,773 - INFO - [raw sql] ()
+[11224] sqlalchemy.engine.Engine - 2022-07-08 00:08:34,774 - INFO - COMMIT
+[11224] urllib3.connectionpool - 2022-07-08 00:08:36,001 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+[11224] urllib3.connectionpool - 2022-07-08 00:08:36,230 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PPC-USD?period1=1579496400&period2=1657342800&interval=1wk&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 None

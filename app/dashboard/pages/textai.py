@@ -405,7 +405,7 @@ def populate_cards(sel_src, sel_sents):
                         children=[
                             dbc.Col([
                                 dbc.CardImg(
-                                    src='https://picsum.photos/200',
+                                    src='https://picsum.photos/200/?random&dummyParam={}'.format(idx),
                                     className="img-fluid rounded-start",
                                 )],
                                 className="col-md-4"

@@ -334,7 +334,7 @@ def build_dset(coins_list: list, gtrends: bool = False):
   ir_dfs = []
   for ir in yield_curve:
       min_date = coins_df['first_historical_data'].min()
-      status, ir_data = yahoo_finance.market_value(ir, hist=min_date, interval='1d')
+      status, ir_data = yahoo_finance.market_value(symbol=ir, today=dt.datetime.today(), hist=min_date, interval='1d')
       ir_data.rename(columns={'Close': ir[1:]}, inplace=True)
       ir_close =  ir_data[ir[1:]]
       ir_dfs.append(ir_close)
@@ -349,7 +349,7 @@ def build_dset(coins_list: list, gtrends: bool = False):
     start = coin['first_historical_data']
 
     # Get daily market data from yahoo
-    status, data = yahoo_finance.market_value(ticker, hist=start, interval='1d')
+    status, data = yahoo_finance.market_value(symbol=ticker, today=dt.datetime.today(), hist=start, interval='1d')
     print(coin_name, coin['days_history'])
     print(data.shape)
     # Add yield curve data
@@ -719,16 +719,15 @@ def get_prediction(
     # get treasury bonds price
     tr_ticker = model_meta['treasury_ticker']
 
-    status, yield_df = yf.market_value(tr_ticker, hist=history, interval='1d')
+    status, yield_df = yf.market_value(symbol=tr_ticker, today=dt.datetime.today(), hist=history, interval='1d')
     if status:
-        print('got treasury data')
-        yield_df.to_csv('YIELD_NAAAA.csv')
+        # print('got treasury data')
         yield_data = yield_df.iloc[-(lags+1):, :].rename(columns={'Close': tr_ticker[-3:]})[tr_ticker[-3:]]
         # get the last close with lags
-        status, close_df = yf.market_value(ticker_usd, hist=history, interval='1d')
+        status, close_df = yf.market_value(symbol=ticker_usd, today=dt.datetime.today(), hist=history, interval='1d')
 
         if status:
-            print('Successfully got coin mkt data')
+            # print('Successfully got coin mkt data')
             last_close = close_df['Close'].values[-1]
             sample_df = close_df.iloc[-(lags+1):, :][features]
             sample_df[tr_ticker[-3:]] = yield_data
@@ -737,62 +736,42 @@ def get_prediction(
             # query our database bc google trends takes about 1 minute to load results
             use_gtrend = model_meta['google_trend']
             if use_gtrend:
-                print('attempting google trends')
+                # print('attempting google trends')
                 conn = sql.connect('./database.db', detect_types=sql.PARSE_DECLTYPES)
                 dbquery = """
                   SELECT
-                    Date date,
-                    Gtrend {}
+                    *
                   FROM google_trend_hist
-                  WHERE Ticker = "{}"
-                    AND Date >= DATE("{}")
-                """.format(coin_name, ticker_usd, history_str)
+                  WHERE Date >= DATE("{}")
+                """.format(history_str)
                 gt_data_local = pd.read_sql(dbquery, conn)
-                gt_data_local['date'] = pd.to_datetime(gt_data_local['date']).dt.date
-                print('DB DATA >>>', gt_data_local.info())
-                max_local = gt_data_local['date'].max()
+                gt_data_local['Date'] = pd.to_datetime(gt_data_local['Date']).dt.date
+                max_local = gt_data_local.query('Ticker==@ticker_usd')['Date'].max()
 
                 if max_local < dt.date.today():
                   # Get daily google trend interest for the remaining days
                   gt = GoogleTrends()
                   gtrend_df_api = gt.get_daily_trend_df([coin_name], start_dt=max_local + dt.timedelta(days=1))
                   gtrend_df_api.reset_index(inplace=True)
-
-                  gtrend_df = pd.concat([gt_data_local, gtrend_df_api]).reset_index(drop=True)
-                  print('CONCAT RESULT >>> \n')
-                  print(gtrend_df.info())
-                  gtrend_df.fillna(method='ffill', inplace=True)
-                
-                  # Update our local database for later use
-                  gtrend_df_api.reset_index(inplace=True)
-                  gtrend_df_api.rename(columns={coin_name: 'Gtrend', 'date':'Date'}, inplace=True)
-                  ('>> FROM GT API >>>')
-                  print(gtrend_df_api.info())
+                  gtrend_df_api.rename(columns={coin_name: 'Gtrend', 'date': 'Date'}, inplace=True)
                   gtrend_df_api['Ticker'] = ticker_usd
-                  gtrend_df_api = gtrend_df_api[['Date', 'Ticker', 'Gtrend']]
-                  cursor = conn.cursor()
-                  for _, row in gtrend_df_api.iterrows():
-                    insert_query = """
-                      INSERT INTO google_trend_hist
-                        (Date, Ticker, Gtrend)
-                      VALUES
-                        ({}, "{}", {})
-                    """.format(row['Date'], row['Ticker'], row['Gtrend'])
-                    cursor.execute(insert_query)
-                    conn.commit()
-                  print('>> Google Trend database updated.')
-                
+                  # Append results to local history
+                  gtrend_db = pd.concat([gt_data_local, gtrend_df_api]).reset_index(drop=True)
+                  gtrend_db.fillna(method='ffill', inplace=True)
+                  # Update our local database for later use
+                  gtrend_db.to_sql('google_trend_hist', conn, index=False, if_exists='replace')
+                  gtrend_df = gtrend_db.query('Ticker==@ticker_usd')
+                  print('\tUpdated local database.')
                 else:
                   gtrend_df = gt_data_local
 
                 gtrend_df = gtrend_df.iloc[-(lags+1):, :]
                 print('>> Successfully collected Google Trends data.')
                 gtrend_df.set_index(sample_df.index, drop=True, inplace=True)
-                gtrend_data = gtrend_df[coin_name]
-                sample_df['Gtrend'] = gtrend_data
+                sample_df['Gtrend'] = gtrend_df['Gtrend']
             
             if use_btc:
-              status, btc_df = yf.market_value('BTC-USD', hist=history, interval='1d')
+              status, btc_df = yf.market_value(symbol='BTC-USD', today=dt.datetime.today(), hist=history, interval='1d')
               if status:
                 print('Successfully collected BTC data.')
                 sample_df['BTC'] = btc_df['Close']
@@ -800,17 +779,16 @@ def get_prediction(
 
                 print('Prediction failed. Error collecting BTC feature data.')
                 return
-            # Dataframe con la muestra
+            # Dataframe con los insumos para predicción
             sample_df.fillna(method='ffill', inplace=True)
             sample_df = sample_df.iloc[-lags:,:][ord_fts]
-
-            print('>> Successfully collected all features data.')
+            print('\t>> Successfully collected all features data.')
             print(sample_df.info())
             # Extract and scale sample
             X = prep_data(sample_df, test_days=test_days, timesteps=lags, xscaler=xscaler, yscaler=yscaler, production=True)
             # Make model prediction
             pred_y = rebuilt_model.predict(X)
-            print('PRED_Y', pred_y)
+            print('\tPRED_Y:', pred_y)
             # undo scaling
             prediction = yscaler.inverse_transform(pred_y).reshape(1)[0]
 

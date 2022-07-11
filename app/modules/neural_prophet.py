@@ -5,7 +5,6 @@ from enum import auto
 import pickle
 from app.api import yahoo_finance, GoogleTrends
 import datetime as dt
-import sqlite3 as sql
 
 set_log_level("ERROR")
 set_random_seed(888)
