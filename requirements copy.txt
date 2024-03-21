@@ -9,7 +9,7 @@ python-coinmarketcap==0.3
 coinmarketcap-api==0.0.2
 statsmodels==0.13.2
 scikit_learn==1.1.1
-tensorflow==2.9.1
+tensorflow==2.11.1
 pytrends==4.8.0
 plotly==5.9.0
 dash==2.5.1
